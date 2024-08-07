@@ -1,0 +1,130 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{bbm} %para 1 indicatriz
+\usepackage{cancel}
+\usepackage{enumitem} %fancy itemize
+
+\title{formal}
+\author{leontaglelb }
+\date{July 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+
+We define the $1 \times J$ vector $\mathcal{J}$, composed of all $1, ..., J$ doctors.
+
+Now we define for each patient $i$ a vector $S_i \in \Delta(\mathcal{J})$, which will be his \textit{strategy} for this game, representing his probabilistic choice of visit for each doctor $j$, such that each component $s_{i1}, ... , s_{iJ}$ stands for the probability that he’ll visit doctors $1, ..., J$ respectively.
+
+In order to describe a proper probability distribution, the following criteria must be met:
+
+
+\begin{enumerate}[label=\roman*.]
+    \item $\forall j, \, s_{ij} \geq 0$
+    \item $\sum_{i = 1}^{J} s_{ij} \leq 1$
+\end{enumerate}
+
+We will allow the sum of all components to be less than one, implying the presence of an \textit{outside option} for patients, that is, to not visit any doctors. Such an option is important, as patient rationality in our models will include  ``\textit{free disposal}’’, meaning that a patient will never visit a doctor if his expected utility from such a visit is less than $0$.
+
+We shall further specify the form $S_i$ will take. Consider now a $1 \times J$ vector $U_i$, where each component $u_{i1}, ... , u_{iJ}$ indicates the utility patient $i$ expects from a visit to doctors $1, ..., J$ respectively, corresponding to $U_i(V_j, \bar{\kappa_j})$ for each doctor $j$. As a shorthand, we shall write $u_{i,-j}$ to indicate the $J - 1$ components of $U_i$ excluding $u_{ij}$.
+
+In the models considered, each component $s_{ij}$ of $S_i$ will be defined as:
+\[s_{ij} \equiv g_i(u_{ij}, u_{i,-j})\]
+where $g_i(\cdot)$ is a continuous function weakly increasing in the first argument $u_{ij}$, and weakly decreasing in the remaining arguments given by $u_{i,-j}$. Our model specifications will consist in giving this function $g_i(u_{ij}, u_{i,-j})$ a specific form.
+
+Our defining $s_{ij}$ this way has two interlinked corollaries:
+
+\textbf{Corollary 1:}
+\[s_{ij} \mid \kappa_i < \bar{\kappa_j} \;\;\;\; \leq     \;\;\;\; s_{ij} \mid \kappa_i \geq \bar{\kappa_j} \;\;\;\; \text{(with strict inequality if $\gamma_i > 0$).}\]
+
+For a fixed value of $V_j$ and $\kappa_i$, the value of $U_i(V_j, \bar{\kappa_j})$ is $V_j \kappa_i - \tau$ if $\kappa_i < \bar{\kappa_j}$, and $\gamma_i + V_j \kappa_i - \tau$ if $\kappa_i \geq \bar{\kappa_j}$, where $\gamma_i \geq 0$. Given that $s_{ij}$ is weakly increasing in $u_{ij}$, the corollary follows.
+
+\textbf{Corollary 2:}
+\[ \frac{\partial s_{ij}}{\partial\bar{\kappa_{l}}} \geq 0, \forall l \neq j \]
+
+From the argumentation in corollary 1 follows that $u_{ij}$ is weakly decreasing in $\bar{\kappa_j}$, $\forall j$. Take some $l \neq j$, then $s_{ij}$ is defined in turn as weakly decreasing in $u_{il}$, which implies it is increasing in $\bar{\kappa_l}$.
+
+Both corollaries hinge upon our definition of $U_i(\cdot)$ as a step function over $\kappa_i$, such that it is discontinuous at $\kappa_i = \bar{\kappa_j}$, where there’s a discrete jump of magnitude  $\gamma_i$.
+
+It is because of this and the continuity of our function $g_i(\cdot)$ that we observe the following:
+\begin{align*}
+    \lim_{\kappa_i \to\bar{\kappa_j}^+} s_{ij} - \lim_{\kappa_i \to\bar{\kappa_j}^-} s_{ij} = & \lim_{\kappa_i \to\bar{\kappa_j}^+} g_i(u_{ij}, u_{i,-j}) - \lim_{\kappa_i \to\bar{\kappa_j}^-} g_i(u_{ij}, u_{i,-j}) & \\
+    &  g_i(\lim_{\kappa_i \to\bar{\kappa_j}^+} u_{ij}, u_{i,-j}) -  g_i(\lim_{\kappa_i \to\bar{\kappa_j}^-} u_{ij}, u_{i,-j}) & > 0
+\end{align*}
+in the case that $\gamma_i > 0$ (else it equals $0$).
+
+We define $\alpha_{ij} \equiv \lim_{\kappa_i \to\bar{\kappa_j}^+} s_{ij} - \lim_{\kappa_i \to\bar{\kappa_j}^-} s_{ij} \geq 0$.
+
+\section{On the strategic effect}
+
+Consider our general form FOC:
+\begin{equation*}
+ R_j^{\prime}(Q_j)\frac{\partial Q_j}{\partial\bar{\kappa_j}} = P_j^{\prime}(X_j)\frac{\partial X_j}{\partial \bar{\kappa_j}} 
+\end{equation*}
+
+We may re-write it as:
+\begin{equation*}
+\frac{\partial Q_j/\partial\bar{\kappa_j}}{\partial X_j/\partial \bar{\kappa_j}}  = \frac{P_j^{\prime}(X_j)}{R_j^{\prime}(Q_j)}
+\end{equation*}
+
+Suppose some doctor $l \neq j$ decreases her threshold $\bar{\kappa_{l}}$, such that a positive mass of patients characterised by $\kappa_i$ are now above the threshold that weren’t before, which means their respective values for $u_{il}$ increased, and in turn $s_{ij}$ decreased because of it.
+
+As a result, both $Q_j$ and $X_j$, defined as integrals over $s_{ij}$ across all patients $i$, are reduced. Suppose we were in equilibrium before the unilateral move by doctor $l$, which means our FOC was indeed fulfilled. The concavity of $R(\cdot)$ and convexity of $P(\cdot)$ imply the previous equality suffers the following changes:
+
+
+\section{On the something}
+
+The presence of a ``strategic effect’’, wherein doctor $j$ takes into account the behavior of other doctors in the selection of her own $\bar{\kappa_j}$, comes from the fact that our doctors’ utility is defined as the sum of non-linear functions over aggregates, namely, concave $R_j(\cdot)$ over expected total patients $Q_j$, and convex $P_j(\cdot)$ over expected total licenses granted $X_j$.
+
+As a consequence of this formulation, our utility function $U_j(\cdot)$ isn’t \textit{additively separable}, which in this context of unbounded maximization by part of doctor $j$ implies she can’t consider each patient individually in terms of whether she’s willing to allow their visit, such a decision is no longer independent of other patients’ visits; the marginal utility of an additional patient is dependent on the aggregate of patients up to that point, both in terms of the visit itself as well as in the number of licenses granted up to that point.
+
+Let’s illustrate this point. Consider for a moment a finite number of patients $1, ... , k$, where each patient is inputed directly as an argument in our doctor $j$’s $U_j(\cdot)$, like so: $U_j(1, ..., k)$. If it has the property of additive separability, this means it may be reformulated like so:
+\[
+U_j(1, ...,k) = v_1(1) + ... + v_k(k) = \sum_{i = 1}^{k} v_i(i)
+\]
+Unconstrained optimization in this context implies she’s willing to see any patient whose $v_i(i)$ is non-negative, such that her total utility is:
+\[
+U_j(1, ...,k) =  \sum_{v_i(i) \geq 0} v_i(i)
+\]
+In the context of our doctor-patient model, selection is achieved by the doctor by choosing a $\bar{\kappa_j}$ which excludes all patients $i$ whose $\kappa_i < \bar{\kappa_j}$. Supposing our patients are well-ordered in $\kappa_i$, the choice of such a $\bar{\kappa_j}$ would be one where the marginal consumer $i$ affords a non-negative $v_i(i)$, and the inframarginal consumer $i + 1$ fulfills $v_{i-1}(i-1) < 0$. We would then have:
+\[
+U_j(1, ...,k) =  \sum_{\kappa_i \geq \bar{\kappa_j}} v_i(i)
+\]
+
+If instead of a discrete set we consider a mass of consumers characterized by their level of $\kappa_i$, ignoring for a moment that patients themselves have a \textit{choice} of visiting -- depending upon a second dimension $\gamma$ --, our $U_j(\cdot)$ could be expressed as:
+\[
+\int_{\bar{\kappa_j}}^{\infty} v_k(k) \, dF(k)
+\]
+
+Schnell (2024) is an example of just such a treatment, which specifies the doctor’s utility by patient in the following manner:
+\[
+v_i(\kappa_i) \equiv R_j + \beta_j h(\kappa_i)
+\]
+where $R_j$ is a parameter standing for revenue by visit, and $\beta_j h(\kappa_i)$ represent the doctor’s ``altruistic’’ utility over the health impact of a prescription drug to a patient with ``pain level’’ $\kappa_i$.
+
+The threshold $\bar{\kappa_j}$ is then obtained out of the maximization over \footnote{Once again, ignoring patient choice and $\gamma$}:
+\[
+\int_{\bar{\kappa_j}}^{\infty}  R_j + \beta_j h(k) \, dF(k)
+\]
+
+Giving out the following FOC:
+\[
+R_j = - \beta_j h^{\prime}(\bar{\kappa_j})
+\]
+which, as is immediately apparent, doesn’t depend upon the behavior of other doctors ---more specifically, \textit{their} choice of $\bar{\kappa_j}$.
+
+Such a treatment is rendered inviable by our choice of utility function. Schnell’s parameter of revenue would in our model imply the linearity of our revenue \textit{function} $R_j(\cdot)$, and our $P(\cdot)$ function over \textit{aggregate} licenses granted isn’t additively separable into Schnell-like $\beta_j h^{\prime}(\bar{\kappa_j})$ terms for each patient, because of its convexity, through which the impact on doctor $j$’s utility in granting patient $i$ a license isn’t independent from the granting of licenses of other patients. The aggregate level enters into the equation
+
+Our FOC reflects this:
+\begin{equation*}
+ R_j^{\prime}(Q_j)\frac{\partial Q_j}{\partial\bar{\kappa_j}} = P_j^{\prime}(X_j)\frac{\partial X_j}{\partial \bar{\kappa_j}} 
+\end{equation*}
+As can be seen, the equilibrium considers the aggregate levels of $Q_j$ and $X_j$, and so the impact that other doctors’ choice of $\bar{\kappa_j}$ have on these becomes relevant, introducing a ``strategic effect’’ into the mix.
+
+Continuará...
+
+\end{document}
