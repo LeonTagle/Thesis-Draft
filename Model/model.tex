@@ -29,7 +29,7 @@ Patients are characterized by the tuple $(\kappa_i,\gamma_i) \in (\mathbb{R}_0^+
 
 Doctors are described by their ``service quality'' $V_j \in \mathbb{R}_0^+$, following the \textit{ex-post}, empirical distribution $H(V)$.
 
-A patient $i$ visits a doctor for treatment and may be granted a sick leave certificate. As such, their utility function --implicitly dependent on his $(\kappa_i,\gamma_i)$ tuple-- is defined piece-wise as follows:
+A patient $i$ visits a doctor for treatment and may be granted a sick leave certificate. As such, their utility function --implicitly dependent on his characteristic $(\kappa_i,\gamma_i)$ tuple-- is defined piece-wise as follows:
     \[
 U_i(V_j) =\begin{cases}
 \gamma_i + V_j \kappa_i - \tau \text{  \hspace{0.65cm} if he’s granted a certificate,} \\
@@ -52,29 +52,32 @@ where $R_j(\cdot)$ is an individual, concave \textit{revenue} function defined o
 
 Following \cite{schnell2017physician}, we focus on \textit{threshold equilibriums}, wherein each physician’s strategy is the choice of a value $\bar{\kappa_j}$, such that of the patients who visit $j$, those with a $\kappa_i$ value above or at that threshold will recieve a certificate, and those under it won’t.
 
-Now we define for each patient $i$ a vector $S_i \in \Delta(\mathcal{J})$, where $\mathcal{J}$ is the the $1 \times J$ vector composed of all $1, ..., J$ doctors. $S_i$ will be patient $i$’s \textit{strategy} for this game, representing his probabilistic choice of visit for each doctor $j$, such that each component $s_{i1}, ... , s_{iJ}$ of $S_i$ stands for the probability that he’ll visit doctors $1, ..., J$ respectively.
-
-In order to describe a proper probability distribution, the following criteria must be met:
-
-
-\begin{enumerate}[label=\roman*.]
-    \item $\forall j, \, s_{ij} \geq 0$
-    \item $\sum_{i = 1}^{J} s_{ij} \leq 1$
-\end{enumerate}
-
-We will allow the sum of all components to be less than one, implying the presence of an \textit{outside option} for patients, that is, to not visit any doctors. Such an option is important, as patient rationality in our models will include  ``\textit{free disposal}’’, meaning that a patient will never visit a doctor if his expected utility from such a visit is less than $0$.
-
-TIMING DEL JUEGO
-
-PERO CORRIGE S (QUIZÁ DEJALO PA DESPUÉS ENTONCES)
-
-
-
-The vector $\bar{\kappa}$ composed of all physicians’ choice of $\bar{\kappa_j}$ is public knowledge, meaning
+In both frameworks we will work with, with and without search, the vector $\bar{\kappa}$ composed of all physicians’ choice of $\bar{\kappa_j}$ will be public knowledge to patients at the moment they choose their strategy, whereas doctors themselves don’t observe it at the moment they make their choice of threshold, because they will select it simultaneously -- and \textit{then} patients make their move.
 
 \subsection{Non-search Equilibrium}
 
-We first devote attention to the non-search baseline, where all patients are randomly, symmetrically assigned to a physician, and their only say in the matter is whether they’ll then visit doctor $j$.
+We first devote attention to a non-search baseline, where all patients are randomly, symmetrically assigned to a physician, and their only say in the matter is whether they’ll then visit doctor $j$.
 
+A patient won’t visit his assigned physician if his expected utility from such a visit is negative, we call this a \textit{free disposal} requirement. As such, a doctor $j$’s expected client demand, as a function of $\bar{\kappa_j}$ and given the parameter $V_j$, will be the following:
+\begin{equation}
+    Q_j(\bar{\kappa_j}) \,=\, \frac{I}{J}\left[ \int_{\tau/V_j}^{\infty}\,dF(k) +  \int_{\min\{\bar{\kappa_j},\tau/V_j\}}^{\tau/V_j} \int_{\tilde{\gamma}(k)}^{\infty} \,dG(\gamma) \,dF(k) \right] \tag{N.1}\label{eq:N.1}
+    \end{equation}
+where the left term envelops those patients who just by virtue of doctor $j$’s service quality $V_j$ would be willing to pay a visit (i.e. $\kappa_i \geq \tau/V_j$), and the right term would be patients who only see doctor $j$ out of the expectation of getting sick leave ($\kappa_i \geq \bar{\kappa_j}$ \& $\gamma_i \geq \tau - V_j \kappa_i$), but wouldn’t visit otherwise. We define $\tilde{\gamma}(k) := \tau - V_j k$ as the lower limit of the inner integral.
+
+Given that each patient with a $\kappa_i$ higher or equal to $\bar{\kappa_j}$ is granted a sick leave certificate, the expected total number of such certificates granted by $j$, as a function of $\bar{\kappa_j}$, is:
+
+\begin{equation}
+    X_j(\bar{\kappa_j}) \,=\, \frac{I}{J} \int_{\bar{\kappa_j}}^{\infty} \int_{\tilde{\gamma}(k)}^{\infty} \,dG(\gamma) \,dF(k)
+    \tag{N.2}\label{eq:N.2}
+\end{equation}
+
+Given (\ref{eq:N.1}) and (\ref{eq:N.2}), each physician solves for the following unconstrained optimization:
+\[
+\bar{\kappa_j}^* \equiv \max_{\bar{\kappa_j}} R_j(Q_j) - P_j(X_j)
+\]
+
+LEMMA: No value in $(\frac{\tau}{V_j},\infty)$ can be the optimal solution of $\bar{\kappa_j}^*$.
+
+PROOF: APPENDIX
 
 \end{document}
