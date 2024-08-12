@@ -5,7 +5,7 @@
 \usepackage{bbm} %para 1 indicatriz
 \usepackage{cancel}
 \usepackage{enumitem} %fancy itemize
-\usepackage{apacite} %bibliography style
+\usepackage{natbib} %bibliography style
 
 \title{formal}
 \author{leontaglelb }
@@ -21,32 +21,13 @@
 It is a well established factum that taking sick leave is subject to an economic calculation on part of the workers, rather than being an orthogonal, merely health-concerned matter. \cite{JohanssonPalme} begin their article with a quote by Nobel Laureate Ragnar Frisch: ``Regarding the high absence rate at the Department: Acquiring minor diseases, such as colds or flu, is an act of choice''. Their paper is among many others (italian-jobs
 norway-jobs, us-jobs, sweden-jobs) which give empirical evidence of such a choice being driven by economic incentives, through an event study on exogenous institutional regime changes in the subject nation's public insurance system. This line of research, though, is concerned with the actions of workers themselves and their subsequent effect on macroeconomic employment variables, whereas our main focus shall be the role played by physicians.
 
-Our doctors' utility function is composed of two terms: one concerning revenue, the other patients' health. This is in line with the literature on physicians, which now commonly regards them as ``altruistic'' agents whose utility is to a higher or lesser degree dependent of that of the patients, a claim which has found empirical support in both medical students (\cite{avengers}, \shortcite{hs-wiesen}) as well as doctors themselves (\cite{hippocrates}, \cite{brosigkoch}). \cite{crea2019physician} finds no evidence for this, whereas \cite{godager2013profit} does, and explores its heterogeneity across physicians. The fact that physicians are also concerned with revenue, rather than being purely altruistic, is also well evidenced (\cite{clemensgottlieb}, \cite{HSW}, \cite{autor}; see \cite{rrk2012} for a review on the matter). Therein lies the dilemma with giving physicians the status of gatekeepers for different services and certifications, like disability insurance (as in autor). As markussen-roed (page 1) put it: ``In essence, the GPs have been assigned the task of protecting the public (or private) insurer's purse against thecustomers who form the basis for their own livelihood ''.
+Our doctors' utility function is composed of two terms: one concerning revenue, the other patients' health. This is in line with the literature on physicians, which now commonly regards them as ``altruistic'' agents whose utility is to a higher or lesser degree dependent of that of the patients, a claim which has found empirical support in both medical students (\cite{avengers}, \cite{hs-wiesen}) as well as doctors themselves (\cite{hippocrates}, \cite{brosigkoch}). \cite{crea2019physician} finds no evidence for this, whereas \cite{godager2013profit} does, and explores its heterogeneity across physicians. The fact that physicians are also concerned with revenue, rather than being purely altruistic, is also well evidenced (\cite{clemensgottlieb}, \cite{HSW}, \cite{autor}; see \cite{rrk2012} for a review on the matter). Therein lies the dilemma with giving physicians the status of gatekeepers for different services and certifications, like disability insurance (as in autor). As markussen-roed (page 1) put it: ``In essence, the GPs have been assigned the task of protecting the public (or private) insurer's purse against thecustomers who form the basis for their own livelihood ''.
 
-\dots
 
-\section{Model}
-
-We consider $i = 1, ..., I$ patients and $j = 1, ..., J$ doctors.
-
-Patients are characterized by the tuple $(\kappa_i,\gamma_i) \in $, their ``medical need'' and ``taste for licenses'' respectively, following the ex-ante cumulative distributions $F(k)$ and $G(\gamma)$.
-
-Doctors are described by their ``service quality'' $V_j \in \mathbb{R}_0^+$, following the \textit{ex-post}, empirical distribution $H(V)$.
-
-A patient $i$ visits a doctor for treatment and may be granted a medical license. As such, their utility function --implicitly dependent on his $(\kappa_i,\gamma_i)$ tuple-- is defined piece-wise as follows:
-    \[
-U_i(V_j) =\begin{cases}
-\gamma_i + V_j \kappa_i - \tau \text{  \hspace{0.65cm} if they're granted a license,} \\
-V_j \kappa_i - \tau \text{  \hspace{0.5cm} if they only visit a doctor,} \\
-0 \text{  \hspace{0.8cm} if he doesn't see a doctor,}
-\end{cases}
-\]
-
-As we see, there's three components to patient utility: an interaction between 
 
 
 \newpage
 \bibliography{bibliography}	 
-\bibliographystyle{apacite}
+\bibliographystyle{dcu}
 
 \end{document}
