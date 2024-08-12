@@ -1,0 +1,329 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Autor%
+, Duggan%
+\BCBL {}\ \BBA {} Gruber%
+}{%
+Autor%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+autor}
+\APACinsertmetastar {%
+autor}%
+\begin{APACrefauthors}%
+Autor, D.%
+, Duggan, M.%
+\BCBL {}\ \BBA {} Gruber, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{October}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Moral Hazard and Claims Deterrence in Private Disability Insurance} {Moral hazard and claims deterrence in private disability insurance}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{American Economic Journal: Applied Economics}{6}{4}{110--141}.
+\newblock
+\begin{APACrefURL} \url{https://www.aeaweb.org/articles?id=10.1257/app.6.4.110} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1257/app.6.4.110} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Brosig-Koch%
+, Hennig-Schmidt%
+, Kairies-Schwarz%
+\BCBL {}\ \BBA {} Wiesen%
+}{%
+Brosig-Koch%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+brosigkoch}
+\APACinsertmetastar {%
+brosigkoch}%
+\begin{APACrefauthors}%
+Brosig-Koch, J.%
+, Hennig-Schmidt, H.%
+, Kairies-Schwarz, N.%
+\BCBL {}\ \BBA {} Wiesen, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Using artefactual field and lab experiments to investigate how fee-for-service and capitation affect medical service provision} {Using artefactual field and lab experiments to investigate how fee-for-service and capitation affect medical service provision}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Economic Behavior \& Organization}{131}{}{17--23}.
+\newblock
+\begin{APACrefURL} \url{https://www.sciencedirect.com/science/article/pii/S0167268115000891} \end{APACrefURL}
+\newblock
+\APACrefnote{Experimental and Behavioral Economics of Healthcare}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.jebo.2015.04.011} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Brosig-Koch%
+, Hennig-Schmidt%
+, Kairies-Schwarz%
+\BCBL {}\ \BBA {} Wiesen%
+}{%
+Brosig-Koch%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+avengers}
+\APACinsertmetastar {%
+avengers}%
+\begin{APACrefauthors}%
+Brosig-Koch, J.%
+, Hennig-Schmidt, H.%
+, Kairies-Schwarz, N.%
+\BCBL {}\ \BBA {} Wiesen, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The Effects of Introducing Mixed Payment Systems for Physicians: Experimental Evidence} {The effects of introducing mixed payment systems for physicians: Experimental evidence}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Health Economics}{26}{2}{243--262}.
+\newblock
+\begin{APACrefURL} \url{https://onlinelibrary.wiley.com/doi/abs/10.1002/hec.3292} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1002/hec.3292} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Clemens%
+\ \BBA {} Gottlieb%
+}{%
+Clemens%
+\ \BBA {} Gottlieb%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+clemensgottlieb}
+\APACinsertmetastar {%
+clemensgottlieb}%
+\begin{APACrefauthors}%
+Clemens, J.%
+\BCBT {}\ \BBA {} Gottlieb, J\BPBI D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{April}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Do Physicians' Financial Incentives Affect Medical Treatment and Patient Health?} {Do physicians' financial incentives affect medical treatment and patient health?}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{American Economic Review}{104}{4}{1320--1349}.
+\newblock
+\begin{APACrefURL} \url{https://www.aeaweb.org/articles?id=10.1257/aer.104.4.1320} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1257/aer.104.4.1320} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Crea%
+}{%
+Crea%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+crea2019physician}
+\APACinsertmetastar {%
+crea2019physician}%
+\begin{APACrefauthors}%
+Crea, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Physician altruism and moral hazard: (no) Evidence from Finnish national prescriptions data} {Physician altruism and moral hazard: (no) evidence from finnish national prescriptions data}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Health Economics}{65}{}{153--169}.
+\newblock
+\begin{APACrefURL} \url{https://www.sciencedirect.com/science/article/pii/S0167629617307348} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.jhealeco.2019.03.006} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Godager%
+\ \BBA {} Wiesen%
+}{%
+Godager%
+\ \BBA {} Wiesen%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+godager2013profit}
+\APACinsertmetastar {%
+godager2013profit}%
+\begin{APACrefauthors}%
+Godager, G.%
+\BCBT {}\ \BBA {} Wiesen, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Profit or patients’ health benefit? Exploring the heterogeneity in physician altruism} {Profit or patients’ health benefit? exploring the heterogeneity in physician altruism}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Health Economics}{32}{6}{1105--1116}.
+\newblock
+\begin{APACrefURL} \url{https://www.sciencedirect.com/science/article/pii/S0167629613001070} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.jhealeco.2013.08.008} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hennig-Schmidt%
+, Selten%
+\BCBL {}\ \BBA {} Wiesen%
+}{%
+Hennig-Schmidt%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2011}}%
+}]{%
+HSW}
+\APACinsertmetastar {%
+HSW}%
+\begin{APACrefauthors}%
+Hennig-Schmidt, H.%
+, Selten, R.%
+\BCBL {}\ \BBA {} Wiesen, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {How payment systems affect physicians’ provision behaviour—An experimental investigation} {How payment systems affect physicians’ provision behaviour—an experimental investigation}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Health Economics}{30}{4}{637--646}.
+\newblock
+\begin{APACrefURL} \url{https://www.sciencedirect.com/science/article/pii/S0167629611000452} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.jhealeco.2011.05.001} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hennig-Schmidt%
+\ \BBA {} Wiesen%
+}{%
+Hennig-Schmidt%
+\ \BBA {} Wiesen%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+hs-wiesen}
+\APACinsertmetastar {%
+hs-wiesen}%
+\begin{APACrefauthors}%
+Hennig-Schmidt, H.%
+\BCBT {}\ \BBA {} Wiesen, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Other-regarding behavior and motivation in health care provision: An experiment with medical and non-medical students} {Other-regarding behavior and motivation in health care provision: An experiment with medical and non-medical students}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Social Science \& Medicine}{108}{}{156--165}.
+\newblock
+\begin{APACrefURL} \url{https://www.sciencedirect.com/science/article/pii/S0277953614001622} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.socscimed.2014.03.001} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Johansson%
+\ \BBA {} Palme%
+}{%
+Johansson%
+\ \BBA {} Palme%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+JohanssonPalme}
+\APACinsertmetastar {%
+JohanssonPalme}%
+\begin{APACrefauthors}%
+Johansson, P.%
+\BCBT {}\ \BBA {} Palme, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Moral hazard and sickness insurance} {Moral hazard and sickness insurance}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Public Economics}{89}{9}{1879--1890}.
+\newblock
+\begin{APACrefURL} \url{https://www.sciencedirect.com/science/article/pii/S0047272705000290} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.jpubeco.2004.11.007} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kesternich%
+, Schumacher%
+\BCBL {}\ \BBA {} Winter%
+}{%
+Kesternich%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+hippocrates}
+\APACinsertmetastar {%
+hippocrates}%
+\begin{APACrefauthors}%
+Kesternich, I.%
+, Schumacher, H.%
+\BCBL {}\ \BBA {} Winter, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Professional norms and physician behavior: Homo oeconomicus or homo hippocraticus?} {Professional norms and physician behavior: Homo oeconomicus or homo hippocraticus?}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Public Economics}{131}{}{1--11}.
+\newblock
+\begin{APACrefURL} \url{https://www.sciencedirect.com/science/article/pii/S0047272715001449} \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.jpubeco.2015.08.009} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Robertson%
+, Rose%
+\BCBL {}\ \BBA {} Kesselheim%
+}{%
+Robertson%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+rrk2012}
+\APACinsertmetastar {%
+rrk2012}%
+\begin{APACrefauthors}%
+Robertson, C.%
+, Rose, S.%
+\BCBL {}\ \BBA {} Kesselheim, A\BPBI S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Effect of Financial Relationships on the Behaviors of Health Care Professionals: A Review of the Evidence} {Effect of financial relationships on the behaviors of health care professionals: A review of the evidence}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Law, Medicine \& Ethics}{40}{3}{452--466}.
+\newblock
+\begin{APACrefDOI} \doi{10.1111/j.1748-720X.2012.00678.x} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

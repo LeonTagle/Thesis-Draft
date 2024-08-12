@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{amssymb} % Fancy R
+\usepackage{bbm} %para 1 indicatriz
+\usepackage{cancel}
+\usepackage{enumitem} %fancy itemize
+\usepackage{apacite} %bibliography style
+
+\title{formal}
+\author{leontaglelb }
+\date{July 2024}
+
+\begin{document}
+
+
+\section{Model}
+
+We consider $i = 1, ..., I$ patients and $j = 1, ..., J$ doctors.
+
+Patients are characterized by the tuple $(\kappa_i,\gamma_i) \in (\mathbb{R}_0^+)^2$, their ``medical need'' and ``taste for licenses'' respectively, following the ex-ante cumulative distributions $F(k)$ and $G(\gamma)$.
+
+Doctors are described by their ``service quality'' $V_j \in \mathbb{R}_0^+$, following the \textit{ex-post}, empirical distribution $H(V)$.
+
+A patient $i$ visits a doctor for treatment and may be granted a medical license. As such, their utility function --implicitly dependent on his $(\kappa_i,\gamma_i)$ tuple-- is defined piece-wise as follows:
+    \[
+U_i(V_j) =\begin{cases}
+\gamma_i + V_j \kappa_i - \tau \text{  \hspace{0.65cm} if he’s granted a license,} \\
+V_j \kappa_i - \tau \text{  \hspace{0.5cm} if he only visits a doctor,} \\
+0 \text{  \hspace{0.8cm} if he doesn't see a doctor,}
+\end{cases}
+\]
+
+As we see, there's three components to patient utility: an interaction between the patient's medical need $\kappa_i$ and the physician's service quality $V_j$ which implies their complimentarity, his taste for licenses $\gamma_i$ in the case he’s granted one, and $\tau$, the cost of visit, normalized across doctors.
+
+
+\end{document}
