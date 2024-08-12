@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.7)  12 AUG 2024 14:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.7)  12 AUG 2024 17:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -185,75 +185,85 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./literature.bbl
-Overfull \hbox (5.12561pt too wide) in paragraph at lines 4--7
-\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.sciencedirect.com/science/article/pii/S0927537118300034 
- []
-
-
-Overfull \hbox (5.12561pt too wide) in paragraph at lines 14--18
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./literature.bbl
+Overfull \hbox (5.12561pt too wide) in paragraph at lines 9--13
 \OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.sciencedirect.com/science/article/pii/S0167268115000891 
  []
 
 
-Overfull \hbox (5.12561pt too wide) in paragraph at lines 30--33
+Overfull \hbox (5.12561pt too wide) in paragraph at lines 35--38
 \OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.sciencedirect.com/science/article/pii/S0167629617307348 
  []
 
 
-Overfull \hbox (5.12561pt too wide) in paragraph at lines 35--38
+Overfull \hbox (5.12561pt too wide) in paragraph at lines 49--52
 \OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.sciencedirect.com/science/article/pii/S0167629613001070 
  []
 
 
-Overfull \hbox (5.12561pt too wide) in paragraph at lines 40--43
+Overfull \hbox (5.12561pt too wide) in paragraph at lines 54--57
 \OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.sciencedirect.com/science/article/pii/S0167629611000452 
  []
 
-
-Overfull \hbox (5.12561pt too wide) in paragraph at lines 45--48
+[3]
+Overfull \hbox (5.12561pt too wide) in paragraph at lines 59--62
 \OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.sciencedirect.com/science/article/pii/S0277953614001622 
  []
 
 
-Overfull \hbox (5.12561pt too wide) in paragraph at lines 55--58
+Overfull \hbox (5.12561pt too wide) in paragraph at lines 69--73
+\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.sciencedirect.com/science/article/pii/S0167629603001103 
+ []
+
+
+Overfull \hbox (7.6728pt too wide) in paragraph at lines 75--78
+\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.sciencedirect.com/science/article/pii/S016726810000130X 
+ []
+
+
+Overfull \hbox (5.12561pt too wide) in paragraph at lines 80--83
 \OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.sciencedirect.com/science/article/pii/S0047272705000290 
  []
 
-[2]
-Overfull \hbox (5.12561pt too wide) in paragraph at lines 60--63
+
+Overfull \hbox (5.12561pt too wide) in paragraph at lines 85--88
 \OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.sciencedirect.com/science/article/pii/S0047272715001449 
  []
 
 
-Overfull \hbox (5.12561pt too wide) in paragraph at lines 65--69
+Overfull \hbox (5.12561pt too wide) in paragraph at lines 90--94
 \OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.sciencedirect.com/science/article/pii/S0047272712000953 
  []
 
 
-Overfull \hbox (5.12561pt too wide) in paragraph at lines 71--74
+Overfull \hbox (5.12561pt too wide) in paragraph at lines 96--99
 \OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.sciencedirect.com/science/article/pii/S0167629616300893 
  []
 
-) [3] (./literature.aux)
+[4]
+Overfull \hbox (5.12561pt too wide) in paragraph at lines 114--117
+\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.sciencedirect.com/science/article/pii/S0927537118300034 
+ []
+
+) [5] (./literature.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3330 strings out of 474116
- 48889 string characters out of 5743683
- 1934187 words of memory out of 5000000
- 25671 multiletter control sequences out of 15000+600000
- 564272 words of font info for 59 fonts, out of 8000000 for 9000
+ 3363 strings out of 474116
+ 49443 string characters out of 5743683
+ 1935187 words of memory out of 5000000
+ 25702 multiletter control sequences out of 15000+600000
+ 565971 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,6n,65p,1314b,244s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on literature.pdf (3 pages, 93123 bytes).
+ 57i,6n,65p,1313b,268s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on literature.pdf (5 pages, 116074 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 60 PDF objects out of 1000 (max. 8388607)
+ 36 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

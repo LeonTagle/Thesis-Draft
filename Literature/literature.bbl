@@ -1,10 +1,5 @@
 \begin{thebibliography}{xx}
 
-\harvarditem{author listed}{2018}{us-jobs}
-author listed, N.  \harvardyearleft 2018\harvardyearright .
-\newblock Can paid sick leave mandates reduce leave-taking?, {\em Labour Economics} {\bf 51}:~227--246.
-\newline\harvardurl{https://www.sciencedirect.com/science/article/pii/S0927537118300034}
-
 \harvarditem[Autor et~al.]{Autor, Duggan \harvardand\ Gruber}{2014}{autor}
 Autor, D., Duggan, M. \harvardand\ Gruber, J.  \harvardyearleft 2014\harvardyearright .
 \newblock Moral hazard and claims deterrence in private disability insurance, {\em American Economic Journal: Applied Economics} {\bf 6}(4):~110--141.
@@ -21,6 +16,16 @@ Brosig-Koch, J., Hennig-Schmidt, H., Kairies-Schwarz, N. \harvardand\ Wiesen, D.
 \newblock The effects of introducing mixed payment systems for physicians: Experimental evidence, {\em Health Economics} {\bf 26}(2):~243--262.
 \newline\harvardurl{https://onlinelibrary.wiley.com/doi/abs/10.1002/hec.3292}
 
+\harvarditem[Carlsen et~al.]{Carlsen, Lind \harvardand\ Nyborg}{2020}{cln}
+Carlsen, B., Lind, J.~T. \harvardand\ Nyborg, K.  \harvardyearleft 2020\harvardyearright .
+\newblock Why physicians are lousy gatekeepers: Sicklisting decisions when patients have private information on symptoms, {\em Health Economics} {\bf 29}(7):~778--789.
+\newline\harvardurl{https://onlinelibrary.wiley.com/doi/abs/10.1002/hec.4019}
+
+\harvarditem{Choné \harvardand\ Ma}{2011}{chone-ma}
+Choné, P. \harvardand\ Ma, C.  \harvardyearleft 2011\harvardyearright .
+\newblock Optimal health care contract under physician agency, {\em Annals of Economics and Statistics} (101/102):~229--256.
+\newline\harvardurl{http://www.jstor.org/stable/41615481}
+
 \harvarditem{Clemens \harvardand\ Gottlieb}{2014}{clemensgottlieb}
 Clemens, J. \harvardand\ Gottlieb, J.~D.  \harvardyearleft 2014\harvardyearright .
 \newblock Do physicians' financial incentives affect medical treatment and patient health?, {\em American Economic Review} {\bf 104}(4):~1320--1349.
@@ -30,6 +35,15 @@ Clemens, J. \harvardand\ Gottlieb, J.~D.  \harvardyearleft 2014\harvardyearright
 Crea, G.  \harvardyearleft 2019\harvardyearright .
 \newblock Physician altruism and moral hazard: (no) evidence from finnish national prescriptions data, {\em Journal of Health Economics} {\bf 65}:~153--169.
 \newline\harvardurl{https://www.sciencedirect.com/science/article/pii/S0167629617307348}
+
+\harvarditem[Currie et~al.]{Currie, Li \harvardand\ Schnell}{2023}{currie2023effects}
+Currie, J., Li, A. \harvardand\ Schnell, M.  \harvardyearleft 2023\harvardyearright .
+\newblock The effects of competition on physician prescribing, {\em Technical report}, National Bureau of Economic Research.
+
+\harvarditem[Gaynor et~al.]{Gaynor, Mehta \harvardand\ Richards-Shubik}{2023}{optimal-altruism}
+Gaynor, M., Mehta, N. \harvardand\ Richards-Shubik, S.  \harvardyearleft 2023\harvardyearright .
+\newblock Optimal contracting with altruistic agents: Medicare payments for dialysis drugs, {\em American Economic Review} {\bf 113}(6):~1530--1571.
+\newline\harvardurl{https://www.aeaweb.org/articles?id=10.1257/aer.20210208}
 
 \harvarditem{Godager \harvardand\ Wiesen}{2013}{godager2013profit}
 Godager, G. \harvardand\ Wiesen, D.  \harvardyearleft 2013\harvardyearright .
@@ -50,6 +64,17 @@ Hennig-Schmidt, H. \harvardand\ Wiesen, D.  \harvardyearleft 2014\harvardyearrig
 Henrekson, M. \harvardand\ Persson, M.  \harvardyearleft 2004\harvardyearright .
 \newblock The effects on sick leave of changes in the sickness insurance system, {\em Journal of Labor Economics} {\bf 22}(1):~87--113.
 \newline\harvardurl{https://doi.org/10.1086/380404}
+
+\harvarditem{Iversen}{2004}{iversen2004}
+Iversen, T.  \harvardyearleft 2004\harvardyearright .
+\newblock The effects of a patient shortage on general practitioners’ future income and list of patients, {\em Journal of Health Economics} {\bf 23}(4):~673--694.
+\newblock Contains contributions from the Grossman Symposium.
+\newline\harvardurl{https://www.sciencedirect.com/science/article/pii/S0167629603001103}
+
+\harvarditem{Iversen \harvardand\ Lurås}{2000}{iversen-luras}
+Iversen, T. \harvardand\ Lurås, H.  \harvardyearleft 2000\harvardyearright .
+\newblock Economic motives and professional norms: the case of general medical practice, {\em Journal of Economic Behavior \& Organization} {\bf 43}(4):~447--470.
+\newline\harvardurl{https://www.sciencedirect.com/science/article/pii/S016726810000130X}
 
 \harvarditem{Johansson \harvardand\ Palme}{2005}{JohanssonPalme}
 Johansson, P. \harvardand\ Palme, M.  \harvardyearleft 2005\harvardyearright .
@@ -80,5 +105,14 @@ Paola, M.~D., Scoppa, V. \harvardand\ Pupo, V.  \harvardyearleft 2014\harvardyea
 \harvarditem[Robertson et~al.]{Robertson, Rose \harvardand\ Kesselheim}{2012}{rrk2012}
 Robertson, C., Rose, S. \harvardand\ Kesselheim, A.~S.  \harvardyearleft 2012\harvardyearright .
 \newblock Effect of financial relationships on the behaviors of health care professionals: A review of the evidence, {\em Journal of Law, Medicine \& Ethics} {\bf 40}(3):~452--466.
+
+\harvarditem{Schnell}{2017}{schnell2017physician}
+Schnell, M.  \harvardyearleft 2017\harvardyearright .
+\newblock Physician behavior in the presence of a secondary market: The case of prescription opioids, {\em Princeton University Department of Economics Working Paper} {\bf 5}:~383--410.
+
+\harvarditem{Stearns \harvardand\ White}{2018}{us-jobs}
+Stearns, J. \harvardand\ White, C.  \harvardyearleft 2018\harvardyearright .
+\newblock Can paid sick leave mandates reduce leave-taking?, {\em Labour Economics} {\bf 51}:~227--246.
+\newline\harvardurl{https://www.sciencedirect.com/science/article/pii/S0927537118300034}
 
 \end{thebibliography}
