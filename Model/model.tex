@@ -14,24 +14,65 @@
 \begin{document}
 
 
+\section{Note on language}
+
+For ease of reference, we refer to any patient --otherwise called client or worker-- as ``he'', and to any doctor --or physician-- as ``she''.
+
+At this point it shall be noted that the first person plural (we) employed over the course of this article is to be read as a royal \textit{we}, being that we claim sole authorship over this paper.
+
+
 \section{Model}
 
 We consider $i = 1, ..., I$ patients and $j = 1, ..., J$ doctors.
 
-Patients are characterized by the tuple $(\kappa_i,\gamma_i) \in (\mathbb{R}_0^+)^2$, their ``medical need'' and ``taste for licenses'' respectively, following the ex-ante cumulative distributions $F(k)$ and $G(\gamma)$.
+Patients are characterized by the tuple $(\kappa_i,\gamma_i) \in (\mathbb{R}_0^+)^2$, their ``medical need'' and ``taste for sick leave'' respectively, following the ex-ante cumulative distributions $F(k)$ and $G(\gamma)$.
 
 Doctors are described by their ``service quality'' $V_j \in \mathbb{R}_0^+$, following the \textit{ex-post}, empirical distribution $H(V)$.
 
-A patient $i$ visits a doctor for treatment and may be granted a medical license. As such, their utility function --implicitly dependent on his $(\kappa_i,\gamma_i)$ tuple-- is defined piece-wise as follows:
+A patient $i$ visits a doctor for treatment and may be granted a sick leave certificate. As such, their utility function --implicitly dependent on his $(\kappa_i,\gamma_i)$ tuple-- is defined piece-wise as follows:
     \[
 U_i(V_j) =\begin{cases}
-\gamma_i + V_j \kappa_i - \tau \text{  \hspace{0.65cm} if he’s granted a license,} \\
+\gamma_i + V_j \kappa_i - \tau \text{  \hspace{0.65cm} if he’s granted a certificate,} \\
 V_j \kappa_i - \tau \text{  \hspace{0.5cm} if he only visits a doctor,} \\
 0 \text{  \hspace{0.8cm} if he doesn't see a doctor,}
 \end{cases}
 \]
 
-As we see, there's three components to patient utility: an interaction between the patient's medical need $\kappa_i$ and the physician's service quality $V_j$ which implies their complimentarity, his taste for licenses $\gamma_i$ in the case he’s granted one, and $\tau$, the cost of visit, normalized across doctors.
+As we see, there's three components to patient utility: an interaction between the patient's medical need $\kappa_i$ and the physician's service quality $V_j$ which implies their complimentarity, his ``taste'' for sick leave $\gamma_i$ in the case he’s granted one, and $\tau$, the cost of visit, normalized across doctors.
+
+Whereas patients may visit at most one doctor, a doctor may see several physicians. We define $Q_j$ as the expected number of patients of doctor $j$, the demand for her services. We say ``expected'' because, as we'll see later on, patients may opt for a mixed strategy, assigning a certain \textit{probability} to visiting $j$, and $Q_j$ will be defined over the ex-ante probabilities of all patients and not their ex-post realization.
+
+As doctor $j$ has the option to grant a sick leave certificate to a given patient $i$ which visits her, so we likewise define $X_j$ as the \textit{expected} number of such certificates doctor $j$ will dole out, given her ex-ante client demand and how many of them would be granted one.
+
+We now define the physician's utility function as follows:
+\[
+U_j(Q_j, X_j) = R_j(Q_j) - P_j(X_j)
+\]
+where $R_j(\cdot)$ is an individual, concave \textit{revenue} function defined over expected total clients, and $P_j(\cdot)$ is a convex \textit{punishment} function on $X_j$, grouping her personal preference as well as institutional incentives. The implication is that after a given number of patients the disutility of an additional certificate issued would outweigh doctor $j$ financial incentives for further clientele.
+
+Following \cite{schnell2017physician}, we focus on \textit{threshold equilibriums}, wherein each physician’s strategy is the choice of a value $\bar{\kappa_j}$, such that of the patients who visit $j$, those with a $\kappa_i$ value above or at that threshold will recieve a certificate, and those under it won’t.
+
+Now we define for each patient $i$ a vector $S_i \in \Delta(\mathcal{J})$, where $\mathcal{J}$ is the the $1 \times J$ vector composed of all $1, ..., J$ doctors. $S_i$ will be patient $i$’s \textit{strategy} for this game, representing his probabilistic choice of visit for each doctor $j$, such that each component $s_{i1}, ... , s_{iJ}$ of $S_i$ stands for the probability that he’ll visit doctors $1, ..., J$ respectively.
+
+In order to describe a proper probability distribution, the following criteria must be met:
+
+
+\begin{enumerate}[label=\roman*.]
+    \item $\forall j, \, s_{ij} \geq 0$
+    \item $\sum_{i = 1}^{J} s_{ij} \leq 1$
+\end{enumerate}
+
+We will allow the sum of all components to be less than one, implying the presence of an \textit{outside option} for patients, that is, to not visit any doctors. Such an option is important, as patient rationality in our models will include  ``\textit{free disposal}’’, meaning that a patient will never visit a doctor if his expected utility from such a visit is less than $0$.
+
+
+
+
+
+The vector $\bar{\kappa}$ composed of all physicians’ choice of $\bar{\kappa_j}$ is public knowledge, meaning
+
+\subsection{Non-search Equilibrium}
+
+We first devote attention to the non-search baseline, where all patients are randomly, symmetrically assigned to a physician, and their only say in the matter is whether they’ll then visit doctor $j$.
 
 
 \end{document}
