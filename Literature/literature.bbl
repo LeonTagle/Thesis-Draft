@@ -1,5 +1,10 @@
 \begin{thebibliography}{xx}
 
+\harvarditem{author listed}{2018}{us-jobs}
+author listed, N.  \harvardyearleft 2018\harvardyearright .
+\newblock Can paid sick leave mandates reduce leave-taking?, {\em Labour Economics} {\bf 51}:~227--246.
+\newline\harvardurl{https://www.sciencedirect.com/science/article/pii/S0927537118300034}
+
 \harvarditem[Autor et~al.]{Autor, Duggan \harvardand\ Gruber}{2014}{autor}
 Autor, D., Duggan, M. \harvardand\ Gruber, J.  \harvardyearleft 2014\harvardyearright .
 \newblock Moral hazard and claims deterrence in private disability insurance, {\em American Economic Journal: Applied Economics} {\bf 6}(4):~110--141.
@@ -41,6 +46,11 @@ Hennig-Schmidt, H. \harvardand\ Wiesen, D.  \harvardyearleft 2014\harvardyearrig
 \newblock Other-regarding behavior and motivation in health care provision: An experiment with medical and non-medical students, {\em Social Science \& Medicine} {\bf 108}:~156--165.
 \newline\harvardurl{https://www.sciencedirect.com/science/article/pii/S0277953614001622}
 
+\harvarditem{Henrekson \harvardand\ Persson}{2004}{sweden-jobs}
+Henrekson, M. \harvardand\ Persson, M.  \harvardyearleft 2004\harvardyearright .
+\newblock The effects on sick leave of changes in the sickness insurance system, {\em Journal of Labor Economics} {\bf 22}(1):~87--113.
+\newline\harvardurl{https://doi.org/10.1086/380404}
+
 \harvarditem{Johansson \harvardand\ Palme}{2005}{JohanssonPalme}
 Johansson, P. \harvardand\ Palme, M.  \harvardyearleft 2005\harvardyearright .
 \newblock Moral hazard and sickness insurance, {\em Journal of Public Economics} {\bf 89}(9):~1879--1890.
@@ -50,6 +60,22 @@ Johansson, P. \harvardand\ Palme, M.  \harvardyearleft 2005\harvardyearright .
 Kesternich, I., Schumacher, H. \harvardand\ Winter, J.  \harvardyearleft 2015\harvardyearright .
 \newblock Professional norms and physician behavior: Homo oeconomicus or homo hippocraticus?, {\em Journal of Public Economics} {\bf 131}:~1--11.
 \newline\harvardurl{https://www.sciencedirect.com/science/article/pii/S0047272715001449}
+
+\harvarditem[Markussen et~al.]{Markussen, Mykletun \harvardand\ Røed}{2012}{norway-jobs}
+Markussen, S., Mykletun, A. \harvardand\ Røed, K.  \harvardyearleft 2012\harvardyearright .
+\newblock The case for presenteeism — evidence from norway's sickness insurance program, {\em Journal of Public Economics} {\bf 96}(11):~959--972.
+\newblock Fiscal Federalism.
+\newline\harvardurl{https://www.sciencedirect.com/science/article/pii/S0047272712000953}
+
+\harvarditem{Markussen \harvardand\ Røed}{2017}{markussen-roed}
+Markussen, S. \harvardand\ Røed, K.  \harvardyearleft 2017\harvardyearright .
+\newblock The market for paid sick leave, {\em Journal of Health Economics} {\bf 55}:~244--261.
+\newline\harvardurl{https://www.sciencedirect.com/science/article/pii/S0167629616300893}
+
+\harvarditem[Paola et~al.]{Paola, Scoppa \harvardand\ Pupo}{2014}{italian-jobs}
+Paola, M.~D., Scoppa, V. \harvardand\ Pupo, V.  \harvardyearleft 2014\harvardyearright .
+\newblock Absenteeism in the italian public sector: The effects of changes in sick leave policy, {\em Journal of Labor Economics} {\bf 32}(2):~337--360.
+\newline\harvardurl{https://doi.org/10.1086/674986}
 
 \harvarditem[Robertson et~al.]{Robertson, Rose \harvardand\ Kesselheim}{2012}{rrk2012}
 Robertson, C., Rose, S. \harvardand\ Kesselheim, A.~S.  \harvardyearleft 2012\harvardyearright .
