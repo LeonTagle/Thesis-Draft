@@ -1,11 +1,24 @@
 \documentclass{article}
 \usepackage{graphicx} % Required for inserting images
-\usepackage{amsmath}
-\usepackage{amssymb} % Fancy R
+\usepackage{amsmath, amsthm, amssymb}
 \usepackage{bbm} %para 1 indicatriz
 \usepackage{cancel}
 \usepackage{enumitem} %fancy itemize
-\usepackage{apacite} %bibliography style
+\usepackage{thmtools} %fancy theorems
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{ass}[theorem]{Assumption}
+\newtheorem{prop}[theorem]{Proposition}
+
+\declaretheoremstyle[
+notefont=\bfseries, notebraces={}{},
+bodyfont=\normalfont\itshape,
+headformat=\NAME \NOTE
+]{nopar}
+\declaretheorem[style=nopar]{equilibrium}
+
 
 \title{formal}
 \author{leontaglelb }
@@ -50,6 +63,10 @@ U_j(Q_j, X_j) = R_j(Q_j) - P_j(X_j)
 \]
 where $R_j(\cdot)$ is an individual, concave \textit{revenue} function defined over expected total clients, and $P_j(\cdot)$ is a convex \textit{punishment} function on $X_j$, grouping her personal preference as well as institutional incentives. The implication is that after a given number of patients the disutility of an additional certificate issued would outweigh doctor $j$ financial incentives for further clientele.
 
+The $j$ subindex indicates that we will allow $R_j(\cdot)$ and $P_j(\cdot)$ to vary across physicians, meaning that a given doctor $j$ will now be initially characterized by both her parameter $V_j$ as well as the form of her $R_j(\cdot)$ and $P_j(\cdot)$ functions.
+
+We stress again that we define physician utility in terms of the \textit{expected} realization of patient demand and granted sick leaves, as befits the logic of this game, where doctors take action before patients (we will specify the timing of our game below).
+
 Following \cite{schnell2017physician}, we focus on \textit{threshold equilibriums}, wherein each physician’s strategy is the choice of a value $\bar{\kappa_j}$, such that of the patients who visit $j$, those with a $\kappa_i$ value above or at that threshold will recieve a certificate, and those under it won’t.
 
 In both frameworks we will develop, with and without search, the set $\{\bar{\kappa_j}\}_{j =1}^{J}$ composed of all physicians’ choice of $\bar{\kappa_j}$ will be public knowledge to patients at the moment they choose their strategy, whereas doctors themselves don’t observe it at the moment they make their choice of threshold, because they will select it simultaneously -- and \textit{then} patients make their move.
@@ -80,7 +97,7 @@ We first devote attention to a non-search baseline, where all patients are rando
 
 A patient won’t visit his assigned physician if his expected utility from such a visit is negative, we call this a \textit{free disposal} requirement. As such, a doctor $j$’s expected client demand, as a function of $\bar{\kappa_j}$ and given the parameter $V_j$, will be the following:
 \begin{equation}
-    Q_j(\bar{\kappa_j}) \,=\, \frac{I}{J}\left[ \int_{\tau/V_j}^{\infty}\,dF(k) +  \int_{\min\{\bar{\kappa_j},\tau/V_j\}}^{\tau/V_j} \int_{\tilde{\gamma}(k)}^{\infty} \,dG(\gamma) \,dF(k) \right] \tag{N.1}\label{eq:N.1}
+    Q_j(\bar{\kappa_j}) \,=\, \frac{I}{J}\left[ \int_{\tau/V_j}^{\infty}\,dF(k) +  \int_{\min\{\bar{\kappa_j},\tau/V_j\}}^{\tau/V_j} \int_{\tilde{\gamma}(k)}^{\infty} \,dG(\gamma) \,dF(k) \right] \tag{N.1}\label{eq:ns_Q}
     \end{equation}
 where the left term consists of the mass of patients who just by virtue of doctor $j$’s service quality $V_j$ would be willing to pay a visit (i.e. $\kappa_i \geq \tau/V_j$), and the right term would be patients who only see doctor $j$ out of the expectation of getting sick leave ($\kappa_i \geq \bar{\kappa_j}$ \& $\gamma_i \geq \tau - V_j \kappa_i$), but wouldn’t visit otherwise. We define $\tilde{\gamma}(k) := \tau - V_j k$ as the lower limit of the inner integral.
 
@@ -88,41 +105,50 @@ Given that each patient with a $\kappa_i$ higher or equal to $\bar{\kappa_j}$ is
 
 \begin{equation}
     X_j(\bar{\kappa_j}) \,=\, \frac{I}{J} \int_{\bar{\kappa_j}}^{\infty} \int_{\tilde{\gamma}(k)}^{\infty} \,dG(\gamma) \,dF(k)
-    \tag{N.2}\label{eq:N.2}
+    \tag{N.2}\label{eq:ns_X}
 \end{equation}
 
-Given (\ref{eq:N.1}) and (\ref{eq:N.2}), each physician solves for the following unconstrained optimization:
+Given (\ref{eq:ns_Q}) and (\ref{eq:ns_X}), each physician solves for the following unconstrained optimization:
 \begin{equation}
 \bar{\kappa_j}^* \equiv \max_{\bar{\kappa_j}} R_j(Q_j) - P_j(X_j)
-\tag{N.3}\label{eq:N.3}
+\tag{N.3}\label{eq:ns_k}
 \end{equation}
 
-LEMMA: No value in $(\frac{\tau}{V_j},\infty)$ can be the optimal solution of \ref{eq:N.3}.
+\textit{MÁS SUPUESTOS?}
+
+\begin{lemma}
+\label{ns_lemma}
+No value in $(\frac{\tau}{V_j},\infty)$ can be the optimal solution of (\ref{eq:ns_k}).
+\end{lemma}
 
 PROOF: APPENDIX
 
-PROPOSITION: When $\bar{\kappa_j} \in [0,\frac{\tau}{V_j}]$,
+\begin{prop}
+    \label{ns_derivatives}
+When $\bar{\kappa_j} \in [0,\frac{\tau}{V_j}]$,
 \[
     \frac{\partial Q_j}{\partial\bar{\kappa_j}} = \frac{\partial X_j}{\partial \bar{\kappa_j}}   
 \]
+\end{prop}
 
 This proposition implies that when $\bar{\kappa_j}$ is low enough that the marginal patient is indifferent, any new clients gained by doctor $j$ are those she entices through the expectation of getting a certificate, meaning that in the vicinity of $\bar{\kappa_j}$ the change in expected patients $\Delta Q_j/\Delta\bar{\kappa_j}$ through a variation in $\bar{\kappa_j}$ is the same as the change in expected certificates granted $\Delta X_j/\Delta \bar{\kappa_j}$.
 
-Given PROPOSITION, the following equation, which is the FOC of \ref{eq:N.3}:
+Given Proposition \ref{ns_derivatives}, the following equation, which is the FOC of (\ref{eq:ns_k}):
 \[
 R_j^{\prime}(Q_j)\frac{\partial Q_j}{\partial\bar{\kappa_j}}  - P_j^{\prime}(X_j)\frac{\partial X_j}{\partial \bar{\kappa_j}} = 0
 \]
 may be simplified into
 \begin{equation}
     R^{\prime}(Q_j) = P^{\prime}(X_j)
-    \tag{N.4}\label{eq:N.4}
+    \tag{N.4}\label{eq:ns_FOC}
 \end{equation}
 
-We can see that \ref{eq:N.3} offers three possibilities by way of solution: a \textit{corner} solution towards $\infty$, where doctor $j$ is content with her ``captured'' clientele (those who will visit her anyway), and offers no certificates at all\footnote{We may rationalize this by interpreting it as physician $j$ being as strict as is medically responsible. We could have written this as $\bar{\kappa_j}$ having an upper bound $\kappa_{\operatorname{max}}$, where any physician would be obliged to grant sick leave to a patient with $\kappa_i > \kappa_{\operatorname{max}}$.}; the corner solution $\bar{\kappa_j} = 0$, maximum leniency; and an \textit{inner} solution in $[0,\frac{\tau}{V_j}]$ fulfilling equation \ref{eq:N.4} and thus the FOC of \ref{eq:N.3}. We formalize this notion below.
+We can see that (\ref{eq:ns_k}) offers three possibilities by way of solution: a \textit{corner} solution towards $\infty$, where doctor $j$ is content with her ``captured'' clientele (those who would visit her even without expecting sick leave), and offers no certificates at all\footnote{We may rationalize this by interpreting it as physician $j$ being as strict as is medically responsible. We could have written this as $\bar{\kappa_j}$ having an upper bound $\kappa_{\operatorname{max}}$, where any physician would be obliged to grant sick leave to a patient with $\kappa_i > \kappa_{\operatorname{max}}$.}; the corner solution $\bar{\kappa_j} = 0$, maximum leniency; and an \textit{inner} solution in $[0,\frac{\tau}{V_j}]$ fulfilling equation (\ref{eq:ns_FOC}) and thus the FOC of (\ref{eq:ns_k}). We formalize equilibrium below.
 
-MÁS SUPUESTOS?
-
-EQUILIBRIO FORMAL: PREGUNTARLE A NICO
+\begin{equilibrium}[in non-search models]
+    \label{ns_eq}
+Given a doctor-patient market specified by $(\{(\kappa_i,\gamma_i)\}_{i =1}^{I},\{(V_j,R_j(\cdot),P_j(\cdot))\}_{i =1}^{J})$, we define an equilibrium as a set of physician thresholds $\{\bar{\kappa_j}\}_{j =1}^{J}$ satisfying (\ref{eq:ns_k}) and their corresponding equilibrium (expected) patient demand and granted medical licenses $\{(Q_j,X_j)\}_{j =1}^{J}$ as described by (\ref{eq:ns_Q}), (\ref{eq:ns_X}).
+\end{equilibrium}
 
 \subsection{Search Equilibria}
 
