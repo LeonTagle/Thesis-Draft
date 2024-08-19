@@ -13,10 +13,9 @@
 
 
 
-The main difference between our equilibrium and that of \cite{schnell2017physician} is the presence of a ``strategic effect'', wherein doctor $j$ takes into account the behavior of other doctors in the selection of her own $\bar{\kappa_j}$. Of the different modifications we made to her framework, we'll argue it's the absence of \textit{additive separability} across patients which accounts for this.
+The main difference between our equilibrium and that of \cite{schnell2017physician} is the presence of a ``strategic effect'', wherein doctor $j$ takes into account the behavior of other doctors in the selection of her own $\bar{\kappa_j}$. Of the different modifications we made to her framework, we'll argue it's the absence of \textit{additive separability} across patients in physician utility $U_j(\cdot)$ which accounts for this.
 
-VER AHI ABAJO QUE ONDA
-In our context of unbounded maximization by doctor $j$, additive separability implies she can't consider each patient individually when it comes to whether she's willing to allow (or induce) their visit, as such a decision is no longer independent of other patients' visits; the marginal utility of an additional patient is dependent on the aggregate of clients up to that point, both in terms of the visit itself as well as in the number of sick leave certificates granted up to that point.
+In our context of unbounded maximization by doctor $j$, the absence of additive separability implies she can't consider each patient individually when it comes to whether she's willing to allow (or induce) their visit, as such a decision is no longer independent of other patients' visits; the marginal utility of an additional patient is dependent on the aggregate of clients up to that point, both in terms of the visit itself as well as in the number of sick leave certificates granted up to that point.
 
 
 
@@ -50,40 +49,39 @@ The optimal value of threshold $\bar{\kappa_j}$ is $\kappa_j^*$. Assuming $U_j(\
 \]
 Solving for this would yield $\bar{\kappa_j} = \kappa_j^*$.
 
-\[\]
-
-CORREGIR UN POCO ABAJO SCHNELL
-
-\cite{schnell2017physician} is an example of just such a treatment, which specifies the doctor’s utility by patient in the following manner:
+\cite{schnell2017physician} is an example of just such a treatment, which specifies the physician's additive utility by patient in the following manner:
 \[
-v_i(\kappa_i) \equiv R_j + \beta_j h(\kappa_i)
+v_{ji}(\kappa_i) \equiv R_j + \beta_j h(\kappa_i)
 \]
-where $R_j$ is a parameter standing for revenue by visit, and $\beta_j h(\kappa_i)$ represent the doctor's ``altruistic'' utility over the health impact of a prescription drug to a patient with ``pain level'' $\kappa_i$.
+where $R_j$ is a parameter standing for revenue by visit, and $\beta_j h(\kappa_i)$ represents the physician's ``altruistic'' utility over the health impact of a prescription drug to a patient with ``pain level'' $\kappa_i$.
 
-The threshold $\bar{\kappa_j}$ is then obtained out of the maximization over \footnote{Once again, ignoring patient choice and $\gamma$}:
+The optimal threshold $\kappa_j^*$ is then obtained out of the maximization\footnote{Once again, ignoring patient choice and $\gamma$,. We're presenting a \textit{simplified} version for illustrative purposes.}:
 \[
-\int_{\bar{\kappa_j}}^{\infty}  R_j + \beta_j h(k) \, dF(k)
+\max_{\bar{\kappa_j}}\int_{\bar{\kappa_j}}^{\infty}  R_j + \beta_j h(k) \, dF(k)
 \]
 
-Giving out the following FOC:
+Which gives out the following FOC:
 \[
 R_j = - \beta_j h^{\prime}(\bar{\kappa_j})
 \]
-which, as is immediately apparent, doesn't depend upon the behavior of other doctors ---more specifically, \textit{their} choice of $\bar{\kappa_j}$.
+which, as is immediately apparent, doesn't depend upon the behavior of other doctors ---more specifically, \textit{their} choice of $\bar{\kappa_j}$. It merely establishes that, at the threshold, marginal benefit by patient --revenue $R_j$-- must equal marginal ``cost'' -- altruistic ``cost'' $\beta_j h(\bar{\kappa_j})$--. A way to interpret this is that doctors will be willing to see any and all patients which render them positive marginal utility, unconcerned with their total market share, and thus, what other physicians may do to take away clientele.
 
-Such a treatment is rendered inviable by our choice of utility function. Schnell's parameter of revenue would in our model imply the linearity of our revenue \textit{function} $R_j(\cdot)$, and our $P(\cdot)$ function over \textit{aggregate} licenses granted isn't additively separable into Schnell-like $\beta_j h^{\prime}(\bar{\kappa_j})$ terms for each patient, because of its convexity, through which the impact on doctor $j$'s utility in granting patient $i$ a license isn't independent from the granting of licenses of other patients. The aggregate level enters into the equation
+Such a treatment is rendered inviable by our choice of utility function. Schnell's parameter of revenue would in our model imply the linearity of our revenue \textit{function} $R_j(\cdot)$ and our $P(\cdot)$ function over \textit{aggregate} licenses granted. Strict convexity of $P(\cdot)$ would forestall its formulation as Schnell-like $\beta_j h^{\prime}(\bar{\kappa_j})$ terms for each patient, because the impact on doctor $j$'s utility in granting patient $i$ a license would no longer independent from the granting of licenses of other patients. Likewise, strict concavity of $R_j(\cdot)$ belies a simple ``r'' parameter such that $R_j'(Q_j) = r Q_j$.
 
-Our FOC reflects this:
+More formally, when $U_j(1,...,k)$ \textit{isn't} additively separable across patients, the value $\kappa_j^*$ such that if $\kappa_i \geq \kappa_j^*$ patient $i$ provides positive marginal utility, isn’t independent of current clientele, because what before was a properly defined object, marginal utility by patient $i$, $v_j(\kappa_i)$, can no longer be so identified. The marginal utility $i$ provides to $j$ as the $k$th client (assuming some order over clients) is not necessarily the same he’d provide as the $k+1$th client, and so, as the $k$th client he could provide $0$ utility, impliying $\kappa_i = \kappa_j^*$, whereas as the $k + 1$th he could be inframarginal, such that $\kappa_i < \kappa_j^*$.
+
+$\kappa_j^*$ is not longer independent of clientele mass $\mathcal{I}$ as before, but a function of it, $\kappa_j^*(\mathcal{I})$. More specifically, in the models we consider it will depend on the \textit{cardinality} of current clientele, $|\mathcal{I}|$, such that our physician's choice of marginal consumer will depend on her aggregate level of patient demand, where before it didn't. This effect is introduced through the \textit{strict non-linearity} of our physician utility function $U_j(\cdot)$, either through the strict concavity of $R_j(\cdot)$ over expected patient demand $Q_j$, or the strict convexity of $P_j(\cdot)$ over total expected sick leaves granted.
+
+When either of those is the case, $aggregate$ levels enter into the equation and form part of the optimality condition. Our general FOC reflects this:
 \begin{equation*}
  R_j^{\prime}(Q_j)\frac{\partial Q_j}{\partial\bar{\kappa_j}} = P_j^{\prime}(X_j)\frac{\partial X_j}{\partial \bar{\kappa_j}} 
 \end{equation*}
-As can be seen, the equilibrium considers the aggregate levels of $Q_j$ and $X_j$, and so the impact that other doctors’ choice of $\bar{\kappa_j}$ have on these becomes relevant, introducing a ``strategic effect’’ into the mix.
+where either or both of $R_j'(\cdot)$ and $P_j'(\cdot)$ are a non-constant function over aggregates.
 
-Continuará...
+When such aggregates, either $Q_j$ or $X_j$, come into play, physicians come to consider their \textit{market share}, which doesn't depend exclusively on their own choice of $\bar{\kappa_j}$. Each patient's strategy $S_i$ is constructed taking into account the whole of $\{(V_j,\bar{\kappa_j})\}_{i =1}^{J})$.
 
-When $U_j(1,...,k)$ \textit{isn’t} additively separable across patients, the value $\kappa_j^*$ such that if $\kappa_i \geq \kappa_j^*$ patient $i$ provides positive marginal utility, isn’t independent of current clientele, because what before was a properly defined object, marginal utility by patient $i$, $v_j(\kappa_i)$, can no longer be so identified. The marginal utility $i$ provides to $j$ as the $k$th client (assuming some order over clients) is not necessarily the same he’d provide as the $k+1$th client, and so, as the $k$th client he could provide $0$ utility, impliying $\kappa_i = \kappa_j^*$, whereas as the $k + 1$th he could be inframarginal, such that $\kappa_i < \kappa_j^*$.
 
-$\kappa_j^*$ is not longer independent of clientele mass $\mathcal{I}$ as before, but a function of it, $\kappa_j^*(\mathcal{I})$, such that our physician’s choice of marginal consumer will depend on her aggregate level of patient demand, where before it didn’t. It is this, the fact that \textit{aggregate} levels come into the equation, which is the source of the presence of a ``strategic effect''.
+ALGO ACERCA DE COMO SE SALE DE EQUILIBRIO, LELVA A PENSAR QUE Y CONCLUYE
 
 \subsection{som}
 
@@ -131,7 +129,7 @@ Where we use ``$\mid \bar{\kappa_j}$'' to clumsily indicate that we integrate $\
     \label{eq:schnell_condition}
 \end{equation}
 
-This is the same result as in the original model in \ref(schnell2017physician) in the absence of a secondary market, a condition which stipulates that marginal utility in $\bar{\kappa_j}$ must be $0$, i.e. that revenue ($R_j$) must equal "altruistic" loss ($\beta_j h(\bar{\kappa_j})$), which pre-supposes that the marginal patient granted prescription opioids suffers a net loss in utility (the negative externalities outweigh its medical benefit as a palliative).
+This is the same result as in the original model in \ref{schnell2017physician} in the absence of a secondary market, a condition which stipulates that marginal utility in $\bar{\kappa_j}$ must be $0$, i.e. that revenue ($R_j$) must equal "altruistic" loss ($\beta_j h(\bar{\kappa_j})$), which pre-supposes that the marginal patient granted prescription opioids suffers a net loss in utility (the negative externalities outweigh its medical benefit as a palliative).
 
 Condition (\ref{eq:schnell_condition}) means a value  $\kappa_j$ is chosen irrespective of the strategies employed by other doctors, it quite literally doesn't enter into the equation. As we have argued, additive separability over clients means the \textit{total} demand for physician $j$'s services doesn't influence marginal utility by a given patient $i$, and so has no sway in the optimality condition. Doctor $j$ states simply that she won't grant a prescription (or sick leave, as in our case) below $\bar{\kappa_j}$, \textit{come what may}. In order for her to care about \textit{aggregate} values, like her total expected demand, making her care about her market share and thus about the strategies of other doctors, \textit{strict non-linearity} must be introduced into her utility function.
 
