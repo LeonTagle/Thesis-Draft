@@ -5,9 +5,11 @@
 \usepackage{cancel}
 \usepackage{enumitem} %fancy itemize
 \usepackage{thmtools} %fancy theorems
+\usepackage{bm} %math bold-face
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{ass}[theorem]{Assumption}
 \newtheorem{prop}[theorem]{Proposition}
@@ -19,6 +21,8 @@ headformat=\NAME \NOTE
 ]{nopar}
 \declaretheorem[style=nopar]{equilibrium}
 
+\renewcommand{\thesubsubsection}{\alph{subsubsection}}
+% Subsubsections with .a .b etc
 
 \title{formal}
 \author{leontaglelb }
@@ -51,7 +55,7 @@ V_j \kappa_i - \tau \text{  \hspace{0.5cm} if he only visits the doctor,} \\
 \end{cases}
 \]
 
-As we see, there's three components to patient utility: an interaction between the patient's medical need $\kappa_i$ and the physician's service quality $V_j$ which implies their complimentarity, his ``taste'' for sick leave $\gamma_i$ in the case he’s granted one, and $\tau$, the cost of visit, normalized across doctors.
+As we see, there's three components to patient utility: an interaction between the patient's medical need $\kappa_i$ and the physician's service quality $V_j$ which implies their complimentarity, his ``taste'' for sick leave $\gamma_i$ in the case he's granted one, and $\tau$, the cost of visit, normalized across doctors.
 
 Whereas patients may visit at most one doctor, a doctor may see several physicians. We define $Q_j$ as the expected number of patients of doctor $j$, the demand for her services. We say ``expected'' because, as we'll see later on, patients may opt for a mixed strategy, assigning a certain \textit{probability} to visiting $j$, and $Q_j$ will be defined over the ex-ante probabilities of all patients and not their ex-post realization.
 
@@ -67,9 +71,9 @@ The $j$ subindex indicates that we will allow $R_j(\cdot)$ and $P_j(\cdot)$ to v
 
 We stress again that we define physician utility in terms of the \textit{expected} realization of patient demand and granted sick leaves, as befits the logic of this game, where doctors take action before patients (we will specify the timing of our game below).
 
-Following \cite{schnell2017physician}, we focus on \textit{threshold equilibriums}, wherein each physician’s strategy is the choice of a value $\bar{\kappa_j}$, such that of the patients who visit $j$, those with a $\kappa_i$ value above or at that threshold will recieve a certificate, and those under it won’t.
+Following \cite{schnell2017physician}, we focus on \textit{threshold equilibria}, wherein each physician's strategy is the choice of a value $\bar{\kappa_j}$, such that of the patients who visit $j$, those with a $\kappa_i$ value above or at that threshold will recieve a certificate, and those under it won't.
 
-In both frameworks we will develop, with and without search, the set $\{\bar{\kappa_j}\}_{j =1}^{J}$ composed of all physicians’ choice of $\bar{\kappa_j}$ will be public knowledge to patients at the moment they choose their strategy, whereas doctors themselves don’t observe it at the moment they make their choice of threshold, because they will select it simultaneously -- and \textit{then} patients make their move.
+In both frameworks we will develop, with and without search, the set $\{\bar{\kappa_j}\}_{j =1}^{J}$ composed of all physicians' choice of $\bar{\kappa_j}$ will be public knowledge to patients at the moment they choose their strategy, whereas doctors themselves don't observe it at the moment they make their choice of threshold, because they will select it simultaneously -- and \textit{then} patients make their move.
 
 Our models are different iterations of a general game with the following timing:
 \begin{itemize}
@@ -98,7 +102,7 @@ We first devote attention to a non-search baseline, where all patients are rando
 A patient won’t visit his assigned physician if his expected utility from such a visit is negative, we call this a \textit{free disposal} requirement. As such, a doctor $j$’s expected client demand, as a function of $\bar{\kappa_j}$ and given the parameter $V_j$, will be the following:
 \begin{equation}
     Q_j(\bar{\kappa_j}) \,=\, \frac{I}{J}\left[ \int_{\tau/V_j}^{\infty}\,dF(k) +  \int_{\min\{\bar{\kappa_j},\tau/V_j\}}^{\tau/V_j} \int_{\tilde{\gamma}(k)}^{\infty} \,dG(\gamma) \,dF(k) \right] \tag{N.1}\label{eq:ns_Q}
-    \end{equation}
+\end{equation}
 where the left term consists of the mass of patients who just by virtue of doctor $j$’s service quality $V_j$ would be willing to pay a visit (i.e. $\kappa_i \geq \tau/V_j$), and the right term would be patients who only see doctor $j$ out of the expectation of getting sick leave ($\kappa_i \geq \bar{\kappa_j}$ \& $\gamma_i \geq \tau - V_j \kappa_i$), but wouldn’t visit otherwise. We define $\tilde{\gamma}(k) := \tau - V_j k$ as the lower limit of the inner integral.
 
 Given that each patient with a $\kappa_i$ higher or equal to $\bar{\kappa_j}$ is granted a sick leave certificate, the expected total number of such certificates granted by $j$, as a function of $\bar{\kappa_j}$, is:
@@ -147,14 +151,16 @@ We can see that (\ref{eq:ns_k}) offers three possibilities by way of solution: a
 
 \begin{equilibrium}[in non-search models]
     \label{ns_eq}
-Given a doctor-patient market specified by $(\{(\kappa_i,\gamma_i)\}_{i =1}^{I},\{(V_j,R_j(\cdot),P_j(\cdot))\}_{i =1}^{J})$, we define an equilibrium as a set of physician thresholds $\{\bar{\kappa_j}\}_{j =1}^{J}$ satisfying (\ref{eq:ns_k}) and their corresponding equilibrium (expected) patient demand and granted medical licenses $\{(Q_j,X_j)\}_{j =1}^{J}$ as described by (\ref{eq:ns_Q}), (\ref{eq:ns_X}).
+Given a doctor-patient market specified by $(\{(\kappa_i,\gamma_i)\}_{i =1}^{I},\{(V_j,R_j(\cdot),P_j(\cdot))\}_{i =1}^{J})$, we define an equilibrium as a set of physician thresholds $\{\bar{\kappa_j}\}_{j =1}^{J}$ satisfying (\ref{eq:ns_k}) and their corresponding equilibrium (expected) patient demand and granted medical licenses $\{(Q_j,X_j)\}_{j =1}^{J}$ as described by (\ref{eq:ns_Q}), (\ref{eq:ns_X}), respectively.
 \end{equilibrium}
 
 \subsection{Search Equilibria}
 
+\subsubsection{Introducing search}
+
 We introduce patient ``search'' as a general framework in which patients can choose freely among all physicians.
 
-We define for each patient $i$ a vector $S_i \in \Delta(\mathcal{J})$, where $\mathcal{J}$ is the the $1 \times J$ vector composed of all $1, ..., J$ physicians. $S_i$ will be his \textit{strategy} for this game, representing his probabilistic choice of visit for each doctor $j$, such that each component $s_{i1}, ... , s_{iJ}$ of $S_i$ stands for the probability that he’ll visit doctors $1, ..., J$ respectively.
+We define for each patient $i$ a vector $S_i \in \Delta(\mathcal{J})$, where $\mathcal{J}$ is the the $1 \times J$ vector composed of all $1, ..., J$ physicians. $S_i$ will be his \textit{strategy} for this game, representing his probabilistic choice of visit for each doctor $j$, such that each component $s_{i1}, ... , s_{iJ}$ of $S_i$ stands for the probability that he'll visit doctors $1, ..., J$ respectively.
 
 In order to describe a proper probability distribution, the following criteria must be met:
 
@@ -164,8 +170,86 @@ In order to describe a proper probability distribution, the following criteria m
     \item $\sum_{i = 1}^{J} s_{ij} \leq 1$
 \end{enumerate}
 
-We will allow the sum of all components to be less than one, implying the presence of an \textit{outside option} for patients, that is, to not visit any doctors. Such an option is important, as patient rationality in our models will include  ``\textit{free disposal}’’, meaning that a patient will never visit a doctor if his expected utility from such a visit is less than $0$, i.e. $s_{ij} = 0$ if $U_i(V_j,\bar{\kappa_j}) = 0$. This makes the third stage trivial, as under free choice, patient $i$ will only be assigned with positive probability to doctors he will be willing to visit.
+We will allow the sum of all components to be less than one, implying the presence of an \textit{outside option} for patients, that is, to not visit any doctors. Such an option is important, as patient rationality in our models will include  ``\textit{free disposal}'', meaning that a patient will never visit a doctor if his expected utility from such a visit is less than $0$, i.e. $s_{ij} = 0$ if $U_i(V_j,\bar{\kappa_j}) = 0$. This makes the third stage trivial, as under free choice, patient $i$ will only be assigned with positive probability to doctors he will be willing to visit.
 
-We can re-interpret the non-search model as each patient being made to play by the strategy \{$S_i: s_{i1} = s_{i2} ... = s_{iJ} = \frac{1}{J}$ \}, and it’s the lack of a free choice which makes the third stage non-trivial.
+We can re-interpret the non-search model as each patient being made to play by the strategy \{$S_i: s_{i1} = s_{i2} ... = s_{iJ} = \frac{1}{J}$ \}, and it's the lack of a free choice which makes the third stage non-trivial.
+
+Given the collection of all patients' strategies $(\{S_i\}_{i =1}^{I}$, each with a respective $s_{ij}$ for doctor $j$, we can formulate expected clientele and granted sick leaves for $j$ in a manner very much alike the previous section (indeed, as a generalization):
+\begin{equation}
+    Q_j(\bar{\kappa_j}, \bar{\kappa}_{-j}) \,=\, \int_{\tau/V_j}^{\infty}\bm{s_{ij}}\,dF(k) +  \int_{\min\{\bar{\kappa_j},\tau/V_j\}}^{\tau/V_j} \int_{\tilde{\gamma}(k)}^{\infty}\bm{s_{ij}} \,dG(\gamma) \,dF(k)  \tag{S.1}\label{eq:s_Q}
+\end{equation}
+
+\begin{equation}
+    X_j(\bar{\kappa_j}, \bar{\kappa}_{-j}) \,=\, \int_{\bar{\kappa_j}}^{\infty} \int_{\tilde{\gamma}(k)}^{\infty}\bm{s_{ij}} \,dG(\gamma) \,dF(k)
+    \tag{S.2}\label{eq:s_X}
+\end{equation}
+
+As before, the left term in equation (\ref{eq:s_Q}) includes patients who would visit $j$ even without sick leave, whereas the right term those who only do so because they expect one.
+
+Notice that we now present $Q_j$ and $X_j$  not only in terms of the threshold $\bar{\kappa_j}$ chosen by doctor $j$, but also in terms of the thresholds of the other $J - 1$ doctors, which we abreviate as $\bar{\kappa}_{-j}$. Whereas before doctors were simply alloted a given number of patients, now they will \textit{compete} for them, as patients' $S_i$ strategy will consider the whole of $(\{\bar{\kappa_j}\}_{j =1}^{J}$ when considering which physician(s) they will visit with positive probability.
+
+\subsubsection{Some analytic results}
+
+We shall further specify the form $S_i$ will take. Consider now a $1 \times J$ vector $U_i$, where each component $u_{i1}, ... , u_{iJ}$ indicates the utility patient $i$ expects from a visit to doctors $1, ..., J$ respectively, corresponding to $U_i(V_j, \bar{\kappa_j})$ for each doctor $j$. As a shorthand, we shall write $u_{i,-j}$ to indicate the $J - 1$ components of $U_i$ excluding $u_{ij}$.
+
+In the models considered, each component $s_{ij}$ of $S_i$ will be defined as:
+\[s_{ij} \equiv g_i(u_{ij}, u_{i,-j})\]
+where $g_i(\cdot)$ is a continuous function weakly increasing in the first argument $u_{ij}$, and weakly decreasing in the remaining arguments given by $u_{i,-j}$. Our model specifications will consist in giving this function $g_i(u_{ij}, u_{i,-j})$ a specific form.
+
+Our defining $s_{ij}$ this way has two interlinked corollaries:
+
+\begin{corollary}
+\[s_{ij} \mid \kappa_i < \bar{\kappa_j} \;\;\;\; \leq     \;\;\;\; s_{ij} \mid \kappa_i \geq \bar{\kappa_j} \;\;\;\; \text{(with strict inequality if $\gamma_i > 0$).}\]
+\end{corollary}
+
+\begin{proof}
+    For a fixed value of $V_j$ and $\kappa_i$, the value of $U_i(V_j, \bar{\kappa_j})$ is $V_j \kappa_i - \tau$ if $\kappa_i < \bar{\kappa_j}$, and $\gamma_i + V_j \kappa_i - \tau$ if $\kappa_i \geq \bar{\kappa_j}$, where $\gamma_i \geq 0$. Given that $s_{ij}$ is weakly increasing in $u_{ij}$, the corollary follows.
+\end{proof}
+
+
+\begin{corollary}
+\begin{align*}
+    \frac{\partial s_{ij}}{\partial\bar{\kappa_{j}}} \leq 0 &&  \frac{\partial s_{ij}}{\partial\bar{\kappa_{l}}} \geq 0, \forall l \neq j
+\end{align*}   
+\end{corollary}
+
+\begin{proof}
+From the argumentation in corollary 1 follows that $u_{ij}$ is weakly decreasing in $\bar{\kappa_j}$, $\forall j$. Take some $l \neq j$, then $s_{ij}$ is defined in turn as weakly decreasing in $u_{il}$, which implies it is increasing in $\bar{\kappa_l}$.
+\end{proof}
+
+Both corollaries hinge upon our definition of $U_i(\cdot)$ as a step function over $\kappa_i$, such that it is discontinuous at $\kappa_i = \bar{\kappa_j}$, where there's a discrete jump of magnitude  $\gamma_i$.
+
+\begin{corollary}
+\begin{align*}
+    \frac{\partial Q_{j}}{\partial\bar{\kappa_{j}}},\frac{\partial X_{j}}{\partial\bar{\kappa_{j}}} \leq 0 &&  \frac{\partial Q_{j}}{\partial\bar{\kappa_{l}}}, \frac{\partial X_{j}}{\partial\bar{\kappa_{l}}} \geq 0, \forall l \neq j
+\end{align*}
+\end{corollary}
+
+\begin{proof}
+\begin{align*}
+\frac{\partial Q_{j}}{\partial\bar{\kappa_{l}}} = \frac{\partial Q_{j}}{\partial s_{ij}} \cdot \frac{\partial s_{ij}}{\partial\bar{\kappa_{l}}} \text{ where $\frac{\partial Q_{j}}{\partial s_{ij}} \geq 0$ as the integral of a non-negative term,} \\ \text{and $\frac{\partial s_{ij}}{\partial\bar{\kappa_{l}}} \geq 0$ if $l = j$, $\leq 0$ if $l \neq  j$.}  \text{The same logic follows for $X_j$.}
+\end{align*}
+\end{proof}
+
+These simple corollaries build-up to the following result: the theoretical ambiguity of strategic complementarity between physicians' $\bar{\kappa_j}$.
+
+Consider some $l \neq j$. If we breakdown the mixed partial derivative of $U_j$ over $\bar{\kappa_j}$ and $\bar{\kappa_l}$, we get:
+\begin{align*}
+\frac{\partial^2 U_{j}}{\partial\bar{\kappa_{j}} \partial\bar{\kappa_{l}}}  = 
+R^{\prime \prime} (Q_j(\bar{\kappa_j}, \bar{\kappa}_{-j}))
+\cdot \frac{\partial Q_{j}}{\partial\bar{\kappa_{l}}}
+\cdot \frac{\partial Q_{j}}{\partial\bar{\kappa_{j}}}  + 
+R^{\prime} (Q_j(\bar{\kappa_j}, \bar{\kappa}_{-j})) \frac{\partial^2 Q_{j}}{\partial\bar{\kappa_{j}} \partial\bar{\kappa_{l}}} \\
+ - P^{\prime \prime} (X_j(\bar{\kappa_j}, \bar{\kappa}_{-j}))
+\cdot \frac{\partial X_{j}}{\partial\bar{\kappa_{l}}}
+\cdot \frac{\partial X_{j}}{\partial\bar{\kappa_{j}}}  - 
+P^{\prime} (X_j(\bar{\kappa_j}, \bar{\kappa}_{-j})) \frac{\partial^2 X_{j}}{\partial\bar{\kappa_{j}} \partial\bar{\kappa_{l}}} 
+\end{align*}
+
+$\underbrace{R^{\prime \prime}}$
+
+\subsubsection{The ``implicit'' search model}
+
+
 
 \end{document}
