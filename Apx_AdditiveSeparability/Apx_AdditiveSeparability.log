@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.7)  19 AUG 2024 19:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.7)  20 AUG 2024 09:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -162,23 +162,26 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 
-LaTeX Warning: Citation `schnell2017physician' on page 1 undefined on input line 16.
+LaTeX Warning: Citation `schnell2017physician' on page 1 undefined on input line 18.
 
 [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
-LaTeX Warning: Citation `schnell2017physician' on page 2 undefined on input line 52.
+LaTeX Warning: Citation `schnell2017physician' on page 2 undefined on input line 51.
 
 [2]
 
-LaTeX Warning: Citation `schnell2017physician' on page 3 undefined on input line 82.
+LaTeX Warning: Citation `schnell2017physician' on page 3 undefined on input line 87.
+
+
+LaTeX Warning: Citation `schnell2017physician' on page 3 undefined on input line 89.
 
 [3]
 
-LaTeX Warning: Reference `(' on page 4 undefined on input line 126.
+LaTeX Warning: Reference `schnell2017physician' on page 4 undefined on input line 133.
 
-[4] (./Apx_AdditiveSeparability.aux)
+[4] [5] (./Apx_AdditiveSeparability.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -189,18 +192,18 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2402 strings out of 474116
- 37655 string characters out of 5743683
- 1937187 words of memory out of 5000000
- 24768 multiletter control sequences out of 15000+600000
- 562407 words of font info for 51 fonts, out of 8000000 for 9000
+ 2405 strings out of 474116
+ 37719 string characters out of 5743683
+ 1938187 words of memory out of 5000000
+ 24771 multiletter control sequences out of 15000+600000
+ 563012 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,9n,65p,915b,157s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on Apx_AdditiveSeparability.pdf (4 pages, 195080 bytes).
+Output written on Apx_AdditiveSeparability.pdf (5 pages, 202427 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
+ 105 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
