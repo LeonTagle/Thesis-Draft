@@ -1,15 +1,37 @@
 \documentclass{article}
 \usepackage{graphicx} % Required for inserting images
-\usepackage{amsmath}
+\usepackage{amsmath, amsthm, amssymb}
 \usepackage{bbm} %para 1 indicatriz
 \usepackage{cancel}
 \usepackage{enumitem} %fancy itemize
+\usepackage{thmtools} %fancy theorems
+\usepackage{bm} %math bold-face
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{ass}[theorem]{Assumption}
+\newtheorem{prop}[theorem]{Proposition}
+
+\newcommand\maybegeq{\stackrel{?}{\geq}}
+
+\declaretheoremstyle[
+notefont=\bfseries, notebraces={}{},
+bodyfont=\normalfont\itshape,
+headformat=\NAME \NOTE
+]{nopar}
+\declaretheorem[style=nopar]{equilibrium}
+
+\renewcommand{\thesubsubsection}{\alph{subsubsection}}
+% Subsubsections with .a .b etc
 
 \title{formal}
 \author{leontaglelb }
 \date{July 2024}
 
 \begin{document}
+
 
 \section{Appendix}
 
@@ -133,5 +155,86 @@ Where we use ``$\mid \bar{\kappa_j}$'' to clumsily indicate that we integrate $\
 This is the same result as in the original model in \ref{schnell2017physician} in the absence of a secondary market, a condition which stipulates that marginal utility in $\bar{\kappa_j}$ must be $0$, i.e. that revenue ($R_j$) must equal "altruistic" loss ($\beta_j h(\bar{\kappa_j})$), which pre-supposes that the marginal patient granted prescription opioids suffers a net loss in utility (the negative externalities outweigh its medical benefit as a palliative).
 
 Condition (\ref{eq:schnell_condition}) means a value  $\kappa_j$ is chosen irrespective of the strategies employed by other doctors, it quite literally doesn't enter into the equation. As we have argued, additive separability over clients means the \textit{total} demand for physician $j$'s services doesn't influence marginal utility by a given patient $i$, and so has no sway in the optimality condition. Doctor $j$ states simply that she won't grant a prescription (or sick leave, as in our case) below $\bar{\kappa_j}$, \textit{come what may}. In order for her to care about \textit{aggregate} values, like her total expected demand, making her care about her market share and thus about the strategies of other doctors, \textit{strict non-linearity} must be introduced into her utility function.
+
+
+\subsection{On the strategic complementarity of $\bar{\kappa_j}$'s}
+
+We had defined the components $s_{ij}$ of $S_i$  as:
+\[s_{ij} \equiv g_i(u_{ij}, u_{i,-j})\]
+where $g_i(\cdot)$ is a continuous function weakly increasing in the first argument $u_{ij}$. Our defining $s_{ij}$ this way has two interlinked corollaries:
+
+\begin{corollary}
+\[s_{ij} \mid \kappa_i < \bar{\kappa_j} \;\;\;\; \leq     \;\;\;\; s_{ij} \mid \kappa_i \geq \bar{\kappa_j} \;\;\;\; \text{(with strict inequality if $\gamma_i > 0$).}\]
+\end{corollary}
+
+\begin{proof}
+    For a fixed value of $V_j$ and $\kappa_i$, the value of $U_i(V_j, \bar{\kappa_j})$ is $V_j \kappa_i - \tau$ if $\kappa_i < \bar{\kappa_j}$, and $\gamma_i + V_j \kappa_i - \tau$ if $\kappa_i \geq \bar{\kappa_j}$, where $\gamma_i \geq 0$. Given that $s_{ij}$ is weakly increasing in $u_{ij}$, the corollary follows.
+\end{proof}
+
+
+\begin{corollary}
+\begin{align*}
+    \frac{\partial s_{ij}}{\partial\bar{\kappa_{j}}} \leq 0 &&  \frac{\partial s_{ij}}{\partial\bar{\kappa_{l}}} \geq 0, \forall l \neq j
+\end{align*}   
+\end{corollary}
+
+\begin{proof}
+From the argumentation in corollary 1 follows that $u_{ij}$ is weakly decreasing in $\bar{\kappa_j}$, $\forall j$. Take some $l \neq j$, then $s_{ij}$ is defined in turn as weakly decreasing in $u_{il}$, which implies it is increasing in $\bar{\kappa_l}$.
+\end{proof}
+
+Both corollaries hinge upon our definition of $U_i(\cdot)$ as a step function over $\kappa_i$, such that it is discontinuous at $\kappa_i = \bar{\kappa_j}$, where there's a discrete jump of magnitude  $\gamma_i$.
+
+\begin{corollary}
+\begin{align*}
+    \frac{\partial Q_{j}}{\partial\bar{\kappa_{j}}},\frac{\partial X_{j}}{\partial\bar{\kappa_{j}}} \leq 0 &&  \frac{\partial Q_{j}}{\partial\bar{\kappa_{l}}}, \frac{\partial X_{j}}{\partial\bar{\kappa_{l}}} \geq 0, \forall l \neq j
+\end{align*}
+\end{corollary}
+
+\begin{proof}
+\begin{align*}
+\frac{\partial Q_{j}}{\partial\bar{\kappa_{l}}} = \frac{\partial Q_{j}}{\partial s_{ij}} \cdot \frac{\partial s_{ij}}{\partial\bar{\kappa_{l}}} \text{ where $\frac{\partial Q_{j}}{\partial s_{ij}} \geq 0$ as the integral of a non-negative term,} \\ \text{and $\frac{\partial s_{ij}}{\partial\bar{\kappa_{l}}} \geq 0$ if $l = j$, $\leq 0$ if $l \neq  j$.}  \text{The same logic follows for $X_j$.}
+\end{align*}
+\end{proof}
+
+These simple corollaries build-up to the following result: the theoretical ambiguity of strategic complementarity between physicians' $\bar{\kappa_j}$.
+
+Consider some $l \neq j$. If we breakdown the mixed partial derivative of $U_j$ over $\bar{\kappa_j}$ and $\bar{\kappa_l}$, we get:
+\begin{align*}
+\frac{\partial^2 U_{j}}{\partial\bar{\kappa_{j}} \partial\bar{\kappa_{l}}}  = 
+\underbrace{R^{\prime \prime}(Q_j(\bar{\kappa_j}, \bar{\kappa}_{-j}))}_{\leq 0}
+\cdot \underbrace{\frac{\partial Q_{j}}{\partial\bar{\kappa_{l}}}}_{\geq 0}
+\cdot \underbrace{\frac{\partial Q_{j}}{\partial\bar{\kappa_{j}}}}_{\leq 0}  + 
+\underbrace{R^{\prime} (Q_j(\bar{\kappa_j}, \bar{\kappa}_{-j}))}_{\geq 0} \underbrace{\frac{\partial^2 Q_{j}}{{\partial\bar{\kappa_{j}} \partial\bar{\kappa_{l}}}}}_{?} \\
+ - \underbrace{P^{\prime \prime} (X_j(\bar{\kappa_j}, \bar{\kappa}_{-j}))}_{\geq 0}
+\cdot \underbrace{\frac{\partial X_{j}}{\partial\bar{\kappa_{l}}}}_{\geq 0}
+\cdot \underbrace{\frac{\partial X_{j}}{\partial\bar{\kappa_{j}}}}_{\leq 0}  - 
+\underbrace{P^{\prime} (X_j(\bar{\kappa_j}, \bar{\kappa}_{-j}))}_{\geq 0} \underbrace{\frac{\partial^2 X_{j}}{\partial\bar{\kappa_{j}} \partial\bar{\kappa_{l}}}}_{?}
+\tag{A}
+\label{eq:mixed}
+\end{align*}
+
+Reordering terms we get the following:
+
+
+\begin{align*}
+    \frac{\partial^2 U_{j}}{\partial\bar{\kappa_{j}} \partial\bar{\kappa_{l}}}  = 
+    \underbrace{[{R^{\prime \prime}} (Q_j(\bar{\kappa_j}, \bar{\kappa}_{-j}))
+    \cdot \frac{\partial Q_{j}}{\partial\bar{\kappa_{l}}}
+    \cdot \frac{\partial Q_{j}}{\partial\bar{\kappa_{j}}}  -
+    P^{\prime \prime} (X_j(\bar{\kappa_j}, \bar{\kappa}_{-j}))
+    \cdot \frac{\partial X_{j}}{\partial\bar{\kappa_{l}}}
+    \cdot \frac{\partial X_{j}}{\partial\bar{\kappa_{j}}}]}_{\geq 0}
+   \\
+   + \underbrace{[R^{\prime} (Q_j(\bar{\kappa_j}, \bar{\kappa}_{-j})) \frac{\partial^2 Q_{j}}{\partial\bar{\kappa_{j}} \partial\bar{\kappa_{l}}} - 
+    P^{\prime} (X_j(\bar{\kappa_j}, \bar{\kappa}_{-j})) \frac{\partial^2 X_{j}}{\partial\bar{\kappa_{j}} \partial\bar{\kappa_{l}}}]}_{?} \; \; \; \; \overset{?}{\geq} \; \; 0
+\end{align*}
+
+We see that ambiguity with respect to the sign of the mixed derivative is two-fold:
+\begin{itemize}
+    \item Our modest prerrequisites for $s_{ij}$ aren't enough to analytically establish the sign of the mixed derivatives $\frac{\partial^2 Q_{j}}{\partial\bar{\kappa_{j}} \partial\bar{\kappa_{l}}}$ and $\frac{\partial^2 X_{j}}{\partial\bar{\kappa_{j}} \partial\bar{\kappa_{l}}}$, though it stands to reason they'd share the same sign, and furthermore that it would be negative: raising $\bar{\kappa_{j}}$ would depress the positive effect of a raise in $\bar{\kappa_{l}}$, whereas raising $\bar{\kappa_{l}}$ would exacerbate the negative effect of a raise in $\bar{\kappa_{j}}$, for both $Q_j$ and $X_j$.
+    
+    \item As $R^{\prime} (\cdot)$ and $P^{\prime} (\cdot)$ share the same sign, the question of whether the expression in brackets on the second row is positive falls to the \textit{quantitative} level of both derivatives, which will depend on the specific form and parameters chosen for these functions and can't be anticipated by this analysis.
+\end{itemize}
+
 
 \end{document}

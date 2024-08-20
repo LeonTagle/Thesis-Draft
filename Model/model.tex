@@ -14,6 +14,8 @@
 \newtheorem{ass}[theorem]{Assumption}
 \newtheorem{prop}[theorem]{Proposition}
 
+\newcommand\maybegeq{\stackrel{?}{\geq}}
+
 \declaretheoremstyle[
 notefont=\bfseries, notebraces={}{},
 bodyfont=\normalfont\itshape,
@@ -196,57 +198,7 @@ In the models considered, each component $s_{ij}$ of $S_i$ will be defined as:
 \[s_{ij} \equiv g_i(u_{ij}, u_{i,-j})\]
 where $g_i(\cdot)$ is a continuous function weakly increasing in the first argument $u_{ij}$, and weakly decreasing in the remaining arguments given by $u_{i,-j}$. Our model specifications will consist in giving this function $g_i(u_{ij}, u_{i,-j})$ a specific form.
 
-Our defining $s_{ij}$ this way has two interlinked corollaries:
-
-\begin{corollary}
-\[s_{ij} \mid \kappa_i < \bar{\kappa_j} \;\;\;\; \leq     \;\;\;\; s_{ij} \mid \kappa_i \geq \bar{\kappa_j} \;\;\;\; \text{(with strict inequality if $\gamma_i > 0$).}\]
-\end{corollary}
-
-\begin{proof}
-    For a fixed value of $V_j$ and $\kappa_i$, the value of $U_i(V_j, \bar{\kappa_j})$ is $V_j \kappa_i - \tau$ if $\kappa_i < \bar{\kappa_j}$, and $\gamma_i + V_j \kappa_i - \tau$ if $\kappa_i \geq \bar{\kappa_j}$, where $\gamma_i \geq 0$. Given that $s_{ij}$ is weakly increasing in $u_{ij}$, the corollary follows.
-\end{proof}
-
-
-\begin{corollary}
-\begin{align*}
-    \frac{\partial s_{ij}}{\partial\bar{\kappa_{j}}} \leq 0 &&  \frac{\partial s_{ij}}{\partial\bar{\kappa_{l}}} \geq 0, \forall l \neq j
-\end{align*}   
-\end{corollary}
-
-\begin{proof}
-From the argumentation in corollary 1 follows that $u_{ij}$ is weakly decreasing in $\bar{\kappa_j}$, $\forall j$. Take some $l \neq j$, then $s_{ij}$ is defined in turn as weakly decreasing in $u_{il}$, which implies it is increasing in $\bar{\kappa_l}$.
-\end{proof}
-
-Both corollaries hinge upon our definition of $U_i(\cdot)$ as a step function over $\kappa_i$, such that it is discontinuous at $\kappa_i = \bar{\kappa_j}$, where there's a discrete jump of magnitude  $\gamma_i$.
-
-\begin{corollary}
-\begin{align*}
-    \frac{\partial Q_{j}}{\partial\bar{\kappa_{j}}},\frac{\partial X_{j}}{\partial\bar{\kappa_{j}}} \leq 0 &&  \frac{\partial Q_{j}}{\partial\bar{\kappa_{l}}}, \frac{\partial X_{j}}{\partial\bar{\kappa_{l}}} \geq 0, \forall l \neq j
-\end{align*}
-\end{corollary}
-
-\begin{proof}
-\begin{align*}
-\frac{\partial Q_{j}}{\partial\bar{\kappa_{l}}} = \frac{\partial Q_{j}}{\partial s_{ij}} \cdot \frac{\partial s_{ij}}{\partial\bar{\kappa_{l}}} \text{ where $\frac{\partial Q_{j}}{\partial s_{ij}} \geq 0$ as the integral of a non-negative term,} \\ \text{and $\frac{\partial s_{ij}}{\partial\bar{\kappa_{l}}} \geq 0$ if $l = j$, $\leq 0$ if $l \neq  j$.}  \text{The same logic follows for $X_j$.}
-\end{align*}
-\end{proof}
-
-These simple corollaries build-up to the following result: the theoretical ambiguity of strategic complementarity between physicians' $\bar{\kappa_j}$.
-
-Consider some $l \neq j$. If we breakdown the mixed partial derivative of $U_j$ over $\bar{\kappa_j}$ and $\bar{\kappa_l}$, we get:
-\begin{align*}
-\frac{\partial^2 U_{j}}{\partial\bar{\kappa_{j}} \partial\bar{\kappa_{l}}}  = 
-R^{\prime \prime} (Q_j(\bar{\kappa_j}, \bar{\kappa}_{-j}))
-\cdot \frac{\partial Q_{j}}{\partial\bar{\kappa_{l}}}
-\cdot \frac{\partial Q_{j}}{\partial\bar{\kappa_{j}}}  + 
-R^{\prime} (Q_j(\bar{\kappa_j}, \bar{\kappa}_{-j})) \frac{\partial^2 Q_{j}}{\partial\bar{\kappa_{j}} \partial\bar{\kappa_{l}}} \\
- - P^{\prime \prime} (X_j(\bar{\kappa_j}, \bar{\kappa}_{-j}))
-\cdot \frac{\partial X_{j}}{\partial\bar{\kappa_{l}}}
-\cdot \frac{\partial X_{j}}{\partial\bar{\kappa_{j}}}  - 
-P^{\prime} (X_j(\bar{\kappa_j}, \bar{\kappa}_{-j})) \frac{\partial^2 X_{j}}{\partial\bar{\kappa_{j}} \partial\bar{\kappa_{l}}} 
-\end{align*}
-
-$\underbrace{R^{\prime \prime}}$
+As we show in the APPENDIX, such prerrequisites over $s_{ij}$ are enough to prove most of the qualitative relations we expect to see regarding equilibrium aggregates and doctor strategies, but not enough to prove that $\bar{\kappa_j}$ and $\bar{\kappa_{-j}}$ are strategic complements -- i.e., that for any $l \neq j$, $\frac{\partial^2 U_{j}}{\partial\bar{\kappa_{j}} \partial\bar{\kappa_{l}}} \geq 0$
 
 \subsubsection{The ``implicit'' search model}
 
