@@ -129,13 +129,15 @@ No value in $(\frac{\tau}{V_j},\infty)$ can be the optimal solution of (\ref{eq:
 
 PROOF: APPENDIX
 
-\begin{prop}
+\begin{lemma}
     \label{ns_derivatives}
 When $\bar{\kappa_j} \in [0,\frac{\tau}{V_j}]$,
 \[
     \frac{\partial Q_j}{\partial\bar{\kappa_j}} = \frac{\partial X_j}{\partial \bar{\kappa_j}}   
 \]
-\end{prop}
+\end{lemma}
+
+PROOF: APPENDIX
 
 This proposition implies that when $\bar{\kappa_j}$ is low enough that the marginal patient is indifferent, any new clients gained by doctor $j$ are those she entices through the expectation of getting a certificate, meaning that in the vicinity of $\bar{\kappa_j}$ the change in expected patients $\Delta Q_j/\Delta\bar{\kappa_j}$ through a variation in $\bar{\kappa_j}$ is the same as the change in expected certificates granted $\Delta X_j/\Delta \bar{\kappa_j}$.
 
@@ -153,7 +155,7 @@ We can see that (\ref{eq:ns_k}) offers three possibilities by way of solution: a
 
 \begin{equilibrium}[in non-search models]
     \label{ns_eq}
-Given a doctor-patient market specified by $(\{(\kappa_i,\gamma_i)\}_{i =1}^{I},\{(V_j,R_j(\cdot),P_j(\cdot))\}_{i =1}^{J})$, we define an equilibrium as a set of physician thresholds $\{\bar{\kappa_j}\}_{j =1}^{J}$ satisfying (\ref{eq:ns_k}) and their corresponding equilibrium (expected) patient demand and granted medical licenses $\{(Q_j,X_j)\}_{j =1}^{J}$ as described by (\ref{eq:ns_Q}), (\ref{eq:ns_X}), respectively.
+Given a doctor-patient market specified by $(\{(\kappa_i,\gamma_i)\}_{i =1}^{I},\{(V_j,R_j(\cdot),P_j(\cdot))\}_{i =1}^{J})$, we define an equilibrium as a set of physician thresholds $\{\bar{\kappa_j}\}_{j =1}^{J}$ satisfying (\ref{eq:ns_k}) and their corresponding equilibrium (expected) patient demand and granted sick leave certificates $\{(Q_j,X_j)\}_{j =1}^{J}$ as described by (\ref{eq:ns_Q}), (\ref{eq:ns_X}), respectively.
 \end{equilibrium}
 
 \subsection{Search Equilibria}
@@ -198,10 +200,62 @@ In the models considered, each component $s_{ij}$ of $S_i$ will be defined as:
 \[s_{ij} \equiv g_i(u_{ij}, u_{i,-j})\]
 where $g_i(\cdot)$ is a continuous function weakly increasing in the first argument $u_{ij}$, and weakly decreasing in the remaining arguments given by $u_{i,-j}$. Our model specifications will consist in giving this function $g_i(u_{ij}, u_{i,-j})$ a specific form.
 
-As we show in the APPENDIX, such prerrequisites over $s_{ij}$ are enough to prove most of the qualitative relations we expect to see regarding equilibrium aggregates and doctor strategies, but not enough to prove that $\bar{\kappa_j}$ and $\bar{\kappa_{-j}}$ are strategic complements -- i.e., that for any $l \neq j$, $\frac{\partial^2 U_{j}}{\partial\bar{\kappa_{j}} \partial\bar{\kappa_{l}}} \geq 0$
+As we show in the APPENDIX, such prerrequisites over $s_{ij}$ are enough to prove most of the qualitative relations we expect to see regarding equilibrium aggregates and doctor strategies, but not enough to prove that $\bar{\kappa_j}$ and $\bar{\kappa}_{-j}$ are strategic complements -- i.e., that for any $l \neq j$, $\frac{\partial^2 U_{j}}{\partial\bar{\kappa_{j}} \partial\bar{\kappa_{l}}} \geq 0$
 
 \subsubsection{The ``implicit'' search model}
 
+The ``implicit'' search model is a McFadden Logit choice model modified to give null probability visits to doctors which afford patient $i$ non-positive utility, that way the free disposal requirement is fulfilled.
 
+We call it the ``implicit'' search model because strictly speaking patient search is not formally included, yet one arrives at result qualitatively similar to specifications that do (like our own). The choice strategy noisily assigns positive probability to physicians who render $i$ high utility, and the higher this $u_{ij}$ expected utility is, the higher the probability of visit.
+
+Instead of \textit{explicitly} defining search and subsequent choice, probability of visit depends upon expected utility from doctor $j$, $u_{ij}$, and a weighing parameter $\lambda$. The lower the value of $\lambda$, the noisier patient ``search'' is: they give high assingment probability to sub-optimal --yet feasible-- physician choices.
+
+We define the components $s_{ij}$ of the patient's strategy vector $S_i$ as follows:
+
+\begin{equation}
+s_{ij} = \frac{\alpha_{ij}}{\sum_{k = 1}^{J} \alpha_{ik}}, \; \; \text{where } \; \alpha_{ij} = \begin{cases}
+e^{\lambda u_{ij}}, \; \; \text{if } \; \; u_{ij} > 0 \\
+0 , \; \; \text{if } \; \; u_{ij} = 0
+\end{cases}
+\label{eq:is_s}
+\tag{S}
+\end{equation}
+
+Unlike the ``explicit'' search model, the probability that patient $i$ visits doctor $j$ is \textit{strictly} growing in $\kappa_i$, rather than being a piece-wise constant function with different levels. There is a discrete jump in probability at $\bar{\kappa_j}$, but elsewhere above $0$ the function is smoothly increasing, rewarding physicians with high $V_j$.
+
+The same lemmas as in the non-search model still hold.
+
+
+\begin{lemma}
+\label{is_lemma}
+No value in $(\frac{\tau}{V_j},\infty)$ can be the optimal solution of (\ref{eq:ns_k}).
+\end{lemma}
+    
+    PROOF: APPENDIX
+    
+\begin{lemma}
+\label{is_derivatives}
+When $\bar{\kappa_j} \in [0,\frac{\tau}{V_j}]$,
+\[
+\frac{\partial Q_j}{\partial\bar{\kappa_j}} = \frac{\partial X_j}{\partial \bar{\kappa_j}}   
+\]
+\end{lemma}
+    
+PROOF: APPENDIX
+
+Thus, the possible solutions for $\label{eq:ns_k}$ remain threefold: the corner solutions $0$ and $\infty$, and an inner solution where the simplified FOC $R^{\prime}(Q_j) = P^{\prime}(X_j)$ holds.
+
+Equilibrium is achieved in a similar fashion, though now taking into account the patients' $S_i$ strategies.
+
+\begin{equilibrium}[in ``implicit'' search]
+    \label{is_eq}
+Given a doctor-patient market specified by $(\{(\kappa_i,\gamma_i)\}_{i =1}^{I},\{(V_j,R_j(\cdot),P_j(\cdot))\}_{i =1}^{J})$, we define an equilibrium as a set of physician thresholds $\{\bar{\kappa_j}\}_{j =1}^{J}$ satisfying (\ref{eq:ns_k}) and patient strategies $\{S_i\}_{i =1}^{I}$ as defined by (\ref{eq:is_s}), with their corresponding equilibrium (expected) patient demand and granted sick leave certificates $\{(Q_j,X_j)\}_{j =1}^{J}$ as described by (\ref{eq:s_Q}), (\ref{eq:s_X}), respectively.
+\end{equilibrium}
+
+\subsubsection{The ``explicit'' search model}
+
+What we call the ``explicit'' model is in which patient strategy $S_i$ is explicitly the result of a sequential search algorithm on part of the patients. This is in line with \cite{schnell2017physician}, though made trickier by the fact that our model allows for physician services apart from contingent ``prescriptions'' (in our case, sick leave certificates). In our model some patients \textit{are} willing to visit physicians who don't intend to grant them sick leave, given a high enough benefit from the medical service proper, $V_j \kappa_i$.
+
+FURTHER EXPLANATION REQUIRED, TO BE CONTINUED
 
 \end{document}
