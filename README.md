@@ -1,2 +1,2 @@
-# Thesis
-Files from my M.A. thesis in Economics at PUC
+# Thesis-Draft
+LaTeX files from my M.A. thesis in Economics at PUC
