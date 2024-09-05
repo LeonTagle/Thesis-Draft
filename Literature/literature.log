@@ -1,13 +1,18 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.7)  12 AUG 2024 17:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.7)  5 SEP 2024 17:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/leontagle/Documents/TESIS/Github/Literature/literature
-(/Users/leontagle/Documents/TESIS/Github/Literature/literature.tex
+**/Users/leontagle/Documents/TESIS/Thesis-Draft/Literature/literature
+(/Users/leontagle/Documents/TESIS/Thesis-Draft/Literature/literature.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
-(/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
+(/usr/local/texlive/2024/texmf-dist/tex/latex/subfiles/subfiles.cls
+Document Class: subfiles 2020/11/14 v2.2 Multi-file projects (class)
+Preamble taken from file `../main.tex'
+(/usr/local/texlive/2024/texmf-dist/tex/latex/import/import.sty
+Package: import 2020/04/01  v 6.2
+) (../main.tex (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
@@ -105,6 +110,17 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks23
+\thm@bodyfont=\toks24
+\thm@headfont=\toks25
+\thm@notefont=\toks26
+\thm@headpunct=\toks27
+\thm@preskip=\skip53
+\thm@postskip=\skip54
+\thm@headsep=\skip55
+\dth@everypar=\toks28
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty
@@ -124,146 +140,127 @@ LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
 Package: cancel 2013/04/12 v2.2 Cancel math terms
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip53
+\labelindent=\skip56
 \enit@outerparindent=\dimen152
-\enit@toks=\toks23
+\enit@toks=\toks29
 \enit@inbox=\box53
 \enit@count@id=\count274
 \enitdp@description=\count275
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/thmtools/thmtools.sty
+Package: thmtools 2023/05/04 v0.76
+\thmt@toks=\toks30
+\c@thmt@dummyctr=\count276
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/thmtools/thm-patch.sty
+Package: thm-patch 2023/05/04 v0.76
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/thmtools/parseargs.sty
+Package: parseargs 2023/05/04 v0.76
+\@parsespec=\toks31
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/thmtools/thm-kv.sty
+Package: thm-kv 2023/05/04 v0.76
+Package thm-kv Info: Theorem names will be uppercased on input line 42.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+Package thm-kv Info: kvsetkeys patch (v1.16 or later) on input line 158.
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/thmtools/thm-autoref.sty
+Package: thm-autoref 2023/05/04 v0.76
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/thmtools/aliasctr.sty
+Package: aliasctr 2023/05/04 v0.76
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/thmtools/thm-listof.sty
+Package: thm-listof 2023/05/04 v0.76
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/thmtools/thm-restate.sty
+Package: thm-restate 2023/05/04 v0.76
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/thmtools/thm-amsthm.sty
+Package: thm-amsthm 2023/05/04 v0.76
+\thmt@style@headstyle=\toks32
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2023/07/08 v1.2f Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip54
-\bibsep=\skip55
+\bibhang=\skip57
+\bibsep=\skip58
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count276
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+\c@NAT@ctr=\count277
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/subfiles/subfiles.sty
+Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
+)
+\c@theorem=\count278
+\c@equilibrium=\count279
+)) (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count277
+\l__color_backend_stack_int=\count280
 \l__pdf_internal_box=\box54
 ) (./literature.aux)
 \openout1 = `literature.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
  (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count278
+\scratchcounter=\count281
 \scratchdimen=\dimen153
 \scratchbox=\box55
-\nofMPsegments=\count279
-\nofMParguments=\count280
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count281
+\nofMPsegments=\count282
+\nofMParguments=\count283
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count284
 \MPscratchDim=\dimen154
-\MPnumerator=\count282
-\makeMPintoPDFobject=\count283
-\everyMPtoPDFconversion=\toks25
+\MPnumerator=\count285
+\makeMPintoPDFobject=\count286
+\everyMPtoPDFconversion=\toks34
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./literature.bbl
-Overfull \hbox (5.12561pt too wide) in paragraph at lines 9--13
-\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.sciencedirect.com/science/article/pii/S0167268115000891 
- []
-
-
-Overfull \hbox (5.12561pt too wide) in paragraph at lines 35--38
-\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.sciencedirect.com/science/article/pii/S0167629617307348 
- []
-
-
-Overfull \hbox (5.12561pt too wide) in paragraph at lines 49--52
-\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.sciencedirect.com/science/article/pii/S0167629613001070 
- []
-
-
-Overfull \hbox (5.12561pt too wide) in paragraph at lines 54--57
-\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.sciencedirect.com/science/article/pii/S0167629611000452 
- []
-
-[3]
-Overfull \hbox (5.12561pt too wide) in paragraph at lines 59--62
-\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.sciencedirect.com/science/article/pii/S0277953614001622 
- []
-
-
-Overfull \hbox (5.12561pt too wide) in paragraph at lines 69--73
-\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.sciencedirect.com/science/article/pii/S0167629603001103 
- []
-
-
-Overfull \hbox (7.6728pt too wide) in paragraph at lines 75--78
-\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.sciencedirect.com/science/article/pii/S016726810000130X 
- []
-
-
-Overfull \hbox (5.12561pt too wide) in paragraph at lines 80--83
-\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.sciencedirect.com/science/article/pii/S0047272705000290 
- []
-
-
-Overfull \hbox (5.12561pt too wide) in paragraph at lines 85--88
-\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.sciencedirect.com/science/article/pii/S0047272715001449 
- []
-
-
-Overfull \hbox (5.12561pt too wide) in paragraph at lines 90--94
-\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.sciencedirect.com/science/article/pii/S0047272712000953 
- []
-
-
-Overfull \hbox (5.12561pt too wide) in paragraph at lines 96--99
-\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.sciencedirect.com/science/article/pii/S0167629616300893 
- []
-
-[4]
-Overfull \hbox (5.12561pt too wide) in paragraph at lines 114--117
-\OT1/cmr/bx/n/10 URL: \OT1/cmr/m/it/10 https://www.sciencedirect.com/science/article/pii/S0927537118300034 
- []
-
-) [5] (./literature.aux)
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./literature.bbl [2] [3]) [4] (./literature.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3363 strings out of 474116
- 49443 string characters out of 5743683
- 1935187 words of memory out of 5000000
- 25702 multiletter control sequences out of 15000+600000
- 565971 words of font info for 67 fonts, out of 8000000 for 9000
+ 4379 strings out of 474116
+ 68962 string characters out of 5743683
+ 1934187 words of memory out of 5000000
+ 26650 multiletter control sequences out of 15000+600000
+ 571189 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,6n,65p,1313b,268s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 77i,6n,82p,1319b,254s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on literature.pdf (5 pages, 116074 bytes).
+Output written on literature.pdf (4 pages, 110583 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 57 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

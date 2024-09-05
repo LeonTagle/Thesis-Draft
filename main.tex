@@ -1,0 +1,82 @@
+\documentclass{article}
+
+\usepackage[letterpaper,left=4cm,right=4cm,top=3.5cm,bottom=3.3cm]{geometry}
+
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath, amsthm, amssymb}
+\usepackage{bbm} %para 1 indicatriz
+\usepackage{cancel}
+\usepackage{enumitem} %fancy itemize
+\usepackage{thmtools} %fancy theorems
+\usepackage{bm} %math bold-face
+
+\usepackage{natbib} %bibliography style
+
+\usepackage{subfiles} %for organization
+
+\setlength{\parskip}{0.3em} 
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{ass}[theorem]{Assumption}
+\newtheorem{prop}[theorem]{Proposition}
+
+\newcommand\maybegeq{\stackrel{?}{\geq}}
+
+\declaretheoremstyle[
+notefont=\bfseries, notebraces={}{},
+bodyfont=\normalfont\itshape,
+headformat=\NAME \NOTE
+]{nopar}
+\declaretheorem[style=nopar]{equilibrium}
+
+\renewcommand{\thesubsubsection}{\alph{subsubsection}}
+% Subsubsections with .a .b etc
+
+\title{\includegraphics[scale=0.3]{UC_lineal_TR-01.png} \linebreak \linebreak 
+Thesis Draft \linebreak Master in Economics}
+\author{León Tagle Le Blanc}
+\date{as of 05-sep-2024}
+
+\begin{document}
+
+\begin{titlepage}
+\maketitle
+\tableofcontents
+\setcounter{page}{0}
+\thispagestyle{empty}
+\end{titlepage}
+
+\section{Introduction}
+
+PENDING.
+
+\subfile{Literature/literature}
+
+\section{Data}
+
+PENDING.
+
+\subfile{Model/model}
+
+\section{Calibration}
+
+PENDING.
+
+\section{Counterfactuals \& Comments}
+
+PENDING.
+
+\newpage
+
+\bibliography{bibliography}	 
+\bibliographystyle{dcu}
+
+\newpage
+
+\subfile{Appendix/appendix}
+
+
+\end{document}

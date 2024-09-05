@@ -1,46 +1,12 @@
-\documentclass{article}
-\usepackage{graphicx} % Required for inserting images
-\usepackage{amsmath, amsthm, amssymb}
-\usepackage{bbm} %para 1 indicatriz
-\usepackage{cancel}
-\usepackage{enumitem} %fancy itemize
-\usepackage{thmtools} %fancy theorems
-\usepackage{bm} %math bold-face
-
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{definition}[theorem]{Definition}
-\newtheorem{ass}[theorem]{Assumption}
-\newtheorem{prop}[theorem]{Proposition}
-
-\newcommand\maybegeq{\stackrel{?}{\geq}}
-
-\declaretheoremstyle[
-notefont=\bfseries, notebraces={}{},
-bodyfont=\normalfont\itshape,
-headformat=\NAME \NOTE
-]{nopar}
-\declaretheorem[style=nopar]{equilibrium}
-
-\renewcommand{\thesubsubsection}{\alph{subsubsection}}
-% Subsubsections with .a .b etc
-
-\title{formal}
-\author{leontaglelb }
-\date{July 2024}
+\documentclass[../main.tex]{subfiles}
 
 \begin{document}
 
+\section{Model}
 
-\section{Note on language}
-
-For ease of reference, we refer to any patient --otherwise called client or worker-- as ``he'', and to any doctor --or physician-- as ``she''.
+\textbf{Note on language:} For ease of reference, we refer to any patient --otherwise called client or worker-- as ``he'', and to any doctor --or physician-- as ``she''.
 
 At this point it shall be noted that the first person plural (we) employed over the course of this article is to be read as a royal \textit{we}, being that we claim sole authorship over this paper.
-
-
-\section{Model}
 
 We consider $i = 1, ..., I$ patients and $j = 1, ..., J$ doctors.
 
@@ -155,7 +121,7 @@ We can see that (\ref{eq:ns_k}) offers three possibilities by way of solution: a
 
 \begin{equilibrium}[in non-search models]
     \label{ns_eq}
-Given a doctor-patient market specified by $(\{(\kappa_i,\gamma_i)\}_{i =1}^{I},\{(V_j,R_j(\cdot),P_j(\cdot))\}_{i =1}^{J})$, we define an equilibrium as a set of physician thresholds $\{\bar{\kappa_j}\}_{j =1}^{J}$ satisfying (\ref{eq:ns_k}) and their corresponding equilibrium (expected) patient demand and granted sick leave certificates $\{(Q_j,X_j)\}_{j =1}^{J}$ as described by (\ref{eq:ns_Q}), (\ref{eq:ns_X}), respectively.
+Given a doctor-patient market specified by \\ $(\{(\kappa_i,\gamma_i)\}_{i =1}^{I},\{(V_j,R_j(\cdot),P_j(\cdot))\}_{i =1}^{J})$, we define an equilibrium as a set of physician thresholds $\{\bar{\kappa_j}\}_{j =1}^{J}$ satisfying (\ref{eq:ns_k}) and their corresponding equilibrium (expected) patient demand and granted sick leave certificates $\{(Q_j,X_j)\}_{j =1}^{J}$ as described by (\ref{eq:ns_Q}), (\ref{eq:ns_X}), respectively.
 \end{equilibrium}
 
 \subsection{Search Equilibria}
@@ -249,7 +215,7 @@ Equilibrium is achieved in a similar fashion, though now taking into account the
 
 \begin{equilibrium}[in ``implicit'' search]
     \label{is_eq}
-Given a doctor-patient market specified by $(\{(\kappa_i,\gamma_i)\}_{i =1}^{I},\{(V_j,R_j(\cdot),P_j(\cdot))\}_{i =1}^{J})$, we define an equilibrium as a set of physician thresholds $\{\bar{\kappa_j}\}_{j =1}^{J}$ satisfying (\ref{eq:ns_k}) and patient strategies $\{S_i\}_{i =1}^{I}$ as defined by (\ref{eq:is_s}), with their corresponding equilibrium (expected) patient demand and granted sick leave certificates $\{(Q_j,X_j)\}_{j =1}^{J}$ as described by (\ref{eq:s_Q}), (\ref{eq:s_X}), respectively.
+Given a doctor-patient market specified by \\ $(\{(\kappa_i,\gamma_i)\}_{i =1}^{I},\{(V_j,R_j(\cdot),P_j(\cdot))\}_{i =1}^{J})$, we define an equilibrium as a set of physician thresholds $\{\bar{\kappa_j}\}_{j =1}^{J}$ satisfying (\ref{eq:ns_k}) and patient strategies $\{S_i\}_{i =1}^{I}$ as defined by (\ref{eq:is_s}), with their corresponding equilibrium (expected) patient demand and granted sick leave certificates $\{(Q_j,X_j)\}_{j =1}^{J}$ as described by (\ref{eq:s_Q}), (\ref{eq:s_X}), respectively.
 \end{equilibrium}
 
 \subsubsection{The ``explicit'' search model}
