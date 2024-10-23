@@ -4,6 +4,8 @@
 
 \section{Model}
 
+MENTION PREVIOUS SECTION FOR CONTINUITY
+
 \textbf{Note on language:} For ease of reference, we refer to any patient --otherwise called client or worker-- as ``he'', and to any doctor --or physician-- as ``she''.
 
 At this point it shall be noted that the first person plural (we) employed over the course of this article is to be read as a royal \textit{we}, being that we claim sole authorship over this paper.
@@ -33,7 +35,7 @@ We now define the physician's utility function as follows:
 \[
 U_j(Q_j, X_j) = R_j(Q_j) - P_j(X_j)
 \]
-where $R_j(\cdot)$ is an individual, concave \textit{revenue} function defined over expected total clients, and $P_j(\cdot)$ is a convex \textit{punishment} function on $X_j$, grouping her personal preference as well as institutional incentives. The implication is that after a given number of patients the disutility of an additional certificate issued would outweigh doctor $j$ financial incentives for further clientele.
+where $R_j(\cdot)$ is an individual, concave \textit{revenue} function defined over expected total clients, and $P_j(\cdot)$ is a convex \textit{punishment} function on $X_j$, grouping her personal preference as well as institutional incentives. The implication is that after a given number of patients the disutility of an additional certificate issued would outweigh doctor $j$ financial incentives for further clientele. We assume both $R_j(\cdot)$ and $P_j(\cdot)$ to be twicely differentiable.
 
 The $j$ subindex indicates that we will allow $R_j(\cdot)$ and $P_j(\cdot)$ to vary across physicians, meaning that a given doctor $j$ will now be initially characterized by both her parameter $V_j$ as well as the form of her $R_j(\cdot)$ and $P_j(\cdot)$ functions.
 
@@ -67,7 +69,7 @@ U_i(V_j,\bar{\kappa_j}) =  \operatorname{max} \{y_i(V_j,\bar{\kappa_j}),0\}
 
 We first devote attention to a non-search baseline, where all patients are randomly, symmetrically assigned to a physician, and their only say in the matter is whether they’ll then visit doctor $j$, i.e. the second stage of the game is out of their hands, and they only make choices in the third stage after assingment.
 
-A patient won’t visit his assigned physician if his expected utility from such a visit is negative, we call this a \textit{free disposal} requirement. As such, a doctor $j$’s expected client demand, as a function of $\bar{\kappa_j}$ and given the parameter $V_j$, will be the following:
+A patient won't visit his assigned physician if his expected utility from such a visit is negative, we call this a \textit{free disposal} requirement. As such, a doctor $j$’s expected client demand, as a function of $\bar{\kappa_j}$ and given the parameter $V_j$, will be the following:
 \begin{equation}
     Q_j(\bar{\kappa_j}) \,=\, \frac{I}{J}\left[ \int_{\tau/V_j}^{\infty}\,dF(k) +  \int_{\min\{\bar{\kappa_j},\tau/V_j\}}^{\tau/V_j} \int_{\tilde{\gamma}(k)}^{\infty} \,dG(\gamma) \,dF(k) \right] \tag{N.1}\label{eq:ns_Q}
 \end{equation}
@@ -82,11 +84,11 @@ Given that each patient with a $\kappa_i$ higher or equal to $\bar{\kappa_j}$ is
 
 Given (\ref{eq:ns_Q}) and (\ref{eq:ns_X}), each physician solves for the following unconstrained optimization:
 \begin{equation}
-\bar{\kappa_j}^* \equiv \max_{\bar{\kappa_j}} R_j(Q_j) - P_j(X_j)
+\bar{\kappa_j}^* \equiv \operatorname{arg}\max_{\bar{\kappa_j}} R_j(Q_j) - P_j(X_j)
 \tag{N.3}\label{eq:ns_k}
 \end{equation}
 
-\textit{MÁS SUPUESTOS?}
+We now SEE LATER
 
 \begin{lemma}
 \label{ns_lemma}
@@ -146,7 +148,8 @@ We can re-interpret the non-search model as each patient being made to play by t
 
 Given the collection of all patients' strategies $(\{S_i\}_{i =1}^{I}$, each with a respective $s_{ij}$ for doctor $j$, we can formulate expected clientele and granted sick leaves for $j$ in a manner very much alike the previous section (indeed, as a generalization):
 \begin{equation}
-    Q_j(\bar{\kappa_j}, \bar{\kappa}_{-j}) \,=\, \int_{\tau/V_j}^{\infty}\bm{s_{ij}}\,dF(k) +  \int_{\min\{\bar{\kappa_j},\tau/V_j\}}^{\tau/V_j} \int_{\tilde{\gamma}(k)}^{\infty}\bm{s_{ij}} \,dG(\gamma) \,dF(k)  \tag{S.1}\label{eq:s_Q}
+    Q_j(\bar{\kappa_j}, \bar{\kappa}_{-j}) \,=\, \int_{\tau/V_j}^{\infty}\bm{s_{ij}}\,dF(k) +  \int_{\min\{\bar{\kappa_j},\tau/V_j\}}^{\tau/V_j} \int_{\tilde{\gamma}(k)}^{\infty}\bm{s_{ij}} \,dG(\gamma) \,dF(k) 
+    \tag{S.1}\label{eq:s_Q}
 \end{equation}
 
 \begin{equation}
@@ -209,7 +212,7 @@ When $\bar{\kappa_j} \in [0,\frac{\tau}{V_j}]$,
     
 PROOF: APPENDIX
 
-Thus, the possible solutions for $\label{eq:ns_k}$ remain threefold: the corner solutions $0$ and $\infty$, and an inner solution where the simplified FOC $R^{\prime}(Q_j) = P^{\prime}(X_j)$ holds.
+Thus, the possible solutions for ($\ref{eq:ns_k}$) remain threefold: the corner solutions $0$ and $\infty$, and an inner solution where the simplified FOC $R^{\prime}(Q_j) = P^{\prime}(X_j)$ holds.
 
 Equilibrium is achieved in a similar fashion, though now taking into account the patients' $S_i$ strategies.
 

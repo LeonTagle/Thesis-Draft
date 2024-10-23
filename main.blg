@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: dcu.bst
+Database file #1: bibliography.bib
+Warning--there's a number but no volume in chone-ma
+You've used 23 entries,
+            2921 wiz_defined-function locations,
+            781 strings with 8540 characters,
+and the built_in function-call counts, 99151 in all, are:
+= -- 16212
+> -- 1307
+< -- 0
++ -- 7662
+- -- 392
+* -- 8621
+:= -- 19860
+add.period$ -- 49
+call.type$ -- 23
+change.case$ -- 323
+chr.to.int$ -- 23
+cite$ -- 24
+duplicate$ -- 319
+empty$ -- 766
+format.name$ -- 485
+if$ -- 17813
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 22
+newline$ -- 98
+num.names$ -- 241
+pop$ -- 35
+preamble$ -- 1
+purify$ -- 345
+quote$ -- 0
+skip$ -- 306
+stack$ -- 0
+substring$ -- 22903
+swap$ -- 44
+text.length$ -- 322
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 92
+warning$ -- 1
+while$ -- 527
+width$ -- 0
+write$ -- 330
+(There was 1 warning)
