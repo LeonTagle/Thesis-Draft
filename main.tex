@@ -9,6 +9,8 @@
 \usepackage{enumitem} %fancy itemize
 \usepackage{thmtools} %fancy theorems
 \usepackage{bm} %math bold-face
+\usepackage{float} %To have [H] in figure
+\usepackage{subcaption} % For subfigure environment
 
 \usepackage{natbib} %bibliography style
 
@@ -18,11 +20,14 @@
 \usepackage{baskervillef}
 
 \usepackage{booktabs}
+
 \linespread{1}
 \setlength{\parskip}{6pt}
 \setlength{\footnotesep}{.2in}
 \setlength{\parindent}{0pt}
 
+\DeclareMathOperator*{\argmax}{arg\,max} %Define argmin and argmax
+\DeclareMathOperator*{\argmin}{arg\,min}
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
@@ -62,11 +67,14 @@ Thesis Draft \linebreak Master in Economics}
 
 \subfile{Literature/literature}
 
+
+\subfile{Model/model}
+
+\subfile{Computation/computation}
+
 \section{Data}
 
 PENDING.
-
-\subfile{Model/model}
 
 \section{Calibration}
 

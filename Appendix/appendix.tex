@@ -247,5 +247,58 @@ Consider some two physicians $j$, $l$, such that $\bar{\kappa_j} \neq \bar{\kapp
 
 POOSITIVE MIXED DERIVATIVE IS STRATEGIC COMPLEMENTARITY
 
+\subsection{Proof Sequential}
+
+We follow the argument of (QUOTE). Let for the moment $\tilde{F_i}(U) = \operatorname{Pr}\{u_{ij} \leq U\}$ be the distribution of utility patient $i$ recieves from doctor visits, with $\tilde{F_i}(0) = 0$, $\tilde{F_i}(B) = 1$, for $B < \infty$. Each period, the patient draws an 'offer' $U$ from $\tilde{F_i}$, which is to say, his search lead him to a physician $j$ such that $u_{ij} = U$. He may either accept and have physician $j$ assigned to him, recieving utility $U$ per period henceforth, or look for a new physician next period.
+
+Let $u_t$ be the patient's utility for period $t$, where it's $0$ if he doesn't visit a physician and $U$ if he has accepted an assigned physician which renders him utility $u_{ij} = U$. This patient will seek to maximize $\mathbb{E}[\sum_{t=0}^{\infty} \beta^t u_t]$, where $0 < \beta < 1$ is his discount factor.
+
+Let $V(U)$ be the expected value of $\sum_{t=0}^{\infty} \beta^t u_t$ of a patient with an offer $U$ in hand. Assuming no recall, under optimal behavior the value function $V(U)$ satisfies the Bellman equation:
+\begin{equation}
+    V(U) = \max \left\{ \frac{U}{1 - \beta},\; \;\beta \hspace{-0.1cm}\int V(U') \, d \tilde{F_i}(U') \right\}
+    \label{eq:seq1} 
+\end{equation}
+
+The patient chooses an optimal value $\bar{U_i}$, such that offers $U \geq \bar{U_i}$ are accepted (the visit takes place). As such, the solution takes on the following form:
+\begin{equation}
+    V(U) = \begin{cases}
+        \frac{\bar{U}_i}{1 - \beta} + \beta \int V(U') \, d \tilde{F_i}(U') & \text{if }\; \; U \leq \bar{U}_i, \\[0.5em]
+        \frac{U}{1 - \beta} & \text{if } \; \; U \geq \bar{U}_i.
+    \end{cases}
+\label{eq:seq2} 
+\end{equation}
+
+Using equation (\ref{eq:seq2}), we can convert the functional equation (\ref{eq:seq1}) into an ordinary equation in the reservation utility $\bar{U_i}$. Evaluating $V(\bar{U_i})$ and using equation (\ref{eq:seq2}), we have:
+
+$$
+\frac{\bar{U_i}}{1-\beta}= \beta \int_0^{\bar{U_i}} \frac{\bar{U_i}}{1-\beta} \, d \tilde{F_i}(U') + \beta \int_{\bar{U_i}}^B \frac{U'}{1-\beta} \, d \tilde{F_i}(U')
+$$
+or
+$$
+\begin{aligned}
+& \frac{\bar{U_i}}{1-\beta} \int_0^{\bar{U_i}} d \tilde{F_i}(U') + \frac{\bar{U_i}}{1-\beta} \int_{\bar{U_i}}^B d \tilde{F_i}(U') \\
+& \quad = \beta \int_0^{\bar{U_i}} \frac{\bar{U_i}}{1-\beta} \, d \tilde{F_i}(U') + \beta \int_{\bar{U_i}}^B \frac{U'}{1-\beta} \, d \tilde{F_i}(U')
+\end{aligned}
+$$
+or
+$$
+\bar{U_i} \int_0^{\bar{U_i}} d \tilde{F_i}(U') = \frac{1}{1-\beta} \int_{\bar{U_i}}^B \left(\beta U' - \bar{U_i}\right) d \tilde{F_i}(U') .
+$$
+
+Adding $\bar{U_i} \int_{\bar{U_i}}^B d \tilde{F_i}(U')$ to both sides gives
+\begin{equation}
+    \bar{U_i} = \frac{\beta}{1-\beta} \int_{\bar{U_i}}^B \left(U' - \bar{U_i}\right) d \tilde{F_i}(U')
+    \label{eq:seq3}  
+\end{equation}
+
+
+Finally, for our purposes, we discretize $\int_{\bar{U_i}}^B \left(U' - \bar{U_i}\right) d \tilde{F_i}(U')$ as a summation over the countable set of $J$ doctors. The discrete equivalent of equation (\ref{eq:seq3}) is:
+\begin{equation}
+    \bar{U_i} = \frac{\beta}{1-\beta}  \sum_{j=1}^{J} \left\{ \frac{\mathbbm{1}[ u_{ij} \geq \bar{U_i} ] \cdot (u_{ij} - \bar{U_i})}{\mathbbm{1}[ u_{ij} \geq \bar{U_i} ]} \right\}
+    \label{eq:seq4}  
+\end{equation}
+
+Which is the function we say characterizes patient thresholds in the explicit search model.
+
 
 \end{document}

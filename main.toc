@@ -1,16 +1,18 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{}%
 \contentsline {section}{\numberline {2}Literature Review}{1}{}%
-\contentsline {section}{\numberline {3}Data}{4}{}%
-\contentsline {section}{\numberline {4}Model}{4}{}%
-\contentsline {subsection}{\numberline {4.1}Non-search Equilibrium}{6}{}%
-\contentsline {subsection}{\numberline {4.2}Search Equilibria}{7}{}%
+\contentsline {section}{\numberline {3}Model}{4}{}%
+\contentsline {subsection}{\numberline {3.1}Non-search Equilibrium}{6}{}%
+\contentsline {subsection}{\numberline {3.2}Search Equilibria}{7}{}%
 \contentsline {subsubsection}{\numberline {a}Introducing search}{7}{}%
 \contentsline {subsubsection}{\numberline {b}Some analytic results}{8}{}%
 \contentsline {subsubsection}{\numberline {c}The ``implicit'' search model}{9}{}%
 \contentsline {subsubsection}{\numberline {d}The ``explicit'' search model}{10}{}%
-\contentsline {section}{\numberline {5}Calibration}{10}{}%
-\contentsline {section}{\numberline {6}Counterfactuals \& Comments}{10}{}%
-\contentsline {section}{\numberline {7}Appendix}{13}{}%
-\contentsline {subsection}{\numberline {7.1}The cause of the ``strategic effect''}{13}{}%
-\contentsline {subsection}{\numberline {7.2}\cite {schnell2017physician} with Logit choice}{15}{}%
-\contentsline {subsection}{\numberline {7.3}On the strategic complementarity of $\bar {\kappa _j}$'s}{17}{}%
+\contentsline {section}{\numberline {4}Computation}{10}{}%
+\contentsline {section}{\numberline {5}Data}{12}{}%
+\contentsline {section}{\numberline {6}Calibration}{12}{}%
+\contentsline {section}{\numberline {7}Counterfactuals \& Comments}{12}{}%
+\contentsline {section}{\numberline {8}Appendix}{15}{}%
+\contentsline {subsection}{\numberline {8.1}The cause of the ``strategic effect''}{15}{}%
+\contentsline {subsection}{\numberline {8.2}\cite {schnell2017physician} with Logit choice}{17}{}%
+\contentsline {subsection}{\numberline {8.3}On the strategic complementarity of $\bar {\kappa _j}$'s}{19}{}%
+\contentsline {subsection}{\numberline {8.4}Proof Sequential}{22}{}%
