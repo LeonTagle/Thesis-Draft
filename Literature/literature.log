@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.7)  22 OCT 2024 22:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.7)  31 OCT 2024 18:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -201,12 +201,43 @@ Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
 Package bm Info: No bold for \U/msa/m/n, using \pmb.
 Package bm Info: No bold for \U/msb/m/n, using \pmb.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count280
+\float@exts=\toks34
+\float@box=\box54
+\@float@everytoks=\toks35
+\@floatcapt=\box55
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen161
+\captionmargin=\dimen162
+\caption@leftmargin=\dimen163
+\caption@rightmargin=\dimen164
+\caption@width=\dimen165
+\caption@indent=\dimen166
+\caption@parindent=\dimen167
+\caption@hangindent=\dimen168
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count281
+\c@continuedfloat=\count282
+Package caption Info: float package is loaded.
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count283
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count284
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip57
 \bibsep=\skip58
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count280
+\c@NAT@ctr=\count285
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/base/fontenc.sty
@@ -350,10 +381,10 @@ File: ly1enc.dfu 2022/06/07 v1.3c UTF-8 support
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count281
+\etb@tempcnta=\count286
 ) (/usr/local/texlive/2024/texmf-dist/tex/generic/xstring/xstring.sty (/usr/local/texlive/2024/texmf-dist/tex/generic/xstring/xstring.tex
-\xs_counta=\count282
-\xs_countb=\count283
+\xs_counta=\count287
+\xs_countb=\count288
 )
 Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty
@@ -375,33 +406,33 @@ LaTeX Info: Redefining \swshape on input line 32.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
  (/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks34
-\XKV@tempa@toks=\toks35
+\XKV@toks=\toks36
+\XKV@tempa@toks=\toks37
 )
-\XKV@depth=\count284
+\XKV@depth=\count289
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))) (/usr/local/texlive/2024/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen161
-\lightrulewidth=\dimen162
-\cmidrulewidth=\dimen163
-\belowrulesep=\dimen164
-\belowbottomsep=\dimen165
-\aboverulesep=\dimen166
-\abovetopsep=\dimen167
-\cmidrulesep=\dimen168
-\cmidrulekern=\dimen169
-\defaultaddspace=\dimen170
-\@cmidla=\count285
-\@cmidlb=\count286
-\@aboverulesep=\dimen171
-\@belowrulesep=\dimen172
-\@thisruleclass=\count287
-\@lastruleclass=\count288
-\@thisrulewidth=\dimen173
+\heavyrulewidth=\dimen169
+\lightrulewidth=\dimen170
+\cmidrulewidth=\dimen171
+\belowrulesep=\dimen172
+\belowbottomsep=\dimen173
+\aboverulesep=\dimen174
+\abovetopsep=\dimen175
+\cmidrulesep=\dimen176
+\cmidrulekern=\dimen177
+\defaultaddspace=\dimen178
+\@cmidla=\count290
+\@cmidlb=\count291
+\@aboverulesep=\dimen179
+\@belowrulesep=\dimen180
+\@thisruleclass=\count292
+\@lastruleclass=\count293
+\@thisrulewidth=\dimen181
 )
-\c@theorem=\count289
-\c@equilibrium=\count290
+\c@theorem=\count294
+\c@equilibrium=\count295
 ))
 LaTeX Font Info:    Trying to load font information for T1+BaskervilleF-TLF on input line 3.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/baskervillef/T1BaskervilleF-TLF.fd
@@ -411,8 +442,8 @@ LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
 (Font)              scaled to size 10.95pt on input line 3.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count291
-\l__pdf_internal_box=\box54
+\l__color_backend_stack_int=\count296
+\l__pdf_internal_box=\box56
 ) (./literature.aux)
 \openout1 = `literature.aux'.
 
@@ -473,33 +504,101 @@ LaTeX Font Info:    ... okay on input line 3.
 
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count292
-\scratchdimen=\dimen174
-\scratchbox=\box55
-\nofMPsegments=\count293
-\nofMParguments=\count294
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count295
-\MPscratchDim=\dimen175
-\MPnumerator=\count296
-\makeMPintoPDFobject=\count297
-\everyMPtoPDFconversion=\toks37
+\scratchcounter=\count297
+\scratchdimen=\dimen182
+\scratchbox=\box57
+\nofMPsegments=\count298
+\nofMParguments=\count299
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count300
+\MPscratchDim=\dimen183
+\MPnumerator=\count301
+\makeMPintoPDFobject=\count302
+\everyMPtoPDFconversion=\toks39
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\c@mv@tabular=\count298
-\c@mv@boldtabular=\count299
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+\c@mv@tabular=\count303
+\c@mv@boldtabular=\count304
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
 (Font)              scaled to size 14.4pt on input line 5.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
 (Font)              scaled to size 14.4pt on input line 5.
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 10.95pt on input line 8.
+
+
+Package natbib Warning: Citation `JohanssonPalme' on page 1 undefined on input line 8.
+
+
+Package natbib Warning: Citation `italian-jobs' on page 1 undefined on input line 8.
+
+
+Package natbib Warning: Citation `norway-jobs' on page 1 undefined on input line 8.
+
+
+Package natbib Warning: Citation `us-jobs' on page 1 undefined on input line 8.
+
+
+Package natbib Warning: Citation `sweden-jobs' on page 1 undefined on input line 8.
+
+
+Package natbib Warning: Citation `avengers' on page 1 undefined on input line 10.
+
+
+Package natbib Warning: Citation `hs-wiesen' on page 1 undefined on input line 10.
+
+
+Package natbib Warning: Citation `hippocrates' on page 1 undefined on input line 10.
+
+
+Package natbib Warning: Citation `brosigkoch' on page 1 undefined on input line 10.
+
+
+Package natbib Warning: Citation `crea2019physician' on page 1 undefined on input line 10.
+
+
+Package natbib Warning: Citation `godager2013profit' on page 1 undefined on input line 10.
+
+
+Package natbib Warning: Citation `clemensgottlieb' on page 1 undefined on input line 10.
+
+
+Package natbib Warning: Citation `HSW' on page 1 undefined on input line 10.
+
+
+Package natbib Warning: Citation `autor' on page 1 undefined on input line 10.
+
+
+Package natbib Warning: Citation `rrk2012' on page 1 undefined on input line 10.
+
+
+Package natbib Warning: Citation `markussen-roed' on page 1 undefined on input line 10.
+
+
+Package natbib Warning: Citation `chone-ma' on page 1 undefined on input line 12.
+
+
+Package natbib Warning: Citation `optimal-altruism' on page 1 undefined on input line 12.
+
+
+Package natbib Warning: Citation `currie2023effects' on page 1 undefined on input line 12.
+
+
+Package natbib Warning: Citation `iversen-luras' on page 1 undefined on input line 12.
+
+
+Package natbib Warning: Citation `iversen2004' on page 1 undefined on input line 12.
+
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
 (Font)              scaled to size 10.95pt on input line 12.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 12.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 12.
@@ -512,24 +611,42 @@ LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 12.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
 (Font)              scaled to size 6.0pt on input line 12.
- [1
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/baskervillef/zba_uf5aa7.enc}] [2] [3] (./literature.aux)
+
+Package natbib Warning: Citation `markussen-roed' on page 1 undefined on input line 14.
+
+
+Package natbib Warning: Citation `cln' on page 1 undefined on input line 14.
+
+
+Package natbib Warning: Citation `markussen-roed' on page 1 undefined on input line 14.
+
+[1
+
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/baskervillef/zba_uf5aa7.enc}]
+
+Package natbib Warning: Citation `schnell2017physician' on page 2 undefined on input line 16.
+
+[2]
+
+Package natbib Warning: There were undefined citations.
+
+[3] (./literature.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 6627 strings out of 474116
- 103341 string characters out of 5743683
- 1939187 words of memory out of 5000000
- 28825 multiletter control sequences out of 15000+600000
- 690052 words of font info for 92 fonts, out of 8000000 for 9000
+ 8112 strings out of 474116
+ 131868 string characters out of 5743683
+ 1940187 words of memory out of 5000000
+ 30296 multiletter control sequences out of 15000+600000
+ 706535 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 77i,8n,85p,1931b,192s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,8n,94p,1941b,192s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on literature.pdf (3 pages, 133995 bytes).
+Output written on literature.pdf (3 pages, 131748 bytes).
 PDF statistics:
  60 PDF objects out of 1000 (max. 8388607)
  36 compressed objects within 1 object stream

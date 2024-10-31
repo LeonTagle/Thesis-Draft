@@ -4,45 +4,45 @@ The top-level auxiliary file: main.aux
 The style file: dcu.bst
 Database file #1: bibliography.bib
 Warning--there's a number but no volume in chone-ma
-You've used 23 entries,
+You've used 27 entries,
             2921 wiz_defined-function locations,
-            781 strings with 8540 characters,
-and the built_in function-call counts, 99151 in all, are:
-= -- 16212
-> -- 1307
+            800 strings with 9127 characters,
+and the built_in function-call counts, 112813 in all, are:
+= -- 18456
+> -- 1449
 < -- 0
-+ -- 7662
-- -- 392
-* -- 8621
-:= -- 19860
-add.period$ -- 49
-call.type$ -- 23
-change.case$ -- 323
-chr.to.int$ -- 23
-cite$ -- 24
-duplicate$ -- 319
-empty$ -- 766
-format.name$ -- 485
-if$ -- 17813
++ -- 8710
+- -- 434
+* -- 9748
+:= -- 22685
+add.period$ -- 57
+call.type$ -- 27
+change.case$ -- 379
+chr.to.int$ -- 27
+cite$ -- 28
+duplicate$ -- 369
+empty$ -- 861
+format.name$ -- 536
+if$ -- 20244
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 22
-newline$ -- 98
-num.names$ -- 241
-pop$ -- 35
+missing$ -- 25
+newline$ -- 115
+num.names$ -- 282
+pop$ -- 52
 preamble$ -- 1
-purify$ -- 345
+purify$ -- 405
 quote$ -- 0
-skip$ -- 306
+skip$ -- 349
 stack$ -- 0
-substring$ -- 22903
-swap$ -- 44
-text.length$ -- 322
+substring$ -- 26038
+swap$ -- 48
+text.length$ -- 378
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 92
+type$ -- 106
 warning$ -- 1
-while$ -- 527
+while$ -- 611
 width$ -- 0
-write$ -- 330
+write$ -- 387
 (There was 1 warning)
