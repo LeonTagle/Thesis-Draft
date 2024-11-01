@@ -6,6 +6,7 @@
 \section{Appendix}
 
 \subsection{The cause of the ``strategic effect''}
+\label{sec:separate}
 
 The main difference between our equilibrium and that of \cite{schnell2017physician} is the presence of a ``strategic effect'', wherein doctor $j$ takes into account the behavior of other doctors in the selection of her own $\bar{\kappa_j}$. Of the different modifications we made to her framework, we'll argue it's the absence of \textit{additive separability} across patients in physician utility $U_j(\cdot)$ which accounts for this.
 
@@ -77,6 +78,7 @@ Imagine equation (\ref{eq:apx_foc}) holds for some doctor $j$, and some doctor $
 This intelligible line of reasoning links the presence of a ``strategic effect'' to the non-additive separability of $U_j(\cdot)$: doctor $j$ takes into account other physicians' strategy in her own choice of $ \bar{\kappa_j}$ because of the present of \textit{aggregate} amounts of clientele in her optimality conditions, which is so because utility isn't additively separable across clients.
 
 \subsection{\cite{schnell2017physician} with Logit choice}
+\label{sec:schnell_logit}
 
 To prove our point that it is additive separability which accounts for a possible strategic effect, we reformulate \cite{schnell2017physician} in the manner of a McFadden Logit -- with some quirks.
 
@@ -249,7 +251,7 @@ POOSITIVE MIXED DERIVATIVE IS STRATEGIC COMPLEMENTARITY
 
 \subsection{Proof Sequential}
 
-We follow the argument of (QUOTE). Let for the moment $\tilde{F_i}(U) = \operatorname{Pr}\{u_{ij} \leq U\}$ be the distribution of utility patient $i$ recieves from doctor visits, with $\tilde{F_i}(0) = 0$, $\tilde{F_i}(B) = 1$, for $B < \infty$. Each period, the patient draws an 'offer' $U$ from $\tilde{F_i}$, which is to say, his search lead him to a physician $j$ such that $u_{ij} = U$. He may either accept and have physician $j$ assigned to him, recieving utility $U$ per period henceforth, or look for a new physician next period.
+We follow the argument of \cite{sargent}. Let for the moment $\tilde{F_i}(U) = \operatorname{Pr}\{u_{ij} \leq U\}$ be the distribution of utility patient $i$ recieves from doctor visits, with $\tilde{F_i}(0) = 0$, $\tilde{F_i}(B) = 1$, for $B < \infty$. Each period, the patient draws an 'offer' $U$ from $\tilde{F_i}$, which is to say, his search lead him to a physician $j$ such that $u_{ij} = U$. He may either accept and have physician $j$ assigned to him, recieving utility $U$ per period henceforth, or look for a new physician next period.
 
 Let $u_t$ be the patient's utility for period $t$, where it's $0$ if he doesn't visit a physician and $U$ if he has accepted an assigned physician which renders him utility $u_{ij} = U$. This patient will seek to maximize $\mathbb{E}[\sum_{t=0}^{\infty} \beta^t u_t]$, where $0 < \beta < 1$ is his discount factor.
 

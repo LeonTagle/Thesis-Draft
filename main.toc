@@ -6,7 +6,7 @@
 \contentsline {subsubsection}{\numberline {a}Introducing search}{8}{subsubsection.3.2.1}%
 \contentsline {subsubsection}{\numberline {b}Some analytic results}{9}{subsubsection.3.2.2}%
 \contentsline {subsubsection}{\numberline {c}The ``implicit'' search model}{9}{subsubsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {d}The ``explicit'' search model}{11}{subsubsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {d}The ``explicit'' search model}{10}{subsubsection.3.2.4}%
 \contentsline {section}{\numberline {4}Computation}{11}{section.4}%
 \contentsline {section}{\numberline {5}Data}{13}{section.5}%
 \contentsline {section}{\numberline {6}Calibration}{13}{section.6}%

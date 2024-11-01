@@ -35,7 +35,7 @@ Crea, G.  \harvardyearleft 2019\harvardyearright .
 
 \harvarditem[Currie et~al.]{Currie, Li \harvardand\ Schnell}{2023}{currie2023effects}
 Currie, J., Li, A. \harvardand\ Schnell, M.  \harvardyearleft 2023\harvardyearright .
-\newblock The effects of competition on physician prescribing, {\em Technical report}, National Bureau of Economic Research.
+\newblock The effects of competition on physician prescribing, {\em Working Paper 30889}, National Bureau of Economic Research.
 
 \harvarditem[Gaynor et~al.]{Gaynor, Mehta \harvardand\ Richards-Shubik}{2023}{optimal-altruism}
 Gaynor, M., Mehta, N. \harvardand\ Richards-Shubik, S.  \harvardyearleft 2023\harvardyearright .
@@ -78,6 +78,10 @@ Johansson, P. \harvardand\ Palme, M.  \harvardyearleft 2005\harvardyearright .
 Kesternich, I., Schumacher, H. \harvardand\ Winter, J.  \harvardyearleft 2015\harvardyearright .
 \newblock Professional norms and physician behavior: Homo oeconomicus or homo hippocraticus?, {\em Journal of Public Economics} {\bf 131}:~1--11.
 
+\harvarditem{Ljungqvist \harvardand\ Sargent}{2012}{sargent}
+Ljungqvist, L. \harvardand\ Sargent, T.~J.  \harvardyearleft 2012\harvardyearright .
+\newblock {\em Search, Matching, and Unemployment}, The MIT Press, pp.~159--224.
+
 \harvarditem[Markussen et~al.]{Markussen, Mykletun \harvardand\ Røed}{2012}{norway-jobs}
 Markussen, S., Mykletun, A. \harvardand\ Røed, K.  \harvardyearleft 2012\harvardyearright .
 \newblock The case for presenteeism — evidence from norway's sickness insurance program, {\em Journal of Public Economics} {\bf 96}(11):~959--972.
@@ -104,8 +108,8 @@ Paola, M.~D., Scoppa, V. \harvardand\ Pupo, V.  \harvardyearleft 2014\harvardyea
 Robertson, C., Rose, S. \harvardand\ Kesselheim, A.~S.  \harvardyearleft 2012\harvardyearright .
 \newblock Effect of financial relationships on the behaviors of health care professionals: A review of the evidence, {\em Journal of Law, Medicine \& Ethics} {\bf 40}(3):~452--466.
 
-\harvarditem{Schnell}{2017}{schnell2017physician}
-Schnell, M.  \harvardyearleft 2017\harvardyearright .
+\harvarditem{Schnell}{2022}{schnell2017physician}
+Schnell, M.  \harvardyearleft 2022\harvardyearright .
 \newblock Physician behavior in the presence of a secondary market: The case of prescription opioids, {\em Princeton University Department of Economics Working Paper} {\bf 5}:~383--410.
 
 \harvarditem{Stearns \harvardand\ White}{2018}{us-jobs}
