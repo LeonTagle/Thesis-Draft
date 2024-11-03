@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.7)  1 NOV 2024 16:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.7)  2 NOV 2024 23:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -649,6 +649,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 3.
+ (./appendix.out) (./appendix.out)
 \@outlinefile=\write3
 \openout3 = `appendix.out'.
 
@@ -659,134 +660,142 @@ LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
 (Font)              scaled to size 14.4pt on input line 6.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 8.
+(Font)              scaled to size 12.0pt on input line 13.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 8.
+(Font)              scaled to size 12.0pt on input line 13.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 11.
+(Font)              scaled to size 10.95pt on input line 16.
 
 
-Package natbib Warning: Citation `schnell2017physician' on page 1 undefined on input line 11.
+Package natbib Warning: Citation `schnell2017physician' on page 1 undefined on input line 16.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 11.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 16.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 11.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 16.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 11.
+(Font)              scaled to size 10.95pt on input line 16.
  [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/baskervillef/zba_uf5aa7.enc}]
 
-Package natbib Warning: Citation `schnell2017physician' on page 2 undefined on input line 44.
+Package natbib Warning: Citation `schnell2017physician' on page 2 undefined on input line 49.
 
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 50.
+(Font)              scaled to size 8.0pt on input line 55.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 50.
+(Font)              scaled to size 9.0pt on input line 55.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 50.
+(Font)              scaled to size 6.0pt on input line 55.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 50.
+(Font)              scaled to size 9.0pt on input line 55.
 [2]
 
-Package hyperref Warning: Suppressing link with empty target on input line 76.
-
-
-Package hyperref Warning: Suppressing link with empty target on input line 76.
-
-
-Package natbib Warning: Citation `schnell2017physician' on page 3 undefined on input line 80.
+Package natbib Warning: Citation `schnell2017physician' on page 3 undefined on input line 85.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 80.
+(hyperref)                removing `\begingroup' on input line 85.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 80.
+(hyperref)                removing `\<let>-command' on input line 85.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 80.
+(hyperref)                removing `\NAT@ctype' on input line 85.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 80.
+(hyperref)                removing `\z@' on input line 85.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 80.
+(hyperref)                removing `\let' on input line 85.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 80.
+(hyperref)                removing `\let' on input line 85.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 80.
+(hyperref)                removing `\new@ifnextchar' on input line 85.
 
 
-Package natbib Warning: Citation `schnell2017physician' on page 3 undefined on input line 83.
+Package natbib Warning: Citation `schnell2017physician' on page 3 undefined on input line 88.
 
 
-Overfull \hbox (3.18907pt too wide) in paragraph at lines 85--86
+Overfull \hbox (3.18907pt too wide) in paragraph at lines 90--91
 []\T1/BaskervilleF-TLF/m/n/10.95 The way in which Schnell de-vises her physi-cian's util-ity for-mula is im-plic-itly Bernoulli-
  []
 
-[3]
+[3] [4]
 
-Package hyperref Warning: Suppressing link with empty target on input line 121.
-
-[4]
-
-LaTeX Warning: Reference `schnell2017physician' on page 5 undefined on input line 127.
-
-
-Package hyperref Warning: Suppressing link with empty target on input line 129.
+LaTeX Warning: Reference `schnell2017physician' on page 5 undefined on input line 132.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 132.
+(hyperref)                removing `math shift' on input line 137.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 132.
+(hyperref)                removing `math shift' on input line 137.
 
-Package hyperref Info: bookmark level for unknown corollary defaults to 0 on input line 139.
+Package hyperref Info: bookmark level for unknown corollary defaults to 0 on input line 144.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
-(Font)              scaled to size 8.0pt on input line 139.
+(Font)              scaled to size 8.0pt on input line 144.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
-(Font)              scaled to size 6.0pt on input line 139.
+(Font)              scaled to size 6.0pt on input line 144.
 [5] [6] [7]
 
-Package natbib Warning: Citation `sargent' on page 8 undefined on input line 254.
-
-
-Package hyperref Warning: Suppressing link with empty target on input line 273.
-
-
-Package hyperref Warning: Suppressing link with empty target on input line 273.
-
-
-Package hyperref Warning: Suppressing link with empty target on input line 273.
+Package natbib Warning: Citation `sargent' on page 8 undefined on input line 259.
 
 [8]
-
-Package hyperref Warning: Suppressing link with empty target on input line 297.
-
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 299.
-(/usr/local/texlive/2024/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 304.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-)
+) [9]
+<U.pdf, id=117, 490.63298pt x 344.54347pt>
+File: U.pdf Graphic file (type pdf)
+<use U.pdf>
+Package pdftex.def Info: U.pdf  used on input line 319.
+(pdftex.def)             Requested size: 177.87215pt x 124.90826pt.
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 321.
+<schnell_U.pdf, id=118, 490.63298pt x 344.54347pt>
+File: schnell_U.pdf Graphic file (type pdf)
+<use schnell_U.pdf>
+Package pdftex.def Info: schnell_U.pdf  used on input line 328.
+(pdftex.def)             Requested size: 177.87215pt x 124.90826pt.
+<Q_comparison.pdf, id=119, 490.63298pt x 344.54347pt>
+File: Q_comparison.pdf Graphic file (type pdf)
+<use Q_comparison.pdf>
+Package pdftex.def Info: Q_comparison.pdf  used on input line 344.
+(pdftex.def)             Requested size: 177.87215pt x 124.90826pt.
+<schnell_Q_comparison.pdf, id=120, 490.63298pt x 344.54347pt>
+File: schnell_Q_comparison.pdf Graphic file (type pdf)
+<use schnell_Q_comparison.pdf>
+Package pdftex.def Info: schnell_Q_comparison.pdf  used on input line 353.
+(pdftex.def)             Requested size: 177.87215pt x 124.90826pt.
+<X_comparison.pdf, id=121, 490.63298pt x 344.54347pt>
+File: X_comparison.pdf Graphic file (type pdf)
+<use X_comparison.pdf>
+Package pdftex.def Info: X_comparison.pdf  used on input line 369.
+(pdftex.def)             Requested size: 177.87215pt x 124.90826pt.
+<schnell_X_comparison.pdf, id=122, 490.63298pt x 344.54347pt>
+File: schnell_X_comparison.pdf Graphic file (type pdf)
+<use schnell_X_comparison.pdf>
+Package pdftex.def Info: schnell_X_comparison.pdf  used on input line 378.
+(pdftex.def)             Requested size: 177.87215pt x 124.90826pt.
+
 
 Package natbib Warning: There were undefined citations.
 
-[9] (./appendix.aux)
+[10 <./U.pdf> <./schnell_U.pdf> <./Q_comparison.pdf> <./schnell_Q_comparison.pdf> <./X_comparison.pdf> <./schnell_X_comparison.pdf>] (./appendix.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -795,31 +804,22 @@ L3 programming layer <2024-02-20>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `appendix.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `appendix.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  8D16263B432BD72DA8FEC1A83FE81C8F;998.
+Package rerunfilecheck Info: File `appendix.out' has not changed.
+(rerunfilecheck)             Checksum: E84A4DE7D210D1AB1A65F7C9F471D4C8;1091.
  ) 
 Here is how much of TeX's memory you used:
- 15193 strings out of 474116
- 242603 string characters out of 5743683
+ 15295 strings out of 474116
+ 244781 string characters out of 5743683
  1948187 words of memory out of 5000000
- 37234 multiletter control sequences out of 15000+600000
- 805265 words of font info for 113 fonts, out of 8000000 for 9000
+ 37326 multiletter control sequences out of 15000+600000
+ 821720 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 95i,19n,99p,897b,597s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 95i,19n,99p,897b,634s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/leontagle/Library/texlive/2024/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on appendix.pdf (9 pages, 271557 bytes).
+Output written on appendix.pdf (10 pages, 358531 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
- 131 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 511 PDF objects out of 1000 (max. 8388607)
+ 238 compressed objects within 3 object streams
+ 39 named destinations out of 1000 (max. 500000)
+ 79 words of extra memory for PDF output out of 10000 (max. 10000000)
 

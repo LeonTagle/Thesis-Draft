@@ -3,7 +3,12 @@
 \begin{document}
 
 
-\section{Appendix}
+\section*{Appendix}  % Creates an unnumbered section called "Appendix"
+\addcontentsline{toc}{section}{Appendix}
+% Set subsections to be numbered as "A.1", "A.2", etc.
+\renewcommand{\thesubsection}{A.\arabic{subsection}}  
+\renewcommand{\thesection}{A}  % Set section label to "A" in the appendix
+\renewcommand{\thetheorem}{\thesection.\arabic{theorem}}  % Number theorems as "A.1", "A.2", etc.
 
 \subsection{The cause of the ``strategic effect''}
 \label{sec:separate}
@@ -302,5 +307,81 @@ Finally, for our purposes, we discretize $\int_{\bar{U_i}}^B \left(U' - \bar{U_i
 
 Which is the function we say characterizes patient thresholds in the explicit search model.
 
+\newpage
+
+\subsection{Graphs}
+
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{subfigure}[b]{0.46\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{U.pdf}
+        \vspace{-0.6cm}
+        \caption{Logit model}
+        \label{fig:logit_U}
+    \end{subfigure}
+    \hspace{0.05\linewidth}  % Space between the subfigures
+    % Second subfigure
+    \begin{subfigure}[b]{0.46\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{schnell_U.pdf}
+        \vspace{-0.6cm}
+        \caption{Sequential model}
+        \label{fig:schnell_U}
+    \end{subfigure}
+    \caption{Equilibrium physician utility ($U_j$) by quality ($V_j$) \\ for different model parameters, equilibrium $\bar{\kappa}^*$}
+    \label{fig:physician_U}
+\end{figure}
+
+\vspace{-0.25cm}
+
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{subfigure}[b]{0.46\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{Q_comparison.pdf}
+        \vspace{-0.6cm}
+        \caption{Logit model}
+        \label{fig:logit_Q_comp}
+    \end{subfigure}
+    \hspace{0.05\linewidth}  % Space between the subfigures
+    % Second subfigure
+    \begin{subfigure}[b]{0.46\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{schnell_Q_comparison.pdf}
+        \vspace{-0.6cm}
+        \caption{Sequential model}
+        \label{fig:schnell_Q_comp}
+    \end{subfigure}
+    \caption{Comparison of patient demand ($Q_j$) by physician quality ($V_j$)\\ for different model parameters and threshold vectors $\bar{\kappa}$}
+    \label{fig:Q_comparison}
+\end{figure}
+
+\vspace{-0.25cm}
+
+\begin{figure}[H]
+    \centering
+    % First subfigure
+    \begin{subfigure}[b]{0.46\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{X_comparison.pdf}
+        \vspace{-0.6cm}
+        \caption{Logit model}
+        \label{fig:logit_X_comp}
+    \end{subfigure}
+    \hspace{0.05\linewidth}  % Space between the subfigures
+    % Second subfigure
+    \begin{subfigure}[b]{0.46\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{schnell_X_comparison.pdf}
+        \vspace{-0.6cm}
+        \caption{Sequential model}
+        \label{fig:schnell_X_comp}
+    \end{subfigure}
+    \caption{Comparison of sick leaves issued ($X_j$) by physician quality ($V_j$)\\ for different model parameters and threshold vectors $\bar{\kappa}$}
+    \label{fig:X_comparison}
+\end{figure}
 
 \end{document}

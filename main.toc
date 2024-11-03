@@ -8,11 +8,15 @@
 \contentsline {subsubsection}{\numberline {c}The ``implicit'' search model}{9}{subsubsection.3.2.3}%
 \contentsline {subsubsection}{\numberline {d}The ``explicit'' search model}{10}{subsubsection.3.2.4}%
 \contentsline {section}{\numberline {4}Computation}{11}{section.4}%
-\contentsline {section}{\numberline {5}Data}{13}{section.5}%
-\contentsline {section}{\numberline {6}Calibration}{13}{section.6}%
-\contentsline {section}{\numberline {7}Counterfactuals \& Comments}{13}{section.7}%
-\contentsline {section}{\numberline {8}Appendix}{16}{section.8}%
-\contentsline {subsection}{\numberline {8.1}The cause of the ``strategic effect''}{16}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}\cite {schnell2017physician} with Logit choice}{18}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}On the strategic complementarity of $\bar {\kappa _j}$'s}{20}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}Proof Sequential}{23}{subsection.8.4}%
+\contentsline {subsection}{\numberline {4.1}Algorithms for Model Computation}{11}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Illustrative Examples}{15}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Data}{16}{section.5}%
+\contentsline {section}{\numberline {6}Calibration}{17}{section.6}%
+\contentsline {section}{\numberline {7}Counterfactuals \& Comments}{17}{section.7}%
+\contentsline {section}{References}{19}{section*.13}%
+\contentsline {section}{Appendix}{20}{section*.14}%
+\contentsline {subsection}{\numberline {A.1}The cause of the ``strategic effect''}{20}{subsection.7.1}%
+\contentsline {subsection}{\numberline {A.2}\cite {schnell2017physician} with Logit choice}{22}{subsection.7.2}%
+\contentsline {subsection}{\numberline {A.3}On the strategic complementarity of $\bar {\kappa _j}$'s}{24}{subsection.7.3}%
+\contentsline {subsection}{\numberline {A.4}Proof Sequential}{27}{subsection.7.4}%
+\contentsline {subsection}{\numberline {A.5}Graphs}{29}{subsection.7.5}%

@@ -6,7 +6,7 @@
 
 We now present the model itself before proceeding with further discussion. We consider $i = 1, ..., I$ patients and $j = 1, ..., J$ physicians.\footnote{Note on language: For ease of reference, we refer to any patient as ``he'', and to any physician as ``she'' (s we have done already). At this point it shall be noted that the first person plural (we) employed over the course of this article is to be read as including the reader or perhaps as a royal \textit{we}.}
 
-Patients are characterized by their ``medical necesity'' $\kappa_i \in \mathbb{R}_0^+$ and their ``taste for sick leave'' $\gamma_i \in \mathbb{R}_0^+$, respectively following the ex-ante cumulative distributions $F(\kappa)$ and $G(\gamma)$, which are public knowledge. Physicians are described by their ``service quality'' $V_j \in \mathbb{R}_0^+$, also known both to all patients and other physicians.
+Patients are characterized by their ``medical necesity'' $\kappa_i \in \mathbb{R}_0^+$ and their ``taste for sick leave'' $\gamma_i \in \mathbb{R}_0^+$, respectively following the ex-ante cumulative distributions $F(\kappa)$ and $G(\gamma)$, which are public knowledge. Physicians are described by their ``service quality'' $V_j \in \mathbb{R}^+$, also known both to all patients and other physicians.
 
 A patient $i$ can visit a physician for treatment and may be also granted sick leave. After the patient is assigned a physician $j$, his utility function—implicitly dependent on his characteristic $(\kappa_i,\gamma_i)$ tuple—is defined piecewise as follows:
     \[
@@ -31,12 +31,12 @@ where $R_j(\cdot)$ is an individual, concave \textit{revenue} function defined o
 
 We stress again that we define physician utility in terms of the \textit{expected} realization of patient demand and granted sick leaves, as befits the logic of this game, where doctors take action before patients (we will specify the timing of our game below).
 
-Following \cite{schnell2017physician}, we focus on \textit{threshold equilibria}, wherein each physician's strategy is the choice of a value $\bar{\kappa_j}$, such that of the patients who visit $j$, those with a $\kappa_i$ value above or at that threshold will be granted sick leave, and those strictly under it won't. As a result of this, each physician will be identified by their given `service quality', revenue function and choice of threshold: $\{V_j,R_j(\cdot),\bar{\kappa_j}\}$. The set $\{\bar{\kappa_j}\}_{j=1}^{J}$ will be known to patients when deciding on their behavior strategy.
+Following \cite{schnell2017physician}, we focus on \textit{threshold equilibria}, wherein each physician's strategy is the choice of a value $\bar{\kappa_j} \in \mathbb{R}_0^+$, such that of the patients who visit $j$, those with a $\kappa_i$ value above or at that threshold will be granted sick leave, and those strictly under it won't. As a result of this, each physician will be identified by their given `service quality', revenue function, cost of visit to the patient and choice of threshold: $\{V_j,R_j(\cdot), \tau_j, \bar{\kappa_j}\}$. The set $\{\bar{\kappa_j}\}_{j=1}^{J}$ will be known to patients when deciding on their behavior strategy.
 
 Our models are different iterations of a general game with the following timing:
 \begin{itemize}[itemsep=-1pt, topsep=0pt]
     \item First stage: Physicians simultaneously choose $\bar{\kappa_j}$.
-    \item Second stage: Observing $\{V_j,R_j(\cdot),\bar{\kappa_j}\}_{j =1}^{J}$, each patient chooses (or is assigned to) some doctor $j$.
+    \item Second stage: Observing $\{V_j,R_j(\cdot), \tau_j, \bar{\kappa_j}\}$. The set $\{\bar{\kappa_j}\}_{j=1}^{J}$, each patient chooses (or is assigned to) some doctor $j$.
     \item Third stage: Each patient can choose to see their physician and incur a visit cost $\tau_j$, or refrain from doing so.
 \end{itemize}
 
@@ -48,7 +48,7 @@ Conditional upon his visit (as not to visit renders null utility), the utility o
     \end{cases}
 \]
 
-We will at times use $u_{ij}$ as a shorthand.
+We will usually use $u_{ij}$ as a shorthand.
 
 \subsection{Non-search Equilibrium}
 
