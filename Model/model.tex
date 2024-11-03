@@ -6,7 +6,7 @@
 
 We now present the model itself before proceeding with further discussion. We consider $i = 1, ..., I$ patients and $j = 1, ..., J$ physicians.\footnote{Note on language: For ease of reference, we refer to any patient as ``he'', and to any physician as ``she'' (s we have done already). At this point it shall be noted that the first person plural (we) employed over the course of this article is to be read as including the reader or perhaps as a royal \textit{we}.}
 
-Patients are characterized by their ``medical necesity'' $\kappa_i \in \mathbb{R}_0^+$ and their ``taste for sick leave'' $\gamma_i \in \mathbb{R}_0^+$, respectively following the ex-ante cumulative distributions $F(\kappa)$ and $G(\gamma)$, which are public knowledge. Physicians are described by their ``service quality'' $V_j \in \mathbb{R}^+$, also known both to all patients and other physicians.
+Patients are characterized by their ``medical need'' $\kappa_i \in \mathbb{R}_0^+$ and their ``taste for sick leave'' $\gamma_i \in \mathbb{R}_0^+$, respectively following the ex-ante cumulative distributions $F(\kappa)$ and $G(\gamma)$, which are public knowledge. Physicians are described by their ``service quality'' $V_j \in \mathbb{R}^+$, also known both to all patients and other physicians.
 
 A patient $i$ can visit a physician for treatment and may be also granted sick leave. After the patient is assigned a physician $j$, his utility function—implicitly dependent on his characteristic $(\kappa_i,\gamma_i)$ tuple—is defined piecewise as follows:
     \[
@@ -17,7 +17,7 @@ V_j \kappa_i - \tau_j \text{  \hspace{0.5cm} if he only visits the physician,} \
 \end{cases}
 \]
 
-As we see, there are three components to patient utility: an interaction between the patient's medical need $\kappa_i$ and the physician's service quality $V_j$ which implies their complimentarity, his ``taste'' for sick leave $\gamma_i$ in the case he's granted one, and $\tau_j$, which we define as the cost of visit for physician $j$. As well as being complementarity, $\kappa_j$ as multiplied by $V_j$ would give it the interpretation of being the marginal willigness to pay for physician quality.\footnote{Conceptually, willingness to pay would also depend on patient $i$'s wealth level $w_i$. To steer away from discussions on wealth disparity, we interpret $\kappa_i$ as the \textit{average} willingness to pay for $V_J$.}
+As we see, there are three components to patient utility: an interaction between the patient's medical need $\kappa_i$ and the physician's service quality $V_j$ which implies their complimentarity, his ``taste'' for sick leave $\gamma_i$ in the case he's granted one, and $\tau_j$, which we define as the cost of visit for physician $j$. As well as being complementary, $\kappa_j$ as multiplied by $V_j$ would give it the interpretation of being the marginal willigness to pay for physician quality.\footnote{Conceptually, willingness to pay would also depend on patient $i$'s wealth level $w_i$. To steer away from discussions on wealth disparity, we interpret $\kappa_i$ as the \textit{average} willingness to pay for $V_J$.}
 
 Whereas patients may visit at most one physician, a physician may see several patients. We define $Q_j$ as the expected number of patients for physician $j$, the demand for her services. We say `expected' because, as we'll see later on, patients may opt for a mixed strategy, assigning a certain \textit{probability} to visiting $j$, and we define $Q_j$ as the sum of the ex-ante probability of visit of all patients, not their ex-post realization.
 
