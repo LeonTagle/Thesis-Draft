@@ -9,7 +9,7 @@
 
 Given a set of physicians $\{(V_j, R_j(\cdot), \tau_j)\}_{j =1}^{J}$, punishment function $P(\cdot)$, distribution functions for patient parameters $F(\kappa)$ and $G(\gamma)$, and one search model parameter $z$, which is $\lambda$ in the Logit model, $\beta$ in the sequential model, we develop an algorithm to compute market equilibrium.
 
-Equilibrium aggregates are computed on the basis of Monte-Carlo matrix calculus. Set $J$ as the number of physicians,\footnote{Or, as we'll later interpret it, as the number of bins, where each bin $j$ is a unique combination of $ (V_j, \tau_j, R_j(\cdot),P_j(\cdot))$.} $I$ as the size of the sample drawn randomly from $F(\kappa)$ and $G(\gamma)$. For both models we define a class which can output a matrix $S$ where each column is a patient's strategy vector $S_i$ following that model, when given as input the arrayed set of physicians' quality and visit cost $\{(V_j, \tau_j)\}_{i =1}^{J}$, an arrayed set of patients $(\{(\kappa_i,\gamma_i)\}_{i =1}^{I}$, the model parameter $z$ and a given vector of physician strategies $\{\bar{\kappa_j}\}_{j =1}^{J}$.
+Equilibrium aggregates are computed on the basis of Monte-Carlo matrix calculus. Set $J$ as the number of physicians,\footnote{Or, as we'll later interpret it, as the number of bins, where each bin $j$ is a unique combination of $ (V_j, \tau_j, R_j(\cdot),P_j(\cdot))$.} $I$ as the size of the sample drawn randomly from $F(\kappa)$ and $G(\gamma)$. For both models we define a class which can output a matrix $S$ where each column is a patient's strategy vector $S_i$ following that model, when given as input the arrayed set of physicians' quality and visit cost $\{(V_j, \tau_j)\}_{i =1}^{J}$, an arrayed set of patients $\{(\kappa_i,\gamma_i)\}_{i =1}^{I}$, the model parameter $z$ and a given vector of physician strategies $\{\bar{\kappa_j}\}_{j =1}^{J}$.
 
 We input as ``patients'' our $I$ samples from $F(\kappa)$ and $G(\gamma)$, then a $J \times I$ matrix $U$ is computed, where each component $u_{ji}$ corresponds to the utility the sampled patient $i$ would get from a visit to physician $j$.\footnote{As we have defined our matrices $J \times I$ for ease of visualization, we will refer to matrix components as $x_{ji}$ in this section rather than $x_{ij}$ as we do elsewhere in the paper.} This step is the same for both classes.
 
@@ -18,17 +18,17 @@ What differs between both models is the computation of the matrix $S$ of patient
 \begin{itemize}[itemsep=4pt, topsep=0pt]
     \item \textbf{Implicit search model (Logit):} First, an `$\alpha$-matrix' is calculated over matrix $U,$ where each $\alpha_{ji}$ is $e^{\lambda u_{ji}}$ if $u_{ji} > 0$ and $0$ if not. Then, for each patient $i$, that is, for each column, each component $s_{ji}$ of the $S$ matrix takes on the values $s_{ji} = \alpha_{ji}/\sum_{k = 1}^{J} \alpha_{ki}$.
 
-    \item \textbf{Explicit search model (Sequential):} Recall equation (NUMBER) characterizing patient thresholds. We first compute the $I$-dimensional vector of the sampled patients' respective $\bar{U_i}$. Define $U_i$ as the set $\{u_{ji}\}_{j=1}^{J}$ of utility patient $i$ recieves from a visit to each physician. In matrix terms $U_i$ would be the $i$th column of the $J \times I$ matrix $U$. The operation to compute each $\bar{U_i}$ is the following: \vspace{-0.5em}
+    \item \textbf{Explicit search model (Sequential):} Recall Equation (\ref{eq:seq4}) characterizing patient thresholds. We first compute the $I$-dimensional vector of the sampled patients' respective $\bar{U_i}$. Define $U_i$ as the set $\{u_{ji}\}_{j=1}^{J}$ of utility patient $i$ recieves from a visit to each physician. In matrix terms $U_i$ would be the $i$th column of the $J \times I$ matrix $U$. The operation to compute each $\bar{U_i}$ is the following: \vspace{-0.5em}
     \begin{equation*}
     \bar{U_i} \equiv \argmin_{x \, \in \, U_i}\; \left\|  \; x - \frac{\beta}{1-\beta}  \sum_{j=1}^{J} \left\{ \frac{\mathbbm{1}[ u_{ji} \geq x ] \cdot (u_{ji} - x)}{\mathbbm{1}[ u_{ji} \geq x ]} \right\} \right\|
     \label{eq:comp1}
     \end{equation*}
-    where the norm $\| \cdot \|$ is defined in $\mathbb{R}$ as simply the absolute value $| \cdot |$. This is to say, for each sampled patient $i$ we evaluate $x$ for each $u_{ji}$ in $U_i$. In plain words, if patient $i$ where to say: ``I will only visit physicians which grant me at least as much utility as physician $j$'', the optimal choice of $j$ and its respective $u_{ji}$ would be the minimal in $U_i$ for the evaluation of the absolute value in the left-hand side of (\ref{eq:comp1}). This is computationally less intensive than seeking to compute the exact root of (NUMBER), which would be a redundant exercise, because there's a discrete number of physicians above that mark, and selecting instead to use ``the lowest $u_{ji}$ above the root of (NUMBER)'' as threshold instead of the root proper would result in the same vector of strategies $S_i$ for each patient.\footnote{Granted, this is not strictly true, as in our formulation a `$u_{ji}$' may be selected as threshold which is actually below the root proper in $\mathbb{R}$, but closer to it than the nearest one above it. The effect of this ``estimation noise'' on our overall results is negligible.}
+    where the norm $\| \cdot \|$ is defined in $\mathbb{R}$ as simply the absolute value $| \cdot |$. This is to say, for each sampled patient $i$ we evaluate $x$ for each $u_{ji}$ in $U_i$. In plain words, if patient $i$ where to say: ``I will only visit physicians which grant me at least as much utility as physician $j$'', the optimal choice of $j$ and its respective $u_{ji}$ would be the minimal in $U_i$ for the evaluation of the absolute value in the left-hand side of (\ref{eq:comp1}). This is computationally less intensive than seeking to compute the exact root of Equation (\ref{eq:seq4}), which would be a redundant exercise, because there's a discrete number of physicians above that mark, and selecting instead to use ``the lowest $u_{ji}$ above the root of (\ref{eq:seq4})'' as threshold instead of the root proper would result in the same vector of strategies $S_i$ for each patient.\footnote{Granted, this is not strictly true, as in our formulation a `$u_{ji}$' may be selected as threshold which is actually below the root proper in $\mathbb{R}$, but closer to it than the nearest one above it. The effect of this ``estimation noise'' on our overall results is negligible.}
 
     Once having computed our $I$-dimensional vector of patients' $\bar{U_i}$, we evaluate column-wise the binary operator $\mathbbm{1}\{u_{ji}\geq \bar{U_i}\}$ over matrix $U$, and the $J \times I$ matrix $S$ of patient strategies takes on the values $s_{ji} = \mathbbm{1}\{u_{ji}\geq \bar{U_i}\} / \sum_{k=1}^{J} \mathbbm{1}\{u_{ki}\geq \bar{U_i}\}$.
 \end{itemize}
 
-The $S$ matrix in both cases is computed in linear time, $\mathcal{O}(n)$ in big-O notation, where input size $n$ is the number of physicians $J$. Both consist of a series of ufunc or vectorized operations, where the inclusion of one more physician introduces a new row with $I$ elements on which operations are performed at each stage. The additional step of calculating the $\bar{U_i}$ vector makes the execution of the `explicit' search model relatively slower (see Figure \ref{fig:subfig1}).
+The $S$ matrix in both cases is computed in linear time, $\mathcal{O}(n)$ in big-O notation, where input size $n$ is the number of physicians $J$. Both consist of a series of ufunc or vectorized operations, where the inclusion of one more physician introduces a new row with $I$ elements on which operations are performed at each stage. The additional step of calculating the $\bar{U_i}$ vector makes the execution of the `explicit' search model relatively slower (see Panel Figure \ref{fig:subfig1}).
 
 \begin{figure}[H]
     \centering
@@ -55,7 +55,7 @@ The $S$ matrix in both cases is computed in linear time, $\mathcal{O}(n)$ in big
 
 The steps following the computation of the $S$ matrix are the same for both models. The $J$-dimensional vector $Q$ of each physician's expected demand $Q_j$ is achieved through the row-wise summation of all patient's demand for $j$, i.e. performing $\sum_{i=1}^{I} s_{ji}$ for each $j$. The vector $X$ of each physician's expected sick leaves issued $X_j$ performs that same summation, conditional on the patients' $\kappa_i$ being above or at physician $j$'s chosen threshold $\bar{\kappa}_j$, that is, $\sum_{i=1}^{I}  \mathbbm{1}[ \kappa_{i} \geq \bar{\kappa}_j] \, s_{ji}$. Both sums are normalized to fit the actual number of patients in the physician-patient market.
 
-For a given vector $\bar{\kappa}$, computing patient strategies, physician aggregates and then physicians' utility—defined as $\{R_j(Q_j) - P(X_j)\}$—entails a sequence of calculations done in linear time. However, the calculation of the \textit{equilibrium} vector $\bar{\kappa}^*$ is performed in quadratic time $\mathcal{O}(n^2)$, as it requires each of the aforementioned steps to be done some $x$ number of times \textit{per} physician, such that the inclusion of an additional physician increases the number of operations required \textit{per} physician as well as the amount of physicians whose $\bar{\kappa_j}$ needs to be computed. See Figure \ref{fig:subfig2}.
+For a given vector $\bar{\kappa}$, computing patient strategies, physician aggregates and then physicians' utility—defined as $\{R_j(Q_j) - P(X_j)\}$—entails a sequence of calculations done in linear time. However, the calculation of the \textit{equilibrium} vector $\bar{\kappa}^*$ is performed in quadratic time $\mathcal{O}(n^2)$, as it requires each of the aforementioned steps to be done some $x$ number of times \textit{per} physician, such that the inclusion of an additional physician increases the number of operations required \textit{per} physician as well as the amount of physicians whose $\bar{\kappa_j}$ needs to be computed. See Panel Figure \ref{fig:subfig2}.
 
 The algorithm to find the equilibrium $J$-vector $\bar{\kappa}^*$ of physician strategies is as follows:
 \begin{enumerate}[label=\roman*, itemsep=0pt, topsep=0pt]
@@ -82,6 +82,26 @@ On the one hand, having to perform several operations \textit{per} physician is 
 Once the equilibrium vector $\bar{\kappa_j}^*$ is calculated, it may be used to compute the equilibrium aggregates $Q_j$ and $X_j$ for all physicians, as well as physician utility.
 
 \subsection{Illustrative Examples}
+\label{sec:illustration}
+
+We use the following parametrization for illustration purposes:
+\begin{table}[H]
+\centering
+    \begin{tabular}{ccc|ccc}
+        \toprule
+            $F(\kappa)$ &=& $U[0,1]$ & $R(x)$ &=& $1.5x$\\
+            $G(\gamma)$ &=& $U[0,1]$ & $P(x)$ &=& $\frac{1}{100}x^2$\\
+            $V_j$ &$\sim$& $U[0,10]$ & $ \tau$ &=& $1$\\
+        \bottomrule 
+    \end{tabular}  
+\end{table}
+In particular, we consider $J = 50$ physicians whose $V_j$ is evenly spaced in increments of 0.2 between 0.2 and 10. They share the same $R_j(\cdot)$ and $\tau_j$.
+
+For the Logit model, we present some results for different parametrizations of $\lambda$ in Figure \ref{fig:Logit}. Observe first Panel \ref{fig:LogitQ0}, graphing patient demand $Q_j$ when all physicians choose $\bar{\kappa_j} = 0$: when $\lambda = 0.1$, patient demand is more evenly distributed across physicians of different quality, and as it increases towards 1 it becomes more concentrated at physicians of higher quality.
+
+Panel \ref{fig:LogitQeq} shows patient demand at the equilibrium $\bar{\kappa_j}*$ of each physician. For each level of $\lambda$, there is more patient demand at lower levels of $V_j$ and then a drop-off, followed by a subsequent rise. The drop-off represents the transition from a $V_{mid-low}$ equilibrium to $V_{mid-high}$ (recall Figure \ref{fig:LogitUj}), when physicians start opting for a higher $\bar{\kappa_j}$ in an inner solution. Before the drop-off, low $V_j$ physicians opt for a threshold equal to 0, maximizing their possible patient demand, and then briefly slightly above 0. After a certain level of $V_j$, physicians find it better to be strict and decrease their patient demand slightly but scaling down their issued sick leaves by a larger measure, fulfilling the FOC condition (\ref{eq:ns_FOC}).
+
+We can observe this behavior in Panel \ref{fig:LogitX}. At each $\lambda$ there's a significant drop-off in sick leaves at a certain $V_j$ once physicians start preferring the stricter inner solution. Notice how after the drop, sick leaves remain flat, because physicians share $R_j(\cdot)$ and $P(\cdot)$ in our example, and in particular $R_j(\cdot) = r_j$, so as patient demand $Q_j$ increases with $V_j$, all physicians must do in order to remain at the FOC physicians is increase their threshold $\bar{\kappa_j}$ to remain at the same level of $X_j$. We can see how $\bar{\kappa_j}^*$ increasies in $V_j$ in Panel \ref{fig:Logitk}.
 
 \begin{figure}[H]
     \centering
@@ -126,7 +146,24 @@ Once the equilibrium vector $\bar{\kappa_j}^*$ is calculated, it may be used to 
     \label{fig:Logit}
 \end{figure}
 
-\newpage
+Let's now look at the sequential model with the same parametrization, for different values of $\beta$ (Figure \ref{fig:Schnell}). Something to not is that $\beta$ is restricted to values within $(0,1)$. As $\beta \rightarrow 1$, $Q_j$ behaves similarly to when $\lambda \rightarrow \infty$ in the Logit model, which is why the concentration of patients at high $V_j$'s with $\beta = 0.99$ is much more pronounced in Panel \ref{fig:SchnellQ0} than it is with $\lambda = 1$ in the previous Figure.
+
+The shape of the demand curve points to two disimilarities from the Logit model:
+\begin{itemize}[itemsep=-1pt, topsep=0pt]
+    \item For physicians of low enough $V_j$ demand is strictly 0 rather than just low, as they don't afford to any patient utility over their threshold $\bar{U_i}$.
+    \item At high values of $V_j$ the demand curve is concave rather than convex like before. This is because the formulation of the 'explicit' search model doesn't continuously (and exponentially) reward higher values of $V_j$, it only registers whether $V_j$ is enough to have $u_{ij}$ over patients' reserve utility $\bar{U_i}$. Past a certain point, most patients' $\bar{U_i}$ (which can be seen in Panel \ref{fig:Schnell-uroot}) lay below the $u_{ij}$ a certain physician $j$ affords, and incremental gains to even higher $V_j$ are low, hence the concavity.
+\end{itemize}
+
+Panel \ref{fig:SchnellQeq} is not particullarly illuminating, but Panel \ref{fig:SchnellX} is, and can show the difference between \ref{fig:SchnellQeq} and \ref{fig:SchnellQ0}. Panel \ref{fig:SchnellX} displays sick leaves granted $X_j$ as a function of physician quality $V_j$ for different values of the model parameter $\beta$, at an equilibrium physician strategies vector $\bar{\kappa}^*$. Graphically, it exhibits two peaks in $X_j$, which grow more pronounced and further apart from each other and the origin as $\beta$ increases.
+
+The first peak in each curve is composed of physicians who manage to get positive clientele from leaving their threshold $\bar{\kappa_j}$ at 0. The drop-off from the top signals the transition to an inner solution, where the patient base of physician $j$ decreases for the sake of more starkly decreasing sick leaves issued ($X_j$), fulfilling the FOC condition (\ref{eq:ns_FOC}). The second peak has a smoother lead-up and descent from it, in which physicians make the trade-off of gaining patients through lower $\bar{\kappa_j}$ but requiring sick leave lenience. The peak itself represents the tipping point, after which physicians gain a significant patient base just by virtue of their high $V_j$ and can afford to cut back on sick leave issuance (i.e. increase strictness) with little downside to their overall $Q_j$. Then there's a final peak seen specifically in $\beta = 0.99$, which results out of the high concentration of patients around the maximum $V_j$, such that patients whose $\kappa_i \geq \bar{\kappa}_{\max}$, previously more spread out across physicians, visit the highest $V_j$'s exclusively.
+
+As $\beta$ increases, so too the patients' reserve utility $\bar{U_i}$ as $\kappa_i$ grows, as can be seen in Panel \ref{fig:Schnell-uroot}. These higher values concentrate demand at higher values of $V_j$ and also shorten the window in which patient demand may be gained through sick leave issuance (as opposed to just by virtue of a high $V_j$), which is why the peaks become ``slimmer''.
+
+Despite these idiosyncracies, we can see in Panel \ref{fig:Schnellk} that physician thresholds $\bar{\kappa_j}$ grow with $V_j$ in a very similar fashion to how they did in the previous model.
+
+Some more figures from these simulations can be seen in the Appendix \ref{sec:graphs}. They show how physician utility is strictly increasing in $V_j$ (meaning the drop-offs in patient demand after transitioning to inner solutions of $\bar{\kappa_j}$ are strategic and not a detriment to utility), and also highlight the difference in $Q_j$ and $X_j$ between the equilibrium values of $\bar{\kappa}^*$
+and other physician strategy vectors.
 
 \begin{figure}[H]
     \centering
@@ -174,7 +211,7 @@ Once the equilibrium vector $\bar{\kappa_j}^*$ is calculated, it may be used to 
         \includegraphics[width=\linewidth]{patient_uroot.pdf}
         \vspace{-0.6cm}
         \caption{Patient reserve utility $\bar{U_i}$ \\ by medical necessity ($\kappa_i$), equilibrium $\bar{\kappa}^*$}
-        \label{fig:SchnellX}
+        \label{fig:Schnell-uroot}
     \end{subfigure}
     \hspace{0.05\linewidth} 
 

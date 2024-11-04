@@ -141,7 +141,7 @@ In order to play the role of a proper subprobability measure, for each patient $
 \begin{equation} \tag{ii}
     \sum_{j = 1}^{J} s_{ij} \leq 1
 \end{equation}
-We will allow the sum of all components for each patient $i$ to be less than one (hence \textit{sub}-probability), implying the presence of an \textit{outside option} for patients, that is, to not visit any physicians. To have this option is important, as patient rationality in our models entails a  ``\textit{free disposal }'' property, meaning that a patient will never visit a physician if his expected utility from such a visit is less than $0$, that is, $s_{ij} = 0$ if $U_i(V_j,\bar{\kappa_j}) = 0$. This makes the third stage of the game as described in Section \ref{sec:3_1} trivial, as under free choice patient $i$ will only be ``assigned'' with positive probability to physicians he will be willing to visit.
+We will allow the sum of all components for each patient $i$ to be less than one (hence \textit{sub}-probability), implying the presence of an \textit{outside option} for patients, that is, to not visit any physicians. To have this option is important, as patient rationality in our models entails a  ``\textit{free disposal} \hspace{-0.1cm}'' property, meaning that a patient will never visit a physician if his expected utility from such a visit is less than $0$, that is, $s_{ij} = 0$ if $U_i(V_j,\bar{\kappa_j}) = 0$. This makes the third stage of the game as described in Section \ref{sec:3_1} trivial, as under free choice patient $i$ will only be ``assigned'' with positive probability to physicians he will be willing to visit.
 
 We can re-interpret the non-search model as each patient being made to play by the strategy \{$S_i: s_{i1} = s_{i2} = ... = s_{iJ} = \frac{1}{J}$ \}, and it is the lack of a free choice which makes the third stage non-trivial.
 
@@ -192,10 +192,9 @@ The ``implicit'' search model is a McFadden Logit choice model modified to give 
 
 The reason for calling it the ``implicit'' search model is that strictly speaking patient search is not formally included, yet one arrives at result qualitatively similar to specifications that do (like the ``explicit'' search model). The choice strategy noisily assigns positive probability to physicians who render $i$ high utility, and the higher this $u_{ij}$ expected utility is, the higher the probability of visit.
 
-Instead of \textit{explicitly} defining search and subsequent choice, probability of visit depends upon expected utility from physician $j$, $u_{ij}$, and a weighing parameter $\lambda \in \mathbb{R}$. The lower the value of $\lambda$, the noisier patient ``search'' is: they give high assingment probability to sub-optimal—yet feasible—physician choices. On the other hand, as $\lambda \rightarrow \infty$, patient choice is concentrated with probability approaching 1 on the physician with the highest $V_j$.
+Instead of \textit{explicitly} defining search and subsequent choice, probability of visit depends upon expected utility from physician $j$, $u_{ij}$, and a weighing parameter $\lambda \in \mathbb{R}$. The lower the value of $\lambda$, the noisier patient ``search'' is: they give high assingment probability to sub-optimal—yet feasible—physician choices. On the other hand, as $\lambda \rightarrow \infty$, patient choice is concentrated with probability approaching 1 at the physician with the highest $V_j$.
 
 We define the components $s_{ij}$ of the patient's strategy vector $S_i$ as follows:
-
 \begin{equation}
 s_{ij} = \frac{\alpha_{ij}}{\sum_{k = 1}^{J} \alpha_{ik}}, \; \; \text{where } \; \alpha_{ij} = \begin{cases}
 e^{\lambda u_{ij}}, \; \; \text{if } \; \; u_{ij} > 0 \\
@@ -204,28 +203,75 @@ e^{\lambda u_{ij}}, \; \; \text{if } \; \; u_{ij} > 0 \\
 \label{eq:Logit_s}
 \end{equation}
 
-Unlike the ``explicit'' search model, the probability that patient $i$ visits physician $j$ is \textit{strictly} growing in $\kappa_i$, rather than being a piece-wise constant function with different levels. There is a discrete jump in probability at $\bar{\kappa_j}$, but elsewhere above $0$ the function is smoothly increasing, rewarding physicians with high $V_j$.
+Unlike the ``explicit'' search model, the probability that patient $i$ visits physician $j$ is \textit{strictly} growing in $\kappa_i$, rather than being a piecewise constant function with different levels. There is a discrete jump in probability at $\bar{\kappa_j}$, but elsewhere above $0$ the function is smoothly increasing, rewarding physicians with high $V_j$.
 
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}[scale=0.6]
 \input{graph1.tex}
 \end{tikzpicture}
+\caption{Physician utility $U_j$ in the Logit model for different levels of $V_j$,\\ as it varies across their choice of $\bar{\kappa_j}$}
+\label{fig:LogitUj}
 \end{figure}
 
-Thus, the possible solutions for ($\ref{eq:ns_k}$) remain threefold: the corner solutions $0$ and $\infty$, and an inner solution where the simplified FOC $R^{\prime}(Q_j) = P^{\prime}(X_j)$ holds.
+Figure \ref{fig:LogitUj} is a stylized representation of four ``types'' of physician, as ordered by their level of service quality $V_j$. The `low' and `high' types are driven to a corner solution at 0 and $\bar{\kappa}_{\max}$, respectively. We differentiate between two `middle' types who choose inner solutions of $\bar{\kappa_j}$, as many physicians will present two local maxima across their curve, and their type is determined by which of the two is highest.
 
-Equilibrium is achieved in a similar fashion, though now taking into account the patients' $S_i$ strategies.
+The reason curves present this piecewise behavior, as though composed of two individual concave curves joint together, is because for each physician $j$ in this model there exists the threshold $\kappa_i = \tau_j/V_j$, as in the non-search model, above which patients always give positive probability to visiting $j$. Visiting chances may be \textit{improved} upon by also granting sick leave to patients above that threshold (in terms of their $\kappa_i$), but taking it away doesn't drive their $s_{ij}$ towards 0, as it would with patients whose $\kappa_i < \tau_j/V_j$.
 
-\begin{equilibrium}[in ``implicit'' search]
-    \label{is_eq}
-Given a doctor-patient market specified by \\ $(\{(\kappa_i,\gamma_i)\}_{i =1}^{I},\{(V_j,R_j(\cdot),P_j(\cdot))\}_{i =1}^{J})$, we define an equilibrium as a set of physician thresholds $\{\bar{\kappa_j}\}_{j =1}^{J}$ satisfying (\ref{eq:ns_k}) and patient strategies $\{S_i\}_{i =1}^{I}$ as defined by (\ref{eq:is_s}), with their corresponding equilibrium (expected) patient demand and granted sick leave certificates $\{(Q_j,X_j)\}_{j =1}^{J}$ as described by (\ref{eq:s_Q}), (\ref{eq:s_X}), respectively.
+This difference in incremental patient loss through a raise in $\bar{\kappa_j}$ between the $[0,\frac{\tau_j}{V_j}]$ and $[\frac{\tau_j}{V_j},\bar{\kappa}_{\max}]$ sections of the curve accounts for the presence of two peaks for some values of $V_j$. We call `mid-low' those physicians whose first peak is higher than the second, the others we call `mid-high' (as they'd have a higher $V_j$ for the parametrizations we use later in this paper).
+
+The fact that the breaking point of the curve occurs earlier the higher the $V_j$ results from the fact that $\tau_j$ grows at a lower rate than 1 for increases in $V_j$ in our simulations in Section \ref{sec:illustration} on which we based this graph, but this need not be the case. Notice also that $\bar{\kappa_j}$ is growing in $V_j$, which isn't an analytical property from our model formulation, but an ex-post proclivity, which comes from using \textit{well-behaved} (read: single-peaked, continuous) distributions for $F(\kappa)$ and $G(\gamma)$.
+
+Equilibrium for the Logit model is formalized below.
+
+\vspace{0.5em}
+\begin{equilibrium}[in the ``implicit'' search model]
+    \label{Logit_eq}
+Given a physician-patient market specified by $\{\{(\kappa_i,\gamma_i)\}_{i =1}^{I},\{(V_j, R_j(\cdot), \tau_j)\}_{j =1}^{J}, P(\cdot), \lambda \}$, we define equilibrium as a set of patient strategies $\{S_i: s_{i1} \, ... \, s_{iJ}\}_{i =1}^{I}$ as defined by (\ref{eq:Logit_s}) and physician thresholds $\{\bar{\kappa_j}\}_{j =1}^{J}$ satisfying problem (\ref{eq:ns_k}) with their corresponding equilibrium (expected) patient demand and issued sick leaves $\{(Q_j,X_j)\}_{j =1}^{J}$ as described by (\ref{eq:s_Q}) and (\ref{eq:s_X}), respectively.
 \end{equilibrium}
 
 \subsection{The ``Explicit'' Search Model}
 
-What we call the ``explicit'' model is in which patient strategy $S_i$ is explicitly the result of a sequential search algorithm on part of the patients. This is in line with \cite{schnell2017physician}, though made trickier by the fact that our model allows for physician services apart from contingent ``prescriptions'' (in our case, sick leave certificates). In our model some patients \textit{are} willing to visit physicians who don't intend to grant them sick leave, given a high enough benefit from the medical service proper, $V_j \kappa_i$.
+The ``explicit'' search model, which we also call the sequential model, has patient strategies $S_i$ be the \textit{explicit} result of formalized physician search on part of the patient. This specification is more in line with \cite{schnell2017physician}, although made trickier by physician heterogeneity in \textit{quality} ($V_j$) as well as ``prescription'' \textit{leniency} — in our case, of sick leave issuance.
 
-FURTHER EXPLANATION REQUIRED, TO BE CONTINUED
+Given the two-fold source of patient utility from physicians, we will speak in general of patients' `reserve utility'. In a similar vain to sequential job search models, we envision patients as searching for a physician in discrete time, and when assigned a physician $j$, they have the option to go visit them, which is equivalent to recieving utility $u_{ij}$ in perpetuity, or look for a physician again, ``drawing'' another physician (with replacement) next period. We assume a temporal discount factor $\beta \in (0,1)$, and no-recall, meaning a patient may only visit the current physician assigned.
+
+This modelation can be defined in terms of dynamic programming. For each patient $i$, the solution to this problem will be an optimal threshold $\bar{U_i}$, henceforth their ``reserve utility'', such that each patient is only willing to visit some physician $j$ if the utility he would obtain from that visit, $u_{ij}$, is greater or equal to $\bar{U_i}$. We demonstrate in the Appendix \ref{sec:sequential} that the optimal characteristic equation for $\bar{U_i}$ is the following:
+\begin{equation}
+    \bar{U_i} = \frac{\beta}{1-\beta}  \sum_{j=1}^{J} \left\{ \frac{\mathbbm{1}[ u_{ij} \geq \bar{U_i} ] \cdot (u_{ij} - \bar{U_i})}{\mathbbm{1}[ u_{ij} \geq \bar{U_i} ]} \right\}
+    \label{eq:seq4}  
+\end{equation}
+
+The components $s_{ij}$ of each patient's strategy vector $S_i$ are then defined in terms of patient $i$'s `reserve utility' $\bar{U_i}$:
+\begin{equation}
+    s_{ij} = \frac{\mathbbm{1}[ u_{ij} \geq \bar{U_i} ]}
+    {\sum_{k=1}^{J} \mathbbm{1}[ u_{ik} \geq \bar{U_i} ]}
+    \label{eq:Schnell_s}  
+\end{equation}
+
+Equation (\ref{sec:sequential}) makes the rather simplifying but reasonable assumption that patient $i$ `draws' physicians randomly and thus has equal probability to visit any of the physicians who give him utility above his threshold $\bar{U_i}$.
+
+\vspace{-3.8em}
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[scale=0.6]
+    \input{graph2.tex}
+    \end{tikzpicture}
+    \caption{Physician utility $U_j$ in the sequential model for different levels of $V_j$,\\ as it varies across their choice of $\bar{\kappa_j}$}
+    \label{fig:SchnellUj}
+\end{figure}
+
+Figure \ref{fig:SchnellUj} presents a the stylized utility functions of physicians of different $V_j$ in the manner of Figure \ref{fig:LogitUj} in the previous section. The curves are more \textit{well-behaved} (read: quasi-concavity) than in the ``implicit'' search model for the simulations which form the basis of this figure, and could perhaps analitically be proven to have a unique pure strategy equilibrium under certain conditions.
+
+On thing of note is that more often than in the Logit model, for (relatively) low enough values of $V_j$, physician utility will be strictly 0 for high choices of $\bar{\kappa_j}$, and for high values of $V_j$, utility will be \textit{negative} at low thresholds $\bar{\kappa_j}$. This effect is more pronounced the higher the $\beta$ parameter is, which plays the same role as $\lambda$ in the previous model: the higher it is, the more patient demand will be concentrated at high quality physicians. Patient's `patience' $\beta$ determines ``how long'' they're willing to look for the ideal physician, i.e. of highest $V_j$. As $\beta \rightarrow 1$, demand for the physician with the highest $V_j$ tends to be $I$, and for anyone else to be 0.
+
+As before, we formalize the notion of equilibrium in the sequential model.
+
+\vspace{0.5em}
+\begin{equilibrium}[in the ``explicit'' search model]
+    \label{Logit_eq}
+Given a physician-patient market specified by $\{\{(\kappa_i,\gamma_i)\}_{i =1}^{I},\{(V_j, R_j(\cdot), \tau_j)\}_{j =1}^{J}, P(\cdot), \beta \}$, we define equilibrium as a set of patient thresholds $\{\bar{U_i}\}_{i =1}^{I}$ fulfilling (\ref{eq:seq4}), patient strategies $\{S_i: s_{i1} \, ... \, s_{iJ}\}_{i =1}^{I}$ as defined by (\ref{eq:Schnell_s}) and physician thresholds $\{\bar{\kappa_j}\}_{j =1}^{J}$ satisfying problem (\ref{eq:ns_k}) with their corresponding equilibrium (expected) patient demand and issued sick leaves $\{(Q_j,X_j)\}_{j =1}^{J}$ as described by (\ref{eq:s_Q}) and (\ref{eq:s_X}), respectively.
+\end{equilibrium}
 
 \end{document}

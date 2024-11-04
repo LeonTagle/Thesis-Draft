@@ -8,9 +8,13 @@
 % Set subsections to be numbered as "A.1", "A.2", etc.
 \renewcommand{\thesubsection}{A.\arabic{subsection}}  
 \renewcommand{\thesection}{A}  % Set section label to "A" in the appendix
-\renewcommand{\thetheorem}{\thesection.\arabic{theorem}}  % Number theorems as "A.1", "A.2", etc.
+% Redefine theorem numbering for appendix with "A" prefix
+\renewcommand{\thetheorem}{A.\thesection.\arabic{theorem}}
+\setcounter{theorem}{0} % Reset theorem counter for the appendix
+\newtheorem{appendixtheorem}{Theorem}[section] % Redefine with section-based numbering for appendix
 
-\subsection{The cause of the ``strategic effect''}
+
+\subsection{The Cause of the ``Strategic Effect''}
 \label{sec:separate}
 
 The main difference between our equilibrium and that of \cite{schnell2017physician} is the presence of a ``strategic effect'', wherein doctor $j$ takes into account the behavior of other doctors in the selection of her own $\bar{\kappa_j}$. Of the different modifications we made to her framework, we'll argue it's the absence of \textit{additive separability} across patients in physician utility $U_j(\cdot)$ which accounts for this.
@@ -82,7 +86,7 @@ Imagine equation (\ref{eq:apx_foc}) holds for some doctor $j$, and some doctor $
 
 This intelligible line of reasoning links the presence of a ``strategic effect'' to the non-additive separability of $U_j(\cdot)$: doctor $j$ takes into account other physicians' strategy in her own choice of $ \bar{\kappa_j}$ because of the present of \textit{aggregate} amounts of clientele in her optimality conditions, which is so because utility isn't additively separable across clients.
 
-\subsection{\cite{schnell2017physician} with Logit choice}
+\subsection{\cite{schnell2017physician} with Logit Choice}
 \label{sec:schnell_logit}
 
 To prove our point that it is additive separability which accounts for a possible strategic effect, we reformulate \cite{schnell2017physician} in the manner of a McFadden Logit -- with some quirks.
@@ -134,10 +138,10 @@ This is the same result as in the original model in \ref{schnell2017physician} i
 Condition (\ref{eq:schnell_condition}) means a value  $\kappa_j$ is chosen irrespective of the strategies employed by other doctors, it quite literally doesn't enter into the equation. As we have argued, additive separability over clients means the \textit{total} demand for physician $j$'s services doesn't influence marginal utility by a given patient $i$, and so has no sway in the optimality condition. Doctor $j$ states simply that she won't grant a prescription (or sick leave, as in our case) below $\bar{\kappa_j}$, \textit{come what may}. In order for her to care about \textit{aggregate} values, like her total expected demand, making her care about her market share and thus about the strategies of other doctors, \textit{strict non-linearity} must be introduced into her utility function.
 
 
-\subsection{On the strategic complementarity of $\bar{\kappa_j}$'s}
+\subsection{Strategic Complementarity of $\bar{\kappa_j}$'s (Proof of Proposition \ref{complements})}
 \label{sec:strategic}
 
-We had defined the components $s_{ij}$ of $S_i$  as:
+We defined the components $s_{ij}$ of $S_i$  as:
 \[s_{ij} \equiv g_i(u_{ij}, u_{i,-j})\]
 where $g_i(\cdot)$ is a continuous function weakly increasing in the first argument $u_{ij}$. Our defining $s_{ij}$ this way has two interlinked corollaries:
 
@@ -160,13 +164,13 @@ where $g_i(\cdot)$ is a continuous function weakly increasing in the first argum
 From the argumentation in corollary 1 follows that $u_{ij}$ is weakly decreasing in $\bar{\kappa_j}$, $\forall j$. Take some $l \neq j$, then $s_{ij}$ is defined in turn as weakly decreasing in $u_{il}$, which implies it is increasing in $\bar{\kappa_l}$.
 \end{proof}
 
-Both corollaries hinge upon our definition of $U_i(\cdot)$ as a step function over $\kappa_i$, such that it is discontinuous at $\kappa_i = \bar{\kappa_j}$, where there's a discrete jump of magnitude  $\gamma_i \geq 0$.
+Both corollaries hinge upon our definition of $U_i(\cdot)$ as a step function over $\kappa_i$, such that it is discontinuous at $\kappa_i = \bar{\kappa_j}$, where there's a discrete jump of magnitude  $\gamma_i \geq 0$. We use them in the next proposition.
 
-\begin{corollary}
+\begin{prop}
 \begin{align*}
     \frac{\partial Q_{j}}{\partial\bar{\kappa_{j}}},\frac{\partial X_{j}}{\partial\bar{\kappa_{j}}} \leq 0 &&  \frac{\partial Q_{j}}{\partial\bar{\kappa_{l}}}, \frac{\partial X_{j}}{\partial\bar{\kappa_{l}}} \geq 0, \forall l \neq j
 \end{align*}
-\end{corollary}
+\end{prop}
 
 \begin{proof}
 We recall our function of patient demand for physician $j$ is:
@@ -210,13 +214,13 @@ Likewise:
 
 \end{proof}
 
-Before dealing with PROPOSITION we need one final corollary.
+Before dealing with Proposition \ref{complements} we need one last intermediary proposition.
 
-\begin{corollary}
+\begin{prop}
 \[
 \frac{\partial^2 Q_{j}}{\partial\bar{\kappa_{j}} \partial\bar{\kappa_{l}}} = 0 \;\;\; \text{ and } \;\;\; \frac{\partial^2 X_{j}}{\partial\bar{\kappa_{j}} \partial\bar{\kappa_{l}}} = 0 \;, \;\;\; \text{ $\forall j$ and $l$, $\bar{\kappa_{j}} \neq \bar{\kappa_{l}}$}
 \]
- \end{corollary}
+ \end{prop}
 
 \begin{proof}
 Our proof will be heuristic. Consider
@@ -232,7 +236,7 @@ because as $\epsilon$ approaches $0$ from the right the limit is weakly positive
 
 \end{proof}
 
-PROOF OF PROPOSITION
+\textit{Proof of Proposition \ref{complements}.}
 
 Consider some two physicians $j$, $l$, such that $\bar{\kappa_j} \neq \bar{\kappa_l}$. If we breakdown the mixed partial derivative of $U_j$ over $\bar{\kappa_j}$ and $\bar{\kappa_l}$, we get:
 \begin{align*}
@@ -253,11 +257,15 @@ Consider some two physicians $j$, $l$, such that $\bar{\kappa_j} \neq \bar{\kapp
     \cdot \frac{\partial X_{j}}{\partial\bar{\kappa_{j}}}}_{\leq 0} \, & \geq 0
 \end{align*}
 
-POOSITIVE MIXED DERIVATIVE IS STRATEGIC COMPLEMENTARITY
+and positive mixed derivative of physicians' utility over their strategy is the definition of strategic complementarity.
+\begin{flushright}
+    $\square$
+\end{flushright}
 
-\subsection{Proof Sequential}
+\subsection{Optimal Reserve Utility (Proof of Equation \ref{eq:seq4})}
+\label{sec:sequential}
 
-We follow the argument of \cite{sargent}. Let for the moment $\tilde{F_i}(U) = \operatorname{Pr}\{u_{ij} \leq U\}$ be the distribution of utility patient $i$ recieves from doctor visits, with $\tilde{F_i}(0) = 0$, $\tilde{F_i}(B) = 1$, for $B < \infty$. Each period, the patient draws an 'offer' $U$ from $\tilde{F_i}$, which is to say, his search lead him to a physician $j$ such that $u_{ij} = U$. He may either accept and have physician $j$ assigned to him, recieving utility $U$ per period henceforth, or look for a new physician next period.
+We follow the argument of \cite{sargent}. Let for the moment $\tilde{F_i}(U) = \operatorname{Pr}\{u_{ij} \leq U\}$ be the distribution of utility patient $i$ recieves from doctor visits, with $\tilde{F_i}(0) = 0$, $\tilde{F_i}(B) = 1$, for $B < \infty$. Each period, the patient draws an `offer' $U$ from $\tilde{F_i}$, which is to say, his search lead him to a physician $j$ such that $u_{ij} = U$. He may either accept and have physician $j$ assigned to him, recieving utility $U$ per period henceforth, or look for a new physician next period.
 
 Let $u_t$ be the patient's utility for period $t$, where it's $0$ if he doesn't visit a physician and $U$ if he has accepted an assigned physician which renders him utility $u_{ij} = U$. This patient will seek to maximize $\mathbb{E}[\sum_{t=0}^{\infty} \beta^t u_t]$, where $0 < \beta < 1$ is his discount factor.
 
@@ -302,14 +310,15 @@ Adding $\bar{U_i} \int_{\bar{U_i}}^B d \tilde{F_i}(U')$ to both sides gives
 Finally, for our purposes, we discretize $\int_{\bar{U_i}}^B \left(U' - \bar{U_i}\right) d \tilde{F_i}(U')$ as a summation over the countable set of $J$ doctors. The discrete equivalent of equation (\ref{eq:seq3}) is:
 \begin{equation}
     \bar{U_i} = \frac{\beta}{1-\beta}  \sum_{j=1}^{J} \left\{ \frac{\mathbbm{1}[ u_{ij} \geq \bar{U_i} ] \cdot (u_{ij} - \bar{U_i})}{\mathbbm{1}[ u_{ij} \geq \bar{U_i} ]} \right\}
-    \label{eq:seq4}  
+    \tag{\ref{eq:seq4}}  
 \end{equation}
 
 Which is the function we say characterizes patient thresholds in the explicit search model.
 
 \newpage
 
-\subsection{Graphs}
+\subsection{More Figures}
+\label{sec:graphs}
 
 \begin{figure}[H]
     \centering

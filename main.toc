@@ -5,17 +5,17 @@
 \contentsline {subsection}{\numberline {3.2}Non-Search Equilibrium}{6}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}General Search Framework}{8}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}The ``Implicit'' Search Model}{10}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}The ``Explicit'' Search Model}{11}{subsection.3.5}%
-\contentsline {section}{\numberline {4}Computation}{12}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Algorithms for Model Computation}{12}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Illustrative Examples}{16}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Data}{17}{section.5}%
-\contentsline {section}{\numberline {6}Calibration}{18}{section.6}%
-\contentsline {section}{\numberline {7}Counterfactuals \& Comments}{20}{section.7}%
-\contentsline {section}{References}{22}{section*.13}%
-\contentsline {section}{Appendix}{23}{section*.14}%
-\contentsline {subsection}{\numberline {A.1}The cause of the ``strategic effect''}{23}{subsection.7.1}%
-\contentsline {subsection}{\numberline {A.2}\cite {schnell2017physician} with Logit choice}{25}{subsection.7.2}%
-\contentsline {subsection}{\numberline {A.3}On the strategic complementarity of $\bar {\kappa _j}$'s}{27}{subsection.7.3}%
-\contentsline {subsection}{\numberline {A.4}Proof Sequential}{30}{subsection.7.4}%
-\contentsline {subsection}{\numberline {A.5}Graphs}{32}{subsection.7.5}%
+\contentsline {subsection}{\numberline {3.5}The ``Explicit'' Search Model}{12}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Computation}{14}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Algorithms for Model Computation}{14}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Illustrative Examples}{17}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Data}{20}{section.5}%
+\contentsline {section}{\numberline {6}Calibration}{21}{section.6}%
+\contentsline {section}{\numberline {7}Counterfactuals \& Comments}{23}{section.7}%
+\contentsline {section}{References}{25}{section*.15}%
+\contentsline {section}{Appendix}{26}{section*.16}%
+\contentsline {subsection}{\numberline {A.1}The Cause of the ``Strategic Effect''}{26}{subsection.7.1}%
+\contentsline {subsection}{\numberline {A.2}\cite {schnell2017physician} with Logit Choice}{28}{subsection.7.2}%
+\contentsline {subsection}{\numberline {A.3}Strategic Complementarity of $\bar {\kappa _j}$'s (Proof of Proposition \ref {complements})}{30}{subsection.7.3}%
+\contentsline {subsection}{\numberline {A.4}Optimal Reserve Utility (Proof of Equation \ref {eq:seq4})}{33}{subsection.7.4}%
+\contentsline {subsection}{\numberline {A.5}More Figures}{35}{subsection.7.5}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.7)  3 NOV 2024 23:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.7)  4 NOV 2024 19:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -802,7 +802,11 @@ LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count335
 \l__pdf_internal_box=\box68
-) (./model.aux)
+) (./model.aux
+
+LaTeX Warning: Label `Logit_eq' multiply defined.
+
+)
 \openout1 = `model.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -992,22 +996,28 @@ Package natbib Warning: Citation `schnell2017physician' on page 6 undefined on i
 
 LaTeX Warning: Reference `sec:strategic' on page 6 undefined on input line 180.
 
-[6] (./graph1.tex)
+[6] (./graph1.tex) [7]
 
-LaTeX Warning: Reference `eq:is_s' on page 7 undefined on input line 222.
-
-
-Overfull \hbox (11.73273pt too wide) in paragraph at lines 222--223
-\T1/BaskervilleF-TLF/m/it/10.95 spond-ing equi-lib-rium (ex-pected) pa-tient de-mand and granted sick leave cer-tifi-cates $\OMS/cmsy/m/n/10.95 f\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 Q[]; X[]\OT1/cmr/m/n/10.95 )\OMS/cmsy/m/n/10.95 g[]$
- []
+LaTeX Warning: Reference `sec:illustration' on page 8 undefined on input line 223.
 
 
-Package natbib Warning: Citation `schnell2017physician' on page 7 undefined on input line 227.
+Package natbib Warning: Citation `schnell2017physician' on page 8 undefined on input line 235.
 
+
+LaTeX Warning: Reference `sec:sequential' on page 8 undefined on input line 239.
+
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 241.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
+) [8]
+
+LaTeX Warning: Reference `sec:sequential' on page 9 undefined on input line 252.
+
+(./graph2.tex)
 
 Package natbib Warning: There were undefined citations.
 
-[7] [8] (./model.aux)
+[9] (./model.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -1016,22 +1026,25 @@ L3 programming layer <2024-02-20>
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `model.out' has not changed.
 (rerunfilecheck)             Checksum: BB205B8FE5EF3D048FD902CC8058796E;1046.
  ) 
 Here is how much of TeX's memory you used:
- 35694 strings out of 474116
- 814298 string characters out of 5743683
+ 35746 strings out of 474116
+ 815432 string characters out of 5743683
  1945187 words of memory out of 5000000
- 57377 multiletter control sequences out of 15000+600000
- 828717 words of font info for 117 fonts, out of 8000000 for 9000
+ 57411 multiletter control sequences out of 15000+600000
+ 829929 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 119i,12n,124p,878b,846s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on model.pdf (8 pages, 252392 bytes).
+ 119i,12n,124p,878b,855s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </Users/leontagle/Library/texlive/2024/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on model.pdf (9 pages, 262260 bytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
- 169 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
+ 239 PDF objects out of 1000 (max. 8388607)
+ 190 compressed objects within 2 object streams
+ 43 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
