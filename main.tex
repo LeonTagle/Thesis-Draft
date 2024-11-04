@@ -13,6 +13,7 @@
 \usepackage{subcaption} % For subfigure environment
 \usepackage{caption} % To space captions
 \captionsetup{justification=centering}
+\usepackage{footmisc}  % For easier footnote referencing
 
 \usepackage[dvipsnames]{xcolor} %better colors
 \usepackage{natbib} %bibliography style
@@ -28,12 +29,12 @@
 
 \usepackage{booktabs}
 
-\hyphenpenalty=500 %Higher hyphenation penalty
+\hyphenpenalty=1000 %Higher hyphenation penalty
 
 \linespread{1}
 \setlength{\parskip}{6pt}
 \setlength{\footnotesep}{.2in}
-\setlength{\parindent}{0pt}
+\setlength{\parindent}{10pt}
 
 \DeclareMathOperator*{\argmax}{arg\,max} %Define argmin and argmax
 \DeclareMathOperator*{\argmin}{arg\,min}
@@ -79,7 +80,6 @@ Thesis Draft \linebreak Master in Economics}
 
 \subfile{Literature/literature}
 
-
 \subfile{Model/model}
 
 \subfile{Computation/computation}
@@ -104,7 +104,7 @@ Overall totals by patients and physicians in the sampled period have the followi
     \hspace{1em}10th     & 2       & 1       \\
     \hspace{1em}50th  & 24    & 2       \\
     \hspace{1em}90th    & 216     & 7       \\
-    99th     & 1007    & 14      \\
+    \hspace{1em}99th     & 1007    & 14      \\
     Count     & 48,611   & 1,445,696 \\
     \bottomrule
     \end{tabular}

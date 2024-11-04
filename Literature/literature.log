@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.7)  1 NOV 2024 16:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.7)  3 NOV 2024 17:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -601,14 +601,14 @@ LaTeX Font Info:    ... okay on input line 3.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(113.81102pt, 386.67296pt, 113.81102pt)
-* v-part:(T,H,B)=(99.58464pt, 601.49117pt, 93.89418pt)
+* v-part:(T,H,B)=(85.35826pt, 610.02708pt, 99.58464pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=386.67296pt
-* \textheight=601.49117pt
+* \textheight=610.02708pt
 * \oddsidemargin=41.54103pt
 * \evensidemargin=41.54103pt
-* \topmargin=-9.68535pt
+* \topmargin=-23.91173pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
@@ -738,30 +738,30 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 12.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 12.
+(Font)              scaled to size 9.0pt on input line 14.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 12.
+(Font)              scaled to size 6.0pt on input line 14.
 
 
-Package natbib Warning: Citation `markussen-roed' on page 1 undefined on input line 14.
+Package natbib Warning: Citation `markussen-roed' on page 1 undefined on input line 16.
 
 
-Package natbib Warning: Citation `cln' on page 1 undefined on input line 14.
+Package natbib Warning: Citation `cln' on page 1 undefined on input line 16.
 
 
-Package natbib Warning: Citation `markussen-roed' on page 1 undefined on input line 14.
+Package natbib Warning: Citation `markussen-roed' on page 1 undefined on input line 16.
 
 [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/baskervillef/zba_uf5aa7.enc}]
 
-Package natbib Warning: Citation `schnell2017physician' on page 2 undefined on input line 16.
+Package natbib Warning: Citation `schnell2017physician' on page 2 undefined on input line 18.
 
 
-LaTeX Warning: Reference `sec:schnell_logit' on page 2 undefined on input line 18.
+LaTeX Warning: Reference `sec:schnell_logit' on page 2 undefined on input line 20.
 
 
-LaTeX Warning: Reference `sec:separate' on page 2 undefined on input line 20.
+LaTeX Warning: Reference `sec:separate' on page 2 undefined on input line 22.
 
 [2]
 
@@ -780,15 +780,15 @@ Package rerunfilecheck Info: File `literature.out' has not changed.
 (rerunfilecheck)             Checksum: 66418837E974739E6679786E88FDCD40;131.
  ) 
 Here is how much of TeX's memory you used:
- 15096 strings out of 474116
- 240484 string characters out of 5743683
+ 15097 strings out of 474116
+ 240495 string characters out of 5743683
  1946187 words of memory out of 5000000
- 37172 multiletter control sequences out of 15000+600000
+ 37173 multiletter control sequences out of 15000+600000
  706535 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 95i,8n,99p,1941b,464s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 95i,7n,99p,1941b,464s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on literature.pdf (3 pages, 132114 bytes).
+Output written on literature.pdf (3 pages, 132113 bytes).
 PDF statistics:
  74 PDF objects out of 1000 (max. 8388607)
  50 compressed objects within 1 object stream

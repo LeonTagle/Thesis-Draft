@@ -4,6 +4,9 @@
 
 \section{Model}
 
+\subsection{The Physician-Patient Market}
+\label{sec:3_1}
+
 We now present the model itself before proceeding with further discussion. We consider $i = 1, ..., I$ patients and $j = 1, ..., J$ physicians.\footnote{Note on language: For ease of reference, we refer to any patient as ``he'', and to any physician as ``she'' (s we have done already). At this point it shall be noted that the first person plural (we) employed over the course of this article is to be read as including the reader or perhaps as a royal \textit{we}.}
 
 Patients are characterized by their ``medical need'' $\kappa_i \in \mathbb{R}_0^+$ and their ``taste for sick leave'' $\gamma_i \in \mathbb{R}_0^+$, respectively following the ex-ante cumulative distributions $F(\kappa)$ and $G(\gamma)$, which are public knowledge. Physicians are described by their ``service quality'' $V_j \in \mathbb{R}^+$, also known both to all patients and other physicians.
@@ -11,7 +14,7 @@ Patients are characterized by their ``medical need'' $\kappa_i \in \mathbb{R}_0^
 A patient $i$ can visit a physician for treatment and may be also granted sick leave. After the patient is assigned a physician $j$, his utility function—implicitly dependent on his characteristic $(\kappa_i,\gamma_i)$ tuple—is defined piecewise as follows:
     \[
 U_i(V_j) =\begin{cases}
-\gamma_i + V_j \kappa_i - \tau_j \text{  \hspace{0.65cm} if he’s granted sick leave,} \\
+\gamma_i + V_j \kappa_i - \tau_j \text{  \hspace{0.65cm} if he's granted sick leave,} \\
 V_j \kappa_i - \tau_j \text{  \hspace{0.5cm} if he only visits the physician,} \\
 0 \text{  \hspace{0.8cm} if no visit takes place}
 \end{cases}
@@ -50,113 +53,142 @@ Conditional upon his visit (as not to visit renders null utility), the utility o
 
 We will usually use $u_{ij}$ as a shorthand.
 
-\subsection{Non-search Equilibrium}
+\subsection{Non-Search Equilibrium}
 
-For illustration purposes, we first devote attention to a non-search baseline, where each patient is randomly assigned to a physician, with an equal probability of being matched to any of the $J$ physicians. Their only say in the matter is whether they'll then visit physician $j$, i.e. the second stage of the game is out of their hands, and they only make choices in the third stage after assignment.
+For illustration purposes, we first devote attention to a non-search baseline, where each patient is randomly assigned to a physician, with an equal probability of being matched to any of the $J$ physicians. Their only say in the matter is whether they'll then visit physician $j$, which is to say, the second stage of the game is out of their hands, and they only make choices in the third stage after assignment.
 
-A patient won't visit his assigned physician if his expected utility from such a visit is negative, we call this a \textit{free disposal} requirement. As such, a doctor $j$’s expected client demand, as a function of $\bar{\kappa_j}$ and given the parameter $V_j$, will be the following:
+A patient won't visit his assigned physician if his expected utility from such a visit is negative, we call this the \textit{free disposal} requirement. As such, a physician $j$'s expected patient demand, as a function of her threshold $\bar{\kappa_j}$ (and given the parameter $V_j$) will be the following:
 \begin{equation}
-    Q_j(\bar{\kappa_j}) \,=\, \frac{I}{J}\left[ \int_{\tau/V_j}^{\infty}\,dF(k) +  \int_{\min\{\bar{\kappa_j},\tau/V_j\}}^{\tau/V_j} \int_{\tilde{\gamma}(k)}^{\infty} \,dG(\gamma) \,dF(k) \right] \tag{N.1}\label{eq:ns_Q}
+    Q_j(\bar{\kappa_j}) \,=\, \frac{I}{J}\left[ \int_{\tau_j/V_j}^{\infty}\,dF(\kappa) +  \int_{\min\{\bar{\kappa_j},\tau_j/V_j\}}^{\tau_j/V_j} \int_{\tilde{\gamma}(\kappa)}^{\infty} \,dG(\gamma) \,dF(\kappa) \right] \label{eq:ns_Q}
 \end{equation}
-where the left term consists of the mass of patients who just by virtue of doctor $j$’s service quality $V_j$ would be willing to pay a visit (i.e. $\kappa_i \geq \tau/V_j$), and the right term would be patients who only see doctor $j$ out of the expectation of getting sick leave ($\kappa_i \geq \bar{\kappa_j}$ \& $\gamma_i \geq \tau - V_j \kappa_i$), but wouldn’t visit otherwise. We define $\tilde{\gamma}(k) := \tau - V_j k$ as the lower limit of the inner integral.
+where the left term consists of the mass of patients who just by virtue of physician $j$'s service quality $V_j$ would be willing to pay a visit (i.e. $\kappa_i \geq \tau_j/V_j$), and the right term would be patients who only see physician $j$ solely out of the expectation of getting sick leave ($\kappa_i \geq \bar{\kappa_j}$ \& $\gamma_i \geq \tau_j - V_j \kappa_i$), and wouldn't visit otherwise. We define $\tilde{\gamma}(\kappa) := \tau_j - V_j \kappa$ as the lower limit of the inner integral over $\gamma$.
 
-Given that each patient with a $\kappa_i$ higher or equal to $\bar{\kappa_j}$ is granted a sick leave certificate, the expected total number of such certificates granted by $j$, as a function of $\bar{\kappa_j}$, is:
-
+Given that each patient with a $\kappa_i$ higher or equal to $\bar{\kappa_j}$ is granted sick leave, the expected total number of such certificates granted by $j$, as a function of $\bar{\kappa_j}$, is:
 \begin{equation}
     X_j(\bar{\kappa_j}) \,=\, \frac{I}{J} \int_{\bar{\kappa_j}}^{\infty} \int_{\tilde{\gamma}(k)}^{\infty} \,dG(\gamma) \,dF(k)
-    \tag{N.2}\label{eq:ns_X}
+   \label{eq:ns_X}
 \end{equation}
+which includes in theory patients from both the left and right term of equation (\ref{eq:ns_Q}).
 
-Given (\ref{eq:ns_Q}) and (\ref{eq:ns_X}), each physician solves for the following unconstrained optimization:
+For given formulations of the functions $Q_j(\bar{\kappa_j})$ and $X_j(\bar{\kappa_j})$, each physician solves for the following constrained optimization:
+\begin{align}
+\bar{\kappa_j}^* \; \equiv \; \operatorname{arg}\max_{\bar{\kappa_j}} R_j(Q_j) - P_j(X_j) & \hspace{2em} \text{s.a.} \hspace{1em} 0 \leq \bar{\kappa_j} \leq \bar{\kappa}_{\max}
+\label{eq:ns_k}
+\end{align}
+where $\bar{\kappa}_{\max} < \infty$ is the maximum value the choice of threshold of any physician may take, as we mentioned earlier.\footref{bar-kappa}
+
+An inner solution to problem (\ref{eq:ns_k}) takes on the following form because of the first order condition:
 \begin{equation}
-\bar{\kappa_j}^* \equiv \operatorname{arg}\max_{\bar{\kappa_j}} R_j(Q_j) - P_j(X_j)
-\tag{N.3}\label{eq:ns_k}
+    R_j^{\prime}(Q_j)\frac{\partial Q_j}{\partial\bar{\kappa_j}}  = P_j^{\prime}(X_j)\frac{\partial X_j}{\partial \bar{\kappa_j}}
+\label{eq:ns_FOC}
 \end{equation}
 
-We now SEE LATER
+\vspace{0.5em}
 
-\begin{lemma}
-\label{ns_lemma}
-No value in $(\frac{\tau}{V_j},\infty)$ can be the optimal solution of (\ref{eq:ns_k}).
-\end{lemma}
+\begin{prop}
+    \label{ns_prop}
+In the non-search model as described thus far, when the solution $\bar{\kappa_j}^*$ of problem (\ref{eq:ns_k}) $\in (0,\frac{\tau_j}{V_j}]$, this $\bar{\kappa_j}^*$ is described by: 
+\begin{equation*}
+    R_j^{\prime}(Q_j(\bar{\kappa_j}))  = P_j^{\prime}(X_j(\bar{\kappa_j}))
+\end{equation*}
+\end{prop}
 
-PROOF: APPENDIX
-
-\begin{lemma}
-    \label{ns_derivatives}
-When $\bar{\kappa_j} \in [0,\frac{\tau}{V_j}]$,
+\begin{proof}
+For $Q_j(\bar{\kappa_j})$ and $X_j(\bar{\kappa_j})$ as defined by (\ref{eq:ns_Q}) and (\ref{eq:ns_X}), when $\bar{\kappa_j} \in (0,\frac{\tau_j}{V_j}]$:
 \[
-    \frac{\partial Q_j}{\partial\bar{\kappa_j}} = \frac{\partial X_j}{\partial \bar{\kappa_j}}   
+\frac{\partial Q_j}{\partial\bar{\kappa_j}} = - \frac{I}{J} \int_{\tilde{\gamma}(\bar{\kappa_j})}^{\infty} \,dG(\gamma) \,f(\bar{\kappa_j}) = \frac{\partial X_j}{\partial\bar{\kappa_j}}
 \]
-\end{lemma}
+such that both derivatives are cancelled in equation (\ref{eq:ns_FOC}). As a result, if the optimal $\bar{\kappa_j}^* \in (0,\frac{\tau_j}{V_j}]$, the proposition follows.
+\end{proof}
 
-PROOF: APPENDIX
+This proposition implies that when for low enough values of $\kappa_i$, any new patients gained by physician $j$ are those she entices through the expectation of getting sick leave, meaning that in the vicinity of $\bar{\kappa_j} \in (0,\frac{\tau_j}{V_j}]$ the change in expected patients $\Delta Q_j/\Delta\bar{\kappa_j}$ through a variation in $\bar{\kappa_j}$ is the same as the change in expected sick leaves issued $\Delta X_j/\Delta \bar{\kappa_j}$.
 
-This proposition implies that when $\bar{\kappa_j}$ is low enough that the marginal patient is indifferent, any new clients gained by doctor $j$ are those she entices through the expectation of getting a certificate, meaning that in the vicinity of $\bar{\kappa_j}$ the change in expected patients $\Delta Q_j/\Delta\bar{\kappa_j}$ through a variation in $\bar{\kappa_j}$ is the same as the change in expected certificates granted $\Delta X_j/\Delta \bar{\kappa_j}$.
+We can see that (\ref{eq:ns_k}) offers three possibilities by way of solution: two corner solutions at 0 and $\bar{\kappa}_{\max}$, and an inner solution fulfilling equation (\ref{eq:ns_FOC}). The proposition below proves such an inner solution can't hold for $\bar{\kappa_j} \in (\frac{\tau_j}{V_j}, \bar{\kappa}_{\max})$.  
 
-Given Proposition \ref{ns_derivatives}, the following equation, which is the FOC of (\ref{eq:ns_k}):
-\[
-R_j^{\prime}(Q_j)\frac{\partial Q_j}{\partial\bar{\kappa_j}}  - P_j^{\prime}(X_j)\frac{\partial X_j}{\partial \bar{\kappa_j}} = 0
-\]
-may be simplified into
-\begin{equation}
-    R^{\prime}(Q_j) = P^{\prime}(X_j)
-    \tag{N.4}\label{eq:ns_FOC}
-\end{equation}
+\begin{prop}
+    \label{ns_prop2}
+In the non-search model as described thus far, no $\bar{\kappa_j}$ in $(\frac{\tau_j}{V_j}, \bar{\kappa}_{\max})$ can be the solution of problem (\ref{eq:ns_k}).
+\end{prop}
 
-We can see that (\ref{eq:ns_k}) offers three possibilities by way of solution: a \textit{corner} solution towards $\infty$, where doctor $j$ is content with her ``captured'' clientele (those who would visit her even without expecting sick leave), and offers no certificates at all\footnote{We may rationalize this by interpreting it as physician $j$ being as strict as is medically responsible. We could have written this as $\bar{\kappa_j}$ having an upper bound $\kappa_{\operatorname{max}}$, where any physician would be obliged to grant sick leave to a patient with $\kappa_i > \kappa_{\operatorname{max}}$.}; the corner solution $\bar{\kappa_j} = 0$, maximum leniency; and an \textit{inner} solution in $[0,\frac{\tau}{V_j}]$ fulfilling equation (\ref{eq:ns_FOC}) and thus the FOC of (\ref{eq:ns_k}). We formalize equilibrium below.
-
-\begin{equilibrium}[in non-search models]
+\begin{proof}
+    For $\bar{\kappa_j} \in (\frac{\tau_j}{V_j}, \bar{\kappa}_{\max})$, \vspace{-0.5em}
+    {\small \[Q_j(\bar{\kappa_j}) \,=\, \frac{I}{J}\left[ \int_{\tau_j/V_j}^{\infty}\,dF(\kappa) \right] \hspace{0.5em} \text{\normalsize and thus } \hspace{0.5em} \frac{\partial Q_j}{\partial\bar{\kappa_j}} \;=\; 0\]} whereas \vspace{-0.5em}
+    {\small \[  \frac{\partial X_j}{\partial\bar{\kappa_j}} = - \frac{I}{J} \int_{\tilde{\gamma}(\bar{\kappa_j})}^{\infty} \,dG(\gamma) \,f(\bar{\kappa_j}) \; \; <  \; \; 0
+    \]}
+    so equation (\ref{eq:ns_FOC}) can never hold, which would be required of $\bar{\kappa_j}$ as an inner solution to problem (\ref{eq:ns_k}).
+\end{proof}
+The intuition for this proposition is that $\kappa_i = \tau_j/V_j$ defines the threshold above which patients are willing to visit their assigned physician $j$ regardless of whether they get sick leave, so choosing such a $\bar{\kappa_j}$ is always either too strict or inefficiently lenient. We can speak of a ``captured clientele''. A similar behavior will be observed in the models with patient search, only that, since patients freely choose physicians, a ``captured'' patient won't be one which always visits $j$, rather one that always asigns \textit{positive probability} to visiting physician $j$, no matter her choice of threshold $\bar{\kappa_j}$.
+\vspace{0.5em}
+\begin{equilibrium}[in the non-search model]
     \label{ns_eq}
-Given a doctor-patient market specified by \\ $(\{(\kappa_i,\gamma_i)\}_{i =1}^{I},\{(V_j,R_j(\cdot),P_j(\cdot))\}_{i =1}^{J})$, we define an equilibrium as a set of physician thresholds $\{\bar{\kappa_j}\}_{j =1}^{J}$ satisfying (\ref{eq:ns_k}) and their corresponding equilibrium (expected) patient demand and granted sick leave certificates $\{(Q_j,X_j)\}_{j =1}^{J}$ as described by (\ref{eq:ns_Q}), (\ref{eq:ns_X}), respectively.
+Given a physician-patient market specified by \\ $\{\{(\kappa_i,\gamma_i)\}_{i =1}^{I},\{(V_j, R_j(\cdot), \tau_j)\}_{j =1}^{J}, P(\cdot)\}$, we define equilibrium as a set of physician \\ thresholds $\{\bar{\kappa_j}\}_{j =1}^{J}$ satisfying problem (\ref{eq:ns_k}) and their corresponding equilibrium (expected)\\ patient demand and issued sick leaves $\{(Q_j,X_j)\}_{j =1}^{J}$ as described by (\ref{eq:ns_Q}) and (\ref{eq:ns_X}), respectively.
 \end{equilibrium}
 
-\subsection{Search Equilibria}
-
-\subsubsection{Introducing search}
-
-We introduce patient ``search'' as a general framework in which patients can choose freely among all physicians.
-
-We define for each patient $i$ a vector $S_i \in \Delta(\mathcal{J})$, where $\mathcal{J}$ is the the $1 \times J$ vector composed of all $1, ..., J$ physicians. $S_i$ will be his \textit{strategy} for this game, representing his probabilistic choice of visit for each doctor $j$, such that each component $s_{i1}, ... , s_{iJ}$ of $S_i$ stands for the probability that he'll visit doctors $1, ..., J$ respectively.
-
-In order to describe a proper probability distribution, the following criteria must be met:
+This non-search baseline model, based off \cite{schnell2017physician}, already presents some elements which will be present in our more complex models later, but completely neglects patient behavior, who are reduced to being assigned a physician and choosing to visit her or not. Patient search will allow us to formalize their free choice of physician as a function of the model parameters and physician strategies.
 
 
+\subsection{General Search Framework}
+
+We introduce patient `search' as a general framework in which patients can choose freely among all physicians.
+
+We define for each patient $i$ a vector $S_i \in \Delta(\mathcal{J})$, where $\mathcal{J}$ is the the $J$-dimensional vector composed of all $1, ..., J$ physicians. $S_i$ represents the \textit{strategy} of patient \( i \) in this game, specifying the probability of visiting each physician \( j \). Each component \( s_{i1}, \ldots, s_{iJ} \) within \( S_i \) denotes the probability that patient \( i \) will visit physicians \( 1, \ldots, J \), respectively.
+
+
+In order to play the role of a proper subprobability measure, for each patient $i$ the components $s_{ij} \in S_i$ must fulfill the following criteria:
 \begin{enumerate}[label=\roman*.]
     \item $\forall j, \, s_{ij} \geq 0$
     \item $\sum_{i = 1}^{J} s_{ij} \leq 1$
 \end{enumerate}
 
-We will allow the sum of all components to be less than one, implying the presence of an \textit{outside option} for patients, that is, to not visit any doctors. Such an option is important, as patient rationality in our models will include  ``\textit{free disposal}'', meaning that a patient will never visit a doctor if his expected utility from such a visit is less than $0$, i.e. $s_{ij} = 0$ if $U_i(V_j,\bar{\kappa_j}) = 0$. This makes the third stage trivial, as under free choice, patient $i$ will only be assigned with positive probability to doctors he will be willing to visit.
+We will allow the sum of all components for each patient $i$ to be less than one (hence \textit{sub}-probability), implying the presence of an \textit{outside option} for patients, that is, to not visit any physicians. To have this option is important, as patient rationality in our models entails a  ``\textit{free disposal }'' property, meaning that a patient will never visit a physician if his expected utility from such a visit is less than $0$, that is, $s_{ij} = 0$ if $U_i(V_j,\bar{\kappa_j}) = 0$. This makes the third stage of the game as described in Section \ref{sec:3_1} trivial, as under free choice patient $i$ will only be ``assigned'' with positive probability to physicians he will be willing to visit.
 
-We can re-interpret the non-search model as each patient being made to play by the strategy \{$S_i: s_{i1} = s_{i2} ... = s_{iJ} = \frac{1}{J}$ \}, and it's the lack of a free choice which makes the third stage non-trivial.
+We can re-interpret the non-search model as each patient being made to play by the strategy \{$S_i: s_{i1} = s_{i2} = ... = s_{iJ} = \frac{1}{J}$ \}, and it is the lack of a free choice which makes the third stage non-trivial.
 
-Given the collection of all patients' strategies $(\{S_i\}_{i =1}^{I}$, each with a respective $s_{ij}$ for doctor $j$, we can formulate expected clientele and granted sick leaves for $j$ in a manner very much alike the previous section (indeed, as a generalization):
-\begin{equation}
-    Q_j(\bar{\kappa_j}, \bar{\kappa}_{-j}) \,=\, \int_{\tau/V_j}^{\infty}\bm{s_{ij}}\,dF(k) +  \int_{\min\{\bar{\kappa_j},\tau/V_j\}}^{\tau/V_j} \int_{\tilde{\gamma}(k)}^{\infty}\bm{s_{ij}} \,dG(\gamma) \,dF(k) 
-    \tag{S.1}\label{eq:s_Q}
-\end{equation}
-
-\begin{equation}
-    X_j(\bar{\kappa_j}, \bar{\kappa}_{-j}) \,=\, \int_{\bar{\kappa_j}}^{\infty} \int_{\tilde{\gamma}(k)}^{\infty}\bm{s_{ij}} \,dG(\gamma) \,dF(k)
-    \tag{S.2}\label{eq:s_X}
-\end{equation}
-
-As before, the left term in equation (\ref{eq:s_Q}) includes patients who would visit $j$ even without sick leave, whereas the right term those who only do so because they expect one.
-
-Notice that we now present $Q_j$ and $X_j$  not only in terms of the threshold $\bar{\kappa_j}$ chosen by doctor $j$, but also in terms of the thresholds of the other $J - 1$ doctors, which we abreviate as $\bar{\kappa}_{-j}$. Whereas before doctors were simply alloted a given number of patients, now they will \textit{compete} for them, as patients' $S_i$ strategy will consider the whole of $(\{\bar{\kappa_j}\}_{j =1}^{J}$ when considering which physician(s) they will visit with positive probability.
-
-\subsubsection{Some analytic results}
-
-We shall further specify the form $S_i$ will take. Consider now a $1 \times J$ vector $U_i$, where each component $u_{i1}, ... , u_{iJ}$ indicates the utility patient $i$ expects from a visit to doctors $1, ..., J$ respectively, corresponding to $U_i(V_j, \bar{\kappa_j})$ for each doctor $j$. As a shorthand, we shall write $u_{i,-j}$ to indicate the $J - 1$ components of $U_i$ excluding $u_{ij}$.
+We shall further specify the form $S_i$ will take. Consider now the $J$-dimensional vector $U_i$, where each component $u_{i1}, ... , u_{iJ}$ indicates the utility patient $i$ expects from a visit to physicians $1, ..., J$ respectively. As a shorthand, we shall write $u_{i,-j}$ to indicate the $J - 1$ components of $U_i$ excluding $u_{ij}$.
 
 In the models considered, each component $s_{ij}$ of $S_i$ will be defined as:
 \[s_{ij} \equiv g_i(u_{ij}, u_{i,-j})\]
 where $g_i(\cdot)$ is a continuous function weakly increasing in the first argument $u_{ij}$, and weakly decreasing in the remaining arguments given by $u_{i,-j}$. Our model specifications will consist in giving this function $g_i(u_{ij}, u_{i,-j})$ a specific form.
 
-As we show in the APPENDIX, such prerrequisites over $s_{ij}$ are enough to prove most of the qualitative relations we expect to see regarding equilibrium aggregates and doctor strategies, but not enough to prove that $\bar{\kappa_j}$ and $\bar{\kappa}_{-j}$ are strategic complements -- i.e., that for any $l \neq j$, $\frac{\partial^2 U_{j}}{\partial\bar{\kappa_{j}} \partial\bar{\kappa_{l}}} \geq 0$
+Defining $s_{ij}$ over $u_{ij}$ makes it dependent upon patient $i$'s characteristic tuple $(\kappa_i, \gamma_i)$. We will use the $s_{ij}(\kappa_i, \gamma_i)$ formulation to define physician expected demand and sick leaves issued as functions over patient strategies:
 
-\subsubsection{The ``implicit'' search model}
+\begin{equation}
+    Q_j(\bar{\kappa_j}, \bar{\kappa}_{-j}) \,=\, \int_{0}^{\infty} \int_{0}^{\infty}s_{ij}(\kappa, \gamma) \,dG(\gamma) \,dF(\kappa)
+    \label{eq:s_Q}
+\end{equation}
+
+\begin{equation}
+    X_j(\bar{\kappa_j}, \bar{\kappa}_{-j}) \,=\, \int_{\bar{0}}^{\infty} \int_{0}^{\infty}s_{ij}(\kappa, \gamma)  \,dG(\gamma) \,dF(\kappa)
+    \label{eq:s_X}
+\end{equation}
+
+At face value, these definitions appear less informative than their non-search equivalents in (\ref{eq:ns_Q}) and (\ref{eq:ns_X}). This is because $s_{ij}$ is more general than the patient `strategy' of the non-search model (of being assigned to any physician with equal probability), so we can't yet make claims about e.g. sections in the distribution of $\gamma$ where $s_{ij}$ is strictly 0. The two models we will introduce, the \textit{implicit} and \textit{explicit} search models, will build upon the general framework we've delineated and we will highlight
+
+Given the collection of all patients' strategies $(\{S_i\}_{i =1}^{I}$, each with a respective $s_{ij}$ for doctor $j$, we can formulate expected clientele and granted sick leaves for $j$ in a manner very much alike the previous section (indeed, as a generalization):
+
+
+As before, the left term in equation (\ref{eq:s_Q}) includes patients who would visit $j$ even without sick leave, whereas the right term those who only do so because they expect one.
+
+Notice that we now present $Q_j$ and $X_j$  not only in terms of the threshold $\bar{\kappa_j}$ chosen by doctor $j$, but also in terms of the thresholds of the other $J - 1$ doctors, which we abreviate as $\bar{\kappa}_{-j}$. Whereas before doctors were simply alloted a given number of patients, now they will \textit{compete} for them, as patients' $S_i$ strategy will consider the whole of $(\{\bar{\kappa_j}\}_{j =1}^{J}$ when considering which physician(s) they will visit with positive probability.
+
+
+
+This specification of $s_{ij}$ is sufficient to make the following proposition:
+
+\begin{prop}
+    \label{complements}
+In the non-search model as described thus far, no $\bar{\kappa_j}$ in $(\frac{\tau_j}{V_j}, \bar{\kappa}_{\max})$ can be the solution of problem (\ref{eq:ns_k}).
+\end{prop}
+
+Consider some two physicians $j$, $l$, such that $\bar{\kappa_j} \neq \bar{\kappa_l}$.
+
+
+
+
+
+
+
+\subsection{The ``Implicit'' Search Model}
 
 The ``implicit'' search model is a McFadden Logit choice model modified to give null probability visits to doctors which afford patient $i$ non-positive utility, that way the free disposal requirement is fulfilled.
 
@@ -206,7 +238,7 @@ Equilibrium is achieved in a similar fashion, though now taking into account the
 Given a doctor-patient market specified by \\ $(\{(\kappa_i,\gamma_i)\}_{i =1}^{I},\{(V_j,R_j(\cdot),P_j(\cdot))\}_{i =1}^{J})$, we define an equilibrium as a set of physician thresholds $\{\bar{\kappa_j}\}_{j =1}^{J}$ satisfying (\ref{eq:ns_k}) and patient strategies $\{S_i\}_{i =1}^{I}$ as defined by (\ref{eq:is_s}), with their corresponding equilibrium (expected) patient demand and granted sick leave certificates $\{(Q_j,X_j)\}_{j =1}^{J}$ as described by (\ref{eq:s_Q}), (\ref{eq:s_X}), respectively.
 \end{equilibrium}
 
-\subsubsection{The ``explicit'' search model}
+\subsection{The ``Explicit'' Search Model}
 
 What we call the ``explicit'' model is in which patient strategy $S_i$ is explicitly the result of a sequential search algorithm on part of the patients. This is in line with \cite{schnell2017physician}, though made trickier by the fact that our model allows for physician services apart from contingent ``prescriptions'' (in our case, sick leave certificates). In our model some patients \textit{are} willing to visit physicians who don't intend to grant them sick leave, given a high enough benefit from the medical service proper, $V_j \kappa_i$.
 

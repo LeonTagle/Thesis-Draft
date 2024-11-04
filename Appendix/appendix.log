@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.7)  2 NOV 2024 23:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.7)  3 NOV 2024 22:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -232,6 +232,17 @@ Package caption Info: New subtype `subfigure' on input line 238.
 \c@subfigure=\count283
 Package caption Info: New subtype `subtable' on input line 238.
 \c@subtable=\count284
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2023/07/05 v6.0f a miscellany of footnote facilities
+\FN@temptoken=\toks36
+\footnotemargin=\dimen169
+\@outputbox@depth=\dimen170
+Package footmisc Info: Declaring symbol style bringhurst on input line 696.
+Package footmisc Info: Declaring symbol style chicago on input line 704.
+Package footmisc Info: Declaring symbol style wiley on input line 713.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 724.
+Package footmisc Info: Declaring symbol style lamport* on input line 744.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 765.
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
  (/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -290,7 +301,7 @@ Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count287
 )
-\@linkdim=\dimen169
+\@linkdim=\dimen171
 \Hy@linkcounter=\count288
 \Hy@pagecounter=\count289
  (/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def
@@ -320,15 +331,15 @@ Package hyperref Info: Bookmarks ON on input line 4446.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4784.
-\XeTeXLinkMargin=\dimen170
+\XeTeXLinkMargin=\dimen172
  (/usr/local/texlive/2024/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/usr/local/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count292
-\Field@Width=\dimen171
-\Fld@charsize=\dimen172
+\Field@Width=\dimen173
+\Fld@charsize=\dimen174
 Package hyperref Info: Hyper figures OFF on input line 6063.
 Package hyperref Info: Link nesting OFF on input line 6068.
 Package hyperref Info: Hyper index ON on input line 6071.
@@ -526,30 +537,30 @@ LaTeX Info: Redefining \swshape on input line 32.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
  (/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks36
-\XKV@tempa@toks=\toks37
+\XKV@toks=\toks37
+\XKV@tempa@toks=\toks38
 )
 \XKV@depth=\count300
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))) (/usr/local/texlive/2024/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen173
-\lightrulewidth=\dimen174
-\cmidrulewidth=\dimen175
-\belowrulesep=\dimen176
-\belowbottomsep=\dimen177
-\aboverulesep=\dimen178
-\abovetopsep=\dimen179
-\cmidrulesep=\dimen180
-\cmidrulekern=\dimen181
-\defaultaddspace=\dimen182
+\heavyrulewidth=\dimen175
+\lightrulewidth=\dimen176
+\cmidrulewidth=\dimen177
+\belowrulesep=\dimen178
+\belowbottomsep=\dimen179
+\aboverulesep=\dimen180
+\abovetopsep=\dimen181
+\cmidrulesep=\dimen182
+\cmidrulekern=\dimen183
+\defaultaddspace=\dimen184
 \@cmidla=\count301
 \@cmidlb=\count302
-\@aboverulesep=\dimen183
-\@belowrulesep=\dimen184
+\@aboverulesep=\dimen185
+\@belowrulesep=\dimen186
 \@thisruleclass=\count303
 \@lastruleclass=\count304
-\@thisrulewidth=\dimen185
+\@thisrulewidth=\dimen187
 )
 \c@theorem=\count305
 \c@equilibrium=\count306
@@ -601,14 +612,14 @@ LaTeX Font Info:    ... okay on input line 3.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(113.81102pt, 386.67296pt, 113.81102pt)
-* v-part:(T,H,B)=(99.58464pt, 601.49117pt, 93.89418pt)
+* v-part:(T,H,B)=(85.35826pt, 610.02708pt, 99.58464pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=386.67296pt
-* \textheight=601.49117pt
+* \textheight=610.02708pt
 * \oddsidemargin=41.54103pt
 * \evensidemargin=41.54103pt
-* \topmargin=-9.68535pt
+* \topmargin=-23.91173pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=11.0pt
@@ -629,16 +640,16 @@ LaTeX Font Info:    ... okay on input line 3.
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count308
-\scratchdimen=\dimen186
+\scratchdimen=\dimen188
 \scratchbox=\box57
 \nofMPsegments=\count309
 \nofMParguments=\count310
-\everyMPshowfont=\toks38
+\everyMPshowfont=\toks39
 \MPscratchCnt=\count311
-\MPscratchDim=\dimen187
+\MPscratchDim=\dimen189
 \MPnumerator=\count312
 \makeMPintoPDFobject=\count313
-\everyMPtoPDFconversion=\toks39
+\everyMPtoPDFconversion=\toks40
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -729,7 +740,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package natbib Warning: Citation `schnell2017physician' on page 3 undefined on input line 88.
 
 
-Overfull \hbox (3.18907pt too wide) in paragraph at lines 90--91
+Overfull \hbox (13.18907pt too wide) in paragraph at lines 90--91
 []\T1/BaskervilleF-TLF/m/n/10.95 The way in which Schnell de-vises her physi-cian's util-ity for-mula is im-plic-itly Bernoulli-
  []
 
@@ -755,41 +766,41 @@ LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
 Package natbib Warning: Citation `sargent' on page 8 undefined on input line 259.
 
 [8]
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 304.
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 303.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 ) [9]
 <U.pdf, id=117, 490.63298pt x 344.54347pt>
 File: U.pdf Graphic file (type pdf)
 <use U.pdf>
-Package pdftex.def Info: U.pdf  used on input line 319.
+Package pdftex.def Info: U.pdf  used on input line 318.
 (pdftex.def)             Requested size: 177.87215pt x 124.90826pt.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 321.
+(Font)              scaled to size 10.0pt on input line 320.
 <schnell_U.pdf, id=118, 490.63298pt x 344.54347pt>
 File: schnell_U.pdf Graphic file (type pdf)
 <use schnell_U.pdf>
-Package pdftex.def Info: schnell_U.pdf  used on input line 328.
+Package pdftex.def Info: schnell_U.pdf  used on input line 327.
 (pdftex.def)             Requested size: 177.87215pt x 124.90826pt.
 <Q_comparison.pdf, id=119, 490.63298pt x 344.54347pt>
 File: Q_comparison.pdf Graphic file (type pdf)
 <use Q_comparison.pdf>
-Package pdftex.def Info: Q_comparison.pdf  used on input line 344.
+Package pdftex.def Info: Q_comparison.pdf  used on input line 343.
 (pdftex.def)             Requested size: 177.87215pt x 124.90826pt.
 <schnell_Q_comparison.pdf, id=120, 490.63298pt x 344.54347pt>
 File: schnell_Q_comparison.pdf Graphic file (type pdf)
 <use schnell_Q_comparison.pdf>
-Package pdftex.def Info: schnell_Q_comparison.pdf  used on input line 353.
+Package pdftex.def Info: schnell_Q_comparison.pdf  used on input line 352.
 (pdftex.def)             Requested size: 177.87215pt x 124.90826pt.
 <X_comparison.pdf, id=121, 490.63298pt x 344.54347pt>
 File: X_comparison.pdf Graphic file (type pdf)
 <use X_comparison.pdf>
-Package pdftex.def Info: X_comparison.pdf  used on input line 369.
+Package pdftex.def Info: X_comparison.pdf  used on input line 368.
 (pdftex.def)             Requested size: 177.87215pt x 124.90826pt.
 <schnell_X_comparison.pdf, id=122, 490.63298pt x 344.54347pt>
 File: schnell_X_comparison.pdf Graphic file (type pdf)
 <use schnell_X_comparison.pdf>
-Package pdftex.def Info: schnell_X_comparison.pdf  used on input line 378.
+Package pdftex.def Info: schnell_X_comparison.pdf  used on input line 377.
 (pdftex.def)             Requested size: 177.87215pt x 124.90826pt.
 
 
@@ -808,15 +819,15 @@ Package rerunfilecheck Info: File `appendix.out' has not changed.
 (rerunfilecheck)             Checksum: E84A4DE7D210D1AB1A65F7C9F471D4C8;1091.
  ) 
 Here is how much of TeX's memory you used:
- 15295 strings out of 474116
- 244781 string characters out of 5743683
+ 15430 strings out of 474116
+ 247249 string characters out of 5743683
  1948187 words of memory out of 5000000
- 37326 multiletter control sequences out of 15000+600000
+ 37457 multiletter control sequences out of 15000+600000
  821720 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 95i,19n,99p,897b,634s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 95i,19n,99p,897b,643s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/leontagle/Library/texlive/2024/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on appendix.pdf (10 pages, 358531 bytes).
+Output written on appendix.pdf (10 pages, 358701 bytes).
 PDF statistics:
  511 PDF objects out of 1000 (max. 8388607)
  238 compressed objects within 3 object streams
