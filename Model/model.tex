@@ -135,11 +135,12 @@ We define for each patient $i$ a vector $S_i \in \Delta(\mathcal{J})$, where $\m
 
 
 In order to play the role of a proper subprobability measure, for each patient $i$ the components $s_{ij} \in S_i$ must fulfill the following criteria:
-\begin{enumerate}[label=\roman*.]
-    \item $\forall j, \, s_{ij} \geq 0$
-    \item $\sum_{i = 1}^{J} s_{ij} \leq 1$
-\end{enumerate}
-
+\begin{equation} \tag{i}
+    \forall j, \, s_{ij} \geq 0
+\end{equation}
+\begin{equation} \tag{ii}
+    \sum_{j = 1}^{J} s_{ij} \leq 1
+\end{equation}
 We will allow the sum of all components for each patient $i$ to be less than one (hence \textit{sub}-probability), implying the presence of an \textit{outside option} for patients, that is, to not visit any physicians. To have this option is important, as patient rationality in our models entails a  ``\textit{free disposal }'' property, meaning that a patient will never visit a physician if his expected utility from such a visit is less than $0$, that is, $s_{ij} = 0$ if $U_i(V_j,\bar{\kappa_j}) = 0$. This makes the third stage of the game as described in Section \ref{sec:3_1} trivial, as under free choice patient $i$ will only be ``assigned'' with positive probability to physicians he will be willing to visit.
 
 We can re-interpret the non-search model as each patient being made to play by the strategy \{$S_i: s_{i1} = s_{i2} = ... = s_{iJ} = \frac{1}{J}$ \}, and it is the lack of a free choice which makes the third stage non-trivial.
@@ -162,25 +163,22 @@ Defining $s_{ij}$ over $u_{ij}$ makes it dependent upon patient $i$'s characteri
     \label{eq:s_X}
 \end{equation}
 
-At face value, these definitions appear less informative than their non-search equivalents in (\ref{eq:ns_Q}) and (\ref{eq:ns_X}). This is because $s_{ij}$ is more general than the patient `strategy' of the non-search model (of being assigned to any physician with equal probability), so we can't yet make claims about e.g. sections in the distribution of $\gamma$ where $s_{ij}$ is strictly 0. The two models we will introduce, the \textit{implicit} and \textit{explicit} search models, will build upon the general framework we've delineated and we will highlight
+At face value, these definitions appear less informative than their non-search equivalents in (\ref{eq:ns_Q}) and (\ref{eq:ns_X}). This is because $s_{ij}$ is more general than the patient `strategy' of the non-search model (of being assigned to any physician with equal probability), so we can't yet make claims about e.g. sections in the distribution of $\gamma$ where $s_{ij}$ is strictly 0. The two models we will introduce, the \textit{implicit} and \textit{explicit} search models, will build upon the general framework we've delineated and we will highlight their different qualitative implications.
 
-Given the collection of all patients' strategies $(\{S_i\}_{i =1}^{I}$, each with a respective $s_{ij}$ for doctor $j$, we can formulate expected clientele and granted sick leaves for $j$ in a manner very much alike the previous section (indeed, as a generalization):
+For now though, notice that present we $Q_j$ and $X_j$  not only in terms of the threshold $\bar{\kappa_j}$ chosen by physician $j$, but also in terms of the thresholds of the other $J - 1$ physicians, which we abbreviate as $\bar{\kappa}_{-j}$. Whereas before in `non-search' physicians were simply alloted a given number of patients, now they will \textit{compete} for them, as patients' $S_i$ behavioral strategy will consider the whole of $\{\bar{\kappa_j}\}_{j =1}^{J}$ when considering which physician(s) they will visit with positive probability.
 
+As a consequence of physician competition for patients, equilibrium $\{\bar{\kappa_j}^*\}_{j =1}^{J}$ will need to take on the form of a Nash equilibrium, as physicians take into consideration the strategies of the other $J - 1$ physicians when choosing their own, such that they adapt to the influence they expect other physicians will have on their own ``client'' base, which we call the \textit{strategic effect}. We explore in the Appendix \ref{sec:separate} the reasons for the presence of this effect, which is absent from \citeauthor{schnell2017physician}'s models, the basis for our own. We attribute it to the lack of \textit{additive separability} across patients in the physician's utility function when one of $R_j(\cdot)$ or $P_j(\cdot)$ is \textit{strictly} convex/concave.
 
-As before, the left term in equation (\ref{eq:s_Q}) includes patients who would visit $j$ even without sick leave, whereas the right term those who only do so because they expect one.
-
-Notice that we now present $Q_j$ and $X_j$  not only in terms of the threshold $\bar{\kappa_j}$ chosen by doctor $j$, but also in terms of the thresholds of the other $J - 1$ doctors, which we abreviate as $\bar{\kappa}_{-j}$. Whereas before doctors were simply alloted a given number of patients, now they will \textit{compete} for them, as patients' $S_i$ strategy will consider the whole of $(\{\bar{\kappa_j}\}_{j =1}^{J}$ when considering which physician(s) they will visit with positive probability.
-
-
-
-This specification of $s_{ij}$ is sufficient to make the following proposition:
+Before moving on to our first model specification, we note that this general formulation of $s_{ij}$ is sufficient to make the next proposition.
 
 \begin{prop}
     \label{complements}
-In the non-search model as described thus far, no $\bar{\kappa_j}$ in $(\frac{\tau_j}{V_j}, \bar{\kappa}_{\max})$ can be the solution of problem (\ref{eq:ns_k}).
+In the patient search framework as described, for two physicians $j$, $l$, such that $\bar{\kappa_j} \neq \bar{\kappa_l}$, $\bar{\kappa_j}$ and $\bar{\kappa_l}$ are strategic complements.
 \end{prop}
 
-Consider some two physicians $j$, $l$, such that $\bar{\kappa_j} \neq \bar{\kappa_l}$.
+\begin{proof}
+    The proof is in the Appendix \ref{sec:strategic}.
+\end{proof}
 
 
 
@@ -190,11 +188,11 @@ Consider some two physicians $j$, $l$, such that $\bar{\kappa_j} \neq \bar{\kapp
 
 \subsection{The ``Implicit'' Search Model}
 
-The ``implicit'' search model is a McFadden Logit choice model modified to give null probability visits to doctors which afford patient $i$ non-positive utility, that way the free disposal requirement is fulfilled.
+The ``implicit'' search model is a McFadden Logit choice model modified to give null probability visits to physicians which afford patient $i$ non-positive utility, so that the free disposal requirement is fulfilled. We also call it the Logit model.
 
-We call it the ``implicit'' search model because strictly speaking patient search is not formally included, yet one arrives at result qualitatively similar to specifications that do (like our own). The choice strategy noisily assigns positive probability to physicians who render $i$ high utility, and the higher this $u_{ij}$ expected utility is, the higher the probability of visit.
+The reason for calling it the ``implicit'' search model is that strictly speaking patient search is not formally included, yet one arrives at result qualitatively similar to specifications that do (like the ``explicit'' search model). The choice strategy noisily assigns positive probability to physicians who render $i$ high utility, and the higher this $u_{ij}$ expected utility is, the higher the probability of visit.
 
-Instead of \textit{explicitly} defining search and subsequent choice, probability of visit depends upon expected utility from doctor $j$, $u_{ij}$, and a weighing parameter $\lambda$. The lower the value of $\lambda$, the noisier patient ``search'' is: they give high assingment probability to sub-optimal --yet feasible-- physician choices.
+Instead of \textit{explicitly} defining search and subsequent choice, probability of visit depends upon expected utility from physician $j$, $u_{ij}$, and a weighing parameter $\lambda \in \mathbb{R}$. The lower the value of $\lambda$, the noisier patient ``search'' is: they give high assingment probability to sub-optimal—yet feasible—physician choices. On the other hand, as $\lambda \rightarrow \infty$, patient choice is concentrated with probability approaching 1 on the physician with the highest $V_j$.
 
 We define the components $s_{ij}$ of the patient's strategy vector $S_i$ as follows:
 
@@ -203,31 +201,17 @@ s_{ij} = \frac{\alpha_{ij}}{\sum_{k = 1}^{J} \alpha_{ik}}, \; \; \text{where } \
 e^{\lambda u_{ij}}, \; \; \text{if } \; \; u_{ij} > 0 \\
 0 , \; \; \text{if } \; \; u_{ij} = 0
 \end{cases}
-\label{eq:is_s}
-\tag{S}
+\label{eq:Logit_s}
 \end{equation}
 
-Unlike the ``explicit'' search model, the probability that patient $i$ visits doctor $j$ is \textit{strictly} growing in $\kappa_i$, rather than being a piece-wise constant function with different levels. There is a discrete jump in probability at $\bar{\kappa_j}$, but elsewhere above $0$ the function is smoothly increasing, rewarding physicians with high $V_j$.
+Unlike the ``explicit'' search model, the probability that patient $i$ visits physician $j$ is \textit{strictly} growing in $\kappa_i$, rather than being a piece-wise constant function with different levels. There is a discrete jump in probability at $\bar{\kappa_j}$, but elsewhere above $0$ the function is smoothly increasing, rewarding physicians with high $V_j$.
 
-The same lemmas as in the non-search model still hold.
-
-
-\begin{lemma}
-\label{is_lemma}
-No value in $(\frac{\tau}{V_j},\infty)$ can be the optimal solution of (\ref{eq:ns_k}).
-\end{lemma}
-    
-    PROOF: APPENDIX
-    
-\begin{lemma}
-\label{is_derivatives}
-When $\bar{\kappa_j} \in [0,\frac{\tau}{V_j}]$,
-\[
-\frac{\partial Q_j}{\partial\bar{\kappa_j}} = \frac{\partial X_j}{\partial \bar{\kappa_j}}   
-\]
-\end{lemma}
-    
-PROOF: APPENDIX
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[scale=0.6]
+\input{graph1.tex}
+\end{tikzpicture}
+\end{figure}
 
 Thus, the possible solutions for ($\ref{eq:ns_k}$) remain threefold: the corner solutions $0$ and $\infty$, and an inner solution where the simplified FOC $R^{\prime}(Q_j) = P^{\prime}(X_j)$ holds.
 

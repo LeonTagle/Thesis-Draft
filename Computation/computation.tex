@@ -18,7 +18,7 @@ What differs between both models is the computation of the matrix $S$ of patient
 \begin{itemize}[itemsep=4pt, topsep=0pt]
     \item \textbf{Implicit search model (Logit):} First, an `$\alpha$-matrix' is calculated over matrix $U,$ where each $\alpha_{ji}$ is $e^{\lambda u_{ji}}$ if $u_{ji} > 0$ and $0$ if not. Then, for each patient $i$, that is, for each column, each component $s_{ji}$ of the $S$ matrix takes on the values $s_{ji} = \alpha_{ji}/\sum_{k = 1}^{J} \alpha_{ki}$.
 
-    \item \textbf{Explicit search model (Sequential):} Recall equation (NUMBER) characterizing patient thresholds. We first compute the $I$-dimensional vector of the sampled patients' respective $\bar{U_i}$. Define $U_i$ as the set $\{u_{ji}\}_{j=1}^{J}$ of utility patient $i$ recieves from a visit to each physician. In matrix terms $U_i$ would be the $i$th column of the $J \times I$ matrix $U$. The operation to compute each $\bar{U_i}$ is the following:
+    \item \textbf{Explicit search model (Sequential):} Recall equation (NUMBER) characterizing patient thresholds. We first compute the $I$-dimensional vector of the sampled patients' respective $\bar{U_i}$. Define $U_i$ as the set $\{u_{ji}\}_{j=1}^{J}$ of utility patient $i$ recieves from a visit to each physician. In matrix terms $U_i$ would be the $i$th column of the $J \times I$ matrix $U$. The operation to compute each $\bar{U_i}$ is the following: \vspace{-0.5em}
     \begin{equation*}
     \bar{U_i} \equiv \argmin_{x \, \in \, U_i}\; \left\|  \; x - \frac{\beta}{1-\beta}  \sum_{j=1}^{J} \left\{ \frac{\mathbbm{1}[ u_{ji} \geq x ] \cdot (u_{ji} - x)}{\mathbbm{1}[ u_{ji} \geq x ]} \right\} \right\|
     \label{eq:comp1}
