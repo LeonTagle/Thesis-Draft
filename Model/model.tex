@@ -9,7 +9,7 @@
 
 We now present the model itself before proceeding with further discussion. We consider $i = 1, ..., I$ patients and $j = 1, ..., J$ physicians.\footnote{Note on language: For ease of reference, we refer to any patient as ``he'', and to any physician as ``she'' (s we have done already). At this point it shall be noted that the first person plural (we) employed over the course of this article is to be read as including the reader or perhaps as a royal \textit{we}.}
 
-Patients are characterized by their ``medical need'' $\kappa_i \in \mathbb{R}_0^+$ and their ``taste for sick leave'' $\gamma_i \in \mathbb{R}_0^+$, respectively following the ex-ante cumulative distributions $F(\kappa)$ and $G(\gamma)$, which are public knowledge. Physicians are described by their ``service quality'' $V_j \in \mathbb{R}^+$, also known both to all patients and other physicians.
+Patients are characterized by their ``medical need'' $\kappa_i \in \mathbb{R}_0^+$ and their ``taste for sick leave'' $\gamma_i \in \mathbb{R}$, respectively following the ex-ante cumulative distributions $F(\kappa)$ and $G(\gamma)$, which are public knowledge. Physicians are described by their ``service quality'' $V_j \in \mathbb{R}^+$, also known both to all patients and other physicians.
 
 A patient $i$ can visit a physician for treatment and may be also granted sick leave. After the patient is assigned a physician $j$, his utility function—implicitly dependent on his characteristic $(\kappa_i,\gamma_i)$ tuple—is defined piecewise as follows:
     \[
@@ -159,7 +159,7 @@ Defining $s_{ij}$ over $u_{ij}$ makes it dependent upon patient $i$'s characteri
 \end{equation}
 
 \begin{equation}
-    X_j(\bar{\kappa_j}, \bar{\kappa}_{-j}) \,=\, \int_{\bar{0}}^{\infty} \int_{0}^{\infty}s_{ij}(\kappa, \gamma)  \,dG(\gamma) \,dF(\kappa)
+    X_j(\bar{\kappa_j}, \bar{\kappa}_{-j}) \,=\, \int_{\bar{\kappa_j}}^{\infty} \int_{0}^{\infty}s_{ij}(\kappa, \gamma)  \,dG(\gamma) \,dF(\kappa)
     \label{eq:s_X}
 \end{equation}
 
@@ -270,7 +270,7 @@ As before, we formalize the notion of equilibrium in the sequential model.
 
 \vspace{0.5em}
 \begin{equilibrium}[in the ``explicit'' search model]
-    \label{Logit_eq}
+    \label{Schnell_eq}
 Given a physician-patient market specified by $\{\{(\kappa_i,\gamma_i)\}_{i =1}^{I},\{(V_j, R_j(\cdot), \tau_j)\}_{j =1}^{J}, P(\cdot), \beta \}$, we define equilibrium as a set of patient thresholds $\{\bar{U_i}\}_{i =1}^{I}$ fulfilling (\ref{eq:seq4}), patient strategies $\{S_i: s_{i1} \, ... \, s_{iJ}\}_{i =1}^{I}$ as defined by (\ref{eq:Schnell_s}) and physician thresholds $\{\bar{\kappa_j}\}_{j =1}^{J}$ satisfying problem (\ref{eq:ns_k}) with their corresponding equilibrium (expected) patient demand and issued sick leaves $\{(Q_j,X_j)\}_{j =1}^{J}$ as described by (\ref{eq:s_Q}) and (\ref{eq:s_X}), respectively.
 \end{equilibrium}
 

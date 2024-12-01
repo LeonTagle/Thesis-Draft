@@ -143,7 +143,7 @@ Condition (\ref{eq:schnell_condition}) means a value  $\kappa_j$ is chosen irres
 
 We defined the components $s_{ij}$ of $S_i$  as:
 \[s_{ij} \equiv g_i(u_{ij}, u_{i,-j})\]
-where $g_i(\cdot)$ is a continuous function weakly increasing in the first argument $u_{ij}$. Our defining $s_{ij}$ this way has two interlinked corollaries:
+where $g_i(\cdot)$ is a continuous function weakly increasing in the first argument $u_{ij}$, weakly decreasing in $u_{i,-j}$. Our defining $s_{ij}$ this way has two interlinked corollaries:
 
 \begin{corollary}
 \[s_{ij} \mid \kappa_i < \bar{\kappa_j} \;\;\;\; \leq     \;\;\;\; s_{ij} \mid \kappa_i \geq \bar{\kappa_j} \;\;\;\; \text{(with strict inequality if $\gamma_i > 0$).}\]
@@ -392,5 +392,175 @@ Which is the function we say characterizes patient thresholds in the explicit se
     \caption{Comparison of sick leaves issued ($X_j$) by physician quality ($V_j$)\\ for different model parameters and threshold vectors $\bar{\kappa}$}
     \label{fig:X_comparison}
 \end{figure}
+
+\newpage
+
+\subsection{Identification Panels}
+\label{sec:id}
+
+
+\begin{figure}[H]
+    \centering
+    % First subfigure
+
+    \begin{subfigure}[b]{0.39\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{p_id1.pdf}
+        \vspace{-0.6cm}
+        \caption{$X_j$, variations in $p$}
+        \label{fig:p1}
+    \end{subfigure}
+    \hspace{0.07\linewidth}  % Space between the subfigures
+    % Second subfigure
+    \begin{subfigure}[b]{0.39\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{p_id2.pdf}
+        \vspace{-0.6cm}
+        \caption{$X_j^{30}$, variations in $p$}
+        \label{fig:p2}
+    \end{subfigure}
+
+    \vspace{0.3cm}
+
+    \begin{subfigure}[b]{0.39\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{mu_id1.pdf}
+        \vspace{-0.6cm}
+        \caption{$X_j$, variations in $\mu$}
+        \label{fig:mu1}
+    \end{subfigure}
+    \hspace{0.07\linewidth}  % Space between the subfigures
+    % Second subfigure
+    \begin{subfigure}[b]{0.39\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{mu_id2.pdf}
+        \vspace{-0.6cm}
+        \caption{$X_j^{30}$, variations in $\mu$}
+        \label{fig:mu2}
+    \end{subfigure}
+
+    \vspace{0.3cm}
+
+    \begin{subfigure}[b]{0.39\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{sigma_id1.pdf}
+        \vspace{-0.6cm}
+        \caption{$X_j$, variations in $\sigma$}
+        \label{fig:sigma1}
+    \end{subfigure}
+    \hspace{0.07\linewidth}  % Space between the subfigures
+    % Second subfigure
+    \begin{subfigure}[b]{0.39\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{sigma_id2.pdf}
+        \vspace{-0.6cm}
+        \caption{$X_j^{30}$, variations in $\sigma$}
+        \label{fig:sigma2}
+    \end{subfigure}
+
+    \vspace{0.3cm}
+
+    \begin{subfigure}[b]{0.39\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{lambda_id1.pdf}
+        \vspace{-0.6cm}
+        \caption{$X_j$, variations in $\lambda_s$}
+        \label{fig:lambda1}
+    \end{subfigure}
+    \hspace{0.07\linewidth}  % Space between the subfigures
+    % Second subfigure
+    \begin{subfigure}[b]{0.39\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{lambda_id2.pdf}
+        \vspace{-0.6cm}
+        \caption{$X_j^{30}$, variations in $\lambda_s$}
+        \label{fig:lambda2}
+    \end{subfigure}
+
+    \vspace{0.3cm}
+
+    \begin{subfigure}[b]{0.39\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{k_id1.pdf}
+        \vspace{-0.6cm}
+        \caption{$X_j$, variations in $\bar{\kappa}_{\max}$}
+        \label{fig:k1}
+    \end{subfigure}
+    \hspace{0.07\linewidth}  % Space between the subfigures
+    % Second subfigure
+    \begin{subfigure}[b]{0.39\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{k_id2.pdf}
+        \vspace{-0.6cm}
+        \caption{$X_j^{30}$, variations in $\bar{\kappa}_{\max}$}
+        \label{fig:k2}
+    \end{subfigure}
+
+
+\caption{Sick leaves issued by quality bin as parameters vary.}
+\vspace{0.2em}
+{\small Black: Estimated value. Violet: Lower. Blue: Higher.
+\vspace{-0.2em}
+
+Transparency increasing with distance from estimated value}
+
+
+\end{figure}
+
+
+\subsection{Parameter Sources}
+\label{sec:par}
+
+\subsubsection*{Physician quality by bins ($V_1$ ... $V_{10}$)}
+
+As mentioned in the main text, three criteria are considered for the \textit{quality score}:
+\begin{enumerate}[label=\roman*, itemsep=0pt, topsep=0pt]
+    \item Average duration of sick leaves issued.
+    \item Percentage of sick leaves of 30+ days over total in sampled period.
+    \item Amount of sick leaves of 30+ days issued.
+\end{enumerate}
+
+For each of the criteria the \textit{percentile rank} which each physician occupies is recorded, all in increasing order, i.e. from lowest to highest average duration, from lowest to highest percentage/amount of $\geq30$ days sick leaves. Call the percentile rank which physician $j$ occupies in each category $p_j^{i}$, $p_j^{ii}$ and $p_j^{iii}$. The \textit{quality score} of physician $j$ is the simple average of these three, that is:
+\[
+q\_score_j \;=\; \frac{1}{3}p_j^{i} \;+\; \frac{1}{3}p_j^{ii} \;+\; \frac{1}{3}p_j^{iii}
+\]
+
+The quality bins are then set up from the decile ranks of physicians in their \textit{quality score}. Bin 1, for example, is simply the first decile rank of $q\_score$, the lowest 10\% of physicians according to their quality score. Each bin is therefore equally sized.
+
+The parameters $V_1$ ... $V_{10}$ associated with each bin are then to be estimated in our GMM exercise, subject to the constraint that they increase in alignment with quality. Simply put: $ V_{10} > V_{9} > ... > V_{1}$.
+
+\subsubsection*{Revenue by visit ($r_j$) and cost of visit ($\tau_j$)}
+
+We use a single $r$ and $\tau$ for all physicians on this occasion. In the future a proper match to revenue bins would be a way to further square parameter estimation. Our procedure is arbitrary, but an alternative method would nonetheless stay within the same degree of magnitude as our final values for $r$ and $\tau$, so in this case arbitrariness is not all too relevant.
+
+We select the ten most frequent $cie10$ categories in our sample, the international standard classification of medical conditions. These ten, as well as non-categorized conditions (seen as \textit{empty} in the Table), account for 47.91\% of all sick leaves in our database. We then match the conditions to a particular field of practice, though strictly speaking physicians aren't reduced to their own field when issuing sick leaves, so matching is fuzzy.
+
+We then take a \textit{full price} and the {fee} paid by FONASA affiliates in the Free Choice Modality (MLE) as a reference price, from a tariff book assembled by FONASA itself (2024). We take this to correspond to the physician's revenue by visit ($r$) and the patients' cost of visit ($\tau$), respectively.
+
+Our final value for $r$ and $\tau$ is the weighted average of this prices, weighted by the relative frequency of each category and its matched full and benefit price. This amounts to taking the dot product of the `\%' column with the `Full Price' and `Aff. Fee' columns in the Table below, respectively.
+
+The resulting values are: $r = 21,182$ and $\tau = 8,944$. For simplicity, we select to use them in the thousands for estimation, i.e. 8.944 instead of 8,944. See the Table below for the referenced variable columns.
+
+\begin{table}[H]
+    \centering
+\footnotesize
+    \begin{tabular}{lrrllrr}
+    \toprule
+    \textit{cie10} cat. & Instances & \% & Informal Description & Matched Field & Full Price & Aff. Fee  \\
+    \midrule
+    M54            & 379,332    & 0.20       & Back pain            & Traumatology  & \$ 18,130 & \$ 7,250    \\
+    F32            & 304,399    & 0.16       & Depression           & Psychiatry    & \$ 27,510 & \$ 11,000  \\
+    F41            & 284,129    & 0.15       & Anxiety              & Psychiatry    & \$ 27,510 & \$ 11,000   \\
+    F43            & 244,468    & 0.13       & Stress               & Psychiatry    & \$ 27,510 & \$ 11,000   \\
+    J20            & 191,615    & 0.10       & Bronchitis           & General       & \$ 14,270 & \$ 7,440    \\
+    A09            & 186,535    & 0.10       & Gastroenteritis      & General       & \$ 14,270 & \$ 7,440    \\
+    \textit{empty}  & 152,239   &            &                      &               &       &         \\
+    M75            & 115,585    & 0.06       & Shoulder             & Traumatology  & \$ 18,130 & \$ 7,250   \\
+    J00            & 92,660     & 0.05       & Common cold          & General       & \$ 14,270 & \$ 7,440    \\
+    M51            & 54,800     & 0.03       & Intervertrebal disc  & Traumatology  & \$ 18,130 & \$ 7,250    \\
+    K52            & 49,182     & 0.03       & Gastroenteritis      & General       & \$ 14,270 & \$ 7,440    \\
+    \bottomrule
+    \end{tabular}
+\end{table}
 
 \end{document}

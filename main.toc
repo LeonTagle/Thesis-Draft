@@ -10,12 +10,17 @@
 \contentsline {subsection}{\numberline {4.1}Algorithms for Model Computation}{14}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Illustrative Examples}{17}{subsection.4.2}%
 \contentsline {section}{\numberline {5}Data}{20}{section.5}%
-\contentsline {section}{\numberline {6}Calibration}{21}{section.6}%
-\contentsline {section}{\numberline {7}Counterfactuals \& Comments}{23}{section.7}%
-\contentsline {section}{References}{25}{section*.15}%
-\contentsline {section}{Appendix}{26}{section*.16}%
-\contentsline {subsection}{\numberline {A.1}The Cause of the ``Strategic Effect''}{26}{subsection.7.1}%
-\contentsline {subsection}{\numberline {A.2}\cite {schnell2017physician} with Logit Choice}{28}{subsection.7.2}%
-\contentsline {subsection}{\numberline {A.3}Strategic Complementarity of $\bar {\kappa _j}$'s (Proof of Proposition \ref {complements})}{30}{subsection.7.3}%
-\contentsline {subsection}{\numberline {A.4}Optimal Reserve Utility (Proof of Equation \ref {eq:seq4})}{33}{subsection.7.4}%
-\contentsline {subsection}{\numberline {A.5}More Figures}{35}{subsection.7.5}%
+\contentsline {section}{\numberline {6}Estimation}{22}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Quality Bins}{22}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Data Moments}{24}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Something}{25}{section.7}%
+\contentsline {section}{\numberline {8}Counterfactuals \& Comments}{26}{section.8}%
+\contentsline {section}{References}{28}{section*.17}%
+\contentsline {section}{Appendix}{29}{section*.18}%
+\contentsline {subsection}{\numberline {A.1}The Cause of the ``Strategic Effect''}{29}{subsection.8.1}%
+\contentsline {subsection}{\numberline {A.2}\cite {schnell2017physician} with Logit Choice}{31}{subsection.8.2}%
+\contentsline {subsection}{\numberline {A.3}Strategic Complementarity of $\bar {\kappa _j}$'s (Proof of Proposition \ref {complements})}{33}{subsection.8.3}%
+\contentsline {subsection}{\numberline {A.4}Optimal Reserve Utility (Proof of Equation \ref {eq:seq4})}{36}{subsection.8.4}%
+\contentsline {subsection}{\numberline {A.5}More Figures}{38}{subsection.8.5}%
+\contentsline {subsection}{\numberline {A.6}Identification Panels}{39}{subsection.8.6}%
+\contentsline {subsection}{\numberline {A.7}Parameter Sources}{40}{subsection.8.7}%
