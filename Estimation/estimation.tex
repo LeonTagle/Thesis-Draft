@@ -6,6 +6,7 @@
 \section{Estimation}
 
 \subsection{Data Moments}
+\label{sec:moments}
 
 Having explored both our theoretical framework and the data we have on sick leaves, we turn to calibrating our ``implicit'' search model using that data. Our main blind spot is the fact that we have no information on overall patient visits by each physician ($Q_j$), only the sick leaves they were authorized to issue in the sampled period ($X_j$). We get the necessary variation to be able to identify and estimate our parameters from two sources: by assigning each of the 48,611 physicians to one of ten equally sized ``quality'' bins (or deciles) and by making a distinction between overall sick leaves granted and those of 30 days or more.
 
@@ -23,7 +24,7 @@ Figure \ref{fig:cdf} illustrates the empirical cumulative distribution of sick l
     \centering
     \includegraphics[width=0.70\linewidth]{cdf.pdf}
     \captionsetup{justification=centerlast}
-    \caption{Empirical Cumulative Distribution of Sick Leave Durations. \\ A red dashed line is placed at 29 days.}
+    \caption{Empirical cumulative distribution of sick leave durations. \\ A red dashed line is placed at 29 days.}
     \label{fig:cdf}
 \end{figure}
 
@@ -77,8 +78,61 @@ As for physicians, as we mentioned, we will estimate the ten components of the $
 
 The choice of a linear function for $R_j(\cdot)$ is natural and precedented, the parameter $r_j$ ($r$) has a direct interpretation as the revenue by visit for physician $j$. The choice of $P(\cdot)$ is a little more subtle. At this point we would like to point out, it is not self-evident that our \textit{punishment} function should take total sick leaves granted by physician ($X_j$) as its argument. The reasoning behind it is the fact that the patients' $\kappa_i$ would be unobservable to the institutional overseer, as is the case in the real-life setting, where reports on the patients' conditions come in most cases from the very same agent that issues sick leaves, the physician, making fraud and misdiagnosis be undetectable in these instances.
 
+As a crutch, institutional discipline relies on what variables \textit{are} observable, namely, the amount of sick leaves issued within a given period by physician. As chronicled by \cite{oteiza}, in 2021 the regulatory authority COMPIN sanctioned a subsample of physicians who were eggregious outliers in their volume of sick leaves issued and were unable to justify it. The `expected punishment' which faces some physician $j$ could be formalized as:
+\[
+\text{fine\_\$} \times \operatorname{Pr}[\text{fined} \mid X_j]
+\]
+The probability of being find would be near 0 until $X_j$ gets to be above around the 90th percentile, at which point starts steadily increasing. If we allowed the magnitude of the fine to increase in proportion to the level of $X_j$, the `punishment function' would be more convex still. We choose $p / 2 \cdot (X_j)^2$ as a reasonable polynomial approximation of the function implied by our description. Convexity would not be nearly as steep as before, but it has the advantage of parsimony. The parameter $p$ then takes on the interpretation of both magnitude and probability of fine, anything that impacts the expected punishment physicians envisage for any given level of $X_j$.
+
+\begin{table}[H]
+    \centering
+    \small
+    \begin{tabular}{lcc}
+        \toprule
+        Parameter  & Value & Source \\
+        \midrule
+        Physician quality bins && \\
+        \hspace{1em}$V_1$ ... $V_{10}$ & $\vec{V}_{1 \times 10}$ & GMM \\
+            \\
+        Punishment function $P(\cdot)$ && \\
+            \hspace{1em}$p$ & 1.953 &  GMM\\
+            \\
+        Medical need distribution $F(\kappa)$ && \\
+            \hspace{1em}$\lambda_F$ & 2 & \hspace{0.25em} Normalization\\
+            \\
+        Taste distribution $G(\gamma)$ \\
+            \hspace{1em}$\mu$ & 73.997 &  GMM\\
+            \hspace{1em}$\sigma$ & 18.492 &  GMM\\
+            \\
+        Logit model parameter && \\
+            \hspace{1em}$\lambda_s$ & 0.842 & GMM\\
+            \\
+        Maximum threshold level && \\
+            \hspace{1em}$\bar{\kappa}_{\max}$ & 0.763 &  GMM\\
+            \\
+        Revenue/cost of visit && \\
+            \hspace{1em}$r$ & 21.182 & Data \\
+            \hspace{1em}$\tau$ & 8.944 & Data \\
+        \bottomrule 
+    \end{tabular}
+    \caption{Model parameters}
+    \label{tab:gmm}
+\end{table}
+
+Finally, we must also estimate $\lambda_s$, the parameter specific for the Logit model, characterizing the ``effectiveness'' of search, and $\kappa_{\max}$, the upper bound for physician strategies, regulating the aggregate level of $X^{30}$ in the market. In its estimated level, 21.75\% of patients will fall above this threshold, near the 20.05\% of sick leaves of 30+ days in our sample.
+
+All the parameters in our model and their function within it are summarized in Table \ref{tab:gmm}, alongside they value they take on and its source. Two parameters are directly retreived from the data ($r$ and $\tau$), one we select/normalize ourselves ($\lambda_F$), the rest are subject to GMM estimation. That makes 15 parameters to be evaluated out of 20 data moments.
+
+Define $\theta = \{V_1, ..., V_{10}, p, \mu, \sigma, \lambda_s, \bar{\kappa}_{\max}\}$ and $m = \{X_1, ..., X_{10}, X_1^{30}, ..., X_{10}^{30}\}$. The generalized method of moments (GMM) defines the optimal set of parameters as:
+\begin{equation}
+    \hat{\theta}_{GMM} = \min_{\theta} \left\| \; m(x) - m(x|\theta)\; \right\|
+\end{equation}
+where $m(x)$ are is the moment vector from real data $x$, and $m(x|\theta)$ the vector of moments from the model that correspond to the real-world moment vector $m(x)$. The optimal $\hat{\theta}_{GMM}$ minimizes the distance between these two vectors.
+
+Minimization is achieved through a series of global and local optimization algorithms, using the `\textit{dual\_annealing}' and `\textit{Powell}' modules of Scipy optimization.
 
 
+The resulting set $\hat{\theta}_{GMM}$ of parameters can be seen in Table \ref{tab:gmm}. The comparison between the moments in the data $m(x)$ and the moments from our GMM fitted model $m(x|\hat{\theta}_{GMM})$ is displayed in two bar plots in Figure \ref{fig:moments}.
 
 \begin{figure}[H]
     \centering
@@ -100,49 +154,38 @@ The choice of a linear function for $R_j(\cdot)$ is natural and precedented, the
     \end{subfigure}
 
 
-\caption{GMM Results \\ Moments by Quality Bin, Data vs. Model Fit (Estimation)}
-
+\caption{GMM results \\ Moments by quality bin, Data vs. Model fit (estimation)}
+\label{fig:moments}
 \end{figure}
 
-\newpage
+The first four representative physicians take a corner, $\kappa_j = 0$ solution. The rest are at the inner solution, satisfying the FOC equation (\ref{eq:ns_FOC}), choosing an increasingly large threshold in relation to their higher $V_j$. Patients satisfying $\kappa_i > \bar{\kappa}_{\max}$, which place high value on physician quality, are concentrated at the highest bins, especially number 10, and they would be even more if were the search parameter $\lambda_s$ were higher.
 
-\begin{table}[h]
-    \centering
-    \small
-    \begin{tabular}{lcc}
-        \toprule
-        Parameter  & Value & Source \\
-        \midrule
-        Physician quality bins && \\
-        \hspace{1em}$V_1$ ... $V_{10}$ & $\vec{V}_{1 \times 10}$ & GMM \\
-            \\
-        Punishment function $P(\cdot)$ && \\
-            \hspace{1em}$p$ & 1.953 &  GMM\\
-            \\
-        Medical need distribution $F(\kappa)$ && \\
-            \hspace{1em}$\lambda_F$ & 2 & \hspace{0.25em} Normalization\\
-            \\
-        Taste distribution $G(\gamma)$ \\
-            \hspace{1em}$\mu$ & 73.997 &  GMM\\
-            \hspace{1em}$\sigma$ & 18.492 &  GMM\\
-            \\
-        Maximum threshold level && \\
-            \hspace{1em}$\bar{\kappa}_{\max}$ & 0.763 &  GMM\\
-            \\
-        Logit model parameter && \\
-            \hspace{1em}$\lambda_s$ & 0.842 & GMM\\
-            \\
-        Revenue/cost of visit && \\
-            \hspace{1em}$r$ & 21.182 & Data \\
-            \hspace{1em}$\tau$ & 8.944 & Data \\
-        \bottomrule 
-    \end{tabular}
-    \caption{Model parameters}
-\end{table}
+Even considering the fact that our set-up of physician quality bins amounts to a sort of ``pre-fitting'' of the data to our model, the fitting itself is reasonably succesful, every single of the twenty moments in the model approaching its data analogue to a high degree, in some cases nearing equality.
 
 \subsection{Identification}
 
-\newpage
+Though fulfilling the minimal condition that we have more equations (20) than moments (15), we need to further ensure the correct identification of each individual parameter. This is straightforward to argue for in the case of the $\vec{V}$ vector, each of the ten $V_j$ parameters directly raises demand for representative physician $j$, increasing the value of both moments for the respective quality bin. Identification of the other five moments comes from the interplay between the ten $X$ moments and the other ten $X^{30}$ moments.
+
+To get a visual understanding, the Figure \ref{fig:identification} in the Appendix \ref{sec:id} plots the change in the distribution of $X_j$ and $X_j^{30}$ across quality bins for variations in the five remaining parameters. We briefly explain for each parameter the variation in the data which allows for its identification:
+
+\vspace{0.5em}
+\begin{xltabular}{\textwidth}{lX}
+  
+  
+    $\lambda_s$ & This parameter determines the ``quality'' of search in the Logit model. As it increases towards $\infty$, demand concentrates exclusively at $V_{10}$. As it tends to 0, demand is uniformly distributed across the ten bins. This sensitivity is more pronounced for the $X^{30}$ moments, sick leaves for patients above $\kappa_{\max}$, for the reasons mentioned in subsection \ref{sec:moments}: this moment is almost independent from $\gamma_i$, which conversely makes it more sensitive to $V_j$, which is in turn scaled by  $\lambda_s$. This parameter serves to explain, for a given $\vec{V}$, the relative steepness of the distribution of $X^{30}$ with respect to $X$. \\
+    \\
+    $\bar{\kappa}_{\max}$ & This parameter directly controls the scale of overall $X^{30}$ with respect to $X$. The lower it is, the more aggregate $X^{30}$ approaches aggregate $X$. It should be such that the $X^{30}/X$ ratio resembles the ratio of sick leaves of 30+ days over total sick leaves issued in the data, and indeed it does (21.75\% vs. 20.05\%). \\
+    \\
+    $p$ & The \textit{punishment} function parameter $p$ determines the level of $X_j$ at which physicians who choose an inner solution $\bar{\kappa_j}$ stay, and the first physician bin which plays an inner solution. Raising or increasing $p$ takes the $X_j$ levels of the six representative physicians of highest quality away from the horizontal they currently occupy, regardless of the magnitude of $V_j$ they hold. \\
+    \\
+    $\mu, \sigma$ & For these two parameters we run into complications. Jointly, they \textit{can} be identified, as they account for variations in the location of the first inner solution bin beyond what the $p$ parameter can achieve, but they can't be readily separated. The effect of a decrease in $\mu$ is equivalent to that of an \\
+    & increase in $\sigma$, furthermore, the distribution is insensitive to an increase in $\mu$ as it is to decreasing $\sigma$. In this regard we can say that $\mu$ and $\sigma$ jointly describe a feasible plane where the distribution we achieved is possible for values in both parameters, but they fail at reducing this 2-dimensional plane to a singleton, which would be the exact identification of both.
+\end{xltabular}
+
+This last result is unfortunate, it implies we can only \textit{partially} identify the distribution $G(\gamma)$, placing a question mark over our whole enterprise. We nonetheless carry on, but if this issue is to be alleviated, more data moments are to be made available for fitting. It's possible that the mean and variance of $G(\gamma)$ would present heterogenous effects for $Q_j$ as they do on $X_j$, allowing distinction between the two. In that case, data on physicians' clientele would be crucial. Perhaps physician variation across $r_j$ bins would be another solution, rather than our choice of a single $r$ for all. We will touch on this at the end of this paper.
+
+For now, we go on with our estimated parameters and run simulations to showcase our framework.
+
 
 \section{Counterfactual and Discussion}
 
@@ -176,7 +219,7 @@ We have presented a framework which seeks to include and explain several behavio
 
 As for its use as a guide to policy beyond providing conceptual understanding, that is, correctly predicting the physicians' response to a raise in the probability and/or magnitude of the fine they face for excessive sick leaves granted, its reliability would depend on the plausibility of our chosen functional form for the different distributions and functions and the quality of the data used and performed estimation to calibrate their parameters. It's our view that we achieve the former, but perhaps not the latter. The chosen functional forms are spare in requirements and follow precedents set in the literature. The data we have available, however, is rather thin in comparison to relevant papers on this subject, which affects the quality of our estimation.
 
-As we discussed above, our GMM exercise would benefit greatly from additional sources of information, both in terms of additional variation across physicians, as well as having more parameters be retrieved elsewhere and be set in place by the time we perform estimation, such that we require fewer degrees of freedom. Chief among the possible revisions and extensions to this program: information on the client base of physicians, i.e. a source of $Q_j$, and an alternative, separate method to gauge physician quality, perhaps relating observable qualities like education, tenure, place of work and so on to disagregated data on salaries and visit revenue. \textit{You can only do so much in one semester.}
+As we discussed above, our GMM exercise would benefit greatly from additional sources of information, both in terms of additional variation across physicians, as well as having more parameters be retrieved elsewhere and be set in place by the time we perform estimation, such that we require fewer degrees of freedom. Chief among the possible revisions and extensions to this program: information on the client base of physicians, i.e. a source of $Q_j$, and an alternative, separate method to gauge physician quality, perhaps relating observable qualities like education, tenure, place of work and so on to disagregated data on salaries and visit revenue. Such disaggregated data on its own could prove useful to find more horizontal variation across physicians, setting up bins of $r_j$ and/or $\tau_j$ for their own sake. Ensuring proper identification is foremost among the next steps, but would also require a considerable amount of leg work. \textit{You can only do so much in one semester.}
 
 
 \end{document}

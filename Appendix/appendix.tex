@@ -17,57 +17,57 @@
 \subsection{The Cause of the ``Strategic Effect''}
 \label{sec:separate}
 
-The main difference between our equilibrium and that of \cite{schnell2017physician} is the presence of a ``strategic effect'', wherein doctor $j$ takes into account the behavior of other doctors in the selection of her own $\bar{\kappa_j}$. Of the different modifications we made to her framework, we'll argue it's the absence of \textit{additive separability} across patients in physician utility $U_j(\cdot)$ which accounts for this.
+The main difference between our equilibrium and that of \cite{schnell2017physician} is the presence of a ``strategic effect'', wherein physician $j$ takes into account the behavior of other physicians in the selection of her own $\bar{\kappa_j}$. Of the different modifications we made to Schnell's framework, we argue that it is the absence of \textit{additive separability} across patients in physician utility $U_j(\cdot)$ which accounts for this.
 
-In our context of unbounded maximization by doctor $j$, the absence of additive separability implies she can't consider each patient individually when it comes to whether she's willing to allow (or induce) their visit, as such a decision is no longer independent of other patients' visits; the marginal utility of an additional patient is dependent on the aggregate of clients up to that point, both in terms of the visit itself as well as in the number of sick leave certificates granted up to that point.
+In our context of unbounded maximization by physician $j$, the absence of additive separability implies she can't consider each patient individually when it comes to whether she's willing to allow (or induce) their visit, such a decision no longer being independent from other patients' visits in its impact to the physician's utility: the marginal utility of an additional patient is dependent on the aggregate of clients up to that point, both in terms of the visit itself as well as in the number of sick leaves granted up to that point.
 
-Let's illustrate this point. Consider for a moment a finite number of patients $1, ... , k$, where each patient is inputed directly as an argument in our doctor $j$’s $U_j(\cdot)$, like so: $U_j(1, ..., k)$. If $U_j(\cdot)$ has the property of additive separability, this means it may be reformulated like so:
+Let's illustrate this point. Consider for a moment a finite number of patients $1, ... , k$, where each patient is inputed directly as an argument in our physician $j$'s utility function $U_j(\cdot)$, like so: $U_j(1, ..., k)$. If $U_j(\cdot)$ has the property of additive separability, this means it may be reformulated as the addition of individual functions for each patient:
 \[
 U_j(1, ...,k) = v_{j1}(1) + ... + v_{jk}(k) = \sum_{i = 1}^{k} v_{ji}(i)
 \]
-Unconstrained optimization in this context implies she’s willing to see any patient whose $v_{ji}(i)$ is non-negative, such that her optimal level of utility is:
+Unconstrained optimization in this context implies she's willing to see any patient whose $v_{ji}(i)$ is non-negative, such that her optimal level of utility is:
 \[
 U_j^*(1, ...,k) =  \sum_{i : \; v_{ji}(i) \geq 0} v_{ji}(i)
 \]
-In the context of our doctor-patient model, where physician utility is increasing in $\kappa_i$, selection is achieved by the doctor by choosing a $\kappa_j^*$ which excludes all patients $i$ whose $\kappa_i < \kappa_j^*$. Supposing our patients are well-ordered in $\kappa_i$, the choice of such a $\kappa_j^*$ would be one where the marginal consumer $i$ affords a non-negative $v_{ji}(i)$, and the inframarginal consumer $i + 1$ fulfills $v_{j,i+1}(i+1) < 0$. Ignoring for a moment that patients themselves have a \textit{choice} of visiting -- depending upon a second dimension $\gamma$ --, we would then have:
+For our physician-patient model, where physician utility is increasing in $\kappa_i$, such patient selection is achieved by the physician through the choice of $\kappa_j^*$, excluding all patients $i$ whose $\kappa_i < \kappa_j^*$. Supposing our patients are well-ordered in $\kappa_i$, the selection of such a $\kappa_j^*$ would be one where the marginal consumer $i$ affords a non-negative $v_{ji}(i)$, and the inframarginal consumer $i + 1$ satisfies $v_{j,i+1}(i+1) < 0$. Ignoring for a moment that patients themselves have a \textit{choice} of visiting—depending upon a second dimension $\gamma$ —, we would then have:
 \[
 U_j^*(1, ...,k) =  \sum_{i : \; \kappa_i \geq \kappa_j^*} v_{ji}(i)
 \]
 
-If instead of a discrete set we consider a mass of consumers $\mathcal{I}$ characterized by their level of $\kappa_i$, and we make the simplifying assumption that $v_{ji}$ takes on the same form $v_{j}$ for every $i \in \mathcal{I}$, our $U_j(\cdot)$ could be expressed as:
+If instead of a discrete set we consider a mass of consumers $\mathcal{I}$ characterized by their level of $\kappa_i$, and we make the simplifying assumption that $v_{ji}$ takes on the same form $v_{j}$ for every $i \in \mathcal{I}$, our function $U_j(\cdot)$ could be expressed as:
 \[
-U_j^*(\mathcal{I}) =\int_{\kappa_j^*}^{\infty} v_{j}(k) \, dF(k)
+U_j^*(\mathcal{I}) =\int_{\kappa_j^*}^{\infty} v_{j}(\kappa) \, dF(\kappa)
 \]
 
-$U_j^*(\mathcal{I})$ represents the optimal value of $U_j(\mathcal{I})$, where doctor $j$ only sees patients who provide her with non-negative marginal utility, i.e. such that $\kappa_i \geq \kappa_j^*$. We can find this optimal value $\kappa_j^*$ by looking at \textit{threshold} equilibria, where doctor utility is also dependent on the threshold $\bar{\kappa_j}$ over which she’s willing to see patients:
+$U_j^*(\mathcal{I})$ represents the optimal value of $U_j(\mathcal{I})$, where physician $j$ only sees patients who provide her with non-negative marginal utility, i.e. such that $\kappa_i \geq \kappa_j^*$. We can find this optimal value $\kappa_j^*$ by looking at \textit{threshold} equilibria, where physician utility is also dependent on the threshold $\bar{\kappa_j}$ over which she's willing to see patients:
 \[
-U_j(\mathcal{I}, \bar{\kappa_j}) =\int_{\bar{\kappa_j}}^{\infty} v_{j}(k) \, dF(k)
+U_j(\mathcal{I}, \bar{\kappa_j}) =\int_{\bar{\kappa_j}}^{\infty} v_{j}(\kappa) \, dF(\kappa)
 \]
 
-The optimal value of threshold $\bar{\kappa_j}$ is $\kappa_j^*$. Assuming $U_j(\cdot) $ is twice differentiable and concave in $\bar{\kappa_j}$, such a solution may be arrived at through the FCO:
+The optimal value of the threshold $\bar{\kappa_j}$ corresponds to that of $\kappa_j^*$. Assuming $U_j(\cdot) $ is twicely differentiable and concave in $\bar{\kappa_j}$, this solution may be arrived at through the FOC:
 \[
 \frac{\partial U_j(\mathcal{I})}{\partial \bar{\kappa_j}} \equiv - v_{j}(\bar{\kappa_j})f(\bar{\kappa_j}) = 0
 \]
-Solving for this would yield $\bar{\kappa_j} = \kappa_j^*$.
+Solving for this would yield the optimal $\bar{\kappa_j} = \kappa_j^*$.
 
-\cite{schnell2017physician} is an example of just such a treatment, which specifies the physician's additive utility by patient in the following manner:
+\cite{schnell2017physician} is an example of just such a treatment, which specifies the physician's additively separable utility by patient in the following manner:
 \[
 v_{ji}(\kappa_i) \equiv R_j + \beta_j h(\kappa_i)
 \]
-where $R_j$ is a parameter standing for revenue by visit, and $\beta_j h(\kappa_i)$ represents the physician's ``altruistic'' utility over the health impact of a prescription drug to a patient with ``pain level'' $\kappa_i$.
+where $R_j$ is a parameter which stands for revenue by visit, and $\beta_j h(\kappa_i)$ represents the physician's `altruistic' utility over the health impact of a prescription drug to a patient with `pain level' $\kappa_i$.
 
-The optimal threshold $\kappa_j^*$ is then obtained out of the maximization\footnote{Once again, ignoring patient choice and $\gamma$,. We're presenting a \textit{simplified} version for illustrative purposes.}:
+The optimal threshold $\kappa_j^*$ is then obtained out of the maximization:\footnote{Once again, ignoring patient choice and $\gamma$,. We're discussing a \textit{simplified} version of the patient search framework for illustrative purposes.}
 \[
-\max_{\bar{\kappa_j}}\int_{\bar{\kappa_j}}^{\infty}  R_j + \beta_j h(k) \, dF(k)
+\max_{\bar{\kappa_j}}\int_{\bar{\kappa_j}}^{\infty}  R_j + \beta_j h(\kappa) \, dF(\kappa)
 \]
 
-Which gives out the following FOC:
+Resulting in the following FOC:
 \[
 R_j = - \beta_j h^{\prime}(\bar{\kappa_j})
 \]
-which, as is immediately apparent, doesn't depend upon the behavior of other doctors ---more specifically, \textit{their} choice of $\bar{\kappa_j}$. It merely establishes that, at the threshold, marginal benefit by patient --revenue $R_j$-- must equal marginal ``cost'' --altruistic ``cost'' $\beta_j h(\bar{\kappa_j})$--. A way to interpret this is that doctors will be willing to see any and all patients which render them positive marginal utility, unconcerned with their total market share, and thus, what other physicians may do to take away clientele.
+which, as is immediately apparent, doesn't depend upon the behavior of other physicians, more specifically, on \textit{their} choice of $\bar{\kappa_j}$. This equation merely establishes that, at the threshold, marginal benefit by patient—revenue $R_j$—must equal marginal ``cost'', the altruistic ``cost'' $\beta_j h(\bar{\kappa_j})$. A way to interpret this is that physicians will be willing to see any patient which render them positive marginal utility, unconcerned with their total market share, and thus, unconcerned with what other physicians may do to take away clientele.
 
-Such a treatment is rendered inviable by our choice of utility function. Schnell's parameter of revenue would in our model imply the linearity of our revenue \textit{function} $R_j(\cdot)$ and our $P(\cdot)$ function over \textit{aggregate} licenses granted. Strict convexity of $P(\cdot)$ would forestall its formulation as Schnell-like $\beta_j h^{\prime}(\bar{\kappa_j})$ terms for each patient, because the impact on doctor $j$'s utility in granting patient $i$ a license would no longer independent from the granting of licenses of other patients. Likewise, strict concavity of $R_j(\cdot)$ belies a simple ``r'' parameter such that $R_j'(Q_j) = r Q_j$.
+A treatment like Schnell's is rendered inviable by our choice of utility function. Her parameter of revenue would in our model imply the linearity of our revenue \textit{function} $R_j(\cdot)$ and our $P(\cdot)$ function over \textit{aggregate} licenses granted. Strict convexity of $P(\cdot)$ would forestall its formulation as Schnell-like $\beta_j h^{\prime}(\bar{\kappa_j})$ terms for each patient, because the impact on doctor $j$'s utility in granting patient $i$ a license would no longer independent from the granting of licenses of other patients. Likewise, strict concavity of $R_j(\cdot)$ belies a simple ``r'' parameter such that $R_j'(Q_j) = r Q_j$.
 
 More formally, when $U_j(1,...,k)$ \textit{isn't} additively separable across patients, the value $\kappa_j^*$ such that if $\kappa_i \geq \kappa_j^*$ patient $i$ provides positive marginal utility, isn’t independent of current clientele, because what before was a properly defined object, marginal utility by patient $i$, $v_j(\kappa_i)$, can no longer be so identified. The marginal utility $i$ provides to $j$ as the $k$th client (assuming some order over clients) is not necessarily the same he’d provide as the $k+1$th client, and so, as the $k$th client he could provide $0$ utility, impliying $\kappa_i = \kappa_j^*$, whereas as the $k + 1$th he could be inframarginal, such that $\kappa_i < \kappa_j^*$.
 
@@ -89,15 +89,15 @@ This intelligible line of reasoning links the presence of a ``strategic effect''
 \subsection{\cite{schnell2017physician} with Logit Choice}
 \label{sec:schnell_logit}
 
-To prove our point that it is additive separability which accounts for a possible strategic effect, we reformulate \cite{schnell2017physician} in the manner of a McFadden Logit -- with some quirks.
+To prove our point that it is additive separability which accounts for a possible strategic effect, we reformulate \cite{schnell2017physician} in the manner of a McFadden Logit — with some quirks.
 
 The way in which Schnell devises her physician's utility formula is implicitly Bernoulli-like:
 \[
 \int_{\kappa} \int_{\gamma} u(\kappa, \gamma) \cdot p(\kappa, \gamma) \, dG(\gamma) dF(\kappa)
 \]
-where $u(\kappa, \gamma)$ is the utility function of the physician from patients characterised by a given $(\kappa, \gamma)$ tuple, and $p(\kappa, \gamma)$ stands for the proportion of clients atomized in such a tuple the physician expects to have visit her.
+where $u(\kappa, \gamma)$ is the utility function of the physician from patients characterized by a given $(\kappa, \gamma)$ tuple, and $p(\kappa, \gamma)$ stands for the density of clients atomized in this tuple.
 
-$u(\kappa, \gamma)$ we'll leave as Schnell defined it: $\beta_j h(\kappa) + R_j$. $p(\kappa, \gamma)$ lends itself nicely as the $s_{ij}$ we have been using thus far, which implicitly depends on the $(\kappa_i, \gamma_i)$ tuple which characterizes patient $i$:
+We define $u(\kappa, \gamma)$ as Schnell did: $\beta_j h(\kappa) + R_j$. The accompanying $p(\kappa, \gamma)$ fits the role that our own $s_{ij}$ we have been playing thus far, which implicitly depends on the $(\kappa_i, \gamma_i)$ tuple which characterizes patient $i$, and gives a measure of the change that they'll visit physician $j$. Physician utility can thus be rendered as:
 \[
 \int_{\kappa} \int_{\gamma} [\beta_j h(\kappa) + R_j] \cdot s_{ij}(\kappa, \gamma) \, dG(\gamma) dF(\kappa)
 \]
@@ -111,31 +111,29 @@ e^{\lambda u_{ij}}, \; \; \text{if } \; \; u_{ij} > 0 \\
 \end{cases}
 \]
 
-Schnell's opioid-focused physician model provides an additional simplification: patients which aren't given a drug prescription, i.e. those such that $\kappa_i < \bar{\kappa_j}$, don't garner positive utility from a visit. As such, in the original model as in this reformulation, patients ``below'' $\bar{\kappa_j}$ have a null probability of visit, such that the inferior limit of integration for $\kappa$ is $\bar{\kappa_j}$.
+Schnell's opioid-focused physician model provides an additional simplification: patients which aren't given a drug prescription, i.e. those such that $\kappa_i < \bar{\kappa_j}$, don't garner positive utility from a visit. As such, in the original model as in this reformulation, patients ``below'' $\bar{\kappa_j}$ have a null probability of visit, making the lower bound of integration for $\kappa$ to be $\bar{\kappa_j}$.
 
-As for $\gamma$, the limit of the inner integral remains the same as in Schnell in the absence of a secondary market, a value of $\gamma_i$ such that $u_{ij} = 0$, i.e. $h(\kappa_i) + \gamma_i - \tau^d - \tau^o = 0$.\footnote{Schnell splits the costs a patient will face into costs of visit ($\tau^d$), cost of purchase ($\tau^o$) and search cost ($\tau^s$)}
+As for $\gamma$, the lower bound of the inner integral remains the same as in Schnell in the absence of a secondary market, a value of $\gamma_i$ such that $u_{ij} = 0$, i.e. $h(\kappa_i) + \gamma_i - \tau^d - \tau^o = 0$.\footnote{Schnell splits the costs a patient will face into costs of visit ($\tau^d$), cost of purchase ($\tau^o$) and search cost ($\tau^s$), whereas we consider only the first.}
 
-The double-integral maximized as physician utility is then as follows:
+The double-integral of physician utility to be maximized is then as follows:
 \[
 \max_{\bar{\kappa_j}}\int_{\bar{\kappa_j}}^{\infty} \int_{\tau^d - \tau^o - h(\kappa)}^{\infty} [\beta_j h(\kappa) + R_j] \cdot \frac{e^{\lambda u_{ij}}}{\sum \limits_{k : \, u_{ik} > 0} e^{\lambda u_{ik}}} \, dG(\gamma) dF(\kappa)
 \]
 
-The FOC of such an equation is:
+The FOC of this equation is:
 \begin{equation}
-[\beta_j h(\bar{\kappa_j}) + R_j]\int_{\tau^d - \tau^o - h(\bar{\kappa_j})}^{\infty} \frac{e^{\lambda u_{ij}} \mid \bar{\kappa_j}}{\sum \limits_{k : \, u_{ik} > 0} e^{\lambda u_{ik}} \mid \bar{\kappa_j}} \, dG(\gamma) f(\bar{\kappa_j}) = 0 
+    \underbrace{[\beta_j h(\bar{\kappa_j}) + R_j]}_{A}\underbrace{\int_{\tau^d - \tau^o - h(\bar{\kappa_j})}^{\infty} \frac{e^{\lambda u_{ij}} \mid \bar{\kappa_j}}{\sum \limits_{k : \, u_{ik} > 0} e^{\lambda u_{ik}} \mid \bar{\kappa_j}} \, dG(\gamma)}_{B} \underbrace{f(\bar{\kappa_j})}_{C} = 0 
 \label{eq:schnell_logit}
 \end{equation}
-
-
-Where we use ``$\mid \bar{\kappa_j}$'' to clumsily indicate that we integrate $\gamma$ over patients where $\kappa_i = \bar{\kappa_j}$. As an integral over a strictly positive value and the atom of a density function, respectively, the factors B and C in the equation are non-negative. For this reason, the only way for (\ref{eq:schnell_logit}) to be fulfilled is the following condition:
+where we use ``$\mid \bar{\kappa_j}$'' to clumsily indicate that we integrate $\gamma$ over patients where $\kappa_i = \bar{\kappa_j}$. As an integral over a strictly positive value and the atom of a density function, respectively, the factors B and C in the equation are non-negative. For this reason, the only way for equation (\ref{eq:schnell_logit}) to be satisfied is by obeying the following equality:
 \begin{equation}
     R_j = - \beta_j h(\bar{\kappa_j})
     \label{eq:schnell_condition}
 \end{equation}
 
-This is the same result as in the original model in \ref{schnell2017physician} in the absence of a secondary market, a condition which stipulates that marginal utility in $\bar{\kappa_j}$ must be $0$, i.e. that revenue ($R_j$) must equal "altruistic" loss ($\beta_j h(\bar{\kappa_j})$), which pre-supposes that the marginal patient granted prescription opioids suffers a net loss in utility (the negative externalities outweigh its medical benefit as a palliative).
+This is the same result as in the baseline model presented in \cite{schnell2017physician}, without a secondary market. This equality requires that marginal utility in $\bar{\kappa_j}$ must be $0$, i.e. that revenue ($R_j$) must equal "altruistic" loss ($\beta_j h(\bar{\kappa_j})$), which presupposes that the marginal patient granted prescription opioids suffers a net loss in utility (the negative externalities outweigh its medical benefit as a palliative).
 
-Condition (\ref{eq:schnell_condition}) means a value  $\kappa_j$ is chosen irrespective of the strategies employed by other doctors, it quite literally doesn't enter into the equation. As we have argued, additive separability over clients means the \textit{total} demand for physician $j$'s services doesn't influence marginal utility by a given patient $i$, and so has no sway in the optimality condition. Doctor $j$ states simply that she won't grant a prescription (or sick leave, as in our case) below $\bar{\kappa_j}$, \textit{come what may}. In order for her to care about \textit{aggregate} values, like her total expected demand, making her care about her market share and thus about the strategies of other doctors, \textit{strict non-linearity} must be introduced into her utility function.
+Equation (\ref{eq:schnell_condition}) also implies that the value of  $\kappa_j$ is chosen with no considerarion of the strategies employed by other physicians, they quite literally don't enter into the equation. As we have argued, additive separability over clients means the \textit{aggregate} demand for physician $j$'s services doesn't influence marginal utility by a single patient $i$, and so it has no sway in the optimality condition. Physician $j$ follows simply the rule that she won't grant a prescription (or sick leave, as in our case) below $\bar{\kappa_j}$, however that might affect the size of her ``clientele''. In order for her to care about \textit{aggregate} values, like her total expected demand, making her take her market share and thus the strategies of other doctors into account, \textit{strict non-linearity} must be introduced into her utility function, either through $R_j(\cdot)$ or, as in our case, a function $P(\cdot)$.
 
 
 \subsection{Strategic Complementarity of $\bar{\kappa_j}$'s (Proof of Proposition \ref{complements})}
@@ -175,25 +173,25 @@ Both corollaries hinge upon our definition of $U_i(\cdot)$ as a step function ov
 \begin{proof}
 We recall our function of patient demand for physician $j$ is:
     \[
-    Q_j(\bar{\kappa_j}, \bar{\kappa}_{-j}) \,=\, \int_{0}^{\infty} \int_{0}^{\infty} s_{ij} (k, \gamma) \,dG(\gamma) \,dF(k) 
+    Q_j(\bar{\kappa_j}, \bar{\kappa}_{-j}) \,=\, \int_{0}^{\infty} \int_{0}^{\infty} s_{ij} (\kappa, \gamma) \,dG(\gamma) \,dF(\kappa) 
     \]
 Were physician $j$ to increase her threshold from $\bar{\kappa_j}$ to $\bar{\kappa_j}' = \bar{\kappa_j} + \epsilon, \epsilon > 0$, for the mass of patients whose $\kappa_i \in [\bar{\kappa_j}, \bar{\kappa_j} + \epsilon)$, utility would weakly decrease and thus so would their $s_{ij}$, falling to ${s_{ij}}^{\prime} \leq s_{ij}$ (see first corollary, think of ${s_{ij}}^{\prime}$ as $s_{ij} \mid \kappa_i < \bar{\kappa_j}$ as opposed to $s_{ij} \mid \kappa_i \geq \bar{\kappa_j}$).
 
 The difference that would make for patient demand \textit{caeteris paribus} given the $\bar{\kappa}_{-j}$ strategies of the other physicians (ommitted in our notation) is:\footnote{Besides simplifying $Q_j(\bar{\kappa_j}, \bar{\kappa}_{-j})$ into $Q_j(\bar{\kappa_j})$, we also forego the arguments of $s_{ij} (k, \gamma)$, as we've done many times already, to avoid notation clutter. }
 \[
-\Delta Q_j = Q_j(\bar{\kappa_j} + \epsilon) - Q_j(\bar{\kappa_j})=\int_{\bar{\kappa_j}}^{\bar{\kappa_j} + \epsilon} \int_{0}^{\infty} \{ {s_{ij}}^{\prime} - s_{ij}\} \,dG(\gamma) \,dF(k)
+\Delta Q_j = Q_j(\bar{\kappa_j} + \epsilon) - Q_j(\bar{\kappa_j})=\int_{\bar{\kappa_j}}^{\bar{\kappa_j} + \epsilon} \int_{0}^{\infty} \{ {s_{ij}}^{\prime} - s_{ij}\} \,dG(\gamma) \,dF(\kappa)
 \]
 
 By the definition of a partial derivative:\footnote{The notation for ${s_{ij}} (\bar{\kappa_j}, \gamma)^{\prime}$ is to be taken to mean the strategy ${s_{ij}}^{\prime} \leq s_{ij}$ of the mass of patients at different levels of $\gamma$ atomized at $\kappa_i = \bar{\kappa_j}$.}
 \begin{align*}
-    \frac{\partial Q_{j}}{\partial\bar{\kappa_{j}}} & = \lim_{\epsilon \rightarrow 0} \frac{\int_{\bar{\kappa_j}}^{\bar{\kappa_j} + \epsilon} \int_{0}^{\infty} \{ {s_{ij}}^{\prime} - s_{ij}\} \,dG(\gamma) \,dF(k)}{\epsilon} \\
+    \frac{\partial Q_{j}}{\partial\bar{\kappa_{j}}} & = \lim_{\epsilon \rightarrow 0} \frac{\int_{\bar{\kappa_j}}^{\bar{\kappa_j} + \epsilon} \int_{0}^{\infty} \{ {s_{ij}}^{\prime} - s_{ij}\} \,dG(\gamma) \,dF(\kappa)}{\epsilon} \\
     & = \int_{0}^{\infty} \{ {s_{ij}} (\bar{\kappa_j}, \gamma)^{\prime} - s_{ij} (\bar{\kappa_j}, \gamma)\} \,dG(\gamma) \,f(\bar{\kappa_j}) 
 \end{align*}
 where the derivative is negative if ${s_{ij}}^{\prime}$ is strictly lower than $s_{ij}$, meaning a shift in leniency would affect the utility and optimal strategy of some positive mass of patients around $\bar{\kappa_j}$; or null, if ${s_{ij}}^{\prime} = s_{ij}$.
 
 In a similar vein, consider some physician $l \neq j$ shifting her threshold from $\bar{\kappa_{l}}$ to $\bar{\kappa_l}' = \bar{\kappa_l} + \epsilon, \epsilon > 0$. The fall in patient strategies in $[\bar{\kappa_j}, \bar{\kappa_j} + \epsilon)$ from $s_{il}$ to ${s_{il}}^{\star} \leq s_{il}$ could provide a windfall for $j$ (and all other physicians), raising $s_{ij}$ to ${s_{ij}}^{\star} \geq s_{ij}$ (see previous corollary). In that case:
 \[
-\Delta Q_j = \int_{\bar{\kappa_l}}^{\bar{\kappa_l} + \epsilon} \int_{0}^{\infty} \{ {s_{ij}}^{\star} - s_{ij}\} \,dG(\gamma) \,dF(k) 
+\Delta Q_j = \int_{\bar{\kappa_l}}^{\bar{\kappa_l} + \epsilon} \int_{0}^{\infty} \{ {s_{ij}}^{\star} - s_{ij}\} \,dG(\gamma) \,dF(\kappa) 
 \]
 thus rendering:
 \begin{align*}
@@ -241,22 +239,21 @@ because as $\epsilon$ approaches $0$ from the right the limit is weakly positive
 Consider some two physicians $j$, $l$, such that $\bar{\kappa_j} \neq \bar{\kappa_l}$. If we breakdown the mixed partial derivative of $U_j$ over $\bar{\kappa_j}$ and $\bar{\kappa_l}$, we get:
 \begin{align*}
 \frac{\partial^2 U_{j}}{\partial\bar{\kappa_{j}} \partial\bar{\kappa_{l}}} = & 
-\underbrace{R^{\prime \prime}(Q_j(\bar{\kappa_j}, \bar{\kappa}_{-j}))}_{\leq 0}
+\underbrace{R_j^{\prime \prime}(Q_j(\bar{\kappa_j}, \bar{\kappa}_{-j}))}_{\leq 0}
 \cdot \underbrace{\frac{\partial Q_{j}}{\partial\bar{\kappa_{l}}}}_{\geq 0}
 \cdot \underbrace{\frac{\partial Q_{j}}{\partial\bar{\kappa_{j}}}}_{\leq 0}  + 
-\underbrace{R^{\prime} (Q_j(\bar{\kappa_j}, \bar{\kappa}_{-j}))}_{\geq 0} \underbrace{\frac{\partial^2 Q_{j}}{{\partial\bar{\kappa_{j}} \partial\bar{\kappa_{l}}}}}_{= \, 0} & \\
+\underbrace{R_j^{\prime} (Q_j(\bar{\kappa_j}, \bar{\kappa}_{-j}))}_{\geq 0} \underbrace{\frac{\partial^2 Q_{j}}{{\partial\bar{\kappa_{j}} \partial\bar{\kappa_{l}}}}}_{= \, 0} & \\
  & - \underbrace{P^{\prime \prime} (X_j(\bar{\kappa_j}, \bar{\kappa}_{-j}))}_{\geq 0}
 \cdot \underbrace{\frac{\partial X_{j}}{\partial\bar{\kappa_{l}}}}_{\geq 0}
 \cdot \underbrace{\frac{\partial X_{j}}{\partial\bar{\kappa_{j}}}}_{\leq 0}  - 
 \underbrace{P^{\prime} (X_j(\bar{\kappa_j}, \bar{\kappa}_{-j}))}_{\geq 0} \underbrace{\frac{\partial^2 X_{j}}{\partial\bar{\kappa_{j}} \partial\bar{\kappa_{l}}}}_{= \, 0} &  \\
-    = & \, \underbrace{{R^{\prime \prime}} (Q_j(\bar{\kappa_j}, \bar{\kappa}_{-j}))
+    = & \, \underbrace{{R_j^{\prime \prime}} (Q_j(\bar{\kappa_j}, \bar{\kappa}_{-j}))
     \cdot \frac{\partial Q_{j}}{\partial\bar{\kappa_{l}}}
     \cdot \frac{\partial Q_{j}}{\partial\bar{\kappa_{j}}}}_{\geq 0}  -
     \underbrace{P^{\prime \prime} (X_j(\bar{\kappa_j}, \bar{\kappa}_{-j}))
     \cdot \frac{\partial X_{j}}{\partial\bar{\kappa_{l}}}
     \cdot \frac{\partial X_{j}}{\partial\bar{\kappa_{j}}}}_{\leq 0} \, & \geq 0
 \end{align*}
-
 and positive mixed derivative of physicians' utility over their strategy is the definition of strategic complementarity.
 \begin{flushright}
     $\square$
@@ -498,6 +495,7 @@ Which is the function we say characterizes patient thresholds in the explicit se
 
 
 \caption{Sick leaves issued by quality bin as parameters vary.}
+\label{fig:identification}
 \vspace{0.2em}
 {\small Black: Estimated value. Violet: Lower. Blue: Higher.
 \vspace{-0.2em}

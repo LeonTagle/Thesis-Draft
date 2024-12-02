@@ -13,14 +13,14 @@
 \contentsline {section}{\numberline {6}Estimation}{22}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Data Moments}{22}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}Parameters and Estimation Results}{25}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Identification}{27}{subsection.6.3}%
-\contentsline {section}{\numberline {7}Counterfactual and Discussion}{28}{section.7}%
-\contentsline {section}{References}{32}{section*.19}%
-\contentsline {section}{Appendix}{33}{section*.20}%
-\contentsline {subsection}{\numberline {A.1}The Cause of the ``Strategic Effect''}{33}{subsection.7.1}%
-\contentsline {subsection}{\numberline {A.2}\cite {schnell2017physician} with Logit Choice}{35}{subsection.7.2}%
-\contentsline {subsection}{\numberline {A.3}Strategic Complementarity of $\bar {\kappa _j}$'s (Proof of Proposition \ref {complements})}{37}{subsection.7.3}%
-\contentsline {subsection}{\numberline {A.4}Optimal Reserve Utility (Proof of Equation \ref {eq:seq4})}{40}{subsection.7.4}%
-\contentsline {subsection}{\numberline {A.5}More Figures}{42}{subsection.7.5}%
-\contentsline {subsection}{\numberline {A.6}Identification Panels}{43}{subsection.7.6}%
-\contentsline {subsection}{\numberline {A.7}Parameter Sources}{44}{subsection.7.7}%
+\contentsline {subsection}{\numberline {6.3}Identification}{28}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Counterfactual and Discussion}{29}{section.7}%
+\contentsline {section}{References}{33}{section*.19}%
+\contentsline {section}{Appendix}{34}{section*.20}%
+\contentsline {subsection}{\numberline {A.1}The Cause of the ``Strategic Effect''}{34}{subsection.7.1}%
+\contentsline {subsection}{\numberline {A.2}\cite {schnell2017physician} with Logit Choice}{36}{subsection.7.2}%
+\contentsline {subsection}{\numberline {A.3}Strategic Complementarity of $\bar {\kappa _j}$'s (Proof of Proposition \ref {complements})}{38}{subsection.7.3}%
+\contentsline {subsection}{\numberline {A.4}Optimal Reserve Utility (Proof of Equation \ref {eq:seq4})}{41}{subsection.7.4}%
+\contentsline {subsection}{\numberline {A.5}More Figures}{43}{subsection.7.5}%
+\contentsline {subsection}{\numberline {A.6}Identification Panels}{44}{subsection.7.6}%
+\contentsline {subsection}{\numberline {A.7}Parameter Sources}{45}{subsection.7.7}%
