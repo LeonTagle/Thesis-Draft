@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.7)  30 NOV 2024 19:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.7)  2 DEC 2024 16:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -839,11 +839,11 @@ LaTeX Font Info:    ... okay on input line 3.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(113.81102pt, 386.67296pt, 113.81102pt)
-* v-part:(T,H,B)=(85.35826pt, 610.02708pt, 99.58464pt)
+* v-part:(T,H,B)=(85.35826pt, 624.25346pt, 85.35826pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=386.67296pt
-* \textheight=610.02708pt
+* \textheight=624.25346pt
 * \oddsidemargin=41.54103pt
 * \evensidemargin=41.54103pt
 * \topmargin=-23.91173pt
@@ -900,18 +900,18 @@ LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
 (Font)              scaled to size 14.4pt on input line 6.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
 (Font)              scaled to size 14.4pt on input line 6.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 8.
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 8.
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 8.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 10.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 8.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 10.
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 10.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 20.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
@@ -923,42 +923,65 @@ LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
  [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/baskervillef/zba_uf5aa7.enc}]
-<cdf.pdf, id=37, 512.75699pt x 284.31595pt>
+<cdf.pdf, id=44, 512.75699pt x 284.31595pt>
 File: cdf.pdf Graphic file (type pdf)
 <use cdf.pdf>
 Package pdftex.def Info: cdf.pdf  used on input line 24.
 (pdftex.def)             Requested size: 270.66988pt x 150.0837pt.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
 (Font)              scaled to size 10.95pt on input line 32.
-LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 32.
- [2 <./cdf.pdf>]
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 52.
+(Font)              scaled to size 10.95pt on input line 39.
 
 
-LaTeX Warning: Reference `eq:s_X' on page 3 undefined on input line 52.
+LaTeX Warning: Reference `sec:par' on page 2 undefined on input line 39.
+
+[2 <./cdf.pdf>]
+
+LaTeX Warning: Reference `eq:s_X' on page 3 undefined on input line 50.
 
 
-LaTeX Warning: Reference `eq:s_X' on page 3 undefined on input line 52.
+LaTeX Warning: Reference `eq:s_X' on page 3 undefined on input line 50.
 
 
-LaTeX Warning: Reference `sec:id' on page 3 undefined on input line 69.
+LaTeX Warning: Reference `sec:id' on page 3 undefined on input line 67.
+
+
+Package natbib Warning: Citation `schnell2017physician' on page 3 undefined on input line 72.
 
 [3]
-<result_x.pdf, id=104, 424.1358pt x 331.40637pt>
+
+LaTeX Warning: Reference `sec:par' on page 4 undefined on input line 76.
+
+<result_x.pdf, id=106, 424.1358pt x 328.06577pt>
 File: result_x.pdf Graphic file (type pdf)
 <use result_x.pdf>
-Package pdftex.def Info: result_x.pdf  used on input line 85.
-(pdftex.def)             Requested size: 177.87215pt x 138.98239pt.
+Package pdftex.def Info: result_x.pdf  used on input line 88.
+(pdftex.def)             Requested size: 177.87215pt x 137.58144pt.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 87.
-<result_x30.pdf, id=105, 429.15456pt x 331.40637pt>
+(Font)              scaled to size 10.0pt on input line 90.
+<result_x30.pdf, id=107, 429.15456pt x 328.06577pt>
 File: result_x30.pdf Graphic file (type pdf)
 <use result_x30.pdf>
-Package pdftex.def Info: result_x30.pdf  used on input line 94.
-(pdftex.def)             Requested size: 177.87215pt x 137.35913pt.
- [4 <./result_x.pdf> <./result_x30.pdf>] [5] (./Estimation.aux)
+Package pdftex.def Info: result_x30.pdf  used on input line 97.
+(pdftex.def)             Requested size: 177.87215pt x 135.97455pt.
+[4] [5 <./result_x.pdf> <./result_x30.pdf>] [6]
+
+Package natbib Warning: Citation `markussen-roed' on page 7 undefined on input line 151.
+
+
+Package natbib Warning: Citation `cln' on page 7 undefined on input line 153.
+
+<counter.pdf, id=227, 515.72673pt x 319.79475pt>
+File: counter.pdf Graphic file (type pdf)
+<use counter.pdf>
+Package pdftex.def Info: counter.pdf  used on input line 163.
+(pdftex.def)             Requested size: 232.00613pt x 143.86238pt.
+[7] [8 <./counter.pdf>]
+
+Package natbib Warning: There were undefined citations.
+
+[9] (./Estimation.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -968,21 +991,21 @@ L3 programming layer <2024-02-20>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Estimation.out' has not changed.
-(rerunfilecheck)             Checksum: 21182277F01F87F94D461D0FA683053A;421.
+(rerunfilecheck)             Checksum: 3107913E96724FA21625881B6D256E68;765.
  ) 
 Here is how much of TeX's memory you used:
- 35564 strings out of 474116
- 811125 string characters out of 5743683
- 1942187 words of memory out of 5000000
- 57273 multiletter control sequences out of 15000+600000
- 795868 words of font info for 113 fonts, out of 8000000 for 9000
+ 35578 strings out of 474116
+ 811307 string characters out of 5743683
+ 1943187 words of memory out of 5000000
+ 57282 multiletter control sequences out of 15000+600000
+ 774436 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 119i,19n,124p,808b,666s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 119i,19n,124p,1492b,664s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb>
-Output written on Estimation.pdf (5 pages, 263155 bytes).
+Output written on Estimation.pdf (9 pages, 289015 bytes).
 PDF statistics:
- 305 PDF objects out of 1000 (max. 8388607)
- 140 compressed objects within 2 object streams
- 20 named destinations out of 1000 (max. 500000)
- 60 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 374 PDF objects out of 1000 (max. 8388607)
+ 177 compressed objects within 2 object streams
+ 26 named destinations out of 1000 (max. 500000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 

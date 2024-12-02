@@ -7,9 +7,9 @@
 \subsection{The Physician-Patient Market}
 \label{sec:3_1}
 
-We now present the model itself before proceeding with further discussion. We consider $i = 1, ..., I$ patients and $j = 1, ..., J$ physicians.\footnote{Note on language: For ease of reference, we refer to any patient as ``he'', and to any physician as ``she'' (s we have done already). At this point it shall be noted that the first person plural (we) employed over the course of this article is to be read as including the reader or perhaps as a royal \textit{we}.}
+We now present the model itself before proceeding with further discussion. We consider $i = 1, ..., I$ patients and $j = 1, ..., J$ physicians.\footnote{Note on language: For ease of reference, we refer to any patient as ``he'', and to any physician as ``she'' (as we have done already). At this point it shall be noted that the first person plural (we) employed over the course of this article is to be read as including the reader or perhaps as a royal \textit{we}.}
 
-Patients are characterized by their ``medical need'' $\kappa_i \in \mathbb{R}_0^+$ and their ``taste for sick leave'' $\gamma_i \in \mathbb{R}$, respectively following the ex-ante cumulative distributions $F(\kappa)$ and $G(\gamma)$, which are public knowledge. Physicians are described by their ``service quality'' $V_j \in \mathbb{R}^+$, also known both to all patients and other physicians.
+Patients are characterized by their ``medical necessity'' $\kappa_i \in \mathbb{R}^+$ and their ``taste for sick leave'' $\gamma_i \in \mathbb{R}$, respectively following the ex-ante cumulative distributions $F(\kappa)$ and $G(\gamma)$, which are public knowledge. Physicians are described by their ``service quality'' $V_j \in \mathbb{R}^+$, also known both to all patients and other physicians.
 
 A patient $i$ can visit a physician for treatment and may be also granted sick leave. After the patient is assigned a physician $j$, his utility function—implicitly dependent on his characteristic $(\kappa_i,\gamma_i)$ tuple—is defined piecewise as follows:
     \[
@@ -39,7 +39,7 @@ Following \cite{schnell2017physician}, we focus on \textit{threshold equilibria}
 Our models are different iterations of a general game with the following timing:
 \begin{itemize}[itemsep=-1pt, topsep=0pt]
     \item First stage: Physicians simultaneously choose $\bar{\kappa_j}$.
-    \item Second stage: Observing $\{V_j,R_j(\cdot), \tau_j, \bar{\kappa_j}\}$. The set $\{\bar{\kappa_j}\}_{j=1}^{J}$, each patient chooses (or is assigned to) some doctor $j$.
+    \item Second stage: Observing the set $\{V_j, \tau_j, \bar{\kappa_j}\}_{j=1}^{J}$, each patient chooses (or is assigned to) some doctor $j$.
     \item Third stage: Each patient can choose to see their physician and incur a visit cost $\tau_j$, or refrain from doing so.
 \end{itemize}
 
@@ -72,14 +72,14 @@ which includes in theory patients from both the left and right term of equation 
 
 For given formulations of the functions $Q_j(\bar{\kappa_j})$ and $X_j(\bar{\kappa_j})$, each physician solves for the following constrained optimization:
 \begin{align}
-\bar{\kappa_j}^* \; \equiv \; \operatorname{arg}\max_{\bar{\kappa_j}} R_j(Q_j) - P_j(X_j) & \hspace{2em} \text{s.a.} \hspace{1em} 0 \leq \bar{\kappa_j} \leq \bar{\kappa}_{\max}
+\bar{\kappa_j}^* \; \equiv \; \operatorname{arg}\max_{\bar{\kappa_j}} R_j(Q_j) - P(X_j) & \hspace{2em} \text{s.a.} \hspace{1em} 0 \leq \bar{\kappa_j} \leq \bar{\kappa}_{\max}
 \label{eq:ns_k}
 \end{align}
 where $\bar{\kappa}_{\max} < \infty$ is the maximum value the choice of threshold of any physician may take, as we mentioned earlier.\footref{bar-kappa}
 
 An inner solution to problem (\ref{eq:ns_k}) takes on the following form because of the first order condition:
 \begin{equation}
-    R_j^{\prime}(Q_j)\frac{\partial Q_j}{\partial\bar{\kappa_j}}  = P_j^{\prime}(X_j)\frac{\partial X_j}{\partial \bar{\kappa_j}}
+    R_j^{\prime}(Q_j)\frac{\partial Q_j}{\partial\bar{\kappa_j}}  = P^{\prime}(X_j)\frac{\partial X_j}{\partial \bar{\kappa_j}}
 \label{eq:ns_FOC}
 \end{equation}
 
@@ -89,7 +89,7 @@ An inner solution to problem (\ref{eq:ns_k}) takes on the following form because
     \label{ns_prop}
 In the non-search model as described thus far, when the solution $\bar{\kappa_j}^*$ of problem (\ref{eq:ns_k}) $\in (0,\frac{\tau_j}{V_j}]$, this $\bar{\kappa_j}^*$ is described by: 
 \begin{equation*}
-    R_j^{\prime}(Q_j(\bar{\kappa_j}))  = P_j^{\prime}(X_j(\bar{\kappa_j}))
+    R_j^{\prime}(Q_j(\bar{\kappa_j}))  = P^{\prime}(X_j(\bar{\kappa_j}))
 \end{equation*}
 \end{prop}
 
@@ -167,7 +167,7 @@ At face value, these definitions appear less informative than their non-search e
 
 For now though, notice that present we $Q_j$ and $X_j$  not only in terms of the threshold $\bar{\kappa_j}$ chosen by physician $j$, but also in terms of the thresholds of the other $J - 1$ physicians, which we abbreviate as $\bar{\kappa}_{-j}$. Whereas before in `non-search' physicians were simply alloted a given number of patients, now they will \textit{compete} for them, as patients' $S_i$ behavioral strategy will consider the whole of $\{\bar{\kappa_j}\}_{j =1}^{J}$ when considering which physician(s) they will visit with positive probability.
 
-As a consequence of physician competition for patients, equilibrium $\{\bar{\kappa_j}^*\}_{j =1}^{J}$ will need to take on the form of a Nash equilibrium, as physicians take into consideration the strategies of the other $J - 1$ physicians when choosing their own, such that they adapt to the influence they expect other physicians will have on their own ``client'' base, which we call the \textit{strategic effect}. We explore in the Appendix \ref{sec:separate} the reasons for the presence of this effect, which is absent from \citeauthor{schnell2017physician}'s models, the basis for our own. We attribute it to the lack of \textit{additive separability} across patients in the physician's utility function when one of $R_j(\cdot)$ or $P_j(\cdot)$ is \textit{strictly} convex/concave.
+As a consequence of physician competition for patients, equilibrium $\{\bar{\kappa_j}^*\}_{j =1}^{J}$ will need to take on the form of a Nash equilibrium, as physicians take into consideration the strategies of the other $J - 1$ physicians when choosing their own, such that they adapt to the influence they expect other physicians will have on their own ``client'' base, which we call the \textit{strategic effect}. We explore in the Appendix \ref{sec:separate} the reasons for the presence of this effect, which is absent from \citeauthor{schnell2017physician}'s models, the basis for our own. We attribute it to the lack of \textit{additive separability} across patients in the physician's utility function when one of $R_j(\cdot)$ or $P(\cdot)$ is \textit{strictly} convex/concave.
 
 Before moving on to our first model specification, we note that this general formulation of $s_{ij}$ is sufficient to make the next proposition.
 
@@ -205,6 +205,8 @@ e^{\lambda u_{ij}}, \; \; \text{if } \; \; u_{ij} > 0 \\
 
 Unlike the ``explicit'' search model, the probability that patient $i$ visits physician $j$ is \textit{strictly} growing in $\kappa_i$, rather than being a piecewise constant function with different levels. There is a discrete jump in probability at $\bar{\kappa_j}$, but elsewhere above $0$ the function is smoothly increasing, rewarding physicians with high $V_j$.
 
+\vspace{0.7em}
+
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}[scale=0.6]
@@ -224,7 +226,7 @@ The fact that the breaking point of the curve occurs earlier the higher the $V_j
 
 Equilibrium for the Logit model is formalized below.
 
-\vspace{0.5em}
+
 \begin{equilibrium}[in the ``implicit'' search model]
     \label{Logit_eq}
 Given a physician-patient market specified by $\{\{(\kappa_i,\gamma_i)\}_{i =1}^{I},\{(V_j, R_j(\cdot), \tau_j)\}_{j =1}^{J}, P(\cdot), \lambda \}$, we define equilibrium as a set of patient strategies $\{S_i: s_{i1} \, ... \, s_{iJ}\}_{i =1}^{I}$ as defined by (\ref{eq:Logit_s}) and physician thresholds $\{\bar{\kappa_j}\}_{j =1}^{J}$ satisfying problem (\ref{eq:ns_k}) with their corresponding equilibrium (expected) patient demand and issued sick leaves $\{(Q_j,X_j)\}_{j =1}^{J}$ as described by (\ref{eq:s_Q}) and (\ref{eq:s_X}), respectively.
@@ -242,6 +244,8 @@ This modelation can be defined in terms of dynamic programming. For each patient
     \label{eq:seq4}  
 \end{equation}
 
+
+
 The components $s_{ij}$ of each patient's strategy vector $S_i$ are then defined in terms of patient $i$'s `reserve utility' $\bar{U_i}$:
 \begin{equation}
     s_{ij} = \frac{\mathbbm{1}[ u_{ij} \geq \bar{U_i} ]}
@@ -251,7 +255,7 @@ The components $s_{ij}$ of each patient's strategy vector $S_i$ are then defined
 
 Equation (\ref{sec:sequential}) makes the rather simplifying but reasonable assumption that patient $i$ `draws' physicians randomly and thus has equal probability to visit any of the physicians who give him utility above his threshold $\bar{U_i}$.
 
-\vspace{-3.8em}
+\vspace{-3em}
 
 \begin{figure}[H]
     \centering

@@ -1,6 +1,6 @@
 \documentclass[11pt]{article}
 
-\usepackage[letterpaper,left=4cm,right=4cm,top=3cm,bottom=3.5cm]{geometry}
+\usepackage[letterpaper,left=4cm,right=4cm,top=3cm,bottom=3cm]{geometry}
 
 \usepackage{graphicx} % Required for inserting images
 \usepackage{amsmath, amsthm, amssymb}
@@ -21,10 +21,12 @@
 
 \usepackage[dvipsnames]{xcolor} %better colors
 \usepackage{natbib} %bibliography style
+\setlength{\bibsep}{5.25pt}
+
 \usepackage[colorlinks=true,
         linkcolor=black,
         citecolor=Sepia,
-        urlcolor=blue]{hyperref}
+        urlcolor=black]{hyperref}
 
 \usepackage{subfiles} %for organization
 
@@ -36,7 +38,7 @@
 \hyphenpenalty=1000 %Higher hyphenation penalty
 
 \linespread{1}
-\setlength{\parskip}{6pt}
+\setlength{\parskip}{5pt}
 \setlength{\footnotesep}{.2in}
 \setlength{\parindent}{10pt}
 
@@ -79,6 +81,7 @@ Thesis Draft \linebreak Master in Economics}
 \thispagestyle{empty}
 \end{titlepage}
 
+\setlength{\parskip}{6pt}
 
 \subfile{Introduction/introduction}
 
@@ -88,16 +91,16 @@ Thesis Draft \linebreak Master in Economics}
 
 \subfile{Computation/computation}
 
+\newpage
+
 \subfile{Data/data}
 
 \subfile{Estimation/estimation}
 
 
-\section{Counterfactuals \& Comments}
-
-PENDING.
 
 \newpage
+
 
 
 \bibliography{bibliography}

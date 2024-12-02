@@ -5,13 +5,13 @@
 
 \section{Estimation}
 
-Having explored both our theoretical framework and the data we have on sick leaves, we turn to calibrating our ``implicit'' search model using that data. Our main blind spot is the fact that we have no information on overall patient visits by each physician ($Q_j$), only the sick leaves they were authorized to issue in the sampled period ($X_j$). We get the necessary variation to be able to identify and estimate our parameters from two sources: by assigning each of the 48,611 physicians to one of ten equally sized ``quality'' bins (or deciles) and by making a distinction between overall sick leaves granted and those of 30 days or more.
+\subsection{Data Moments}
 
-\subsection{Quality Bins}
+Having explored both our theoretical framework and the data we have on sick leaves, we turn to calibrating our ``implicit'' search model using that data. Our main blind spot is the fact that we have no information on overall patient visits by each physician ($Q_j$), only the sick leaves they were authorized to issue in the sampled period ($X_j$). We get the necessary variation to be able to identify and estimate our parameters from two sources: by assigning each of the 48,611 physicians to one of ten equally sized ``quality'' bins (or deciles) and by making a distinction between overall sick leaves granted and those of 30 days or more.
 
 A qualitative consequence of both our proposed models is that physician strategies $\bar{\kappa_j}$ were growing on physician ``quality'' $V_j$, or alternatively put, ``strictness'' decreasing on $V_j$, meaning that as physicians expect less and less demand from their own reputation as medical professionals, they would adjust by acquiring a reputation as lenient sick leave issuers. This behavior, not an analytical given from our framework, holds for our proposed distributions for $F(\kappa)$ and $G(\gamma)$.
 
-Being that we lack data on observable qualities from physicians, including individual salary and educational background, our approach to grouping them into quality bins was to make use of that observed relationship and its corollary: higher quality physicians will raise their threshold $\bar{\kappa_j}$ and thus see patients of higher $\kappa_i$ on average, and in particular, a higher proportion of their patient base will be composed of patients whose $\kappa_i > \bar{\kappa}_{\max}$.
+Being that we lack data on observable qualities from physicians, including individual salary and educational background, our approach to grouping them into quality bins was to make use of that observed relationship and its corollary: higher quality physicians will raise their threshold $\bar{\kappa_j}$ and thus see patients of higher $\kappa_i$ on average, and in particular, a higher proportion of their patient base will be composed of patients satisfying $\kappa_i > \bar{\kappa}_{\max}$.
 
 In this regard we can make use of the insensive margin of the sick leaves in our data, namely that we know of how many days they were. We argue that the population equivalent of patients whose $\kappa_i > \bar{\kappa}_{\max}$ is patients who received sick leaves of 30 or more days. Though in a sense an arbitrary threshold, it so happens that starting at 30 days sick leaves are subject to higher institutional scrutiny and are automatically sent to the overseeing authority, subject to their authorization, requiring some medical proof—a test result—of the patient's ailment. At that point, the possibility of outright fraud can be safely discarded.
 
@@ -29,20 +29,18 @@ Figure \ref{fig:cdf} illustrates the empirical cumulative distribution of sick l
 
 
 
-We first make use of this distinction to set up our physician quality bins. We design a \textit{quality score} variable by physician based on the three following criteria:\footnote{SEE APPENDIX}
+We first make use of this distinction to set up our physician quality bins. We design a \textit{quality score} variable by physician based on the three following criteria:
 \begin{enumerate}[label=\roman*, itemsep=0pt, topsep=0pt]
     \item Average duration of sick leaves issued.
     \item Percentage of sick leaves of 30+ days over total in sampled period.
     \item Amount of sick leaves of 30+ days issued.
 \end{enumerate}
 
-The quality bin to which a physician is assigned corresponds to the decile rank of \textit{quality score} to which they belong. SEEEE APPENDIIIIIIX.
+The quality bin to which a physician is assigned corresponds to the decile rank of \textit{quality score} to which they belong. See Appendix \ref{sec:par} for a breakdown of the construction of the score variable and the physician bins.
 
 This procedure does perhaps amount to an over-exhertion of our data sample, recognizing that by taking qualitative results from our model as a presumed basis we somewhat pre-fit our data to the model even before calibration, but it is by no means an econometrically unsanctioned manouver, as the population moments with which we calibrate our parameters contain, in part, different information to that with which we set up the bins themselves, so that identification is in fact possible. 
 
 It would indeed be best to assign a quality score based on a set of observables wholly separate from those which play the role of endogenous outcomes in our model, but our course of action is sufficient for our purpose, which isn't to \textit{falsify} our framework—built upon observations and findings established in the relevant literature—but to showcase it and present an approach for its estimation.
-
-\subsection{Data Moments}
 
 Our second use of the distinction between overall sick leaves and the `30+ days' subsample is that we use both as data moments to calibrate our parameters. This means we have two moments \textit{per} quality bin, 20 moments in total to fit our model, as we won't consider variation across the $r_j$ / $\tau_j$ axes.
 
@@ -66,16 +64,21 @@ The advantage of using this second defined moment, $X^{30}$, lies in its indepen
     \frac{e^{\lambda \{V_j \kappa_i - \tau_j \}}}{\sum\limits_{k : \; u_{ik} \geq 0} \hspace{-0.5em} e^{\lambda \{V_k \kappa_i - \tau_k \}}}
 \end{align*}
 
-We see that $\gamma_i$ can be factored out of the defining fraction. It still plays a role, however, in the condition of the summation in the denominator. Physicians afforded a strictly positive probability of visit by patient $i$ must meet the $u_{ij} \geq 0$ condition implied by our \textit{free disposal} patient rationality. This in turn requires of one such physician $j$ to fulfill $V_j \kappa_i + \gamma_i \geq \tau_j$. So the scale of $\gamma_i$ still has implications for $X^{30}$ in this regard, only insofar as it may take a physician completely out of rotation for a patient's strategy vector $S_i$. We can see in the Appendix \ref{sec:id} that the moment outcomes of our model fit are 
+We see that $\gamma_i$ can be factored out of the defining fraction. It still plays a role, however, in the condition of the summation in the denominator. Physicians afforded a strictly positive probability of visit by patient $i$ must meet the $u_{ij} \geq 0$ condition implied by our \textit{free disposal} patient rationality. This in turn requires of one such physician $j$ to fulfill $V_j \kappa_i + \gamma_i \geq \tau_j$. So the scale of $\gamma_i$ still has implications for $X^{30}$ in this regard, only insofar as it may take a physician completely out of rotation for a patient's strategy vector $S_i$. We can see in the Appendix \ref{sec:id} that the moment outcomes of our model fit are much less responsive to variations in the parameters for $G(\cdot)$ in the case of $X^{30}$ as in overall $X$.
+
+
+\subsection{Parameters and Estimation Results}
+
+There are several elements in this model that require specification and then calibration. Starting with the two population distributions $F(\kappa)$ and $G(\gamma)$ describing patients, in keeping with their analogues in \cite{schnell2017physician}, we choose an exponential distribution for $\kappa$ with a $\lambda_F$ scale parameter, such that as ``medical necessity'' (`pain severity' in Schnell) grows larger , it becomes increasingly rare — whereas for $\gamma$, the ``taste for sick leave'' (for prescription drugs in Schnell), we choose a normal distribution, parametrized by a mean $\mu$ and variance $\sigma$.
+
+Both $\mu$ and $\sigma$ we will fit through calibration, but for $\lambda_F$ we simply normalize it to 2, in order to have the average $\kappa_i$ in the population be $1/2$, on aesthetic grounds. We normalize $\lambda_F$ because it couldn't otherwise be correctly identified, as $\kappa_i$ only ever appears in the patients' utility function accompanied by a multiplying $V_j$. Being the case that we will calibrate the values of $V_1$ through $V_{10}$, we need to fix a value for the distribution of $\kappa$, else identification will fail. Fortunately for us, and not coincidentally, what matters really is the shape of the distribution. Given the \textit{scaling property} of the exponential distribution, if some value $k^*$ is the true population parameter for $\lambda_F$, rather than 2, then the true values for the components of the physician quality vector $\vec{V}$ would follow $V_j^* = 2/k^* \; V_j$. But then the accompanying expect value of $\kappa_i$ would itself be scaled by $k^*/2$, such that for these \textit{true} values the level of each $V_j \kappa_i$ would remain as before. Given that only this single term $V_j \kappa_i$ is relevant to inform agent behavior, not each product individually, it makes no difference in the end our choice of $\lambda_F$.
+
+As for physicians, as we mentioned, we will estimate the ten components of the $\vec{V}$ vector. With respect to their utility function, the form we give to the revenue and punishment functions, $R_j(\cdot)$ and $P(\cdot)$, is a linear function $r_j Q_j$ and a strictly convex quadratic function $p / 2 \cdot (X_j)^2$. For convenience, we will disregard the $j$ subscript in the revenue function like we have done all along for $P(\cdot)$. The parameter $p$ will be subject to GMM estimation, whereas $r$—and for that matter the cost of visit $\tau_j$, which shall also be the same $\tau$ for all physicians—we obtain from the data directly, doing a weighted averaged of listed prices for doctor visits by FONASA matched with the 10 most common conditions granted sick leave. The resulting values for $r$ and $\tau$ are 21.182 and 8.944, respectively. See Appendix \ref{sec:par} for more detail on the calculation.
+
+The choice of a linear function for $R_j(\cdot)$ is natural and precedented, the parameter $r_j$ ($r$) has a direct interpretation as the revenue by visit for physician $j$. The choice of $P(\cdot)$ is a little more subtle. At this point we would like to point out, it is not self-evident that our \textit{punishment} function should take total sick leaves granted by physician ($X_j$) as its argument. The reasoning behind it is the fact that the patients' $\kappa_i$ would be unobservable to the institutional overseer, as is the case in the real-life setting, where reports on the patients' conditions come in most cases from the very same agent that issues sick leaves, the physician, making fraud and misdiagnosis be undetectable in these instances.
 
 
 
-
-\newpage
-
-\section{Something}
-
-\vspace{-0.1em}
 
 \begin{figure}[H]
     \centering
@@ -130,12 +133,50 @@ We see that $\gamma_i$ can be factored out of the defining fraction. It still pl
             \hspace{1em}$\lambda_s$ & 0.842 & GMM\\
             \\
         Revenue/cost of visit && \\
-            \hspace{1em}$r_j$ & 21.182 & Data \\
-            \hspace{1em}$\tau_j$ & 8.944 & Data \\
+            \hspace{1em}$r$ & 21.182 & Data \\
+            \hspace{1em}$\tau$ & 8.944 & Data \\
         \bottomrule 
     \end{tabular}
     \caption{Model parameters}
-    \end{table}
-    
+\end{table}
+
+\subsection{Identification}
+
+\newpage
+
+\section{Counterfactual and Discussion}
+
+With our fitted model at hand, we are in a position to run different scenarios. In particular, what might be the ideal choice of $p$ for the punishment function by a policymaker?
+
+Ideally, a policy maker would be able to stamp out fraud directly, which in our model would imply that they would be able to have direct influence over the physicians' choice of $\bar{\kappa_j}$, namely to place a specified lower bound on it, some level $\underline{\kappa}$ under which patients are under no circumstance to receive sick leave. That is, in a way, the status quo, except for the fact that enforcement is unfeasible. The ``overdetermination'' of roles which \cite{markussen-roed} speak about not only has the consequence that physician serve opposite financial interests (their own and the taxpayers'), but also that, in this occasion, they're better able to cover their tracks. The policymaker, as principal, would like to establish surveillance over their agent, the physician, on whether they've granted unwarranted sick leaves. Only that their only source of information is the agent herself. The agent in charge of diagnosis is the same as then issues sick leave, as such they would have every incentive to fit one to the other, whether legitimately or illegitimately. We mentioned higher scrutiny \textit{does} take place on high duration sick leaves, automatically sent up to the overseer for approval, requiring medical. This isn't the case for the routine conditions which make up the majority of observations in our sample, nor would it be practical that it were so.
+
+This isn't necessarily a question of deliberate fraud either. \cite{cln} establish that under all but the most extreme circumstances (read: set of parameters), physicians have no incentive to be distrustful of their patients' self-reported symptoms, whether in fact suspicious of foul play or not. In that regard, our policy of choice would seek to realign the incentives of the physician to that of the policymaker, rather than merely being a question of catching and punishing willing offenders, such that physicians self-police into subjecting diagnosis to some higher level of scrutiny on their part.
+
+Consider for a moment the policymaker \textit{were} able to place restrictions on $\bar{\kappa_j}$. Under our current parameters, if physician strategies, i.e. strictness, were imposed at a fourth of the value of the upper bound, that is, at $\underline{\kappa} = 1/4 \, \bar{\kappa}_{\max}$, total issuance would go down by 32\%. In particular, the lowest 32\% of patients previously receiving sick leave, ordered by their `medical necessity' $\kappa_i$, would be cut off.
+
+How might the policymaker effect such a change through feasible policy means? The careful reader might argue that, in fact, we have already defined the punishment function $P(\cdot)$ as being the purview of the institutional overseer. As misdiagnosis itself isn't observed, punishment takes the form of a probability and magnitude of fine as a function of sick leaves issued over a given period ($X_j$), where we proposed $P(X_j) = p / 2 \cdot (X_j)^2$ as a polynomial approximation. Under this definition, the policymaker would have control over the parameter $p$.
+
+Figure \ref{fig:counter} illustrates the \textit{aggregate} amount of sick leaves issued in the physician-patient market as a function of different relative levels of $p$. The dashed horizontal line is the level of aggregate sick leaves that would be achieved by direct control over physicians' $\bar{\kappa_j}$, placing them at $\underline{\kappa} = 1/4 \, \bar{\kappa}_{\max}$.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.60\linewidth]{counter.pdf}
+    \captionsetup{justification=centerlast}
+    \caption{Aggregate sick leaves in our fitted model for different values of $p$}
+    \label{fig:counter}
+\end{figure}
+
+We don't directly address the question of welfare in this paper. The optimal choice of $p$, itself informed by the optimal choice of $\underline{\kappa}$, should derive from some model which can numerically formalize its different repercussions. Within our framework itself is present the downside: raising $p$ presses physicians into higher strictness, reducing overall welfare, as physicians must cut back their services, facing higher expected penalties for a reduced revenue stream — and patients are in many cases induced to visit lower quality physicians, which decreases their utility with respect to the previous status quo, and in some cases patients are driven out of the market entirely.
+
+The flipside, the reason why a policimaker would \textit{want} to reduce the issuance of sick leaves, is not present in any shape or form in our framework. These negative consequences are one of the main subjects of the economic literature on sick leaves. Two motives stand out: sick leave fraud puts financial strain on either the taxpayer or employer, whoever covers the worker's wages; the work absence facilitated by easy access to sick leave has an impact on aggregate productivity. Such effects would need to be included in an estimation of the overall welfare impact of cracking down on sick leave issuance, but they fall well outside of the scope of our analysis.
+
+\subsubsection*{Final comments}
+
+We have presented a framework which seeks to include and explain several behaviors in the sick leave market in a parsimonious way: assortative matching of high issuance physicians with high ``usage'' patients, leniency as a response to increasing competition among physicians, heterogenous leniency, imperfect matching. All of these are constructed to be endogenous outcomes from rational choices by both types of agents, physicians and patients, as well as certain modelling decisions on our part: heterogenous physicians, fuzzy search, dual source patient utility. In this respect, theoretically, our framework and both its computed specifications give reasonable insight into this market.
+
+As for its use as a guide to policy beyond providing conceptual understanding, that is, correctly predicting the physicians' response to a raise in the probability and/or magnitude of the fine they face for excessive sick leaves granted, its reliability would depend on the plausibility of our chosen functional form for the different distributions and functions and the quality of the data used and performed estimation to calibrate their parameters. It's our view that we achieve the former, but perhaps not the latter. The chosen functional forms are spare in requirements and follow precedents set in the literature. The data we have available, however, is rather thin in comparison to relevant papers on this subject, which affects the quality of our estimation.
+
+As we discussed above, our GMM exercise would benefit greatly from additional sources of information, both in terms of additional variation across physicians, as well as having more parameters be retrieved elsewhere and be set in place by the time we perform estimation, such that we require fewer degrees of freedom. Chief among the possible revisions and extensions to this program: information on the client base of physicians, i.e. a source of $Q_j$, and an alternative, separate method to gauge physician quality, perhaps relating observable qualities like education, tenure, place of work and so on to disagregated data on salaries and visit revenue. \textit{You can only do so much in one semester.}
+
 
 \end{document}

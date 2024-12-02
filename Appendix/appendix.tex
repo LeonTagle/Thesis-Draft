@@ -535,7 +535,7 @@ We use a single $r$ and $\tau$ for all physicians on this occasion. In the futur
 
 We select the ten most frequent $cie10$ categories in our sample, the international standard classification of medical conditions. These ten, as well as non-categorized conditions (seen as \textit{empty} in the Table), account for 47.91\% of all sick leaves in our database. We then match the conditions to a particular field of practice, though strictly speaking physicians aren't reduced to their own field when issuing sick leaves, so matching is fuzzy.
 
-We then take a \textit{full price} and the {fee} paid by FONASA affiliates in the Free Choice Modality (MLE) as a reference price, from a tariff book assembled by FONASA itself (2024). We take this to correspond to the physician's revenue by visit ($r$) and the patients' cost of visit ($\tau$), respectively.
+We then take a \textit{full price} and the {fee} paid by FONASA affiliates in the Free Choice Modality (MLE) as a reference price, from a tariff book assembled by FONASA itself (\citeyear{fonasa}). We take this to correspond to the physician's revenue by visit ($r$) and the patients' cost of visit ($\tau$), respectively.
 
 Our final value for $r$ and $\tau$ is the weighted average of this prices, weighted by the relative frequency of each category and its matched full and benefit price. This amounts to taking the dot product of the `\%' column with the `Full Price' and `Aff. Fee' columns in the Table below, respectively.
 
@@ -561,6 +561,8 @@ The resulting values are: $r = 21,182$ and $\tau = 8,944$. For simplicity, we se
     K52            & 49,182     & 0.03       & Gastroenteritis      & General       & \$ 14,270 & \$ 7,440    \\
     \bottomrule
     \end{tabular}
+    \caption{Most common health conditions reported by physicians in sick leaves issued, matched to corresponding fees of service}
+    \label{tab:cond}
 \end{table}
 
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.7)  4 NOV 2024 16:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.7)  2 DEC 2024 11:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -839,11 +839,11 @@ LaTeX Font Info:    ... okay on input line 3.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(113.81102pt, 386.67296pt, 113.81102pt)
-* v-part:(T,H,B)=(85.35826pt, 610.02708pt, 99.58464pt)
+* v-part:(T,H,B)=(85.35826pt, 624.25346pt, 85.35826pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=386.67296pt
-* \textheight=610.02708pt
+* \textheight=624.25346pt
 * \oddsidemargin=41.54103pt
 * \evensidemargin=41.54103pt
 * \topmargin=-23.91173pt
@@ -943,10 +943,11 @@ LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
 
 Package natbib Warning: Citation `mcfadden' on page 2 undefined on input line 25.
 
+[2]
 
 Package natbib Warning: There were undefined citations.
 
-[2] (./introduction.aux)
+[3] (./introduction.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -955,18 +956,18 @@ Package rerunfilecheck Info: File `introduction.out' has not changed.
 (rerunfilecheck)             Checksum: 9814C2D956916ADB9290ECA4E25C967A;103.
  ) 
 Here is how much of TeX's memory you used:
- 35458 strings out of 474116
- 809238 string characters out of 5743683
- 1941187 words of memory out of 5000000
+ 35459 strings out of 474116
+ 809244 string characters out of 5743683
+ 1942187 words of memory out of 5000000
  57187 multiletter control sequences out of 15000+600000
  723018 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  119i,8n,124p,828b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Regular.pfb>
-Output written on introduction.pdf (2 pages, 78284 bytes).
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on introduction.pdf (3 pages, 99275 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
- 32 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
+ 57 PDF objects out of 1000 (max. 8388607)
+ 41 compressed objects within 1 object stream
+ 6 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

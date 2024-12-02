@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.7)  29 NOV 2024 11:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.7)  1 DEC 2024 10:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -922,6 +922,21 @@ Package natbib Warning: Citation `oteiza' on page 1 undefined on input line 38.
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/baskervillef/zba_uf5aa7.enc}]
 
+LaTeX Warning: Reference `tab:cond' on page 2 undefined on input line 42.
+
+
+LaTeX Warning: Reference `sec:par' on page 2 undefined on input line 42.
+
+
+Package natbib Warning: Citation `cln' on page 2 undefined on input line 42.
+
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 42.
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 42.
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 6.0pt on input line 42.
+
 Package natbib Warning: There were undefined citations.
 
 [2] (./data.aux)
@@ -929,22 +944,26 @@ Package natbib Warning: There were undefined citations.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `data.out' has not changed.
 (rerunfilecheck)             Checksum: A11EA37CFA35B78134C59E09BF80971A;63.
  ) 
 Here is how much of TeX's memory you used:
- 35460 strings out of 474116
- 809118 string characters out of 5743683
+ 35486 strings out of 474116
+ 809495 string characters out of 5743683
  1942187 words of memory out of 5000000
- 57196 multiletter control sequences out of 15000+600000
- 674054 words of font info for 92 fonts, out of 8000000 for 9000
+ 57211 multiletter control sequences out of 15000+600000
+ 725885 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 119i,8n,124p,796b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 119i,8n,124p,1157b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on data.pdf (2 pages, 100299 bytes).
+Output written on data.pdf (2 pages, 102452 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
+ 60 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
+ 6 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

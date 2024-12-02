@@ -9,7 +9,7 @@
 
 Given a set of physicians $\{(V_j, R_j(\cdot), \tau_j)\}_{j =1}^{J}$, punishment function $P(\cdot)$, distribution functions for patient parameters $F(\kappa)$ and $G(\gamma)$, and one search model parameter $z$, which is $\lambda$ in the Logit model, $\beta$ in the sequential model, we develop an algorithm to compute market equilibrium.
 
-Equilibrium aggregates are computed on the basis of Monte-Carlo matrix calculus. Set $J$ as the number of physicians,\footnote{Or, as we'll later interpret it, as the number of bins, where each bin $j$ is a unique combination of $ (V_j, \tau_j, R_j(\cdot),P_j(\cdot))$.} $I$ as the size of the sample drawn randomly from $F(\kappa)$ and $G(\gamma)$. For both models we define a class which can output a matrix $S$ where each column is a patient's strategy vector $S_i$ following that model, when given as input the arrayed set of physicians' quality and visit cost $\{(V_j, \tau_j)\}_{i =1}^{J}$, an arrayed set of patients $\{(\kappa_i,\gamma_i)\}_{i =1}^{I}$, the model parameter $z$ and a given vector of physician strategies $\{\bar{\kappa_j}\}_{j =1}^{J}$.
+Equilibrium aggregates are computed on the basis of Monte-Carlo matrix calculus. Set $J$ as the number of physicians,\footnote{Or, as we'll later interpret it, as the number of bins, where each bin $j$ is a unique combination of $ (V_j, \tau_j, R_j(\cdot))$.} $I$ as the size of the sample drawn randomly from $F(\kappa)$ and $G(\gamma)$. For both models we define a class which can output a matrix $S$ where each column is a patient's strategy vector $S_i$ following that model, when given as input the arrayed set of physicians' quality and visit cost $\{(V_j, \tau_j)\}_{i =1}^{J}$, an arrayed set of patients $\{(\kappa_i,\gamma_i)\}_{i =1}^{I}$, the model parameter $z$ and a given vector of physician strategies $\{\bar{\kappa_j}\}_{j =1}^{J}$.
 
 We input as ``patients'' our $I$ samples from $F(\kappa)$ and $G(\gamma)$, then a $J \times I$ matrix $U$ is computed, where each component $u_{ji}$ corresponds to the utility the sampled patient $i$ would get from a visit to physician $j$.\footnote{As we have defined our matrices $J \times I$ for ease of visualization, we will refer to matrix components as $x_{ji}$ in this section rather than $x_{ij}$ as we do elsewhere in the paper.} This step is the same for both classes.
 
@@ -165,7 +165,8 @@ Despite these idiosyncracies, we can see in Panel \ref{fig:Schnellk} that physic
 Some more figures from these simulations can be seen in the Appendix \ref{sec:graphs}. They show how physician utility is strictly increasing in $V_j$ (meaning the drop-offs in patient demand after transitioning to inner solutions of $\bar{\kappa_j}$ are strategic and not a detriment to utility), and also highlight the difference in $Q_j$ and $X_j$ between the equilibrium values of $\bar{\kappa}^*$
 and other physician strategy vectors.
 
-\begin{figure}[H]
+
+\begin{figure}[p]
     \centering
     % First subfigure
     \begin{subfigure}[b]{0.46\linewidth}

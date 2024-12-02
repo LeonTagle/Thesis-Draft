@@ -1,26 +1,26 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
-\contentsline {section}{\numberline {2}Literature Review}{2}{section.2}%
+\contentsline {section}{\numberline {2}Literature Review}{3}{section.2}%
 \contentsline {section}{\numberline {3}Model}{5}{section.3}%
 \contentsline {subsection}{\numberline {3.1}The Physician-Patient Market}{5}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Non-Search Equilibrium}{6}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}General Search Framework}{8}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.2}Non-Search Equilibrium}{7}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}General Search Framework}{9}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}The ``Implicit'' Search Model}{10}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}The ``Explicit'' Search Model}{12}{subsection.3.5}%
 \contentsline {section}{\numberline {4}Computation}{14}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Algorithms for Model Computation}{14}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Illustrative Examples}{17}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Data}{20}{section.5}%
+\contentsline {section}{\numberline {5}Data}{21}{section.5}%
 \contentsline {section}{\numberline {6}Estimation}{22}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Quality Bins}{22}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Data Moments}{24}{subsection.6.2}%
-\contentsline {section}{\numberline {7}Something}{25}{section.7}%
-\contentsline {section}{\numberline {8}Counterfactuals \& Comments}{26}{section.8}%
-\contentsline {section}{References}{28}{section*.17}%
-\contentsline {section}{Appendix}{29}{section*.18}%
-\contentsline {subsection}{\numberline {A.1}The Cause of the ``Strategic Effect''}{29}{subsection.8.1}%
-\contentsline {subsection}{\numberline {A.2}\cite {schnell2017physician} with Logit Choice}{31}{subsection.8.2}%
-\contentsline {subsection}{\numberline {A.3}Strategic Complementarity of $\bar {\kappa _j}$'s (Proof of Proposition \ref {complements})}{33}{subsection.8.3}%
-\contentsline {subsection}{\numberline {A.4}Optimal Reserve Utility (Proof of Equation \ref {eq:seq4})}{36}{subsection.8.4}%
-\contentsline {subsection}{\numberline {A.5}More Figures}{38}{subsection.8.5}%
-\contentsline {subsection}{\numberline {A.6}Identification Panels}{39}{subsection.8.6}%
-\contentsline {subsection}{\numberline {A.7}Parameter Sources}{40}{subsection.8.7}%
+\contentsline {subsection}{\numberline {6.1}Data Moments}{22}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Parameters and Estimation Results}{25}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Identification}{27}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Counterfactual and Discussion}{28}{section.7}%
+\contentsline {section}{References}{32}{section*.19}%
+\contentsline {section}{Appendix}{33}{section*.20}%
+\contentsline {subsection}{\numberline {A.1}The Cause of the ``Strategic Effect''}{33}{subsection.7.1}%
+\contentsline {subsection}{\numberline {A.2}\cite {schnell2017physician} with Logit Choice}{35}{subsection.7.2}%
+\contentsline {subsection}{\numberline {A.3}Strategic Complementarity of $\bar {\kappa _j}$'s (Proof of Proposition \ref {complements})}{37}{subsection.7.3}%
+\contentsline {subsection}{\numberline {A.4}Optimal Reserve Utility (Proof of Equation \ref {eq:seq4})}{40}{subsection.7.4}%
+\contentsline {subsection}{\numberline {A.5}More Figures}{42}{subsection.7.5}%
+\contentsline {subsection}{\numberline {A.6}Identification Panels}{43}{subsection.7.6}%
+\contentsline {subsection}{\numberline {A.7}Parameter Sources}{44}{subsection.7.7}%
