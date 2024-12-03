@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.7)  2 DEC 2024 20:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.7)  2 DEC 2024 21:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -829,12 +829,12 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 )
 \c@theorem=\count339
 \c@equilibrium=\count340
-LaTeX Font Info:    Trying to load font information for T1+BaskervilleF-TLF on input line 75.
+LaTeX Font Info:    Trying to load font information for T1+BaskervilleF-TLF on input line 77.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/baskervillef/T1BaskervilleF-TLF.fd
 File: T1BaskervilleF-TLF.fd 2016/11/15 (autoinst) Font definitions for T1/BaskervilleF-TLF.
 )
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 75.
+(Font)              scaled to size 10.95pt on input line 77.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count341
@@ -842,30 +842,30 @@ File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 75.
-LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 75.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 77.
+LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 77.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/ly1/ly1ptm.fd
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
-LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    ... okay on input line 77.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -930,7 +930,7 @@ Package caption Info: End \AtBeginDocument code.
 
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-Package hyperref Info: Link coloring ON on input line 75.
+Package hyperref Info: Link coloring ON on input line 77.
 (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -938,28 +938,32 @@ Package hyperref Info: Link coloring ON on input line 75.
 \c@mv@tabular=\count348
 \c@mv@boldtabular=\count349
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 79.
-<UC_lineal_TR-01.png, id=111, 512.1534pt x 317.0244pt>
+(Font)              scaled to size 17.28pt on input line 81.
+<UC_lineal_TR-01.png, id=115, 512.1534pt x 317.0244pt>
 File: UC_lineal_TR-01.png Graphic file (type png)
 <use UC_lineal_TR-01.png>
-Package pdftex.def Info: UC_lineal_TR-01.png  used on input line 79.
+Package pdftex.def Info: UC_lineal_TR-01.png  used on input line 81.
 (pdftex.def)             Requested size: 153.6472pt x 95.10805pt.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 79.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 79.
+(Font)              scaled to size 22.0pt on input line 81.
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
+(Font)              scaled to size 22.0pt on input line 81.
+LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 81.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 81.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 79.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 81.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/baskervillef/zba_uf5aa7.enc} <./UC_lineal_TR-01.png>]
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 82.
+(Font)              scaled to size 14.4pt on input line 84.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 82.
+(Font)              scaled to size 14.4pt on input line 84.
  (./main.toc
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
 (Font)              scaled to size 10.95pt on input line 1.
@@ -1044,12 +1048,12 @@ LaTeX Font Info:    Trying to load font information for U+bbm on input line 243.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 ) [12] (./Model/graph2.tex) [13]) (./Computation/computation.tex [14]
-<Computation/linear.pdf, id=413, 515.55421pt x 344.85713pt>
+<Computation/linear.pdf, id=418, 515.55421pt x 344.85713pt>
 File: Computation/linear.pdf Graphic file (type pdf)
 <use Computation/linear.pdf>
 Package pdftex.def Info: Computation/linear.pdf  used on input line 38.
 (pdftex.def)             Requested size: 174.00165pt x 116.38689pt.
-<Computation/squared.pdf, id=414, 510.53546pt x 344.85713pt>
+<Computation/squared.pdf, id=419, 510.53546pt x 344.85713pt>
 File: Computation/squared.pdf Graphic file (type pdf)
 <use Computation/squared.pdf>
 Package pdftex.def Info: Computation/squared.pdf  used on input line 47.
@@ -1060,77 +1064,77 @@ Overfull \hbox (6.11258pt too wide) in paragraph at lines 56--57
  []
 
 [15 <./Computation/linear.pdf> <./Computation/squared.pdf>] [16]
-<Computation/decimals.pdf, id=520, 510.53546pt x 344.85713pt>
+<Computation/decimals.pdf, id=525, 510.53546pt x 344.85713pt>
 File: Computation/decimals.pdf Graphic file (type pdf)
 <use Computation/decimals.pdf>
 Package pdftex.def Info: Computation/decimals.pdf  used on input line 75.
 (pdftex.def)             Requested size: 212.6713pt x 143.65503pt.
  [17 <./Computation/decimals.pdf>]
-<Computation/Q_zero.pdf, id=576, 490.63298pt x 344.54347pt>
+<Computation/Q_zero.pdf, id=581, 490.63298pt x 344.54347pt>
 File: Computation/Q_zero.pdf Graphic file (type pdf)
 <use Computation/Q_zero.pdf>
 Package pdftex.def Info: Computation/Q_zero.pdf  used on input line 111.
 (pdftex.def)             Requested size: 177.87215pt x 124.90826pt.
-<Computation/Q_eq.pdf, id=577, 490.63298pt x 344.54347pt>
+<Computation/Q_eq.pdf, id=582, 490.63298pt x 344.54347pt>
 File: Computation/Q_eq.pdf Graphic file (type pdf)
 <use Computation/Q_eq.pdf>
 Package pdftex.def Info: Computation/Q_eq.pdf  used on input line 120.
 (pdftex.def)             Requested size: 177.87215pt x 124.90826pt.
-<Computation/X.pdf, id=578, 490.63298pt x 344.54347pt>
+<Computation/X.pdf, id=583, 490.63298pt x 344.54347pt>
 File: Computation/X.pdf Graphic file (type pdf)
 <use Computation/X.pdf>
 Package pdftex.def Info: Computation/X.pdf  used on input line 130.
 (pdftex.def)             Requested size: 177.87215pt x 124.90826pt.
-<Computation/ks.pdf, id=579, 490.63298pt x 344.54347pt>
+<Computation/ks.pdf, id=584, 490.63298pt x 344.54347pt>
 File: Computation/ks.pdf Graphic file (type pdf)
 <use Computation/ks.pdf>
 Package pdftex.def Info: Computation/ks.pdf  used on input line 139.
 (pdftex.def)             Requested size: 177.87215pt x 124.90826pt.
  [18 <./Computation/Q_zero.pdf> <./Computation/Q_eq.pdf> <./Computation/X.pdf> <./Computation/ks.pdf>]
-<Computation/schnell_Q_0.pdf, id=765, 490.63298pt x 344.54347pt>
+<Computation/schnell_Q_0.pdf, id=771, 490.63298pt x 344.54347pt>
 File: Computation/schnell_Q_0.pdf Graphic file (type pdf)
 <use Computation/schnell_Q_0.pdf>
 Package pdftex.def Info: Computation/schnell_Q_0.pdf  used on input line 174.
 (pdftex.def)             Requested size: 177.87215pt x 124.90826pt.
-<Computation/schnell_Q_eq.pdf, id=766, 490.63298pt x 344.54347pt>
+<Computation/schnell_Q_eq.pdf, id=772, 490.63298pt x 344.54347pt>
 File: Computation/schnell_Q_eq.pdf Graphic file (type pdf)
 <use Computation/schnell_Q_eq.pdf>
 Package pdftex.def Info: Computation/schnell_Q_eq.pdf  used on input line 183.
 (pdftex.def)             Requested size: 177.87215pt x 124.90826pt.
-<Computation/schnell_X.pdf, id=767, 490.63298pt x 344.54347pt>
+<Computation/schnell_X.pdf, id=773, 490.63298pt x 344.54347pt>
 File: Computation/schnell_X.pdf Graphic file (type pdf)
 <use Computation/schnell_X.pdf>
 Package pdftex.def Info: Computation/schnell_X.pdf  used on input line 193.
 (pdftex.def)             Requested size: 177.87215pt x 124.90826pt.
-<Computation/schnell_ks.pdf, id=768, 490.63298pt x 344.54347pt>
+<Computation/schnell_ks.pdf, id=774, 490.63298pt x 344.54347pt>
 File: Computation/schnell_ks.pdf Graphic file (type pdf)
 <use Computation/schnell_ks.pdf>
 Package pdftex.def Info: Computation/schnell_ks.pdf  used on input line 202.
 (pdftex.def)             Requested size: 177.87215pt x 124.90826pt.
-<Computation/patient_uroot.pdf, id=769, 492.64049pt x 342.53596pt>
+<Computation/patient_uroot.pdf, id=775, 492.64049pt x 342.53596pt>
 File: Computation/patient_uroot.pdf Graphic file (type pdf)
 <use Computation/patient_uroot.pdf>
 Package pdftex.def Info: Computation/patient_uroot.pdf  used on input line 212.
 (pdftex.def)             Requested size: 177.87215pt x 123.67871pt.
 ) [19] [20 <./Computation/schnell_Q_0.pdf> <./Computation/schnell_Q_eq.pdf> <./Computation/schnell_X.pdf> <./Computation/schnell_ks.pdf> <./Computation/patient_uroot.pdf>] (./Data/data.tex [21]) (./Estimation/estimation.tex [22]
-<Estimation/cdf.pdf, id=1019, 512.75699pt x 284.31595pt>
+<Estimation/cdf.pdf, id=1024, 512.75699pt x 284.31595pt>
 File: Estimation/cdf.pdf Graphic file (type pdf)
 <use Estimation/cdf.pdf>
 Package pdftex.def Info: Estimation/cdf.pdf  used on input line 25.
 (pdftex.def)             Requested size: 270.66988pt x 150.0837pt.
  [23 <./Estimation/cdf.pdf>] [24] [25] [26]
-<Estimation/result_x.pdf, id=1100, 424.1358pt x 328.06577pt>
+<Estimation/result_x.pdf, id=1105, 424.1358pt x 328.06577pt>
 File: Estimation/result_x.pdf Graphic file (type pdf)
 <use Estimation/result_x.pdf>
 Package pdftex.def Info: Estimation/result_x.pdf  used on input line 142.
 (pdftex.def)             Requested size: 177.87215pt x 137.58144pt.
-<Estimation/result_x30.pdf, id=1101, 429.15456pt x 328.06577pt>
+<Estimation/result_x30.pdf, id=1106, 429.15456pt x 328.06577pt>
 File: Estimation/result_x30.pdf Graphic file (type pdf)
 <use Estimation/result_x30.pdf>
 Package pdftex.def Info: Estimation/result_x30.pdf  used on input line 151.
 (pdftex.def)             Requested size: 177.87215pt x 135.97455pt.
  [27 <./Estimation/result_x.pdf> <./Estimation/result_x30.pdf>] [28] [29]
-<Estimation/counter.pdf, id=1230, 515.72673pt x 319.79475pt>
+<Estimation/counter.pdf, id=1235, 515.72673pt x 319.79475pt>
 File: Estimation/counter.pdf Graphic file (type pdf)
 <use Estimation/counter.pdf>
 Package pdftex.def Info: Estimation/counter.pdf  used on input line 206.
@@ -1170,12 +1174,32 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\new@ifnextchar' on input line 89.
 
-
+[36]
 Overfull \hbox (13.18907pt too wide) in paragraph at lines 94--95
 []\T1/BaskervilleF-TLF/m/n/10.95 The way in which Schnell de-vises her physi-cian's util-ity for-mula is im-plic-itly Bernoulli-
  []
 
-[36] [37]
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.8.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.124 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.8.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.124 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.8.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.124 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.8.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.124 \begin{equation}
+                       [37]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 139.
@@ -1190,83 +1214,83 @@ LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
 (Font)              scaled to size 6.0pt on input line 147.
 [38] [39] [40] [41] [42]
-<Appendix/U.pdf, id=1392, 490.63298pt x 344.54347pt>
+<Appendix/U.pdf, id=1399, 490.63298pt x 344.54347pt>
 File: Appendix/U.pdf Graphic file (type pdf)
 <use Appendix/U.pdf>
 Package pdftex.def Info: Appendix/U.pdf  used on input line 325.
 (pdftex.def)             Requested size: 177.87215pt x 124.90826pt.
-<Appendix/schnell_U.pdf, id=1393, 490.63298pt x 344.54347pt>
+<Appendix/schnell_U.pdf, id=1400, 490.63298pt x 344.54347pt>
 File: Appendix/schnell_U.pdf Graphic file (type pdf)
 <use Appendix/schnell_U.pdf>
 Package pdftex.def Info: Appendix/schnell_U.pdf  used on input line 334.
 (pdftex.def)             Requested size: 177.87215pt x 124.90826pt.
-<Appendix/Q_comparison.pdf, id=1394, 490.63298pt x 344.54347pt>
+<Appendix/Q_comparison.pdf, id=1401, 490.63298pt x 344.54347pt>
 File: Appendix/Q_comparison.pdf Graphic file (type pdf)
 <use Appendix/Q_comparison.pdf>
 Package pdftex.def Info: Appendix/Q_comparison.pdf  used on input line 350.
 (pdftex.def)             Requested size: 177.87215pt x 124.90826pt.
-<Appendix/schnell_Q_comparison.pdf, id=1395, 490.63298pt x 344.54347pt>
+<Appendix/schnell_Q_comparison.pdf, id=1402, 490.63298pt x 344.54347pt>
 File: Appendix/schnell_Q_comparison.pdf Graphic file (type pdf)
 <use Appendix/schnell_Q_comparison.pdf>
 Package pdftex.def Info: Appendix/schnell_Q_comparison.pdf  used on input line 359.
 (pdftex.def)             Requested size: 177.87215pt x 124.90826pt.
-<Appendix/X_comparison.pdf, id=1396, 490.63298pt x 344.54347pt>
+<Appendix/X_comparison.pdf, id=1403, 490.63298pt x 344.54347pt>
 File: Appendix/X_comparison.pdf Graphic file (type pdf)
 <use Appendix/X_comparison.pdf>
 Package pdftex.def Info: Appendix/X_comparison.pdf  used on input line 375.
 (pdftex.def)             Requested size: 177.87215pt x 124.90826pt.
-<Appendix/schnell_X_comparison.pdf, id=1397, 490.63298pt x 344.54347pt>
+<Appendix/schnell_X_comparison.pdf, id=1404, 490.63298pt x 344.54347pt>
 File: Appendix/schnell_X_comparison.pdf Graphic file (type pdf)
 <use Appendix/schnell_X_comparison.pdf>
 Package pdftex.def Info: Appendix/schnell_X_comparison.pdf  used on input line 384.
 (pdftex.def)             Requested size: 177.87215pt x 124.90826pt.
  [43 <./Appendix/U.pdf> <./Appendix/schnell_U.pdf> <./Appendix/Q_comparison.pdf> <./Appendix/schnell_Q_comparison.pdf> <./Appendix/X_comparison.pdf> <./Appendix/schnell_X_comparison.pdf>]
-<Appendix/p_id1.pdf, id=1688, 467.86702pt x 260.79056pt>
+<Appendix/p_id1.pdf, id=1695, 467.86702pt x 260.79056pt>
 File: Appendix/p_id1.pdf Graphic file (type pdf)
 <use Appendix/p_id1.pdf>
 Package pdftex.def Info: Appendix/p_id1.pdf  used on input line 405.
 (pdftex.def)             Requested size: 150.80222pt x 84.05556pt.
-<Appendix/p_id2.pdf, id=1689, 467.86702pt x 260.79056pt>
+<Appendix/p_id2.pdf, id=1696, 467.86702pt x 260.79056pt>
 File: Appendix/p_id2.pdf Graphic file (type pdf)
 <use Appendix/p_id2.pdf>
 Package pdftex.def Info: Appendix/p_id2.pdf  used on input line 414.
 (pdftex.def)             Requested size: 150.80222pt x 84.05556pt.
-<Appendix/mu_id1.pdf, id=1690, 467.86702pt x 260.79056pt>
+<Appendix/mu_id1.pdf, id=1697, 467.86702pt x 260.79056pt>
 File: Appendix/mu_id1.pdf Graphic file (type pdf)
 <use Appendix/mu_id1.pdf>
 Package pdftex.def Info: Appendix/mu_id1.pdf  used on input line 424.
 (pdftex.def)             Requested size: 150.80222pt x 84.05556pt.
-<Appendix/mu_id2.pdf, id=1691, 467.86702pt x 260.79056pt>
+<Appendix/mu_id2.pdf, id=1698, 467.86702pt x 260.79056pt>
 File: Appendix/mu_id2.pdf Graphic file (type pdf)
 <use Appendix/mu_id2.pdf>
 Package pdftex.def Info: Appendix/mu_id2.pdf  used on input line 433.
 (pdftex.def)             Requested size: 150.80222pt x 84.05556pt.
-<Appendix/sigma_id1.pdf, id=1692, 467.86702pt x 260.79056pt>
+<Appendix/sigma_id1.pdf, id=1699, 467.86702pt x 260.79056pt>
 File: Appendix/sigma_id1.pdf Graphic file (type pdf)
 <use Appendix/sigma_id1.pdf>
 Package pdftex.def Info: Appendix/sigma_id1.pdf  used on input line 443.
 (pdftex.def)             Requested size: 150.80222pt x 84.05556pt.
-<Appendix/sigma_id2.pdf, id=1693, 467.86702pt x 260.79056pt>
+<Appendix/sigma_id2.pdf, id=1700, 467.86702pt x 260.79056pt>
 File: Appendix/sigma_id2.pdf Graphic file (type pdf)
 <use Appendix/sigma_id2.pdf>
 Package pdftex.def Info: Appendix/sigma_id2.pdf  used on input line 452.
 (pdftex.def)             Requested size: 150.80222pt x 84.05556pt.
-<Appendix/lambda_id1.pdf, id=1694, 467.86702pt x 260.79056pt>
+<Appendix/lambda_id1.pdf, id=1701, 467.86702pt x 260.79056pt>
 File: Appendix/lambda_id1.pdf Graphic file (type pdf)
 <use Appendix/lambda_id1.pdf>
 Package pdftex.def Info: Appendix/lambda_id1.pdf  used on input line 462.
 (pdftex.def)             Requested size: 150.80222pt x 84.05556pt.
-<Appendix/lambda_id2.pdf, id=1695, 467.86702pt x 260.79056pt>
+<Appendix/lambda_id2.pdf, id=1702, 467.86702pt x 260.79056pt>
 File: Appendix/lambda_id2.pdf Graphic file (type pdf)
 <use Appendix/lambda_id2.pdf>
 Package pdftex.def Info: Appendix/lambda_id2.pdf  used on input line 471.
 (pdftex.def)             Requested size: 150.80222pt x 84.05556pt.
-<Appendix/k_id1.pdf, id=1696, 467.86702pt x 260.79056pt>
+<Appendix/k_id1.pdf, id=1703, 467.86702pt x 260.79056pt>
 File: Appendix/k_id1.pdf Graphic file (type pdf)
 <use Appendix/k_id1.pdf>
 Package pdftex.def Info: Appendix/k_id1.pdf  used on input line 481.
 (pdftex.def)             Requested size: 150.80222pt x 84.05556pt.
-<Appendix/k_id2.pdf, id=1697, 467.86702pt x 260.79056pt>
+<Appendix/k_id2.pdf, id=1704, 467.86702pt x 260.79056pt>
 File: Appendix/k_id2.pdf Graphic file (type pdf)
 <use Appendix/k_id2.pdf>
 Package pdftex.def Info: Appendix/k_id2.pdf  used on input line 490.
@@ -1277,21 +1301,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A63EE45422D65F9FFAF44ACBD084F60B;4431.
+(rerunfilecheck)             Checksum: 4092D333B8687114778283CEC0C88AB1;4525.
  ) 
 Here is how much of TeX's memory you used:
- 36918 strings out of 474116
- 838846 string characters out of 5743683
+ 36922 strings out of 474116
+ 838933 string characters out of 5743683
  1949187 words of memory out of 5000000
- 58338 multiletter control sequences out of 15000+600000
- 875285 words of font info for 139 fonts, out of 8000000 for 9000
+ 58341 multiletter control sequences out of 15000+600000
+ 912751 words of font info for 142 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,19n,107p,1945b,980s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/leontagle/Library/texlive/2024/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on main.pdf (48 pages, 1030931 bytes).
+Output written on main.pdf (48 pages, 1030513 bytes).
 PDF statistics:
- 2028 PDF objects out of 2073 (max. 8388607)
- 1030 compressed objects within 11 object streams
+ 2035 PDF objects out of 2073 (max. 8388607)
+ 1037 compressed objects within 11 object streams
  192 named destinations out of 1000 (max. 500000)
- 386 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 394 words of extra memory for PDF output out of 10000 (max. 10000000)
 

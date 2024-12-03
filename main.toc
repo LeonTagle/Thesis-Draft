@@ -15,12 +15,13 @@
 \contentsline {subsection}{\numberline {6.2}Parameters and Estimation Results}{25}{subsection.6.2}%
 \contentsline {subsection}{\numberline {6.3}Identification}{28}{subsection.6.3}%
 \contentsline {section}{\numberline {7}Counterfactual and Discussion}{29}{section.7}%
-\contentsline {section}{References}{33}{section*.19}%
-\contentsline {section}{Appendix}{34}{section*.20}%
-\contentsline {subsection}{\numberline {A.1}The Cause of the ``Strategic Effect''}{34}{subsection.7.1}%
-\contentsline {subsection}{\numberline {A.2}\cite {schnell2017physician} with Logit Choice}{36}{subsection.7.2}%
-\contentsline {subsection}{\numberline {A.3}Strategic Complementarity of $\bar {\kappa _j}$'s (Proof of Proposition \ref {complements})}{38}{subsection.7.3}%
-\contentsline {subsection}{\numberline {A.4}Optimal Reserve Utility (Proof of Equation \ref {eq:seq4})}{41}{subsection.7.4}%
-\contentsline {subsection}{\numberline {A.5}More Figures}{43}{subsection.7.5}%
-\contentsline {subsection}{\numberline {A.6}Identification Panels}{44}{subsection.7.6}%
-\contentsline {subsection}{\numberline {A.7}Parameter Sources}{45}{subsection.7.7}%
+\contentsline {section}{\numberline {8}Conclusion}{31}{section.8}%
+\contentsline {section}{References}{33}{section*.18}%
+\contentsline {section}{Appendix}{34}{section*.19}%
+\contentsline {subsection}{\numberline {A.1}The Cause of the ``Strategic Effect''}{34}{subsection.8.1}%
+\contentsline {subsection}{\numberline {A.2}\cite {schnell2017physician} with Logit Choice}{36}{subsection.8.2}%
+\contentsline {subsection}{\numberline {A.3}Strategic Complementarity of $\bar {\kappa _j}$'s (Proof of Proposition \ref {complements})}{38}{subsection.8.3}%
+\contentsline {subsection}{\numberline {A.4}Optimal Reserve Utility (Proof of Equation \ref {eq:seq4})}{41}{subsection.8.4}%
+\contentsline {subsection}{\numberline {A.5}More Figures}{43}{subsection.8.5}%
+\contentsline {subsection}{\numberline {A.6}Identification Panels}{44}{subsection.8.6}%
+\contentsline {subsection}{\numberline {A.7}Parameter Sources}{45}{subsection.8.7}%
