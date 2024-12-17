@@ -7,9 +7,7 @@
 \subsection{The Physician-Patient Market}
 \label{sec:3_1}
 
-We now present the model itself before proceeding with further discussion. We consider $i = 1, ..., I$ patients and $j = 1, ..., J$ physicians.\footnote{Note on language: For ease of reference, we refer to any patient as ``he'', and to any physician as ``she'' (as we have done already). At this point it shall be noted that the first person plural (we) employed over the course of this article is to be read as including the reader or perhaps as a royal \textit{we}.}
-
-Patients are characterized by their ``medical necessity'' $\kappa_i \in \mathbb{R}^+$ and their ``taste for sick leave'' $\gamma_i \in \mathbb{R}$, respectively following the ex-ante cumulative distributions $F(\kappa)$ and $G(\gamma)$, which are public knowledge. Physicians are described by their ``service quality'' $V_j \in \mathbb{R}^+$, also known both to all patients and other physicians.
+We now present the model itself before proceeding with further discussion. We consider $i = 1, ..., I$ patients and $j = 1, ..., J$ physicians.\footnote{Note on language: For ease of reference, we refer to any patient as ``he'', and to any physician as ``she'' (as we have done already). At this point it shall be noted that the first person plural (we) employed over the course of this article is to be read as including the reader or perhaps as a royal \textit{we}.} Patients are characterized by their ``medical necessity'' $\kappa_i \in \mathbb{R}^+$ and their ``taste for sick leave'' $\gamma_i \in \mathbb{R}$, respectively following the ex-ante cumulative distributions $F(\kappa)$ and $G(\gamma)$, which are public knowledge. Physicians are described by their ``service quality'' $V_j \in \mathbb{R}^+$ and cost of visit $\tau_j \in \mathbb{R}^+$, also known both to all patients and other physicians, as well as their revenue function $R_j(\cdot)$.
 
 A patient $i$ can visit a physician for treatment and may be also granted sick leave. After the patient is assigned a physician $j$, his utility function—implicitly dependent on his characteristic $(\kappa_i,\gamma_i)$ tuple—is defined piecewise as follows:
     \[
@@ -30,7 +28,7 @@ We define the physician's utility function as follows:
 \[
 U_j(Q_j, X_j) = R_j(Q_j) - P(X_j)
 \]
-where $R_j(\cdot)$ is an individual, concave \textit{revenue} function defined over expected total clients, and $P(\cdot)$ is a convex \textit{punishment} function on $X_j$, composed of the probability of being fined for a certain number of sick leaves issued and the magnitude of the fine. The implication is that after a given number of patients, the disutility of an additional (expected) sick leave issued would outweigh physician $j$'s financial incentive for further clientele. The $j$ subindex indicates that we will allow $R_j(\cdot)$ (revenue by visit) to vary across physicians. We assume both $R_j(\cdot)$ and $P(\cdot)$ to be twicely differentiable.
+where $R_j(\cdot)$ is an individual, growing, concave \textit{revenue} function defined over expected total clients, and $P(\cdot)$ is a growing, convex \textit{punishment} function on $X_j$, composed of the probability of being fined for a certain number of sick leaves issued and the magnitude of the fine. The implication is that after a given number of patients, the disutility of an additional (expected) sick leave issued would outweigh physician $j$'s financial incentive for further clientele. The $j$ subindex indicates that we will allow $R_j(\cdot)$ (revenue by visit) to vary across physicians. We assume both $R_j(\cdot)$ and $P(\cdot)$ to be twicely differentiable.
 
 We stress again that we define physician utility in terms of the \textit{expected} realization of patient demand and granted sick leaves, as befits the logic of this game, where doctors take action before patients (we will specify the timing of our game below).
 
@@ -154,12 +152,12 @@ where $g_i(\cdot)$ is a continuous function weakly increasing in the first argum
 Defining $s_{ij}$ over $u_{ij}$ makes it dependent upon patient $i$'s characteristic tuple $(\kappa_i, \gamma_i)$. We will use the $s_{ij}(\kappa_i, \gamma_i)$ formulation to define physician expected demand and sick leaves issued as functions over patient strategies:
 
 \begin{equation}
-    Q_j(\bar{\kappa_j}, \bar{\kappa}_{-j}) \,=\, \int_{0}^{\infty} \int_{0}^{\infty}s_{ij}(\kappa, \gamma) \,dG(\gamma) \,dF(\kappa)
+    Q_j(\bar{\kappa_j}, \bar{\kappa}_{-j}) \,=\, I \int_{0}^{\infty} \int_{0}^{\infty}s_{ij}(\kappa, \gamma) \,dG(\gamma) \,dF(\kappa)
     \label{eq:s_Q}
 \end{equation}
 
 \begin{equation}
-    X_j(\bar{\kappa_j}, \bar{\kappa}_{-j}) \,=\, \int_{\bar{\kappa_j}}^{\infty} \int_{0}^{\infty}s_{ij}(\kappa, \gamma)  \,dG(\gamma) \,dF(\kappa)
+    X_j(\bar{\kappa_j}, \bar{\kappa}_{-j}) \,=\, I \int_{\bar{\kappa_j}}^{\infty} \int_{0}^{\infty}s_{ij}(\kappa, \gamma)  \,dG(\gamma) \,dF(\kappa)
     \label{eq:s_X}
 \end{equation}
 
@@ -198,7 +196,7 @@ We define the components $s_{ij}$ of the patient's strategy vector $S_i$ as foll
 \begin{equation}
 s_{ij} = \frac{\alpha_{ij}}{\sum_{k = 1}^{J} \alpha_{ik}}, \; \; \text{where } \; \alpha_{ij} = \begin{cases}
 e^{\lambda u_{ij}}, \; \; \text{if } \; \; u_{ij} > 0 \\
-0 , \; \; \text{if } \; \; u_{ij} = 0
+0 , \; \; \text{if } \; \; u_{ij} \leq 0
 \end{cases}
 \label{eq:Logit_s}
 \end{equation}
@@ -253,7 +251,7 @@ The components $s_{ij}$ of each patient's strategy vector $S_i$ are then defined
     \label{eq:Schnell_s}  
 \end{equation}
 
-Equation (\ref{sec:Schnell_s}) makes the rather simplifying but reasonable assumption that patient $i$ `draws' physicians randomly and thus has equal probability to visit any of the physicians who give him utility above his threshold $\bar{U_i}$.
+Equation (\ref{eq:Schnell_s}) makes the rather simplifying but reasonable assumption that patient $i$ `draws' physicians randomly and thus has equal probability to visit any of the physicians who give him utility above his threshold $\bar{U_i}$.
 
 \vspace{-3em}
 

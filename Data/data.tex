@@ -5,11 +5,11 @@
 
 \section{Data}
 
-We now turn to the empirical section of this paper. To estimate our models, we will use administrative data provided by FONASA from all sick leaves issued from January 2018 to October 2022 in the public health system. We consider authorized sick leaves only. Our sample includes 48,611 different physicians and 1,445,696 different patients. The dataset contains limited information: each observations consists of a single issued sick leave including encrypted ID's for the physician and patient involved (as well as the patient's employer), duration of sick leave and \textit{cie10} classification of the condition, and some data on issuance and payment methods.
+We now turn to the empirical section of this paper. To estimate our models, we will use administrative data provided by FONASA from all sick leaves issued from January 2018 to October 2022 in the public health system. We consider authorized sick leaves only. Our sample is composed of 4,289,479 observations (sick leaves authorized), including 48,611 different physicians and 1,445,696 different patients. The dataset contains limited information: each observations consists of a single issued sick leave including encrypted ID's for the physician and patient involved (as well as the patient's employer), duration of sick leave and \textit{cie10} classification of the condition, and some data on issuance and payment methods.
 
 Table \ref{tab:stats} presents descriptive statistics on sick leaves by physician and patients, i.e. on the empirical distributions of $X_j$ and $X_i$. One first indication of the skewness of both distributions is the difference between mean and median: whereas the median physician issued 24 sick leaves over the sampled period, the \textit{average} physician issued 88. The right tail is long, the 90th percentile physician issued 216 sick leaves, which quickly goes up to 1,007 at the 99th percentile, and then the most issued by a single physician is more than eight times that amount at 8,743.
 
-The story is similar with regard to patients, as a considerable share of the sample appear only once and then the median is just \textit{two} sick leaves received over the sampled period, goes up to 7 and 14 at the 90th and 99th percentiles, respectively, but then the single worker with the most sick leaves authorized is over five times the 99th percentile at 73.
+The story is similar with regard to patients, as a considerable share of the sample appear only once and then the median is just \textit{two} sick leaves received over the sampled period, goes up to 7 and 14 at the 90th and 99th percentiles, respectively, and the worker with the most sick leaves authorized is over five times the 99th percentile: 73.
 
 \vspace{1em}
 \begin{table}[h]

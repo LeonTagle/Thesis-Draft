@@ -47,14 +47,14 @@ Our second use of the distinction between overall sick leaves and the `30+ days'
 
 To define both moments formally within our framework, each bin corresponds to a representative physician $j$, where $J = 10$, such that we have two $J$-dimensional vectors, $X$ and $X^{30}$, where the $j$th component of each corresponds respectively to the two following moments for representative physician $j$:
 \begin{align}
-    X_j \,=\, &  \int_{\bar{\kappa_j}}^{\infty} \int_{0}^{\infty}s_{ij}(\kappa, \gamma)  \,dG(\gamma) \,dF(\kappa) \tag{\ref{eq:s_X}}
+    X_j \,=\, &  I \int_{\bar{\kappa_j}}^{\infty} \int_{0}^{\infty}s_{ij}(\kappa, \gamma)  \,dG(\gamma) \,dF(\kappa) \tag{\ref{eq:s_X}}
 \end{align}
 \begin{align}
-    X_j^{30} \,=\, & \int_{\bar{\kappa}_{\max}}^{\infty} \int_{0}^{\infty}s_{ij}(\kappa, \gamma)  \,dG(\gamma) \,dF(\kappa)
+    X_j^{30} \,=\, & I \int_{\bar{\kappa}_{\max}}^{\infty} \int_{0}^{\infty}s_{ij}(\kappa, \gamma)  \,dG(\gamma) \,dF(\kappa)
     \label{eq:X30}
 \end{align}
 
-The advantage of using this second defined moment, $X^{30}$, lies in its independence from the choice of strategy $\bar{kappa_j}$ and its \textit{near} independence from the distribution $G(\gamma)$. Any patient satisfying $\kappa_i > \bar{\kappa}_{\max}$ will, by definition, be granted sick leave by any physician. The implication of this on the probability $s_{ij}$ that such a patient visits any physician $j$ can be seen as follows:
+The advantage of using this second defined moment, $X^{30}$, lies in its independence from the choice of strategy $\bar{\kappa_j}$ and its \textit{near} independence from the distribution $G(\gamma)$. Any patient satisfying $\kappa_i > \bar{\kappa}_{\max}$ will, by definition, be granted sick leave by any physician. The implication of this on the probability $s_{ij}$ that such a patient visits any physician $j$ can be seen as follows:
 \begin{align*}
     s_{ij} = \frac{\alpha_{ij}}{\sum_{k = 1}^{J} \alpha_{ik}} & =
     \frac{e^{\lambda u_{ij}}}{\sum\limits_{k : \; u_{ik} \geq 0} \hspace{-0.5em} e^{\lambda u_{ik}}} 
@@ -119,7 +119,7 @@ The probability of being find would be near 0 until $X_j$ gets to be above aroun
     \label{tab:gmm}
 \end{table}
 
-Finally, we must also estimate $\lambda_s$, the parameter specific for the Logit model, characterizing the ``effectiveness'' of search, and $\bar{kappa}_{\max}$, the upper bound for physician strategies, regulating the aggregate level of $X^{30}$ in the market. In its estimated level, 21.75\% of patients will fall above this threshold, near the 20.05\% of sick leaves of 30+ days in our sample.
+Finally, we must also estimate $\lambda_s$, the parameter specific for the Logit model, characterizing the ``effectiveness'' of search, and $\bar{\kappa}_{\max}$, the upper bound for physician strategies, regulating the aggregate level of $X^{30}$ in the market. In its estimated level, 21.75\% of patients will fall above this threshold, near the 20.05\% of sick leaves of 30+ days in our sample.
 
 All the parameters in our model and their function within it are summarized in Table \ref{tab:gmm}, alongside they value they take on and its source. Two parameters are directly retreived from the data ($r$ and $\tau$), one we select/normalize ourselves ($\lambda_F$), the rest are subject to GMM estimation. That makes 15 parameters to be evaluated out of 20 data moments.
 
@@ -172,7 +172,7 @@ To get a visual understanding, the Figure \ref{fig:identification} in the Append
 \begin{xltabular}{\textwidth}{lX}
   
   
-    $\lambda_s$ & This parameter determines the ``quality'' of search in the Logit model. As it increases towards $\infty$, demand concentrates exclusively at $V_{10}$. As it tends to 0, demand is uniformly distributed across the ten bins. This sensitivity is more pronounced for the $X^{30}$ moments, sick leaves for patients above $\bar{kappa}_{\max}$, for the reasons mentioned in subsection \ref{sec:moments}: this moment is almost independent from $\gamma_i$, which conversely makes it more sensitive to $V_j$, which is in turn scaled by  $\lambda_s$. This parameter serves to explain, for a given $\vec{V}$, the relative steepness of the distribution of $X^{30}$ with respect to $X$. \\
+    $\lambda_s$ & This parameter determines the ``quality'' of search in the Logit model. As it increases towards $\infty$, demand concentrates exclusively at $V_{10}$. As it tends to 0, demand is uniformly distributed across the ten bins. This sensitivity is more pronounced for the $X^{30}$ moments, sick leaves for patients above $\bar{\kappa}_{\max}$, for the reasons mentioned in subsection \ref{sec:moments}: this moment is almost independent from $\gamma_i$, which conversely makes it more sensitive to $V_j$, which is in turn scaled by  $\lambda_s$. This parameter serves to explain, for a given $\vec{V}$, the relative steepness of the distribution of $X^{30}$ with respect to $X$. \\
     \\
     $\bar{\kappa}_{\max}$ & This parameter directly controls the scale of overall $X^{30}$ with respect to $X$. The lower it is, the more aggregate $X^{30}$ approaches aggregate $X$. It should be such that the $X^{30}/X$ ratio resembles the ratio of sick leaves of 30+ days over total sick leaves issued in the data, and indeed it does (21.75\% vs. 20.05\%). \\
     \\

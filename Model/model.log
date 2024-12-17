@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.7)  2 DEC 2024 23:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.7)  16 DEC 2024 23:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/leontagle/Documents/TESIS/Thesis-Draft/Model/model
-(/Users/leontagle/Documents/TESIS/Thesis-Draft/Model/model.tex
+**/Users/leontagle/Sótano/Universidad/TESIS/Thesis-Draft/Model/model
+(/Users/leontagle/Sótano/Universidad/TESIS/Thesis-Draft/Model/model.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/subfiles/subfiles.cls
@@ -966,49 +966,49 @@ LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
 (Font)              scaled to size 9.0pt on input line 10.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 25.
+(Font)              scaled to size 10.95pt on input line 23.
  [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/baskervillef/zba_uf5aa7.enc}]
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 37.
+(Font)              scaled to size 10.95pt on input line 35.
 
 
-Package natbib Warning: Citation `schnell2017physician' on page 2 undefined on input line 37.
+Package natbib Warning: Citation `schnell2017physician' on page 2 undefined on input line 35.
 
-LaTeX Font Info:    Trying to load font information for TS1+BaskervilleF-TLF on input line 41.
+LaTeX Font Info:    Trying to load font information for TS1+BaskervilleF-TLF on input line 39.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/baskervillef/TS1BaskervilleF-TLF.fd
 File: TS1BaskervilleF-TLF.fd 2016/11/15 (autoinst) Font definitions for TS1/BaskervilleF-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 41.
+(Font)              scaled to size 10.95pt on input line 39.
  [2{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/baskervillef/zba_qiwnw4.enc}]
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/b/n' will be
-(Font)              scaled to size 8.0pt on input line 78.
+(Font)              scaled to size 8.0pt on input line 76.
 
 
-LaTeX Warning: Reference `bar-kappa' on page 3 undefined on input line 78.
+LaTeX Warning: Reference `bar-kappa' on page 3 undefined on input line 76.
 
-Package hyperref Info: bookmark level for unknown prop defaults to 0 on input line 89.
+Package hyperref Info: bookmark level for unknown prop defaults to 0 on input line 87.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 115.
+(Font)              scaled to size 10.0pt on input line 113.
 [3]
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 115.
+(Font)              scaled to size 7.0pt on input line 113.
 LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 115.
-Package hyperref Info: bookmark level for unknown equilibrium defaults to 0 on input line 122.
+(Font)              scaled to size 5.0pt on input line 113.
+Package hyperref Info: bookmark level for unknown equilibrium defaults to 0 on input line 120.
 
 
-Package natbib Warning: Citation `schnell2017physician' on page 4 undefined on input line 127.
+Package natbib Warning: Citation `schnell2017physician' on page 4 undefined on input line 125.
 
 
-Overfull \hbox (1.78716pt too wide) in paragraph at lines 134--135
+Overfull \hbox (1.78716pt too wide) in paragraph at lines 132--133
 \OML/cmm/m/it/10.95 s[]; [] ; s[]$ \T1/BaskervilleF-TLF/m/n/10.95 within $\OML/cmm/m/it/10.95 S[]$ \T1/BaskervilleF-TLF/m/n/10.95 de-notes the prob-a-bil-ity that pa-tient $\OML/cmm/m/it/10.95 i$ \T1/BaskervilleF-TLF/m/n/10.95 will visit physi-cians $\OT1/cmr/m/n/10.95 1\OML/cmm/m/it/10.95 ; [] ; J$\T1/BaskervilleF-TLF/m/n/10.95 ,
  []
 
 [4]
-Overfull \hbox (0.50584pt too wide) in paragraph at lines 154--155
+Overfull \hbox (0.50584pt too wide) in paragraph at lines 152--153
 []\T1/BaskervilleF-TLF/m/n/10.95 Defining $\OML/cmm/m/it/10.95 s[]$ \T1/BaskervilleF-TLF/m/n/10.95 over $\OML/cmm/m/it/10.95 u[]$ \T1/BaskervilleF-TLF/m/n/10.95 makes it de-pen-dent upon pa-tient $\OML/cmm/m/it/10.95 i$\T1/BaskervilleF-TLF/m/n/10.95 's char-ac-ter-is-tic tu-ple $\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^T[]; ^^M[]\OT1/cmr/m/n/10.95 )$\T1/BaskervilleF-TLF/m/n/10.95 .
  []
 
@@ -1016,56 +1016,52 @@ Overfull \hbox (0.50584pt too wide) in paragraph at lines 154--155
 pdfTeX warning (ext4): destination with the same identifier (name{equation.1.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.156 \begin{equation}
+l.154 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.1.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.156 \begin{equation}
+l.154 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.1.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.156 \begin{equation}
+l.154 \begin{equation}
                       
 pdfTeX warning (ext4): destination with the same identifier (name{equation.1.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.156 \begin{equation}
+l.154 \begin{equation}
                        [5
 pdfTeX warning (ext4): destination with the same identifier (name{equation.1.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.169 
+l.167 
       ]
 
-LaTeX Warning: Reference `sec:separate' on page 6 undefined on input line 170.
+LaTeX Warning: Reference `sec:separate' on page 6 undefined on input line 168.
 
 
-Package natbib Warning: Citation `schnell2017physician' on page 6 undefined on input line 170.
+Package natbib Warning: Citation `schnell2017physician' on page 6 undefined on input line 168.
 
 
-LaTeX Warning: Reference `sec:strategic' on page 6 undefined on input line 180.
+LaTeX Warning: Reference `sec:strategic' on page 6 undefined on input line 178.
 
 (./graph1.tex) [6]
 
-LaTeX Warning: Reference `sec:illustration' on page 7 undefined on input line 225.
+LaTeX Warning: Reference `sec:illustration' on page 7 undefined on input line 223.
 
 
-Package natbib Warning: Citation `schnell2017physician' on page 7 undefined on input line 237.
+Package natbib Warning: Citation `schnell2017physician' on page 7 undefined on input line 235.
 
 [7]
 
-LaTeX Warning: Reference `sec:sequential' on page 8 undefined on input line 241.
+LaTeX Warning: Reference `sec:sequential' on page 8 undefined on input line 239.
 
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 243.
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 241.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
-)
-
-LaTeX Warning: Reference `sec:Schnell_s' on page 8 undefined on input line 256.
-
-(./graph2.tex) [8]
+) (./graph2.tex) [8]
 
 Package natbib Warning: There were undefined citations.
 
@@ -1082,18 +1078,18 @@ Package rerunfilecheck Info: File `model.out' has not changed.
 (rerunfilecheck)             Checksum: BB205B8FE5EF3D048FD902CC8058796E;1046.
  ) 
 Here is how much of TeX's memory you used:
- 36086 strings out of 474116
- 821349 string characters out of 5743683
- 1945187 words of memory out of 5000000
- 57732 multiletter control sequences out of 15000+600000
+ 36085 strings out of 474116
+ 821364 string characters out of 5743683
+ 1946187 words of memory out of 5000000
+ 57731 multiletter control sequences out of 15000+600000
  829929 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 119i,12n,124p,876b,855s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 119i,12n,124p,1098b,855s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/leontagle/Library/texlive/2024/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.657pk></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on model.pdf (9 pages, 262279 bytes).
+Output written on model.pdf (9 pages, 262497 bytes).
 PDF statistics:
- 239 PDF objects out of 1000 (max. 8388607)
- 190 compressed objects within 2 object streams
+ 240 PDF objects out of 1000 (max. 8388607)
+ 191 compressed objects within 2 object streams
  43 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

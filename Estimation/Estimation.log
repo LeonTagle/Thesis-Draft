@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.7)  2 DEC 2024 23:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.7)  16 DEC 2024 23:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/leontagle/Documents/TESIS/Thesis-Draft/Estimation/Estimation
-(/Users/leontagle/Documents/TESIS/Thesis-Draft/Estimation/Estimation.tex
+**/Users/leontagle/Sótano/Universidad/TESIS/Thesis-Draft/Estimation/estimation
+(/Users/leontagle/Sótano/Universidad/TESIS/Thesis-Draft/Estimation/estimation.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/subfiles/subfiles.cls
@@ -843,8 +843,8 @@ LaTeX Font Info:    Font shape `T1/BaskervilleF-TLF/m/n' will be
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count341
 \l__pdf_internal_box=\box75
-) (./Estimation.aux)
-\openout1 = `Estimation.aux'.
+) (./estimation.aux)
+\openout1 = `estimation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
@@ -935,9 +935,9 @@ Package caption Info: End \AtBeginDocument code.
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 Package hyperref Info: Link coloring ON on input line 3.
-(./Estimation.out) (./Estimation.out)
+(./estimation.out) (./estimation.out)
 \@outlinefile=\write4
-\openout4 = `Estimation.out'.
+\openout4 = `estimation.out'.
 
 \c@mv@tabular=\count348
 \c@mv@boldtabular=\count349
@@ -1040,7 +1040,7 @@ Package pdftex.def Info: counter.pdf  used on input line 206.
 
 Package natbib Warning: There were undefined citations.
 
-[10] (./Estimation.aux)
+[10] (./estimation.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -1049,19 +1049,19 @@ L3 programming layer <2024-02-20>
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `Estimation.out' has not changed.
+Package rerunfilecheck Info: File `estimation.out' has not changed.
 (rerunfilecheck)             Checksum: 0EA430DE2F6B281A044C1B725DE92B9A;858.
  ) 
 Here is how much of TeX's memory you used:
  35933 strings out of 474116
- 817502 string characters out of 5743683
+ 817532 string characters out of 5743683
  1944187 words of memory out of 5000000
  57616 multiletter control sequences out of 15000+600000
  774436 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 119i,19n,124p,1497b,627s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 119i,19n,124p,1507b,627s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/baskervillef/BaskervilleF-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb>
-Output written on Estimation.pdf (10 pages, 304786 bytes).
+Output written on estimation.pdf (10 pages, 304777 bytes).
 PDF statistics:
  388 PDF objects out of 1000 (max. 8388607)
  188 compressed objects within 2 object streams

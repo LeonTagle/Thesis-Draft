@@ -4,7 +4,7 @@
 \contentsline {subsection}{\numberline {3.1}The Physician-Patient Market}{5}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Non-Search Equilibrium}{7}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}General Search Framework}{9}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}The ``Implicit'' Search Model}{10}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.4}The ``Implicit'' Search Model}{11}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}The ``Explicit'' Search Model}{12}{subsection.3.5}%
 \contentsline {section}{\numberline {4}Computation}{14}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Algorithms for Model Computation}{14}{subsection.4.1}%
